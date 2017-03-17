@@ -23,12 +23,16 @@ Nomenclatura:
 2. Gestió de finestres
 
 	C-x 1	>> Ver una sóla ventana.
+	
 	C-x 2   >> Divide la ventana actual en dos filas
+	
 	C-x 3   >> Divide la ventana actual en dos columnas
+	
 	C-x 0   >> (cero) Elimina la ventana actual.
+	
 	C-x b   >> Cambiar el buffer de la venana actual. En minibuffer aparece prompt
-	C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en 
-           varias ventanas
+	
+	C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en varias ventanas
 
 
 # 01 Arrancando
@@ -36,19 +40,19 @@ Nomenclatura:
 
 1. Arrancar Emacs modo gráfico
 
-`emacs`
+	emacs
 
 2. Arrancar Emacs modo terminal
 
-`emacs --no-window-system`
+	emacs --no-window-system
 
 3. Suspender ejecución Emacs
 
-`C-z`
+	C-z
 
 4. Detiene Emacs y pregunta si guarda el fichero
 
-`C-x C-c`
+	C-x C-c
 
 # 02 Zonas
 #dia_02
@@ -100,8 +104,8 @@ No todos los `buffers` corresponden a `ficheros`.
 
 Cuando se inicia Emacs aparecen estos dos buffers:
 
-- *scratch*
-- *messages*
+- `*scratch*`
+- `*messages*`
 
 Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a un fichero.
 
