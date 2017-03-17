@@ -1,7 +1,7 @@
-#Emacs
+# Emacs
 
 
-#emacs | 00 Inicio de bitácora
+# emacs | 00 Inicio de bitácora
 #dia_00
 
 `Meta`: Dominar Emacs nivel inicial en 30 dias.
@@ -29,8 +29,7 @@ C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en
            varias ventanas
 
 
-#emacs | 01 Arrancando
-#dia_01
+# emacs | 01 Arrancando
 
 1. Arrancar Emacs modo gráfico
 
@@ -48,8 +47,7 @@ C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en
 
 `C-x C-c`
 
-#emacs | 02 Zonas
-#dia_02
+# emacs | 02 Zonas
 
 1. `Barra de menú`: situada arriba
 
@@ -63,8 +61,7 @@ C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en
 
 -- `Minibúffer`: sirve para escribir argumentos que se hayan de pasar a un comando
 
-#emacs | 03 Edición en ventanas
-#dia_03
+# emacs | 03 Edición en ventanas
 
 1. Borra ventana activa 
 
@@ -86,8 +83,7 @@ C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en
 
 `C-M-v`
 
-#emacs | 04 Ficheros y buffers
-#dia_04
+# emacs | 04 Ficheros y buffers
 
 `Buffer`: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.
 
@@ -110,8 +106,7 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 2. Incluir acentos: incluye esto `(set-keyboard-coding-system 'utf-8) ` en el fichero `.emacs`
 
-#emacs | 05 Visitar (abrir) Ficheros
-#dia_05
+# emacs | 05 Visitar (abrir) Ficheros
 
 1. Abrir fichero
 
@@ -137,8 +132,7 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 `C-x k`
 
-#emacs | 06 Manejo de zonas
-#dia_06
+# emacs | 06 Manejo de zonas
 
 1. Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él.
 
@@ -168,8 +162,7 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 `C-x 4 0`
 
-#emacs | 07 Ayuda
-#dia_07
+# emacs | 07 Ayuda
 
 1. Crear una ventana con ayuda
 
@@ -181,8 +174,7 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 3. Bajar hasta el comando elegido y pulsar enter
 
-#emacs | 08 Buffer
-#dia_08
+# emacs | 08 Buffer
 
 Para entender el concepto debemos tener saber que el buffer se refiere a la memoria RAM.
 
