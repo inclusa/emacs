@@ -115,7 +115,7 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 2. Incluir acentos: incluye esto `(set-keyboard-coding-system 'utf-8) ` en el fichero `.emacs`
 
-# emacs | 05 Visitar (abrir) Ficheros
+# :05 Visitar (abrir) Ficheros
 
 1. Abrir fichero
 
