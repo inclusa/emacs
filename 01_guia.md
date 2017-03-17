@@ -1,8 +1,18 @@
-Emacs
+#Emacs
 
-Referència
 
-http://www.merlos.org/linux/2003/05/emacs.html
+#emacs | 00 Inicio de bitácora
+#dia_00
+
+`Meta`: Dominar Emacs nivel inicial en 30 dias.
+
+Nomenclatura:
+
+`C` - Control
+`M` - Meta, tecla Alt izquierda o ESC
+`S` - Shift o mayúscula
+
+- [Referència](http://www.merlos.org/linux/2003/05/emacs.html)
 
 1. Arrancar Emacs sense entorn de finestres
 
@@ -18,17 +28,6 @@ C-x b   >> Cambiar el buffer de la venana actual. En minibuffer aparece prompt
 C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en 
            varias ventanas
 
-
-#emacs | 00 Inicio de bitácora
-#dia_00
-
-`Meta`: Dominar Emacs nivel inicial en 30 dias.
-
-Nomenclatura:
-
-`C` - Control
-`M` - Meta, tecla Alt izquierda o ESC
-`S` - Shift o mayúscula
 
 #emacs | 01 Arrancando
 #dia_01
