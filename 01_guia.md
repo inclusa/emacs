@@ -77,7 +77,7 @@ Nomenclatura:
 Para salir del minibuffer, zona donde escribimos comandos, debemos apretar C-g, ya que de lo contrario, se encadenaran los comandos.
 
 # 03 Edición en ventanas
-#dia_4
+#dia_04
 
 Aclaraciones
 
@@ -113,7 +113,7 @@ Limpiar minibuffer
 	C-M-v
 
 # 04 Ficheros y buffers
-#dia_5
+#dia_04
 
 `Buffer`: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.
 
@@ -137,6 +137,7 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 2. Incluir acentos: incluye esto `(set-keyboard-coding-system 'utf-8) ` en el fichero `.emacs`
 
 # 05 Visitar (abrir) Ficheros
+#dia_05
 
 1. Abrir fichero
 
@@ -244,7 +245,7 @@ Fuente: https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.h
 
 
 # 09 Gestión de ventanas
-#dia_9
+#dia_09
 
 	C-x 1 - Ver una sola ventana.
 	
