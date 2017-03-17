@@ -21,6 +21,7 @@ Indice
 
 [08 Buffer](#08-buffer)
 
+[09 Gestión de ventanas](#09-Gestión-de-ventanas)
 
 
 # 00 Inicio de bitácora
@@ -38,23 +39,6 @@ Nomenclatura:
 
 - [Referència](http://www.merlos.org/linux/2003/05/emacs.html)
 
-1. Arrancar Emacs sense entorn de finestres
-
-	emacs --no-window-system
-
-2. Gestió de finestres
-
-	C-x 1 - Ver una sóla ventana.
-	
-	C-x 2 - Divide la ventana actual en dos filas
-	
-	C-x 3 - Divide la ventana actual en dos columnas
-	
-	C-x 0 - (cero) Elimina la ventana actual.
-	
-	C-x b - Cambiar el buffer de la venana actual. En minibuffer aparece prompt
-	
-	C-x o - Cambiar de ventana cuando el aréa de trabajo está dividida en varias ventanas
 
 
 # 01 Arrancando
@@ -90,8 +74,23 @@ Nomenclatura:
 - `Área de eco`: aparece sólo al escribir una combinación de teclas. Lo escrito hace eco o tiene su salida en la pantalla.
 - `Minibúffer`: sirve para escribir argumentos que se hayan de pasar a un comando
 
+Para salir del minibuffer, zona donde escribimos comandos, debemos apretar C-g, ya que de lo contrario, se encadenaran los comandos.
+
 # 03 Edición en ventanas
 #dia_4
+
+Aclaraciones
+
+`C-x C-c` - Pulsas `Control` y con la tecla de `Control` pulsada pulsas primero `x` y después `c`.
+
+`C-x k` - Pulsas `Control` y `x`. Levantas el dedo de la tecla `Control` y pulsas `k`.
+
+
+Limpiar minibuffer
+
+`C-g` - Este comando limpia el minibuffer para no encadenar comandos. Una vez limpio ya podemos introducir la secuencia.
+
+
 
 1. Borra ventana activa 
 
@@ -242,4 +241,20 @@ Cuando sales, si no guardas los buffers en archivos específicos, se borran de l
 `*` Indica que ese buffer está modificado
 
 Fuente: https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html
+
+
+# 09 Gestión de ventanas
+#dia_9
+
+	C-x 1 - Ver una sola ventana.
+	
+	C-x 2 - Divide la ventana actual en dos filas
+	
+	C-x 3 - Divide la ventana actual en dos columnas
+	
+	C-x 0 - (cero) Elimina la ventana actual.
+	
+	C-x b - Cambiar el buffer de la venana actual. En minibuffer aparece prompt
+	
+	C-x o - Cambiar de ventana cuando el aréa de trabajo está dividida en varias ventanas
 
