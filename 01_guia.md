@@ -1,7 +1,7 @@
 # Emacs
 
 
-# emacs | 00 Inicio de bitácora
+# 00 Inicio de bitácora
 #dia_00
 
 `Meta`: Dominar Emacs nivel inicial en 30 dias.
@@ -9,27 +9,30 @@
 Nomenclatura:
 
 `C` - Control
+
 `M` - Meta, tecla Alt izquierda o ESC
+
 `S` - Shift o mayúscula
 
 - [Referència](http://www.merlos.org/linux/2003/05/emacs.html)
 
 1. Arrancar Emacs sense entorn de finestres
 
-emacs --no-window-system
+	emacs --no-window-system
 
 2. Gestió de finestres
 
-C-x 1	>> Ver una sóla ventana.
-C-x 2   >> Divide la ventana actual en dos filas
-C-x 3   >> Divide la ventana actual en dos columnas
-C-x 0   >> (cero) Elimina la ventana actual.
-C-x b   >> Cambiar el buffer de la venana actual. En minibuffer aparece prompt
-C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en 
+	C-x 1	>> Ver una sóla ventana.
+	C-x 2   >> Divide la ventana actual en dos filas
+	C-x 3   >> Divide la ventana actual en dos columnas
+	C-x 0   >> (cero) Elimina la ventana actual.
+	C-x b   >> Cambiar el buffer de la venana actual. En minibuffer aparece prompt
+	C-x o   >> Cambiar de ventana cuando el aréa de trabajo está dividida en 
            varias ventanas
 
 
 # emacs | 01 Arrancando
+#dia_01
 
 1. Arrancar Emacs modo gráfico
 
