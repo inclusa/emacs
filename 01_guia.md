@@ -1,5 +1,27 @@
 # Emacs
 
+Indice
+
+
+[00 Inicio de bitácora](#00-inicio-de-bitácora)
+
+[01 Arrancando](#01-arrancando)
+
+[02 Zonas](#02-zonas)
+
+[03 Edición en ventanas](#03-edición-en-ventanas)
+
+[04 Ficheros y buffers](#04-ficheros-y-buffers)
+
+[05 Visitar (abrir) Ficheros](#05-visitar-abrir-ficheros)
+
+[06 Manejo de zonas](#06-manejo-de-zonas)
+
+[07 Ayuda](#07-ayuda)
+
+[08 Buffer](#08-buffer)
+
+
 
 # 00 Inicio de bitácora
 #dia_00
@@ -115,7 +137,7 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 2. Incluir acentos: incluye esto `(set-keyboard-coding-system 'utf-8) ` en el fichero `.emacs`
 
-# :05 Visitar (abrir) Ficheros
+# 05 Visitar (abrir) Ficheros
 
 1. Abrir fichero
 
