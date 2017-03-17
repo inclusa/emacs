@@ -31,7 +31,7 @@ Nomenclatura:
            varias ventanas
 
 
-# emacs | 01 Arrancando
+# 01 Arrancando
 #dia_01
 
 1. Arrancar Emacs modo gráfico
@@ -50,7 +50,8 @@ Nomenclatura:
 
 `C-x C-c`
 
-# emacs | 02 Zonas
+# 02 Zonas
+#dia_02
 
 1. `Barra de menú`: situada arriba
 
@@ -61,32 +62,33 @@ Nomenclatura:
 4. `Área de eco` y `minibuffer`: ambos aparecen en la última línea
 
 - `Área de eco`: aparece sólo al escribir una combinación de teclas. Lo escrito hace eco o tiene su salida en la pantalla.
+- `Minibúffer`: sirve para escribir argumentos que se hayan de pasar a un comando
 
--- `Minibúffer`: sirve para escribir argumentos que se hayan de pasar a un comando
-
-# emacs | 03 Edición en ventanas
+# 03 Edición en ventanas
+#dia_4
 
 1. Borra ventana activa 
 
-`C-x 0`
+	C-x 0
 
 2. Borra todas las ventanas menos la activa
 
-`C-x 1`
+	C-x 1
 
 3. Divide horizontalmente la ventana activa en dos ventans
 
-`C-x 2`
+	C-x 2
 
 4. Lleva el cursos a la próxima ventana
 
-`C-x o`
+	C-x o
 
 5. Desplaza hacia abajo el texto de la próxima ventana, como si hiciéramos AvPág
 
-`C-M-v`
+	C-M-v
 
-# emacs | 04 Ficheros y buffers
+# 04 Ficheros y buffers
+#dia_5
 
 `Buffer`: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.
 
@@ -105,7 +107,7 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 1. Cerrar el búffer, no modifica el fichero si está guardado, no lo crea en caso de no estarlo.
 
-`C-x k`
+	C-x k
 
 2. Incluir acentos: incluye esto `(set-keyboard-coding-system 'utf-8) ` en el fichero `.emacs`
 
@@ -113,71 +115,74 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 1. Abrir fichero
 
-`C-c C-f`
+	C-c C-f
 
 2. Abrir directorio
 
-`C-x d`
+	C-x d
 
 3. Grabar en disco
 
-`C-x C-s`
+	C-x C-s
 
 4. Grabar el buffer con otro nombre
 
-`C-x C-w`
+	C-x C-w
 
 5. En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo
 
-`C-x s`
+	C-x s
 
 6. Cerrar buffer, sin guardar, no modifica archivo creado
 
-`C-x k`
+	C-x k
 
-# emacs | 06 Manejo de zonas
+# 06 Manejo de zonas
+#dia_06
 
 1. Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él.
 
-`C-x b`
+	C-x b
 
 2. Selecciona otra ventana
 
-`C-x o`
+	C-x o
 
 3. Borra la ventana seleccionada
 
-`C-x 0`
+	C-x 0
 
 4. Borra todas las ventanas excepto la seleccionada
 
-`C-x  1`
+	C-x  1
 
 5. Selecciona un buffer en una ventana nueva
 
-`C-x 4 b`
+	C-x 4 b
 
 6. Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada
 
-`C-x 4 f`
+	C-x 4 f
 
 7. Borra la ventana seleccionada y cierra, mata el buffer que contenia
 
-`C-x 4 0`
+	C-x 4 0
 
-# emacs | 07 Ayuda
+# 07 Ayuda
+#dia_07
 
 1. Crear una ventana con ayuda
 
-`M-x o`
+	M-x o
 
 2. Llegar a la ventana nueva. Pulsar dos veces estos comandos
 
-`C-x o`
+	C-x o
 
 3. Bajar hasta el comando elegido y pulsar enter
 
-# emacs | 08 Buffer
+# 08 Buffer
+#dia_08
 
 Para entender el concepto debemos tener saber que el buffer se refiere a la memoria RAM.
 
@@ -187,9 +192,7 @@ El buffer se refiere al espacio concreto que ocupa este archivo en RAM.
 
 Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable `s` a un valor `5`, así:
 
-```
-s = 5
-```
+	s = 5
 
 El la variable `s` queda almacenada en la memoria RAM y cuando la llamamos `$s` nos devueve su valor, en este caso `5`.
 
@@ -197,8 +200,8 @@ Así el buffer se refiere al archivo cargado en ram.
 
 Fíjate que en Emacs tenemos dos buffers que se cargan siempre:
 
-*scratch*
-*Messages*
+	*scratch*
+	*Messages*
 
 Que esten cargados con asteriscos `*` indica que estan en RAM (buffer) pero no escritos en disco (ROM).
 
@@ -212,5 +215,5 @@ Cuando sales, si no guardas los buffers en archivos específicos, se borran de l
 
 `*` Indica que ese buffer está modificado
 
-https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html
+Fuente: https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html
 
