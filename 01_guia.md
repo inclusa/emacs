@@ -19,7 +19,9 @@ Indice
 
 [07 Buffer](#07-buffer)
 
-[08 Gestión de ventanas](#08-Gestión-de-ventanas)
+[08 Cifrado](#08-cifrado)
+
+[09 Gestión de ventanas](#09-Gestión-de-ventanas)
 
 
 # 00 Inicio de bitácora
@@ -233,8 +235,53 @@ Cuando sales, si no guardas los buffers en archivos específicos, se borran de l
 https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html
 
 
+# 08 Cifrado
+#dia_08
 
-# 08 Gestión de ventanas
+Emacs utiliza por defecto el cifrado de GPG.
+
+De esta manera para podemos cifrar y descrifrar documentos tanto para claves simétricas (una clave) como para claves asimétricas (dos claves: pública y privada).
+
+Empecemos por lo sencillo: cifrado simétrico.
+
+Si editamos un documento `a.txt`, lo guardamos.
+
+Ahora lo podremos cifrar desde el menú:
+
+```
+Tools > Encryption/Decryption > Encrypt file...
+```
+
+Lo que hace, por detrás es esto, pero no lo vemos:
+
+```
+gpg -c a.txt
+```
+
+Para desdifrar lo que hace es, pero no lo vemos:
+
+```
+gpg -d a.txt.gpg
+```
+
+Genera un archivo nuevo `a.txt.gpg`, antes nos pide dos veces que le pongamos una contraseña.
+
+El resultado son dos archivos:
+
+`a.txt` Sin cifrar
+
+`a.txt.gpg` Cifrado
+
+Subiríamos a la nube el segundo.
+
+Al recuperarlo deberíamos nos pedirá la clave de cifrado.
+
+Al guardarlo, nos volverá a pedir la clave de cifrado dos veces.
+
+Fin.
+
+
+# 09 Gestión de ventanas
 #dia_09
 
 	C-x 1 - Ver una sola ventana.
