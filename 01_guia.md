@@ -17,11 +17,9 @@ Indice
 
 [06 Manejo de zonas](#06-manejo-de-zonas)
 
-[07 Ayuda](#07-ayuda)
+[07 Buffer](#07-buffer)
 
-[08 Buffer](#08-buffer)
-
-[09 Gestión de ventanas](#09-Gestión-de-ventanas)
+[08 Gestión de ventanas](#08-Gestión-de-ventanas)
 
 
 # 00 Inicio de bitácora
@@ -194,57 +192,49 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 	C-x 4 0
 
-# 07 Ayuda
+
+# 07 Buffer
 #dia_07
 
-1. Crear una ventana con ayuda
+Para entender el concepto de `buffer` debemos tener en cuenta que el `buffer` se refiere a la memoria RAM.
 
-	M-x o
+Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.
 
-2. Llegar a la ventana nueva. Pulsar dos veces estos comandos
-
-	C-x o
-
-3. Bajar hasta el comando elegido y pulsar enter
-
-# 08 Buffer
-#dia_08
-
-Para entender el concepto debemos tener saber que el buffer se refiere a la memoria RAM.
-
-Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio en la memoria RAM.
-
-El buffer se refiere al espacio concreto que ocupa este archivo en RAM.
+El `buffer` se refiere al espacio concreto que ocupa este archivo en RAM.
 
 Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable `s` a un valor `5`, así:
 
-	s = 5
+```
+s = 5
+```
 
-El la variable `s` queda almacenada en la memoria RAM y cuando la llamamos `$s` nos devueve su valor, en este caso `5`.
+El la variable `s` queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos `$s` nos devueve su valor, en este caso `5`.
 
-Así el buffer se refiere al archivo cargado en ram.
+Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.
 
-Fíjate que en Emacs tenemos dos buffers que se cargan siempre:
+Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:
 
-	*scratch*
-	*Messages*
+*GNU Emacs* %
+*scratch*
+*Messages* %
 
 Que esten cargados con asteriscos `*` indica que estan en RAM (buffer) pero no escritos en disco (ROM).
 
 Así, si visitas `*Messages` observarás que tiene la función de `log` o bitácora donde se van acumulando los mensajes que te va dando Emacs.
 
-Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.
+Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.
 
 `.` Indica que se trabaja en ese buffer
 
 `%` Indica sólo lectura
 
-`*` Indica que ese buffer está modificado
+`*` Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)
 
-Fuente: https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html
+https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html
 
 
-# 09 Gestión de ventanas
+
+# 08 Gestión de ventanas
 #dia_09
 
 	C-x 1 - Ver una sola ventana.
