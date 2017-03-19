@@ -240,11 +240,11 @@ https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html
 
 Emacs utiliza por defecto el cifrado de GPG.
 
-De esta manera para podemos cifrar y descrifrar documentos tanto para claves simétricas (una clave) como para claves asimétricas (dos claves: pública y privada).
+De esta manera para podemos cifrar y descrifrar documentos tanto para `claves simétricas`, una clave como para `claves asimétricas`, dos claves: pública y privada).
 
-Empecemos por lo sencillo: cifrado simétrico.
+Empecemos por lo sencillo: `cifrado simétrico`.
 
-Si editamos un documento `a.txt`, lo guardamos.
+Si creamos un documento llamado `a.txt`, lo guardamos.
 
 Ahora lo podremos cifrar desde el menú:
 
@@ -278,7 +278,7 @@ Al recuperarlo deberíamos nos pedirá la clave de cifrado.
 
 Al guardarlo, nos volverá a pedir la clave de cifrado dos veces.
 
-Fin.
+Con este procedimineto siempre mantendremos cifrado nuestro archivo, el cual tendrá una primera capa de seguridad, ya no será tan accesible.
 
 
 # 09 Gestión de ventanas
