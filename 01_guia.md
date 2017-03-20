@@ -21,9 +21,9 @@ Indice
 
 [08 Cifrado](#08-cifrado)
 
-[#9 Configuración](#0-Configuración)
+[#9 Configuración](#9-Configuración)
 
-[10 Gestión de ventanas](#19-Gestión-de-ventanas)
+[10 Gestión de ventanas](#10-Gestión-de-ventanas)
 
 
 # 00 Inicio de bitácora
