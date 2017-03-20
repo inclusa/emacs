@@ -21,7 +21,7 @@ Indice
 
 [08 Cifrado](#08-cifrado)
 
-[#9 Configuración](#9-Configuración)
+[09 Configuración](#9-Configuración)
 
 [10 Gestión de ventanas](#10-Gestión-de-ventanas)
 
@@ -283,7 +283,7 @@ Al guardarlo, nos volverá a pedir la clave de cifrado dos veces.
 Con este procedimineto siempre mantendremos cifrado nuestro archivo, el cual tendrá una primera capa de seguridad, ya no será tan accesible.
 
 
-# 09 Configuracion
+# 09 Configuración
 #dia_09
 
 Recordamos comandos esenciales
