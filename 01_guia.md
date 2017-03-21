@@ -288,12 +288,12 @@ Con este procedimineto siempre mantendremos cifrado nuestro archivo, el cual ten
 
 Recordamos comandos esenciales
 
-Buscar archivo C-x f
-Deshacer C-x u
-Guardar C-x w
-Cambio de buffer C-x b
-Cerrar sessión C-x C-c
-Guardar C-x C-s
+- Buscar archivo C-x f
+- Deshacer C-x u
+- Guardar C-x w
+- Cambio de buffer C-x b
+- Cerrar sessión C-x C-c
+- Guardar C-x C-s
 
 Vamos a mejorar la configuracion para evitar los mensajes de inicio. Abriremos el archivo `.emacs` y copiaremos:
 
