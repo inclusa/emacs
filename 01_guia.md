@@ -25,6 +25,7 @@ Indice
 
 [10 Gestión de ventanas](#10-gestión-de-ventanas)
 
+[11 Trabajando con unicode UTF-8](](#11-trabajando-con-unicode-utf-8)
 
 # 00 Inicio de bitácora
 #dia_00
