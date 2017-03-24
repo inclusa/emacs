@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Emacs" property="og:site_name">
 
-  <meta content="04 Edición de ventanas" property="og:title">
+  <meta content="02 Arrancando" property="og:title">
 
 
   <meta content="article" property="og:type">
@@ -16,10 +16,10 @@
   <meta content="<h3>Iníciate en Emacs sin excusas</h3><h1>Emacs</h1><h3>Guia de inicio rápida</h3>Consigue despegar!" property="og:description">
 
 
-  <meta content="http://inclusa.github.io/emacs/2017/03/03/ventanas.html" property="og:url">
+  <meta content="http://inclusa.github.io/emacs/2017/03/02/arrancando.html" property="og:url">
 
 
-  <meta content="2017-03-03T19:00:00+01:00" property="article:published_time">
+  <meta content="2017-03-02T01:00:00+01:00" property="article:published_time">
   <meta content="http://inclusa.github.io/emacs/about/" property="article:author">
 
 
@@ -31,8 +31,8 @@
 
   
 
-  <title>04 Edición de ventanas</title>
-  <meta name="description" content="Aclaraciones">
+  <title>02 Arrancando</title>
+  <meta name="description" content="  Arrancar Emacs modo gráfico">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
@@ -50,7 +50,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
-  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/03/ventanas.html">
+  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/02/arrancando.html">
   <link rel="alternate" type="application/rss+xml" title="Emacs" href="http://inclusa.github.io/emacs/feed.xml">
 </head>
 
@@ -109,8 +109,8 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="jumbotron">
     <div class="container">
-      <h1 class="post-title-main" itemprop="name headline">04 Edición de ventanas</h1>
-      <p class="post-meta"><time datetime="2017-03-03T19:00:00+01:00" itemprop="datePublished">Mar 3, 2017</time></p>
+      <h1 class="post-title-main" itemprop="name headline">02 Arrancando</h1>
+      <p class="post-meta"><time datetime="2017-03-02T01:00:00+01:00" itemprop="datePublished">Mar 2, 2017</time></p>
       
     </div>
 
@@ -118,53 +118,35 @@
 
 
   <div class="post-content container" itemprop="articleBody">
-    <h1 id="aclaraciones">Aclaraciones</h1>
-
-<p><code class="highlighter-rouge">C-x C-c</code> - Pulsas <code class="highlighter-rouge">Control</code> y con la tecla de <code class="highlighter-rouge">Control</code> pulsada pulsas primero <code class="highlighter-rouge">x</code> y después <code class="highlighter-rouge">c</code>.</p>
-
-<p><code class="highlighter-rouge">C-x k</code> - Pulsas <code class="highlighter-rouge">Control</code> y <code class="highlighter-rouge">x</code>. Levantas el dedo de la tecla <code class="highlighter-rouge">Control</code> y pulsas <code class="highlighter-rouge">k</code>.</p>
-
-<h1 id="limpiar-minibuffer">Limpiar minibuffer</h1>
-
-<p><code class="highlighter-rouge">C-g</code> - Este comando limpia el minibuffer para no encadenar comandos. Una vez limpio ya podemos introducir la secuencia.</p>
-
-<ol>
-  <li>Borra ventana activa</li>
+    <ol>
+  <li>Arrancar Emacs modo gráfico</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>C-x 0
+<div class="highlighter-rouge"><pre class="highlight"><code>emacs
 </code></pre>
 </div>
 
 <ol>
-  <li>Borra todas las ventanas menos la activa</li>
+  <li>Arrancar Emacs modo terminal</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>C-x 1
+<div class="highlighter-rouge"><pre class="highlight"><code>emacs --no-window-system
 </code></pre>
 </div>
 
 <ol>
-  <li>Divide horizontalmente la ventana activa en dos ventans</li>
+  <li>Suspender ejecución Emacs</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>C-x 2
+<div class="highlighter-rouge"><pre class="highlight"><code>C-z
 </code></pre>
 </div>
 
 <ol>
-  <li>Lleva el cursos a la próxima ventana</li>
+  <li>Detiene Emacs y pregunta si guarda el fichero</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>C-x o
-</code></pre>
-</div>
-
-<ol>
-  <li>Desplaza hacia abajo el texto de la próxima ventana, como si hiciéramos AvPág</li>
-</ol>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>C-M-v
+<div class="highlighter-rouge"><pre class="highlight"><code>C-x C-c
 </code></pre>
 </div>
 

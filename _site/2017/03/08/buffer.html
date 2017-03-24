@@ -32,7 +32,7 @@
   
 
   <title>08 Buffer</title>
-  <meta name="description" content="Para entender el concepto de buffer debemos tener en cuenta que el buffer se refiere a la memoria RAM.">
+  <meta name="description" content="Para entender el concepto de buffer debemos tener en cuenta que el buffer se refiere a la memoria RAM.Cuando abrimos un archivo en el disco (memoria ROM) ocu...">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
@@ -118,35 +118,53 @@
 
 
   <div class="post-content container" itemprop="articleBody">
-    <p>Para entender el concepto de <code class="highlighter-rouge">buffer</code> debemos tener en cuenta que el <code class="highlighter-rouge">buffer</code> se refiere a la memoria RAM.</p>
+    <p>Para entender el concepto de <code class="highlighter-rouge">buffer</code> debemos tener en cuenta que el <code class="highlighter-rouge">buffer</code> se refiere a la memoria RAM.
+<br />
+<br />
+Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.</p>
 
-<p>Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.</p>
+<p><br />
+<br />
+El <code class="highlighter-rouge">buffer</code> se refiere al espacio concreto que ocupa este archivo en RAM.
+<br />
+<br /></p>
 
-<p>El <code class="highlighter-rouge">buffer</code> se refiere al espacio concreto que ocupa este archivo en RAM.</p>
-
-<p>Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable <code class="highlighter-rouge">s</code> a un valor <code class="highlighter-rouge">5</code>, así:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>s = 5
-</code></pre>
-</div>
+<p>Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable <code class="highlighter-rouge">s</code> a un valor <code class="highlighter-rouge">5</code>, así: <code class="highlighter-rouge">s = 5</code>
+```
+<br />
+<br /></p>
 
 <p>El la variable <code class="highlighter-rouge">s</code> queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos <code class="highlighter-rouge">$s</code> nos devueve su valor, en este caso <code class="highlighter-rouge">5</code>.</p>
 
-<p>Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.</p>
+<p><br />
+<br />
+Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.</p>
 
-<p>Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:</p>
+<p><br />
+<br />
+Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:</p>
 
-<p><em>GNU Emacs</em> %
+<p><br />
+<br />
+<em>GNU Emacs</em> %
 <em>scratch</em>
 <em>Messages</em> %</p>
 
-<p>Que esten cargados con asteriscos <code class="highlighter-rouge">*</code> indica que estan en RAM (buffer) pero no escritos en disco (ROM).</p>
+<p><br />
+<br />
+Que esten cargados con asteriscos <code class="highlighter-rouge">*</code> indica que estan en RAM (buffer) pero no escritos en disco (ROM).</p>
 
-<p>Así, si visitas <code class="highlighter-rouge">*Messages</code> observarás que tiene la función de <code class="highlighter-rouge">log</code> o bitácora donde se van acumulando los mensajes que te va dando Emacs.</p>
+<p><br />
+<br />
+Así, si visitas <code class="highlighter-rouge">*Messages</code> observarás que tiene la función de <code class="highlighter-rouge">log</code> o bitácora donde se van acumulando los mensajes que te va dando Emacs.</p>
 
-<p>Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.</p>
+<p><br />
+<br />
+Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.</p>
 
-<p><code class="highlighter-rouge">.</code> Indica que se trabaja en ese buffer</p>
+<p><br />
+<br />
+<code class="highlighter-rouge">.</code> Indica que se trabaja en ese buffer</p>
 
 <p><code class="highlighter-rouge">%</code> Indica sólo lectura</p>
 

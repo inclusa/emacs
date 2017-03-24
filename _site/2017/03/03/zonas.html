@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Emacs" property="og:site_name">
 
-  <meta content="02 Arrancando" property="og:title">
+  <meta content="03 Zonas" property="og:title">
 
 
   <meta content="article" property="og:type">
@@ -16,10 +16,10 @@
   <meta content="<h3>Iníciate en Emacs sin excusas</h3><h1>Emacs</h1><h3>Guia de inicio rápida</h3>Consigue despegar!" property="og:description">
 
 
-  <meta content="http://inclusa.github.io/emacs/2017/03/01/arrancando.html" property="og:url">
+  <meta content="http://inclusa.github.io/emacs/2017/03/03/zonas.html" property="og:url">
 
 
-  <meta content="2017-03-01T19:00:00+01:00" property="article:published_time">
+  <meta content="2017-03-03T01:00:00+01:00" property="article:published_time">
   <meta content="http://inclusa.github.io/emacs/about/" property="article:author">
 
 
@@ -31,8 +31,8 @@
 
   
 
-  <title>02 Arrancando</title>
-  <meta name="description" content="  Arrancar Emacs modo gráfico">
+  <title>03 Zonas</title>
+  <meta name="description" content="  Barra de menú: situada arriba">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
@@ -50,7 +50,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
-  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/01/arrancando.html">
+  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/03/zonas.html">
   <link rel="alternate" type="application/rss+xml" title="Emacs" href="http://inclusa.github.io/emacs/feed.xml">
 </head>
 
@@ -109,8 +109,8 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="jumbotron">
     <div class="container">
-      <h1 class="post-title-main" itemprop="name headline">02 Arrancando</h1>
-      <p class="post-meta"><time datetime="2017-03-01T19:00:00+01:00" itemprop="datePublished">Mar 1, 2017</time></p>
+      <h1 class="post-title-main" itemprop="name headline">03 Zonas</h1>
+      <p class="post-meta"><time datetime="2017-03-03T01:00:00+01:00" itemprop="datePublished">Mar 3, 2017</time></p>
       
     </div>
 
@@ -120,26 +120,25 @@
   <div class="post-content container" itemprop="articleBody">
     <ol>
   <li>
-    <p>Arrancar Emacs modo gráfico</p>
-
-    <p>emacs</p>
+    <p><code class="highlighter-rouge">Barra de menú</code>: situada arriba</p>
   </li>
   <li>
-    <p>Arrancar Emacs modo terminal</p>
-
-    <p>emacs –no-window-system</p>
+    <p><code class="highlighter-rouge">Point</code> o punto de escritura en una <code class="highlighter-rouge">ventana de edición</code> o ventanas si decidimos partirlas: situada en la parte central.</p>
   </li>
   <li>
-    <p>Suspender ejecución Emacs</p>
-
-    <p>C-z</p>
+    <p><code class="highlighter-rouge">Línea de modo</code>: situada abajo, en video inverso. Muestra información variada</p>
   </li>
   <li>
-    <p>Detiene Emacs y pregunta si guarda el fichero</p>
-
-    <p>C-x C-c</p>
+    <p><code class="highlighter-rouge">Área de eco</code> y <code class="highlighter-rouge">minibuffer</code>: ambos aparecen en la última línea</p>
   </li>
 </ol>
+
+<ul>
+  <li><code class="highlighter-rouge">Área de eco</code>: aparece sólo al escribir una combinación de teclas. Lo escrito hace eco o tiene su salida en la pantalla.</li>
+  <li><code class="highlighter-rouge">Minibúffer</code>: sirve para escribir argumentos que se hayan de pasar a un comando</li>
+</ul>
+
+<p>Para salir del minibuffer, zona donde escribimos comandos, debemos apretar C-g, ya que de lo contrario, se encadenaran los comandos.</p>
 
 
   </div>

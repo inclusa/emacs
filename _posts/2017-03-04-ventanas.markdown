@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 04 Edición de ventanas
-date:  2017-03-04 00:00:00 +0600
+date:  2017-03-04 00:00:00 
 ---
 
 # Aclaraciones
 
-`C-x C-c` - Pulsas `Control` y con la tecla de `Control` pulsada pulsas primero `x` y después `c`.
+`C-x C-c` - Pulsas `Control` y con la tecla de `Control` pulsada pulsas primero `x` y después `c`.<br />
 
-`C-x k` - Pulsas `Control` y `x`. Levantas el dedo de la tecla `Control` y pulsas `k`.
+`C-x k` - Pulsas `Control` y `x`. Levantas el dedo de la tecla `Control` y pulsas `k`.<br />
 
 
 # Limpiar minibuffer

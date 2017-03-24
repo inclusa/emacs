@@ -1,40 +1,12 @@
 ---
 layout: post
 title: 06 visitar (abrir) ficheros
-date:  2017-03-06 00:00:00 +0600
+date:  2017-03-06 00:00:00 
 ---
 
-1. Abrir fichero
-
-```
-C-c C-f
-```
-2. Abrir directorio
-
-```
-C-x d
-```
-
-3. Grabar en disco
-
-```
-C-x C-s
-```
-
-4. Grabar el buffer con otro nombre
-
-```
-C-x C-w
-```
-
-5. En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo
-
-```
-C-x s
-```
-
-6. Cerrar buffer, sin guardar, no modifica archivo creado
-
-```
-C-x k
-```
+1. Abrir fichero `C-c C-f`
+2. Abrir directorio `C-x d`
+3. Grabar en disco `C-x C-s`
+4. Grabar el buffer con otro nombre `C-x C-w`
+5. En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo `C-x s`
+6. Cerrar buffer, sin guardar, no modifica archivo creado `C-x k`

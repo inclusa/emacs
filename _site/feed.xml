@@ -5,8 +5,8 @@
     <description>&lt;h3&gt;Iníciate en Emacs sin excusas&lt;/h3&gt;&lt;h1&gt;Emacs&lt;/h1&gt;&lt;h3&gt;Guia de inicio rápida&lt;/h3&gt;Consigue despegar!</description>
     <link>http://inclusa.github.io/emacs/</link>
     <atom:link href="http://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Mar 2017 06:00:38 +0100</pubDate>
-    <lastBuildDate>Fri, 24 Mar 2017 06:00:38 +0100</lastBuildDate>
+    <pubDate>Fri, 24 Mar 2017 22:27:00 +0100</pubDate>
+    <lastBuildDate>Fri, 24 Mar 2017 22:27:00 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -239,35 +239,53 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
     
       <item>
         <title>08 Buffer</title>
-        <description>&lt;p&gt;Para entender el concepto de &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; debemos tener en cuenta que el &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere a la memoria RAM.&lt;/p&gt;
+        <description>&lt;p&gt;Para entender el concepto de &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; debemos tener en cuenta que el &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere a la memoria RAM.
+&lt;br /&gt;
+&lt;br /&gt;
+Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.&lt;/p&gt;
 
-&lt;p&gt;Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+El &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere al espacio concreto que ocupa este archivo en RAM.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;El &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere al espacio concreto que ocupa este archivo en RAM.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; a un valor &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;, así:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s = 5
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; a un valor &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;, así: &lt;code class=&quot;highlighter-rouge&quot;&gt;s = 5&lt;/code&gt;
+```
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;El la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos &lt;code class=&quot;highlighter-rouge&quot;&gt;$s&lt;/code&gt; nos devueve su valor, en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.&lt;/p&gt;
 
-&lt;p&gt;Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;GNU Emacs&lt;/em&gt; %
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;em&gt;GNU Emacs&lt;/em&gt; %
 &lt;em&gt;scratch&lt;/em&gt;
 &lt;em&gt;Messages&lt;/em&gt; %&lt;/p&gt;
 
-&lt;p&gt;Que esten cargados con asteriscos &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; indica que estan en RAM (buffer) pero no escritos en disco (ROM).&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Que esten cargados con asteriscos &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; indica que estan en RAM (buffer) pero no escritos en disco (ROM).&lt;/p&gt;
 
-&lt;p&gt;Así, si visitas &lt;code class=&quot;highlighter-rouge&quot;&gt;*Messages&lt;/code&gt; observarás que tiene la función de &lt;code class=&quot;highlighter-rouge&quot;&gt;log&lt;/code&gt; o bitácora donde se van acumulando los mensajes que te va dando Emacs.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Así, si visitas &lt;code class=&quot;highlighter-rouge&quot;&gt;*Messages&lt;/code&gt; observarás que tiene la función de &lt;code class=&quot;highlighter-rouge&quot;&gt;log&lt;/code&gt; o bitácora donde se van acumulando los mensajes que te va dando Emacs.&lt;/p&gt;
 
-&lt;p&gt;Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; Indica que se trabaja en ese buffer&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; Indica que se trabaja en ese buffer&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica sólo lectura&lt;/p&gt;
 
@@ -285,59 +303,14 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
       <item>
         <title>07 Manejo de zonas</title>
         <description>&lt;ol&gt;
-  &lt;li&gt;Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él.&lt;/li&gt;
+  &lt;li&gt;Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él. &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Selecciona otra ventana &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x o&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Borra la ventana seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Borra todas las ventanas excepto la seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x  1&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Selecciona un buffer en una ventana nueva &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 b&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 f&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Borra la ventana seleccionada y cierra, mata el buffer que contenia &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 0&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x b
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;Selecciona otra ventana&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x o
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Borra la ventana seleccionada&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x 0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Borra todas las ventanas excepto la seleccionada&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x  1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Selecciona un buffer en una ventana nueva&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x 4 b
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x 4 f
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Borra la ventana seleccionada y cierra, mata el buffer que contenia&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x 4 0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 </description>
         <pubDate>Tue, 07 Mar 2017 01:00:00 +0100</pubDate>
         <link>http://inclusa.github.io/emacs/2017/03/07/zonas.html</link>
@@ -349,55 +322,17 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
       <item>
         <title>06 visitar (abrir) ficheros</title>
         <description>&lt;ol&gt;
-  &lt;li&gt;Abrir fichero&lt;/li&gt;
+  &lt;li&gt;Abrir fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-f&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Abrir directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x d&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Grabar en disco &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-s&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Grabar el buffer con otro nombre &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-w&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x s&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Cerrar buffer, sin guardar, no modifica archivo creado &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x k&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-c C-f
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;Abrir directorio&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x d
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Grabar en disco&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x C-s
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Grabar el buffer con otro nombre&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x C-w
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x s
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Cerrar buffer, sin guardar, no modifica archivo creado&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x k
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 </description>
-        <pubDate>Sun, 05 Mar 2017 19:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/05/visitar.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/05/visitar.html</guid>
+        <pubDate>Mon, 06 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/06/visitar.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/06/visitar.html</guid>
         
         
       </item>

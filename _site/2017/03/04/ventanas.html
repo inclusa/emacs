@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Emacs" property="og:site_name">
 
-  <meta content="03 Zonas" property="og:title">
+  <meta content="04 Edición de ventanas" property="og:title">
 
 
   <meta content="article" property="og:type">
@@ -16,10 +16,10 @@
   <meta content="<h3>Iníciate en Emacs sin excusas</h3><h1>Emacs</h1><h3>Guia de inicio rápida</h3>Consigue despegar!" property="og:description">
 
 
-  <meta content="http://inclusa.github.io/emacs/2017/03/02/zonas.html" property="og:url">
+  <meta content="http://inclusa.github.io/emacs/2017/03/04/ventanas.html" property="og:url">
 
 
-  <meta content="2017-03-02T19:00:00+01:00" property="article:published_time">
+  <meta content="2017-03-04T01:00:00+01:00" property="article:published_time">
   <meta content="http://inclusa.github.io/emacs/about/" property="article:author">
 
 
@@ -31,8 +31,8 @@
 
   
 
-  <title>03 Zonas</title>
-  <meta name="description" content="  Barra de menú: situada arriba">
+  <title>04 Edición de ventanas</title>
+  <meta name="description" content="Aclaraciones">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
@@ -50,7 +50,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
-  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/02/zonas.html">
+  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/04/ventanas.html">
   <link rel="alternate" type="application/rss+xml" title="Emacs" href="http://inclusa.github.io/emacs/feed.xml">
 </head>
 
@@ -109,8 +109,8 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="jumbotron">
     <div class="container">
-      <h1 class="post-title-main" itemprop="name headline">03 Zonas</h1>
-      <p class="post-meta"><time datetime="2017-03-02T19:00:00+01:00" itemprop="datePublished">Mar 2, 2017</time></p>
+      <h1 class="post-title-main" itemprop="name headline">04 Edición de ventanas</h1>
+      <p class="post-meta"><time datetime="2017-03-04T01:00:00+01:00" itemprop="datePublished">Mar 4, 2017</time></p>
       
     </div>
 
@@ -118,28 +118,55 @@
 
 
   <div class="post-content container" itemprop="articleBody">
-    <ol>
-  <li>
-    <p><code class="highlighter-rouge">Barra de menú</code>: situada arriba</p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">Point</code> o punto de escritura en una <code class="highlighter-rouge">ventana de edición</code> o ventanas si decidimos partirlas: situada en la parte central.</p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">Línea de modo</code>: situada abajo, en video inverso. Muestra información variada</p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">Área de eco</code> y <code class="highlighter-rouge">minibuffer</code>: ambos aparecen en la última línea</p>
-  </li>
+    <h1 id="aclaraciones">Aclaraciones</h1>
+
+<p><code class="highlighter-rouge">C-x C-c</code> - Pulsas <code class="highlighter-rouge">Control</code> y con la tecla de <code class="highlighter-rouge">Control</code> pulsada pulsas primero <code class="highlighter-rouge">x</code> y después <code class="highlighter-rouge">c</code>.<br /></p>
+
+<p><code class="highlighter-rouge">C-x k</code> - Pulsas <code class="highlighter-rouge">Control</code> y <code class="highlighter-rouge">x</code>. Levantas el dedo de la tecla <code class="highlighter-rouge">Control</code> y pulsas <code class="highlighter-rouge">k</code>.<br /></p>
+
+<h1 id="limpiar-minibuffer">Limpiar minibuffer</h1>
+
+<p><code class="highlighter-rouge">C-g</code> - Este comando limpia el minibuffer para no encadenar comandos. Una vez limpio ya podemos introducir la secuencia.</p>
+
+<ol>
+  <li>Borra ventana activa</li>
 </ol>
 
-<ul>
-  <li><code class="highlighter-rouge">Área de eco</code>: aparece sólo al escribir una combinación de teclas. Lo escrito hace eco o tiene su salida en la pantalla.</li>
-  <li><code class="highlighter-rouge">Minibúffer</code>: sirve para escribir argumentos que se hayan de pasar a un comando</li>
-</ul>
+<div class="highlighter-rouge"><pre class="highlight"><code>C-x 0
+</code></pre>
+</div>
 
-<p>Para salir del minibuffer, zona donde escribimos comandos, debemos apretar C-g, ya que de lo contrario, se encadenaran los comandos.</p>
+<ol>
+  <li>Borra todas las ventanas menos la activa</li>
+</ol>
 
+<div class="highlighter-rouge"><pre class="highlight"><code>C-x 1
+</code></pre>
+</div>
+
+<ol>
+  <li>Divide horizontalmente la ventana activa en dos ventans</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>C-x 2
+</code></pre>
+</div>
+
+<ol>
+  <li>Lleva el cursos a la próxima ventana</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>C-x o
+</code></pre>
+</div>
+
+<ol>
+  <li>Desplaza hacia abajo el texto de la próxima ventana, como si hiciéramos AvPág</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>C-M-v
+</code></pre>
+</div>
 
   </div>
 
