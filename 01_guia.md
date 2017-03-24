@@ -378,6 +378,8 @@ https://www.emacswiki.org/emacs/UnicodeEncoding
 
 # 12 Bloc de notas
 
+Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.
+
 Para acceder al Bloc de Notas `M-x remember`
 
 Se nos abrirá un archivo donce podremos escribir.
@@ -405,3 +407,18 @@ adiós
 
 /home/usuario/bulletjournal.org
 ```
+
+# 13 Copiar, cortar, pegar
+
+Utilizaremos la notación `SPC` para simbolizar la barra espaciadora.
+
+Marcar el principio del bloque: `Ctrl-SPC`
+
+Cortar desde la marca hasta la posición actual: `Ctrl-w`
+
+Copiar desde la marca a la posición actual: `M-w`
+
+Cortar desde la marca hata el final de línea: `Ctrl-k`
+
+Pegar el último bloque cortado o copiado: `Ctrl-y`
+
