@@ -1,0 +1,21 @@
+---
+layout: post
+title: "01 Inicio"
+date:  2017-03-01 00:00:00 +0600
+categories: inici
+---
+
+
+`Meta`: Dominar Emacs nivel inicial en 30 dias.
+
+Nomenclatura:
+
+`C` - Control
+
+`M` - Meta, tecla Alt izquierda o ESC
+
+`S` - Shift o mayúscula
+
+- [Referència](http://www.merlos.org/linux/2003/05/emacs.html)
+
+

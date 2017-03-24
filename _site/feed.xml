@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs</title>
+    <description>&lt;h3&gt;Iníciate en Emacs sin excusas&lt;/h3&gt;&lt;h1&gt;Emacs&lt;/h1&gt;&lt;h3&gt;Guia de inicio rápida&lt;/h3&gt;Consigue despegar!</description>
+    <link>http://inclusa.github.io/emacs/</link>
+    <atom:link href="http://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 24 Mar 2017 06:00:38 +0100</pubDate>
+    <lastBuildDate>Fri, 24 Mar 2017 06:00:38 +0100</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>14 Cortar, Copiar, Pegar</title>
+        <description>&lt;p&gt;Utilizaremos la notación &lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt; para simbolizar la barra espaciadora.&lt;/p&gt;
+
+&lt;p&gt;Marcar el principio del bloque: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-SPC&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cortar desde la marca hasta la posición actual: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-w&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Copiar desde la marca a la posición actual: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-w&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cortar desde la marca hata el final de línea: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-k&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Pegar el último bloque cortado o copiado: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-y&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 14 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/14/copiar.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/14/copiar.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>13 Notas</title>
+        <description>&lt;p&gt;Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.&lt;/p&gt;
+
+&lt;p&gt;Para acceder al Bloc de Notas &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x remember&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Se nos abrirá un archivo donce podremos escribir.&lt;/p&gt;
+
+&lt;p&gt;Lo guardaremos así: &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;De esta manera nos guardará este archivo en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt;, nombrandolo notes.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d/notes&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo que nos creará una bitácora genial en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;notes&lt;/code&gt; que incluirá el día y la hora, un comentario y la ruta del archivo del que nos referimos así:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+** Wed Mar 22 20:45:31 2017 (hola)
+
+hola
+
+/home/usuario/bulletjournal.org
+
+** Wed Mar 22 20:46:50 2017 (adiós)
+
+adiós
+
+/home/usuario/bulletjournal.org
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 13 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/13/notas.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/13/notas.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>12 Unicode</title>
+        <description>&lt;p&gt;Unicode es un estándar de codificación de caracteres diseñado para facilitar el tratamiento informático, transmisión y visualización de textos de múltiples lenguajes y disciplinas técnicas, además de textos clásicos de lenguas muertas. El término Unicode proviene de los tres objetivos perseguidos: universalidad, uniformidad y unicidad.&lt;/p&gt;
+
+&lt;p&gt;Los puntos de código de Unicode se identifican por un número entero.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;UTF-8: codificación orientada a byte con símbolos de longitud variable.&lt;/li&gt;
+  &lt;li&gt;UTF-16: codificación de 16 bits de longitud variable optimizada para la representación del plano básico multilingüe (BMP).&lt;/li&gt;
+  &lt;li&gt;UTF-32: codificación de 32 bits de longitud fija, y la más sencilla de las tres.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;– Wikipedia&lt;/p&gt;
+
+&lt;p&gt;La forma más rápida de establecer el código unidoce UTF-8 en Emacs, de forma manual seria:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 8 keymap&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo cual quedaría de esta forma si quisiéramos indicar &lt;code class=&quot;highlighter-rouge&quot;&gt;UTF-8&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pulsamos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 8 RET&lt;/code&gt;. La tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt; indica que pulsemos la tecla Intro o Retorno.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Se nos muestra: &lt;code class=&quot;highlighter-rouge&quot;&gt;Insert character (Unicode name or hex):&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Introducimos exactamente estos caracteres: &lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Así ya podríamos poner acentos.&lt;/p&gt;
+
+&lt;p&gt;Fuente:&lt;/p&gt;
+
+&lt;p&gt;https://www.emacswiki.org/emacs/UnicodeEncoding&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 12 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/12/unicode.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/12/unicode.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>11 Gestión de ventanas</title>
+        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 1&lt;/code&gt; - Ver una sola ventana.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 2&lt;/code&gt; - Divide la ventana actual en dos filas&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 3&lt;/code&gt; - Divide la ventana actual en dos columnas&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt; - (cero) Elimina la ventana actual.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt; - Cambiar el buffer de la venana actual. En minibuffer aparece prompt&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x o&lt;/code&gt; - Cambiar de ventana cuando el aréa de trabajo está dividida en varias ventanas&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 11 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/11/ventanas.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/11/ventanas.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>10 Configuración</title>
+        <description>&lt;p&gt;Recordamos comandos esenciales&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Buscar archivo C-x f&lt;/li&gt;
+  &lt;li&gt;Deshacer C-x u&lt;/li&gt;
+  &lt;li&gt;Guardar C-x w&lt;/li&gt;
+  &lt;li&gt;Cambio de buffer C-x b&lt;/li&gt;
+  &lt;li&gt;Cerrar sessión C-x C-c&lt;/li&gt;
+  &lt;li&gt;Guardar C-x C-s&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vamos a mejorar la configuracion para evitar los mensajes de inicio. Abriremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y copiaremos:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;;;; Sin mensaje de bienvenida:
+(setq inhibit-startup-message t)
+;
+;;; No mostrar la barra del menú:
+(menu-bar-mode -1)
+;
+;;; Reemplazar &quot;yes&quot; y &quot;no&quot; por &quot;y&quot; y &quot;n&quot;
+(fset &#39;yes-or-no-p &#39;y-or-n-p)
+;
+;;; Mover a la papelera al borrar archivos y directorios:
+(setq delete-by-moving-to-trash t
+trash-directory &quot;~/.local/share/Trash/files&quot;)
+;
+;;; guardar la sessión al cerrar emacs y restaurarla
+;;; al arrancar-la de nuevo. Cero (0) para desactivar:
+(desktop-save-mode 1)
+;
+;;; Para que se muestren todos los buffers abiertos al pulsar C-x b (ido):
+(ido-mode 1)
+;;; Ignorar determinados buffers.
+(setq ido-ignore-buffers &#39;(&quot;^ &quot; &quot;*Completions*&quot; &quot;*Shell Command Output*&quot;
+                           &quot;*Messages*&quot; &quot;Async Shell Command&quot; &quot;*scratch*&quot;
+                           &quot;*tramp*&quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 10 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/10/configuracion.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/10/configuracion.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>09 Cifrado</title>
+        <description>&lt;p&gt;Emacs utiliza por defecto el cifrado de GPG.&lt;/p&gt;
+
+&lt;p&gt;De esta manera para podemos cifrar y descrifrar documentos tanto para &lt;code class=&quot;highlighter-rouge&quot;&gt;claves simétricas&lt;/code&gt;, una clave como para &lt;code class=&quot;highlighter-rouge&quot;&gt;claves asimétricas&lt;/code&gt;, dos claves: pública y privada).&lt;/p&gt;
+
+&lt;p&gt;Empecemos por lo sencillo: &lt;code class=&quot;highlighter-rouge&quot;&gt;cifrado simétrico&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si creamos un documento llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt&lt;/code&gt;, lo guardamos.&lt;/p&gt;
+
+&lt;p&gt;Ahora lo podremos cifrar desde el menú:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Tools &amp;gt; Encryption/Decryption &amp;gt; Encrypt file...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Lo que hace, por detrás es esto, pero no lo vemos:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg -c a.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Para desdifrar lo que hace es, pero no lo vemos:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg -d a.txt.gpg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Genera un archivo nuevo &lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt;, antes nos pide dos veces que le pongamos una contraseña.&lt;/p&gt;
+
+&lt;p&gt;El resultado son dos archivos:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt&lt;/code&gt; Sin cifrar&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt; Cifrado&lt;/p&gt;
+
+&lt;p&gt;Subiríamos a la nube el segundo.&lt;/p&gt;
+
+&lt;p&gt;Al recuperarlo deberíamos nos pedirá la clave de cifrado.&lt;/p&gt;
+
+&lt;p&gt;Al guardarlo, nos volverá a pedir la clave de cifrado dos veces.&lt;/p&gt;
+
+&lt;p&gt;Con este procedimineto siempre mantendremos cifrado nuestro archivo, el cual tendrá una primera capa de seguridad, ya no será tan accesible.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/09/cifrado.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/09/cifrado.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>08 Buffer</title>
+        <description>&lt;p&gt;Para entender el concepto de &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; debemos tener en cuenta que el &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere a la memoria RAM.&lt;/p&gt;
+
+&lt;p&gt;Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.&lt;/p&gt;
+
+&lt;p&gt;El &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere al espacio concreto que ocupa este archivo en RAM.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; a un valor &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;, así:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s = 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;El la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos &lt;code class=&quot;highlighter-rouge&quot;&gt;$s&lt;/code&gt; nos devueve su valor, en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.&lt;/p&gt;
+
+&lt;p&gt;Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;GNU Emacs&lt;/em&gt; %
+&lt;em&gt;scratch&lt;/em&gt;
+&lt;em&gt;Messages&lt;/em&gt; %&lt;/p&gt;
+
+&lt;p&gt;Que esten cargados con asteriscos &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; indica que estan en RAM (buffer) pero no escritos en disco (ROM).&lt;/p&gt;
+
+&lt;p&gt;Así, si visitas &lt;code class=&quot;highlighter-rouge&quot;&gt;*Messages&lt;/code&gt; observarás que tiene la función de &lt;code class=&quot;highlighter-rouge&quot;&gt;log&lt;/code&gt; o bitácora donde se van acumulando los mensajes que te va dando Emacs.&lt;/p&gt;
+
+&lt;p&gt;Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; Indica que se trabaja en ese buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica sólo lectura&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)&lt;/p&gt;
+
+&lt;p&gt;https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html&lt;/p&gt;
+</description>
+        <pubDate>Wed, 08 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/08/buffer.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/08/buffer.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>07 Manejo de zonas</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;Selecciona otra ventana&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x o
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Borra la ventana seleccionada&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Borra todas las ventanas excepto la seleccionada&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x  1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Selecciona un buffer en una ventana nueva&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x 4 b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x 4 f
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Borra la ventana seleccionada y cierra, mata el buffer que contenia&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x 4 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 07 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/07/zonas.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/07/zonas.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>06 visitar (abrir) ficheros</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;Abrir fichero&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-c C-f
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;Abrir directorio&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Grabar en disco&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x C-s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Grabar el buffer con otro nombre&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x C-w
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Cerrar buffer, sin guardar, no modifica archivo creado&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x k
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 05 Mar 2017 19:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/05/visitar.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/05/visitar.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>05 Ficheros y Buffers</title>
+        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Buffer&lt;/code&gt;: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Fichero&lt;/code&gt;: conjunto de datos almacenados en el disco. Es inmodificable, aunque se puede borrar y crear otro fichero con distinto nombre y mismo contenido.&lt;/p&gt;
+
+&lt;p&gt;Cuando leemos un fichero, lo que realmente hacermos es copiarlo en memoria RAM (buffer), durante su edición lo modificamos en esa zona de memoria. el fichero permanece inalterado hasta que demos la orden específica de grabar en el disco las modificaciones.&lt;/p&gt;
+
+&lt;p&gt;No todos los &lt;code class=&quot;highlighter-rouge&quot;&gt;buffers&lt;/code&gt; corresponden a &lt;code class=&quot;highlighter-rouge&quot;&gt;ficheros&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cuando se inicia Emacs aparecen estos dos buffers:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*scratch*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*messages*&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a un fichero.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Cerrar el búffer, no modifica el fichero si está guardado, no lo crea en caso de no estarlo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x k
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Incluir acentos: incluye esto &lt;code class=&quot;highlighter-rouge&quot;&gt;(set-keyboard-coding-system &#39;utf-8) &lt;/code&gt; en el fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 04 Mar 2017 19:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/04/ficheros.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/04/ficheros.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

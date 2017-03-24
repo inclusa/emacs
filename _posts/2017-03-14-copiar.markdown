@@ -1,0 +1,18 @@
+---
+layout: post
+title: 14 Cortar, Copiar, Pegar
+date:  2017-03-14 00:00:00
+---
+
+Utilizaremos la notación `SPC` para simbolizar la barra espaciadora.
+
+Marcar el principio del bloque: `Ctrl-SPC`
+
+Cortar desde la marca hasta la posición actual: `Ctrl-w`
+
+Copiar desde la marca a la posición actual: `M-w`
+
+Cortar desde la marca hata el final de línea: `Ctrl-k`
+
+Pegar el último bloque cortado o copiado: `Ctrl-y`
+

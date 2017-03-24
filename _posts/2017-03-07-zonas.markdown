@@ -1,0 +1,46 @@
+---
+layout: post
+title: 07 Manejo de zonas
+date:  2017-03-07 00:00:00
+---
+
+1. Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él.
+
+```
+C-x b
+```
+2. Selecciona otra ventana
+
+```
+C-x o
+```
+
+3. Borra la ventana seleccionada
+
+```
+C-x 0
+```
+
+4. Borra todas las ventanas excepto la seleccionada
+
+```
+C-x  1
+```
+
+5. Selecciona un buffer en una ventana nueva
+
+```
+C-x 4 b
+```
+
+6. Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada
+
+```
+C-x 4 f
+```
+
+7. Borra la ventana seleccionada y cierra, mata el buffer que contenia
+
+```
+C-x 4 0
+```

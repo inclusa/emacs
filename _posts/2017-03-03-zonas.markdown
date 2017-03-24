@@ -1,0 +1,19 @@
+---
+layout: post
+title: 03 Zonas
+date:  2017-03-03 00:00:00 +0600
+---
+
+1. `Barra de menú`: situada arriba
+
+2. `Point` o punto de escritura en una `ventana de edición` o ventanas si decidimos partirlas: situada en la parte central.
+
+3. `Línea de modo`: situada abajo, en video inverso. Muestra información variada
+
+4. `Área de eco` y `minibuffer`: ambos aparecen en la última línea
+
+- `Área de eco`: aparece sólo al escribir una combinación de teclas. Lo escrito hace eco o tiene su salida en la pantalla.
+- `Minibúffer`: sirve para escribir argumentos que se hayan de pasar a un comando
+
+Para salir del minibuffer, zona donde escribimos comandos, debemos apretar C-g, ya que de lo contrario, se encadenaran los comandos.
+
