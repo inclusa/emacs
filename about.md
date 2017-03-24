@@ -22,10 +22,7 @@ La meta es aprender a utilizar Emacs para poder aplicar su metodología `Org Mod
   Este website
   </div>
 
-Este website está construido con <a href="(http://jekyllrb.com/" target="_blank">Jekyll</a> a partir del theme [DevJournal]<a href="https://github.com/hemangsk/devjournal/" target="_blank">DevJournal</a>
-
-
-<span class="page-tagline">Loved it? Download DevJournal</span>
+Este website está construido con <a href="(http://jekyllrb.com/" target="_blank">Jekyll</a> a partir del theme <a href="https://github.com/hemangsk/devjournal/" target="_blank">DevJournal</a>
 
 
 
