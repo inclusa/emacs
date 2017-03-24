@@ -27,8 +27,10 @@ Indice
 
 [11 Trabajando con unicode UTF-8](#11-trabajando-con-unicode-utf-8)
 
-[# 12 Bloc de notas](#12-bloc-de-notas)
-[# 13 Copiar, cortar, pegar](#13-copiar)
+[12 Bloc de notas](#12-bloc-de-notas)
+
+[13 Copiar, cortar, pegar](#13-copiar-cortar-pegar)
+
 
 # 00 Inicio de bitácora
 #dia_00
