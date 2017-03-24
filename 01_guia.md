@@ -422,3 +422,20 @@ Cortar desde la marca hata el final de línea: `Ctrl-k`
 
 Pegar el último bloque cortado o copiado: `Ctrl-y`
 
+
+# 15 Resaltado
+
+```
+*bold* ==> bold
+~code~ ==> code
++strike+ ==> strike
+/italic/ ==> italic
+=verbatim= ==> code
+_underline_ ==> underline
+```
+
+Para crear superíndides:
+
+```
+elemento^superinidice
+```
