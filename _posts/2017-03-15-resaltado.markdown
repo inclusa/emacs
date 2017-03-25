@@ -21,13 +21,13 @@ Para crear superíndides:
 ```
 elemento^superínidice
 ```
-2^4^ `2^4`
+2<sup>4</sup> `2^4`
 
 ```
 elemento_subíndice
 ```
 
-H~2~ `H_2`
+H<sub>2</sub>O `H_2`
 
 
 
