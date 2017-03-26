@@ -7,7 +7,7 @@ date:  2017-03-26 00:00:00
 Metodologia: OrgMode
 
 
-### 1. Enlaces
+# 1. Enlaces
 
 ```
 [[link][Descriptión]]
@@ -25,7 +25,7 @@ Teclas rápidas
 C-c C-l
 ```
 
-### 2. Enlaces internos
+# 2. Enlaces internos
 
 Un contexto en el que podemos utilizar enlaces internos es realizando un índice de un documento. Utilizaremos corchetes `[[]] Para marcar el lugar donde pincharemos..
 
@@ -45,13 +45,13 @@ Utilizaremos estos símbolos `<<>>` para indicar el destino.
 <<Daily Log>>
 ```
 
-### 3. Links externos
+# 3. Links externos
 
 ```
 [[http://www.gnu.org/software/emacs/][GNU Emacs]]
 ```
 
-### 4. Sintaxis
+# 4. Sintaxis
 
 `C-c l` Alamacena un enlace en el buffer
 

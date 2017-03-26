@@ -5,9 +5,110 @@
     <description>&lt;h3&gt;Iníciate en Emacs sin excusas&lt;/h3&gt;&lt;h1&gt;Emacs&lt;/h1&gt;&lt;h3&gt;Guia de inicio rápida&lt;/h3&gt;Consigue despegar!</description>
     <link>http://inclusa.github.io/emacs/</link>
     <atom:link href="http://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Mar 2017 05:21:34 +0100</pubDate>
-    <lastBuildDate>Sat, 25 Mar 2017 05:21:34 +0100</lastBuildDate>
+    <pubDate>Sun, 26 Mar 2017 18:27:01 +0200</pubDate>
+    <lastBuildDate>Sun, 26 Mar 2017 18:27:01 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>16 Enlaces</title>
+        <description>&lt;p&gt;Metodologia: OrgMode&lt;/p&gt;
+
+&lt;h1 id=&quot;enlaces&quot;&gt;1. Enlaces&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[link][Descriptión]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Alternativa&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[link]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Teclas rápidas&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-c C-l
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;enlaces-internos&quot;&gt;2. Enlaces internos&lt;/h1&gt;
+
+&lt;p&gt;Un contexto en el que podemos utilizar enlaces internos es realizando un índice de un documento. Utilizaremos corchetes `[[]] Para marcar el lugar donde pincharemos..&lt;/p&gt;
+
+&lt;p&gt;Índice&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[Future Log]]
+[[Monthy Log]]
+[[Daily Log]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Utilizaremos estos símbolos &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/code&gt; para indicar el destino.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;&amp;lt;Future Log&amp;gt;&amp;gt;
+&amp;lt;&amp;lt;Monty Log&amp;gt;&amp;gt;
+&amp;lt;&amp;lt;Daily Log&amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;links-externos&quot;&gt;3. Links externos&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[http://www.gnu.org/software/emacs/][GNU Emacs]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;sintaxis&quot;&gt;4. Sintaxis&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c l&lt;/code&gt; Alamacena un enlace en el buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Inserta el enlace almacenado en el buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Situándose encima del enlace esconde el enlace (&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;) en la descripción&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; Abre el enlace&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c %&lt;/code&gt; Marca una posición para volver a ella con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;amp;&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/26/links.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/26/links.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>15 Resaltado</title>
+        <description>&lt;p&gt;Podemos utilizar el resaltado escribiendo los códigos:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*bold* ==&amp;gt; bold
+~code~ ==&amp;gt; code
++strike+ ==&amp;gt; strike
+/italic/ ==&amp;gt; italic
+=verbatim= ==&amp;gt; code
+_underline_ ==&amp;gt; underline
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Para crear superíndides:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elemento^superínidice
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;2&lt;sup&gt;4&lt;/sup&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;2^4&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elemento_subíndice
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;H_2&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 15 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/15/resaltado.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/15/resaltado.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>14 Cortar, Copiar, Pegar</title>
@@ -308,63 +409,6 @@ Cuando sales, si no guardas los buffers en archivos específicos, se borran de l
         <pubDate>Tue, 07 Mar 2017 01:00:00 +0100</pubDate>
         <link>http://inclusa.github.io/emacs/2017/03/07/zonas.html</link>
         <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/07/zonas.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>06 visitar (abrir) ficheros</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;Abrir fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-f&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Abrir directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x d&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Grabar en disco &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-s&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Grabar el buffer con otro nombre &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-w&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x s&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Cerrar buffer, sin guardar, no modifica archivo creado &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x k&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Mon, 06 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/06/visitar.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/06/visitar.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>05 Ficheros y Buffers</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Buffer&lt;/code&gt;: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Fichero&lt;/code&gt;: conjunto de datos almacenados en el disco. Es inmodificable, aunque se puede borrar y crear otro fichero con distinto nombre y mismo contenido.&lt;/p&gt;
-
-&lt;p&gt;Cuando leemos un fichero, lo que realmente hacermos es copiarlo en memoria RAM (buffer), durante su edición lo modificamos en esa zona de memoria. el fichero permanece inalterado hasta que demos la orden específica de grabar en el disco las modificaciones.&lt;/p&gt;
-
-&lt;p&gt;No todos los &lt;code class=&quot;highlighter-rouge&quot;&gt;buffers&lt;/code&gt; corresponden a &lt;code class=&quot;highlighter-rouge&quot;&gt;ficheros&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Cuando se inicia Emacs aparecen estos dos buffers:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*scratch*&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*messages*&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a un fichero.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Cerrar el búffer, no modifica el fichero si está guardado, no lo crea en caso de no estarlo.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-x k
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Incluir acentos: incluye esto &lt;code class=&quot;highlighter-rouge&quot;&gt;(set-keyboard-coding-system &#39;utf-8) &lt;/code&gt; en el fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sat, 04 Mar 2017 19:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/04/ficheros.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/04/ficheros.html</guid>
         
         
       </item>

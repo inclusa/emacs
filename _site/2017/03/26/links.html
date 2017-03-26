@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Emacs" property="og:site_name">
 
-  <meta content="08 Buffer" property="og:title">
+  <meta content="16 Enlaces" property="og:title">
 
 
   <meta content="article" property="og:type">
@@ -16,10 +16,10 @@
   <meta content="<h3>Iníciate en Emacs sin excusas</h3><h1>Emacs</h1><h3>Guia de inicio rápida</h3>Consigue despegar!" property="og:description">
 
 
-  <meta content="http://inclusa.github.io/emacs/2017/03/08/buffer.html" property="og:url">
+  <meta content="http://inclusa.github.io/emacs/2017/03/26/links.html" property="og:url">
 
 
-  <meta content="2017-03-08T01:00:00+01:00" property="article:published_time">
+  <meta content="2017-03-26T01:00:00+01:00" property="article:published_time">
   <meta content="http://inclusa.github.io/emacs/about/" property="article:author">
 
 
@@ -31,8 +31,8 @@
 
   
 
-  <title>08 Buffer</title>
-  <meta name="description" content="Para entender el concepto de buffer debemos tener en cuenta que el buffer se refiere a la memoria RAM.Cuando abrimos un archivo en el disco (memoria ROM) ocu...">
+  <title>16 Enlaces</title>
+  <meta name="description" content="Metodologia: OrgMode">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
@@ -50,7 +50,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
-  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/08/buffer.html">
+  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/26/links.html">
   <link rel="alternate" type="application/rss+xml" title="Emacs" href="http://inclusa.github.io/emacs/feed.xml">
 </head>
 
@@ -109,8 +109,8 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="jumbotron">
     <div class="container">
-      <h1 class="post-title-main" itemprop="name headline">08 Buffer</h1>
-      <p class="post-meta"><time datetime="2017-03-08T01:00:00+01:00" itemprop="datePublished">Mar 8, 2017</time></p>
+      <h1 class="post-title-main" itemprop="name headline">16 Enlaces</h1>
+      <p class="post-meta"><time datetime="2017-03-26T01:00:00+01:00" itemprop="datePublished">Mar 26, 2017</time></p>
       
     </div>
 
@@ -118,52 +118,63 @@
 
 
   <div class="post-content container" itemprop="articleBody">
-    <p>Para entender el concepto de <code class="highlighter-rouge">buffer</code> debemos tener en cuenta que el <code class="highlighter-rouge">buffer</code> se refiere a la memoria RAM.
-<br />
-<br />
-Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.
-<br />
-<br />
-El <code class="highlighter-rouge">buffer</code> se refiere al espacio concreto que ocupa este archivo en RAM.
-<br />
-<br />
-Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable <code class="highlighter-rouge">s</code> a un valor <code class="highlighter-rouge">5</code>, así: <code class="highlighter-rouge">s = 5</code>
-<br />
-<br /></p>
+    <p>Metodologia: OrgMode</p>
 
-<p>El la variable <code class="highlighter-rouge">s</code> queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos <code class="highlighter-rouge">$s</code> nos devueve su valor, en este caso <code class="highlighter-rouge">5</code>.
-<br />
-<br />
-Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.
-<br />
-<br />
-Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:
-<br />
-<br />
-<em>GNU Emacs</em> %</p>
+<h1 id="enlaces">1. Enlaces</h1>
 
-<p><em>scratch</em></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>[[link][Descriptión]]
+</code></pre>
+</div>
 
-<p><em>Messages</em> %</p>
+<p>Alternativa</p>
 
-<p><br />
-<br />
-Que esten cargados con asteriscos <code class="highlighter-rouge">*</code> indica que estan en RAM (buffer) pero no escritos en disco (ROM).
-<br />
-<br />
-Así, si visitas <code class="highlighter-rouge">*Messages</code> observarás que tiene la función de <code class="highlighter-rouge">log</code> o bitácora donde se van acumulando los mensajes que te va dando Emacs.
-<br />
-<br />
-Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.
-<br />
-<br />
-<code class="highlighter-rouge">.</code> Indica que se trabaja en ese buffer</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>[[link]]
+</code></pre>
+</div>
 
-<p><code class="highlighter-rouge">%</code> Indica sólo lectura</p>
+<p>Teclas rápidas</p>
 
-<p><code class="highlighter-rouge">*</code> Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>C-c C-l
+</code></pre>
+</div>
 
-<p><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html">https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html</a></p>
+<h1 id="enlaces-internos">2. Enlaces internos</h1>
+
+<p>Un contexto en el que podemos utilizar enlaces internos es realizando un índice de un documento. Utilizaremos corchetes `[[]] Para marcar el lugar donde pincharemos..</p>
+
+<p>Índice</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[[Future Log]]
+[[Monthy Log]]
+[[Daily Log]]
+</code></pre>
+</div>
+
+<p>Utilizaremos estos símbolos <code class="highlighter-rouge">&lt;&lt;&gt;&gt;</code> para indicar el destino.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;&lt;Future Log&gt;&gt;
+&lt;&lt;Monty Log&gt;&gt;
+&lt;&lt;Daily Log&gt;&gt;
+</code></pre>
+</div>
+
+<h1 id="links-externos">3. Links externos</h1>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[[http://www.gnu.org/software/emacs/][GNU Emacs]]
+</code></pre>
+</div>
+
+<h1 id="sintaxis">4. Sintaxis</h1>
+
+<p><code class="highlighter-rouge">C-c l</code> Alamacena un enlace en el buffer</p>
+
+<p><code class="highlighter-rouge">C-c C-l</code> Inserta el enlace almacenado en el buffer</p>
+
+<p><code class="highlighter-rouge">C-c C-l</code> Situándose encima del enlace esconde el enlace (<code class="highlighter-rouge">RET</code>) en la descripción</p>
+
+<p><code class="highlighter-rouge">C-c C-o</code> Abre el enlace</p>
+
+<p><code class="highlighter-rouge">C-c %</code> Marca una posición para volver a ella con el comando <code class="highlighter-rouge">C-c &amp;</code></p>
 
   </div>
 
