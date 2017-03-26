@@ -1,0 +1,64 @@
+---
+layout: post
+title: 16 Enlaces
+date:  2017-03-26 00:00:00
+---
+
+Metodologia: OrgMode
+
+
+### 1. Enlaces
+
+```
+[[link][Descriptión]]
+```
+
+Alternativa
+
+```
+[[link]]
+```
+
+Teclas rápidas
+
+```
+C-c C-l
+```
+
+### 2. Enlaces internos
+
+Un contexto en el que podemos utilizar enlaces internos es realizando un índice de un documento. Utilizaremos corchetes `[[]] Para marcar el lugar donde pincharemos..
+
+Índice
+
+```
+[[Future Log]]
+[[Monthy Log]]
+[[Daily Log]]
+```
+
+Utilizaremos estos símbolos `<<>>` para indicar el destino.
+
+```
+<<Future Log>>
+<<Monty Log>>
+<<Daily Log>>
+```
+
+### 3. Links externos
+
+```
+[[http://www.gnu.org/software/emacs/][GNU Emacs]]
+```
+
+### 4. Sintaxis
+
+`C-c l` Alamacena un enlace en el buffer
+
+`C-c C-l` Inserta el enlace almacenado en el buffer
+
+`C-c C-l` Situándose encima del enlace esconde el enlace (`RET`) en la descripción
+
+`C-c C-o` Abre el enlace
+
+`C-c %` Marca una posición para volver a ella con el comando `C-c &`
