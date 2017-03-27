@@ -1,0 +1,27 @@
+---
+layout: post
+title: 18 TODO Listas de tareas
+date:  2017-03-27 00:00:00
+---
+
+
+# 1. Descripción
+
+Para hacer listas de tareas deberemos utilizar la palabra TODO.
+
+```
+*** TODO Comprar leche
+```
+
+# 2. Teclas rápidas
+
+`C-c C-t` Rotar los TODO a otro ítem: (sin marca) -> TODO -> PROGRESS -> DONE -> (sin marca)
+
+`S-<right>/<left>` Utilizar con flechas. Estado de TODO.
+
+`C-c / t` Ver los TODO en árbol.
+
+`C-c a t` Mostrar todos los TODO.
+
+`S-M-<RET>` Insertar TODO en nueva entrada.
+
