@@ -4,6 +4,7 @@ title: 18 TODO Listas de tareas
 date:  2017-03-27 00:00:00
 ---
 
+Metodología: OrgMode
 
 # 1. Descripción
 
