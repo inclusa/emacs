@@ -1,0 +1,40 @@
+---
+layout: post
+title: 19 HEAD Cabececeras de documento
+date:  2017-03-29 00:00:00
+---
+
+Empezar el documento `.org` con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.
+
+```
+#+TITLE: Bullet Journal
+#+LANGUAGE: en
+#+AUTHOR: Alfons Rovira
+#+EMAIL: alfons@server
+#+DATE: 2017-03-01
+#+DESCRIPTION: Personal organizer
+#+KEYWORDS: bullet journal gtd emacs org-mode
+#+STARTUP: content
+#+PRIORITIES: 1 2 3
+#+TAGS: init(i) review(r) reject(j)
+#+TODO: TODO(t) | PROCESS(p) | DONE(d) | CANCEL(c)
+```
+
+# 1. Campos descriptivos
+
+Sirven para describir el documento, muy útil en caso de que se exporte a otros formatos como html, txt, pdf, etc.
+
+- Title: título del documento
+- Language: lenguaje en el que está escrito
+- Author: autor del mismo
+- Email: email de contacto
+- Date: fecha de inicio o de final del documento
+- Description: descripción del documento
+- Keywords: palabras clave
+
+# 2. Campos interactivos
+
+- Startup: si contine la palabra `content` aparecen desplegadas las categorías al abrir el documento
+- Priorities: configuración de las prioridades, lo que se pone en lo que se usa, en este caso hemos cambiado las prioridades A, B, C por 1, 2, 3
+- Tags: etiquetas que usaremos por defecto
+- ToDo: estados de las tareas que utilizaremos por defecto
