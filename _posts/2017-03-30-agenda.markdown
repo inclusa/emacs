@@ -1,0 +1,20 @@
+---
+layout: post
+title: 20 Agenda
+date:  2017-03-30 00:00:00
+---
+
+Comandos que te introducirán en el uso de la agenda:
+
+`M-x org-agenda` Menú para utilizar la agenda
+
+`C-c C-d`     (org-deadline) Inserta fecha final
+
+`C-c C-s`     (org-schedule) Inserta fecha para realizr la tarea
+
+`C-c / d`     (org-check-deadlines) Lista citas por fecha límite
+
+`C-c / b`     (org-check-before-date) Lista citas antes de una fecha
+
+`C-c / a`     (org-check-after-date) Lista citas después de una fecha
+
