@@ -40,7 +40,7 @@ Para `marcar el hábito` no situaremos encima de la palabra `TODO` y pulsaremos 
 
 De esta forma se generará una lista de seguimiento del hábito.
 
-#3. Resultado
+# 3. Resultado
 
 ```emacs
 *** TODO Controlar la respiración durante 5 minutos          :init:
@@ -48,7 +48,7 @@ De esta forma se generará una lista de seguimiento del hábito.
     - State "PROCESS"    from "TODO"       [2017-04-01 ds 09:41]
     - State "PROCESS"    from "TODO"       [2017-03-31 dv 21:34]
     :PROPERTIES:
-    :STYLE:    habit
+    :STYLE: habit
     :LAST_REPEAT: [2017-04-01 ds 09:41]
       :END:
 ```
