@@ -1,0 +1,60 @@
+---
+layout: post
+title: 22 Captura
+date:  2017-04-02 00:00:00
+---
+
+Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.
+
+Así deberemos incluir en el archivo de configuración `.emacs` el siguiente código:
+
+```emacs
+
+;; Plantilles per a capturar
+
+(setq org-directory "~/Documents/56_bulletjournal/org")
+(setq org-default-notes-file "~/Documents/56_bulletjournal/notes")
+
+;; I use C-c c to start capture mode
+(global-set-key (kbd "C-c c") 'org-capture)
+
+;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
+(setq org-capture-templates
+      (quote (("t" "todo" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* TODO %?\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("r" "respond" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* NEXT Respond to %:from on %:subject\nSCHEDULED: %t\n%U\n%a\n" :clock-in t :clock-resume t :immediate-finish t)
+              ("n" "note" entry (file "~~/Documents/56_bulletjournal/org/captura.org")
+               "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("j" "Journal" entry (file+datetree "~/Documents/56_bulletjournal/org/diary.org")
+               "* %?\n%U\n" :clock-in t :clock-resume t)
+              ("w" "org-protocol" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* TODO Review %c\n%U\n" :immediate-finish t)
+              ("m" "Meeting" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* MEETING with %? :MEETING:\n%U" :clock-in t :clock-resume t)
+              ("p" "Phone call" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* PHONE %? :PHONE:\n%U" :clock-in t :clock-resume t)
+              ("h" "Habit" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a .+1d/3d>>\")\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n"))))
+
+```
+
+De estar forma presionando las teclas `C-c c` obtendremos el menú siguiente:
+
+```
+Select a capture template
+=========================
+
+[t]     todo
+[r]     respond
+[n]     note
+[j]     Journal
+[w]     org-protocol
+[m]     Meeting
+[p]     Phone call
+[h]     Habit
+--------------------------------------------------------------------------
+[C]     Customize org-capture-templates
+[q]     Abort
+```
+
