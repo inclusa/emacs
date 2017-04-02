@@ -38,7 +38,7 @@ Cuando sales, si no guardas los buffers en archivos específicos, se borran de l
 
 `*` Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)
 
-# 2. Teclas rápdicas
+# 2. Teclas rápidas
 
 Listar buffers `C-x C-b`
 
