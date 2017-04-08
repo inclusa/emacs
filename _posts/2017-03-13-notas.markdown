@@ -19,8 +19,7 @@ De esta manera nos guardará este archivo en el directorio `.emacs.d`, nombrando
 Lo que nos creará una bitácora genial en el archivo `notes` que incluirá el día y la hora, un comentario y la ruta del archivo del que nos referimos así:
 
 
-```
-
+```emacs
 ** Wed Mar 22 20:45:31 2017 (hola)
 
 hola

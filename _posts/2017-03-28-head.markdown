@@ -6,7 +6,7 @@ date:  2017-03-29 00:00:00
 
 Empezar el documento `.org` con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.
 
-```
+```emacs
 #+TITLE: Bullet Journal
 #+LANGUAGE: en
 #+AUTHOR: Alfons Rovira

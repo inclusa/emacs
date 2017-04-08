@@ -128,21 +128,18 @@
 
 <p>Ahora lo podremos cifrar desde el menú:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Tools &gt; Encryption/Decryption &gt; Encrypt file...
+<pre><code class="language-emacs">Tools &gt; Encryption/Decryption &gt; Encrypt file...
 </code></pre>
-</div>
 
 <p>Lo que hace, por detrás es esto, pero no lo vemos:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>gpg -c a.txt
+<pre><code class="language-emacs">gpg -c a.txt
 </code></pre>
-</div>
 
 <p>Para desdifrar lo que hace es, pero no lo vemos:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>gpg -d a.txt.gpg
+<pre><code class="language-emacs">gpg -d a.txt.gpg
 </code></pre>
-</div>
 
 <p>Genera un archivo nuevo <code class="highlighter-rouge">a.txt.gpg</code>, antes nos pide dos veces que le pongamos una contraseña.</p>
 

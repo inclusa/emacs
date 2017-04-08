@@ -77,18 +77,18 @@ a:hover {
   padding-bottom: 5em; }
 
 pre {
-  background-color: black !important;
+  background-color: dodgerblue !important;
   border: none !important;
-  border-radius: 0px !important;
+  border-radius: 5px !important;
   font-size: 20px !important;
-  padding: 1.5em !important;
+  padding: 0.5em !important;
   color: white !important; }
 
 .post-meta {
   color: skyblue !important; }
 
 code {
-  background-color: black !important;
+  background-color: DodgerBlue !important;
   color: white !important;
   border: none !important;
   border-radius: 0px !important; }

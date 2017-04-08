@@ -5,9 +5,26 @@
     <description>&lt;h3&gt;Iníciate en Emacs sin excusas&lt;/h3&gt;&lt;h1&gt;Emacs&lt;/h1&gt;&lt;h3&gt;Guia de inicio rápida&lt;/h3&gt;Consigue despegar!</description>
     <link>http://inclusa.github.io/emacs/</link>
     <atom:link href="http://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Apr 2017 19:09:36 +0200</pubDate>
-    <lastBuildDate>Sun, 02 Apr 2017 19:09:36 +0200</lastBuildDate>
+    <pubDate>Sat, 08 Apr 2017 19:13:53 +0200</pubDate>
+    <lastBuildDate>Sat, 08 Apr 2017 19:13:53 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>23 Directorio</title>
+        <description>&lt;p&gt;Para configurar el &lt;em&gt;directorio por defecto&lt;/em&gt; y que, así nos apunte rápidamente al directorio donde trabajajos editaremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; e insertaremos este código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq default-directory &quot;~Documents/BulletJournal/&quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De esta forma, cada vez que abramos un archivo con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x f&lt;/code&gt; ya estaremos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;~Documents/BulletJournal/&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Apr 2017 02:00:00 +0200</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/04/08/directorio.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/04/08/directorio.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>22 Captura</title>
@@ -47,7 +64,7 @@
 
 &lt;p&gt;De estar forma presionando las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c c&lt;/code&gt; obtendremos el menú siguiente:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Select a capture template
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;Select a capture template
 =========================
 
 [t]     todo
@@ -62,7 +79,6 @@
 [C]     Customize org-capture-templates
 [q]     Abort
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Este menú creará un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;captura.org&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;diary.org&lt;/code&gt; donde se irán almacenando muestras capturas.&lt;/p&gt;
 
 &lt;p&gt;Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.&lt;/p&gt;
@@ -100,10 +116,9 @@
 
 &lt;p&gt;Se trata de pulsar unas teclas que nos iran marcando el momento en el que realizamos el hábito realizando una lista:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-04-01 ds 09:41]
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;- State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-04-01 ds 09:41]
 - State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-03-31 dv 21:34]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;p&gt;De esta forma obtendremos un listado de las veces que realizamos el hábito.&lt;/p&gt;
 
@@ -158,7 +173,7 @@
         <title>19 HEAD Cabececeras de documento</title>
         <description>&lt;p&gt;Empezar el documento &lt;code class=&quot;highlighter-rouge&quot;&gt;.org&lt;/code&gt; con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+TITLE: Bullet Journal
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;#+TITLE: Bullet Journal
 #+LANGUAGE: en
 #+AUTHOR: Alfons Rovira
 #+EMAIL: alfons@server
@@ -170,7 +185,6 @@
 #+TAGS: init(i) review(r) reject(j)
 #+TODO: TODO(t) | PROCESS(p) | DONE(d) | CANCEL(c)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h1 id=&quot;campos-descriptivos&quot;&gt;1. Campos descriptivos&lt;/h1&gt;
 
@@ -216,9 +230,8 @@
 
 &lt;p&gt;Para hacer listas de tareas deberemos utilizar la palabra TODO.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*** TODO Comprar leche
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Comprar leche
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h1 id=&quot;teclas-rpidas&quot;&gt;2. Teclas rápidas&lt;/h1&gt;
 
@@ -246,21 +259,18 @@
 
 &lt;h1 id=&quot;enlaces&quot;&gt;1. Enlaces&lt;/h1&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[link][Descriptión]]
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[link][Descriptión]]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;p&gt;Alternativa&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[link]]
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[link]]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;p&gt;Teclas rápidas&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-c C-l
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-c C-l
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h1 id=&quot;enlaces-internos&quot;&gt;2. Enlaces internos&lt;/h1&gt;
 
@@ -268,25 +278,22 @@
 
 &lt;p&gt;Índice&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[Future Log]]
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[Future Log]]
 [[Monthy Log]]
 [[Daily Log]]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;p&gt;Utilizaremos estos símbolos &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/code&gt; para indicar el destino.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;&amp;lt;Future Log&amp;gt;&amp;gt;
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;&amp;lt;&amp;lt;Future Log&amp;gt;&amp;gt;
 &amp;lt;&amp;lt;Monty Log&amp;gt;&amp;gt;
 &amp;lt;&amp;lt;Daily Log&amp;gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h1 id=&quot;links-externos&quot;&gt;3. Links externos&lt;/h1&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[http://www.gnu.org/software/emacs/][GNU Emacs]]
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[http://www.gnu.org/software/emacs/][GNU Emacs]]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h1 id=&quot;sintaxis&quot;&gt;4. Sintaxis&lt;/h1&gt;
 
@@ -328,25 +335,22 @@
         <title>15 Resaltado</title>
         <description>&lt;p&gt;Podemos utilizar el resaltado escribiendo los códigos:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*bold* ==&amp;gt; bold
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*bold* ==&amp;gt; bold
 ~code~ ==&amp;gt; code
 +strike+ ==&amp;gt; strike
 /italic/ ==&amp;gt; italic
 =verbatim= ==&amp;gt; code
 _underline_ ==&amp;gt; underline
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;p&gt;Para crear superíndides:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elemento^superínidice
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento^superínidice
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;2&lt;sup&gt;4&lt;/sup&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;2^4&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elemento_subíndice
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento_subíndice
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;H_2&lt;/code&gt;&lt;/p&gt;
 
@@ -376,44 +380,6 @@ _underline_ ==&amp;gt; underline
         <pubDate>Tue, 14 Mar 2017 01:00:00 +0100</pubDate>
         <link>http://inclusa.github.io/emacs/2017/03/14/copiar.html</link>
         <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/14/copiar.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>13 Notas</title>
-        <description>&lt;p&gt;Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.&lt;/p&gt;
-
-&lt;p&gt;Para acceder al Bloc de Notas &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x remember&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Se nos abrirá un archivo donce podremos escribir.&lt;/p&gt;
-
-&lt;p&gt;Lo guardaremos así: &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;De esta manera nos guardará este archivo en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt;, nombrandolo notes.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d/notes&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Lo que nos creará una bitácora genial en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;notes&lt;/code&gt; que incluirá el día y la hora, un comentario y la ruta del archivo del que nos referimos así:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-** Wed Mar 22 20:45:31 2017 (hola)
-
-hola
-
-/home/usuario/bulletjournal.org
-
-** Wed Mar 22 20:46:50 2017 (adiós)
-
-adiós
-
-/home/usuario/bulletjournal.org
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 13 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/13/notas.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/13/notas.html</guid>
         
         
       </item>

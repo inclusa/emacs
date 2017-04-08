@@ -41,7 +41,7 @@ Así deberemos incluir en el archivo de configuración `.emacs` el siguiente có
 
 De estar forma presionando las teclas `C-c c` obtendremos el menú siguiente:
 
-```
+```emacs
 Select a capture template
 =========================
 

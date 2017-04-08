@@ -7,7 +7,7 @@ date:  2017-03-15 00:00:00
 
 Podemos utilizar el resaltado escribiendo los códigos:
 
-```
+```emacs
 *bold* ==> bold
 ~code~ ==> code
 +strike+ ==> strike
@@ -18,12 +18,12 @@ _underline_ ==> underline
 
 Para crear superíndides:
 
-```
+```emacs
 elemento^superínidice
 ```
 2<sup>4</sup> `2^4`
 
-```
+```emacs
 elemento_subíndice
 ```
 

@@ -14,19 +14,19 @@ Si creamos un documento llamado `a.txt`, lo guardamos.
 
 Ahora lo podremos cifrar desde el menú:
 
-```
+```emacs
 Tools > Encryption/Decryption > Encrypt file...
 ```
 
 Lo que hace, por detrás es esto, pero no lo vemos:
 
-```
+```emacs
 gpg -c a.txt
 ```
 
 Para desdifrar lo que hace es, pero no lo vemos:
 
-```
+```emacs
 gpg -d a.txt.gpg
 ```
 

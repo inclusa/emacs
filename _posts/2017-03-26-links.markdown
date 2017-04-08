@@ -9,19 +9,19 @@ Metodologia: OrgMode
 
 # 1. Enlaces
 
-```
+```emacs
 [[link][Descriptión]]
 ```
 
 Alternativa
 
-```
+```emacs
 [[link]]
 ```
 
 Teclas rápidas
 
-```
+```emacs
 C-c C-l
 ```
 
@@ -31,7 +31,7 @@ Un contexto en el que podemos utilizar enlaces internos es realizando un índice
 
 Índice
 
-```
+```emacs
 [[Future Log]]
 [[Monthy Log]]
 [[Daily Log]]
@@ -39,7 +39,7 @@ Un contexto en el que podemos utilizar enlaces internos es realizando un índice
 
 Utilizaremos estos símbolos `<<>>` para indicar el destino.
 
-```
+```emacs
 <<Future Log>>
 <<Monty Log>>
 <<Daily Log>>
@@ -47,7 +47,7 @@ Utilizaremos estos símbolos `<<>>` para indicar el destino.
 
 # 3. Links externos
 
-```
+```emacs
 [[http://www.gnu.org/software/emacs/][GNU Emacs]]
 ```
 

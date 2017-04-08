@@ -21,7 +21,7 @@ Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a u
 
 1. Cerrar el búffer, no modifica el fichero si está guardado, no lo crea en caso de no estarlo.
 
-```
+```emacs
 C-x k
 ```
 

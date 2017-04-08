@@ -10,7 +10,7 @@ Metodología: OrgMode
 
 Para hacer listas de tareas deberemos utilizar la palabra TODO.
 
-```
+```emacs
 *** TODO Comprar leche
 ```
 

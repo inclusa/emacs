@@ -15,7 +15,7 @@ Recordamos comandos esenciales
 
 Vamos a mejorar la configuracion para evitar los mensajes de inicio. Abriremos el archivo `.emacs` y copiaremos:
 
-```
+```emacs
 ;;; Sin mensaje de bienvenida:
 (setq inhibit-startup-message t)
 ;

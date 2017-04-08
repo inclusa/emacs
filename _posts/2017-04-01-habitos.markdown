@@ -29,7 +29,7 @@ Marcamos en la agenda este hábito `C-c C-s`, pero editamos la marca añadiendo 
 
 Se trata de pulsar unas teclas que nos iran marcando el momento en el que realizamos el hábito realizando una lista:
 
-```
+```emacs
 - State "PROCESS"    from "TODO"       [2017-04-01 ds 09:41]
 - State "PROCESS"    from "TODO"       [2017-03-31 dv 21:34]
 ```
