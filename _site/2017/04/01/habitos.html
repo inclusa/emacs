@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Emacs" property="og:site_name">
 
-  <meta content="13 Notas" property="og:title">
+  <meta content="21 Hábitos" property="og:title">
 
 
   <meta content="article" property="og:type">
@@ -16,10 +16,10 @@
   <meta content="<h3>Iníciate en Emacs sin excusas</h3><h1>Emacs</h1><h3>Guia de inicio rápida</h3>Consigue despegar!" property="og:description">
 
 
-  <meta content="http://inclusa.github.io/emacs/2017/03/13/notas.html" property="og:url">
+  <meta content="http://inclusa.github.io/emacs/2017/04/01/habitos.html" property="og:url">
 
 
-  <meta content="2017-03-13T01:00:00+01:00" property="article:published_time">
+  <meta content="2017-04-01T02:00:00+02:00" property="article:published_time">
   <meta content="http://inclusa.github.io/emacs/about/" property="article:author">
 
 
@@ -31,8 +31,8 @@
 
   
 
-  <title>13 Notas</title>
-  <meta name="description" content="Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.">
+  <title>21 Hábitos</title>
+  <meta name="description" content="Rastrear hábitos es algo importante para poder instaurarlos y consolidarlos.">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
@@ -50,7 +50,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
-  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/13/notas.html">
+  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/04/01/habitos.html">
   <link rel="alternate" type="application/rss+xml" title="Emacs" href="http://inclusa.github.io/emacs/feed.xml">
 </head>
 
@@ -109,8 +109,8 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="jumbotron">
     <div class="container">
-      <h1 class="post-title-main" itemprop="name headline">13 Notas</h1>
-      <p class="post-meta"><time datetime="2017-03-13T01:00:00+01:00" itemprop="datePublished">Mar 13, 2017</time></p>
+      <h1 class="post-title-main" itemprop="name headline">21 Hábitos</h1>
+      <p class="post-meta"><time datetime="2017-04-01T02:00:00+02:00" itemprop="datePublished">Apr 1, 2017</time></p>
       
     </div>
 
@@ -118,34 +118,52 @@
 
 
   <div class="post-content container" itemprop="articleBody">
-    <p>Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.</p>
+    <p>Rastrear hábitos es algo importante para poder instaurarlos y consolidarlos.</p>
 
-<p>Para acceder al Bloc de Notas <code class="highlighter-rouge">M-x remember</code></p>
+<p>Podemos rastrear nuestros hábitos marcando día y hora de cuándo los hacemos de forma muy fácil.</p>
 
-<p>Se nos abrirá un archivo donce podremos escribir.</p>
+<h1 id="generando-el-cdigo">1. Generando el código</h1>
 
-<p>Lo guardaremos así: <code class="highlighter-rouge">C-c C-c</code></p>
+<p>Primero deberemos definir el hábito y escribir:</p>
 
-<p>De esta manera nos guardará este archivo en el directorio <code class="highlighter-rouge">.emacs.d</code>, nombrandolo notes.</p>
+<pre><code class="language-emacs">*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &lt;2017-04-02 dg 05:00 .+1d/2d&gt;
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: 
+      :END: 
+</code></pre>
 
-<p><code class="highlighter-rouge">.emacs.d/notes</code></p>
+<p>Así definimos el hábito `Controlar la respiración durante 5 minuts.</p>
 
-<p>Lo que nos creará una bitácora genial en el archivo <code class="highlighter-rouge">notes</code> que incluirá el día y la hora, un comentario y la ruta del archivo del que nos referimos así:</p>
+<p>Marcamos en la agenda este hábito <code class="highlighter-rouge">C-c C-s</code>, pero editamos la marca añadiendo la hora i las veces que se va a repetir a lo largo del día. <code class="highlighter-rouge">05:00 .+1d/2d</code>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>
-** Wed Mar 22 20:45:31 2017 (hola)
+<h1 id="marcamos-el-hbito">2. Marcamos el hábito</h1>
 
-hola
+<p>Se trata de pulsar unas teclas que nos iran marcando el momento en el que realizamos el hábito realizando una lista:</p>
 
-/home/usuario/bulletjournal.org
-
-** Wed Mar 22 20:46:50 2017 (adiós)
-
-adiós
-
-/home/usuario/bulletjournal.org
+<div class="highlighter-rouge"><pre class="highlight"><code>- State "PROCESS"    from "TODO"       [2017-04-01 ds 09:41]
+- State "PROCESS"    from "TODO"       [2017-03-31 dv 21:34]
 </code></pre>
 </div>
+
+<p>De esta forma obtendremos un listado de las veces que realizamos el hábito.</p>
+
+<p>Para <code class="highlighter-rouge">marcar el hábito</code> no situaremos encima de la palabra <code class="highlighter-rouge">TODO</code> y pulsaremos las teclas <code class="highlighter-rouge">Shift + &lt;right&gt;</code>, es decir <code class="highlighter-rouge">Mayúscula + flecha derecha</code>.</p>
+
+<p>De esta forma se generará una lista de seguimiento del hábito.</p>
+
+<h1 id="resultado">3. Resultado</h1>
+
+<pre><code class="language-emacs">*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &lt;2017-04-02 dg 05:00 .+1d/2d&gt;
+    - State "PROCESS"    from "TODO"       [2017-04-01 ds 09:41]
+    - State "PROCESS"    from "TODO"       [2017-03-31 dv 21:34]
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: [2017-04-01 ds 09:41]
+      :END:
+</code></pre>
 
   </div>
 

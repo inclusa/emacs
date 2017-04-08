@@ -5,12 +5,243 @@
     <description>&lt;h3&gt;Iníciate en Emacs sin excusas&lt;/h3&gt;&lt;h1&gt;Emacs&lt;/h1&gt;&lt;h3&gt;Guia de inicio rápida&lt;/h3&gt;Consigue despegar!</description>
     <link>http://inclusa.github.io/emacs/</link>
     <atom:link href="http://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Mar 2017 18:27:01 +0200</pubDate>
-    <lastBuildDate>Sun, 26 Mar 2017 18:27:01 +0200</lastBuildDate>
+    <pubDate>Sun, 02 Apr 2017 19:09:36 +0200</pubDate>
+    <lastBuildDate>Sun, 02 Apr 2017 19:09:36 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>16 Enlaces</title>
+        <title>22 Captura</title>
+        <description>&lt;p&gt;Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.&lt;/p&gt;
+
+&lt;p&gt;Así deberemos incluir en el archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; el siguiente código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;
+;; Plantilles per a capturar
+
+(setq org-directory &quot;~/Documents/56_bulletjournal/org&quot;)
+(setq org-default-notes-file &quot;~/Documents/56_bulletjournal/notes&quot;)
+
+;; I use C-c c to start capture mode
+(global-set-key (kbd &quot;C-c c&quot;) &#39;org-capture)
+
+;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
+(setq org-capture-templates
+      (quote ((&quot;t&quot; &quot;todo&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* TODO %?\n%U\n%a\n&quot; :clock-in t :clock-resume t)
+              (&quot;r&quot; &quot;respond&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* NEXT Respond to %:from on %:subject\nSCHEDULED: %t\n%U\n%a\n&quot; :clock-in t :clock-resume t :immediate-finish t)
+              (&quot;n&quot; &quot;note&quot; entry (file &quot;~~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* %? :NOTE:\n%U\n%a\n&quot; :clock-in t :clock-resume t)
+              (&quot;j&quot; &quot;Journal&quot; entry (file+datetree &quot;~/Documents/56_bulletjournal/org/diary.org&quot;)
+               &quot;* %?\n%U\n&quot; :clock-in t :clock-resume t)
+              (&quot;w&quot; &quot;org-protocol&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* TODO Review %c\n%U\n&quot; :immediate-finish t)
+              (&quot;m&quot; &quot;Meeting&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* MEETING with %? :MEETING:\n%U&quot; :clock-in t :clock-resume t)
+              (&quot;p&quot; &quot;Phone call&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* PHONE %? :PHONE:\n%U&quot; :clock-in t :clock-resume t)
+              (&quot;h&quot; &quot;Habit&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \&quot;%&amp;lt;&amp;lt;%Y-%m-%d %a .+1d/3d&amp;gt;&amp;gt;\&quot;)\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n&quot;))))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De estar forma presionando las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c c&lt;/code&gt; obtendremos el menú siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Select a capture template
+=========================
+
+[t]     todo
+[r]     respond
+[n]     note
+[j]     Journal
+[w]     org-protocol
+[m]     Meeting
+[p]     Phone call
+[h]     Habit
+--------------------------------------------------------------------------
+[C]     Customize org-capture-templates
+[q]     Abort
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Este menú creará un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;captura.org&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;diary.org&lt;/code&gt; donde se irán almacenando muestras capturas.&lt;/p&gt;
+
+&lt;p&gt;Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Apr 2017 02:00:00 +0200</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/04/02/capturar.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/04/02/capturar.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>21 Hábitos</title>
+        <description>&lt;p&gt;Rastrear hábitos es algo importante para poder instaurarlos y consolidarlos.&lt;/p&gt;
+
+&lt;p&gt;Podemos rastrear nuestros hábitos marcando día y hora de cuándo los hacemos de forma muy fácil.&lt;/p&gt;
+
+&lt;h1 id=&quot;generando-el-cdigo&quot;&gt;1. Generando el código&lt;/h1&gt;
+
+&lt;p&gt;Primero deberemos definir el hábito y escribir:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &amp;lt;2017-04-02 dg 05:00 .+1d/2d&amp;gt;
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: 
+      :END: 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Así definimos el hábito `Controlar la respiración durante 5 minuts.&lt;/p&gt;
+
+&lt;p&gt;Marcamos en la agenda este hábito &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;, pero editamos la marca añadiendo la hora i las veces que se va a repetir a lo largo del día. &lt;code class=&quot;highlighter-rouge&quot;&gt;05:00 .+1d/2d&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;marcamos-el-hbito&quot;&gt;2. Marcamos el hábito&lt;/h1&gt;
+
+&lt;p&gt;Se trata de pulsar unas teclas que nos iran marcando el momento en el que realizamos el hábito realizando una lista:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-04-01 ds 09:41]
+- State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-03-31 dv 21:34]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;De esta forma obtendremos un listado de las veces que realizamos el hábito.&lt;/p&gt;
+
+&lt;p&gt;Para &lt;code class=&quot;highlighter-rouge&quot;&gt;marcar el hábito&lt;/code&gt; no situaremos encima de la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;TODO&lt;/code&gt; y pulsaremos las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift + &amp;lt;right&amp;gt;&lt;/code&gt;, es decir &lt;code class=&quot;highlighter-rouge&quot;&gt;Mayúscula + flecha derecha&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;De esta forma se generará una lista de seguimiento del hábito.&lt;/p&gt;
+
+&lt;h1 id=&quot;resultado&quot;&gt;3. Resultado&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &amp;lt;2017-04-02 dg 05:00 .+1d/2d&amp;gt;
+    - State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-04-01 ds 09:41]
+    - State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-03-31 dv 21:34]
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: [2017-04-01 ds 09:41]
+      :END:
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Sat, 01 Apr 2017 02:00:00 +0200</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/04/01/habitos.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/04/01/habitos.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>20 Agenda</title>
+        <description>&lt;p&gt;Comandos que te introducirán en el uso de la agenda:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x org-agenda&lt;/code&gt; Menú para utilizar la agenda&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-d&lt;/code&gt;     (org-deadline) Inserta fecha final&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;     (org-schedule) Inserta fecha para realizr la tarea&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / d&lt;/code&gt;     (org-check-deadlines) Lista citas por fecha límite&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / b&lt;/code&gt;     (org-check-before-date) Lista citas antes de una fecha&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / a&lt;/code&gt;     (org-check-after-date) Lista citas después de una fecha&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 30 Mar 2017 02:00:00 +0200</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/30/agenda.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/30/agenda.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>19 HEAD Cabececeras de documento</title>
+        <description>&lt;p&gt;Empezar el documento &lt;code class=&quot;highlighter-rouge&quot;&gt;.org&lt;/code&gt; con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+TITLE: Bullet Journal
+#+LANGUAGE: en
+#+AUTHOR: Alfons Rovira
+#+EMAIL: alfons@server
+#+DATE: 2017-03-01
+#+DESCRIPTION: Personal organizer
+#+KEYWORDS: bullet journal gtd emacs org-mode
+#+STARTUP: content
+#+PRIORITIES: 1 2 3
+#+TAGS: init(i) review(r) reject(j)
+#+TODO: TODO(t) | PROCESS(p) | DONE(d) | CANCEL(c)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;campos-descriptivos&quot;&gt;1. Campos descriptivos&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sirven para describir el documento, muy útil en caso de que se exporte a otros formatos como html, txt, pdf, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Title: título del documento&lt;/li&gt;
+  &lt;li&gt;Language: lenguaje en el que está escrito&lt;/li&gt;
+  &lt;li&gt;Author: autor del mismo&lt;/li&gt;
+  &lt;li&gt;Email: email de contacto&lt;/li&gt;
+  &lt;li&gt;Date: fecha de inicio o de final del documento&lt;/li&gt;
+  &lt;li&gt;Description: descripción del documento&lt;/li&gt;
+  &lt;li&gt;Keywords: palabras clave&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;campos-interactivos&quot;&gt;2. Campos interactivos&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sirve para dar funcionalidades específicas adaptadas a tus necesidaes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Startup: si contine la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; aparecen desplegadas las categorías al abrir el documento&lt;/li&gt;
+  &lt;li&gt;Priorities: configuración de las prioridades, lo que se pone en lo que se usa, en este caso hemos cambiado las prioridades A, B, C por 1, 2, 3&lt;/li&gt;
+  &lt;li&gt;Tags: etiquetas que usaremos por defecto&lt;/li&gt;
+  &lt;li&gt;ToDo: estados de las tareas que utilizaremos por defecto&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 29 Mar 2017 02:00:00 +0200</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/29/head.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/29/head.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>18 TODO Listas de tareas</title>
+        <description>&lt;p&gt;Metodología: OrgMode&lt;/p&gt;
+
+&lt;h1 id=&quot;descripcin&quot;&gt;1. Descripción&lt;/h1&gt;
+
+&lt;p&gt;Para hacer listas de tareas deberemos utilizar la palabra TODO.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*** TODO Comprar leche
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;teclas-rpidas&quot;&gt;2. Teclas rápidas&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt; Rotar los TODO a otro ítem: (sin marca) -&amp;gt; TODO -&amp;gt; PROGRESS -&amp;gt; DONE -&amp;gt; (sin marca)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-&amp;lt;right&amp;gt;/&amp;lt;left&amp;gt;&lt;/code&gt; Utilizar con flechas. Estado de TODO.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / t&lt;/code&gt; Ver los TODO en árbol.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c a t&lt;/code&gt; Mostrar todos los TODO.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-M-&amp;lt;RET&amp;gt;&lt;/code&gt; Insertar TODO en nueva entrada.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 27 Mar 2017 02:00:00 +0200</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/27/todo.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/27/todo.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>17 Enlaces</title>
         <description>&lt;p&gt;Metodologia: OrgMode&lt;/p&gt;
 
 &lt;h1 id=&quot;enlaces&quot;&gt;1. Enlaces&lt;/h1&gt;
@@ -72,6 +303,23 @@
         <pubDate>Sun, 26 Mar 2017 01:00:00 +0100</pubDate>
         <link>http://inclusa.github.io/emacs/2017/03/26/links.html</link>
         <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/26/links.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>16 Org Mode</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://orgmode.org/&quot;&gt;Org&lt;/a&gt; es un modo para matener notas, TODO (listas de tareas) y para panificación de proyectos con rapidez y efectividad en texto plano.&lt;/p&gt;
+
+&lt;p&gt;También es un sistema de autoría y publicación, y apoya el trabajo con código fuente para la programación literal y la investigación reproducible.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/bzZ09dAbLEE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+</description>
+        <pubDate>Sat, 25 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://inclusa.github.io/emacs/2017/03/25/org.html</link>
+        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/25/org.html</guid>
         
         
       </item>
@@ -166,249 +414,6 @@ adiós
         <pubDate>Mon, 13 Mar 2017 01:00:00 +0100</pubDate>
         <link>http://inclusa.github.io/emacs/2017/03/13/notas.html</link>
         <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/13/notas.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>12 Unicode</title>
-        <description>&lt;p&gt;Unicode es un estándar de codificación de caracteres diseñado para facilitar el tratamiento informático, transmisión y visualización de textos de múltiples lenguajes y disciplinas técnicas, además de textos clásicos de lenguas muertas. El término Unicode proviene de los tres objetivos perseguidos: universalidad, uniformidad y unicidad.&lt;/p&gt;
-
-&lt;p&gt;Los puntos de código de Unicode se identifican por un número entero.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;UTF-8: codificación orientada a byte con símbolos de longitud variable.&lt;/li&gt;
-  &lt;li&gt;UTF-16: codificación de 16 bits de longitud variable optimizada para la representación del plano básico multilingüe (BMP).&lt;/li&gt;
-  &lt;li&gt;UTF-32: codificación de 32 bits de longitud fija, y la más sencilla de las tres.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;– Wikipedia&lt;/p&gt;
-
-&lt;p&gt;La forma más rápida de establecer el código unidoce UTF-8 en Emacs, de forma manual seria:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 8 keymap&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Lo cual quedaría de esta forma si quisiéramos indicar &lt;code class=&quot;highlighter-rouge&quot;&gt;UTF-8&lt;/code&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pulsamos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 8 RET&lt;/code&gt;. La tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt; indica que pulsemos la tecla Intro o Retorno.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Se nos muestra: &lt;code class=&quot;highlighter-rouge&quot;&gt;Insert character (Unicode name or hex):&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Introducimos exactamente estos caracteres: &lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Así ya podríamos poner acentos.&lt;/p&gt;
-
-&lt;p&gt;Fuente:&lt;/p&gt;
-
-&lt;p&gt;https://www.emacswiki.org/emacs/UnicodeEncoding&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 12 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/12/unicode.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/12/unicode.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>11 Gestión de ventanas</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 1&lt;/code&gt; - Ver una sola ventana.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 2&lt;/code&gt; - Divide la ventana actual en dos filas&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 3&lt;/code&gt; - Divide la ventana actual en dos columnas&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt; - (cero) Elimina la ventana actual.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt; - Cambiar el buffer de la venana actual. En minibuffer aparece prompt&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x o&lt;/code&gt; - Cambiar de ventana cuando el aréa de trabajo está dividida en varias ventanas&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 11 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/11/ventanas.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/11/ventanas.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>10 Configuración</title>
-        <description>&lt;p&gt;Recordamos comandos esenciales&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Buscar archivo C-x f&lt;/li&gt;
-  &lt;li&gt;Deshacer C-x u&lt;/li&gt;
-  &lt;li&gt;Guardar C-x w&lt;/li&gt;
-  &lt;li&gt;Cambio de buffer C-x b&lt;/li&gt;
-  &lt;li&gt;Cerrar sessión C-x C-c&lt;/li&gt;
-  &lt;li&gt;Guardar C-x C-s&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Vamos a mejorar la configuracion para evitar los mensajes de inicio. Abriremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y copiaremos:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;;;; Sin mensaje de bienvenida:
-(setq inhibit-startup-message t)
-;
-;;; No mostrar la barra del menú:
-(menu-bar-mode -1)
-;
-;;; Reemplazar &quot;yes&quot; y &quot;no&quot; por &quot;y&quot; y &quot;n&quot;
-(fset &#39;yes-or-no-p &#39;y-or-n-p)
-;
-;;; Mover a la papelera al borrar archivos y directorios:
-(setq delete-by-moving-to-trash t
-trash-directory &quot;~/.local/share/Trash/files&quot;)
-;
-;;; guardar la sessión al cerrar emacs y restaurarla
-;;; al arrancar-la de nuevo. Cero (0) para desactivar:
-(desktop-save-mode 1)
-;
-;;; Para que se muestren todos los buffers abiertos al pulsar C-x b (ido):
-(ido-mode 1)
-;;; Ignorar determinados buffers.
-(setq ido-ignore-buffers &#39;(&quot;^ &quot; &quot;*Completions*&quot; &quot;*Shell Command Output*&quot;
-                           &quot;*Messages*&quot; &quot;Async Shell Command&quot; &quot;*scratch*&quot;
-                           &quot;*tramp*&quot;))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Fri, 10 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/10/configuracion.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/10/configuracion.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>09 Cifrado</title>
-        <description>&lt;p&gt;Emacs utiliza por defecto el cifrado de GPG.&lt;/p&gt;
-
-&lt;p&gt;De esta manera para podemos cifrar y descrifrar documentos tanto para &lt;code class=&quot;highlighter-rouge&quot;&gt;claves simétricas&lt;/code&gt;, una clave como para &lt;code class=&quot;highlighter-rouge&quot;&gt;claves asimétricas&lt;/code&gt;, dos claves: pública y privada).&lt;/p&gt;
-
-&lt;p&gt;Empecemos por lo sencillo: &lt;code class=&quot;highlighter-rouge&quot;&gt;cifrado simétrico&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Si creamos un documento llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt&lt;/code&gt;, lo guardamos.&lt;/p&gt;
-
-&lt;p&gt;Ahora lo podremos cifrar desde el menú:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Tools &amp;gt; Encryption/Decryption &amp;gt; Encrypt file...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Lo que hace, por detrás es esto, pero no lo vemos:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg -c a.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Para desdifrar lo que hace es, pero no lo vemos:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpg -d a.txt.gpg
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Genera un archivo nuevo &lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt;, antes nos pide dos veces que le pongamos una contraseña.&lt;/p&gt;
-
-&lt;p&gt;El resultado son dos archivos:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt&lt;/code&gt; Sin cifrar&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt; Cifrado&lt;/p&gt;
-
-&lt;p&gt;Subiríamos a la nube el segundo.&lt;/p&gt;
-
-&lt;p&gt;Al recuperarlo deberíamos nos pedirá la clave de cifrado.&lt;/p&gt;
-
-&lt;p&gt;Al guardarlo, nos volverá a pedir la clave de cifrado dos veces.&lt;/p&gt;
-
-&lt;p&gt;Con este procedimineto siempre mantendremos cifrado nuestro archivo, el cual tendrá una primera capa de seguridad, ya no será tan accesible.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/09/cifrado.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/09/cifrado.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>08 Buffer</title>
-        <description>&lt;p&gt;Para entender el concepto de &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; debemos tener en cuenta que el &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere a la memoria RAM.
-&lt;br /&gt;
-&lt;br /&gt;
-Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.
-&lt;br /&gt;
-&lt;br /&gt;
-El &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere al espacio concreto que ocupa este archivo en RAM.
-&lt;br /&gt;
-&lt;br /&gt;
-Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; a un valor &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;, así: &lt;code class=&quot;highlighter-rouge&quot;&gt;s = 5&lt;/code&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;El la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos &lt;code class=&quot;highlighter-rouge&quot;&gt;$s&lt;/code&gt; nos devueve su valor, en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;.
-&lt;br /&gt;
-&lt;br /&gt;
-Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.
-&lt;br /&gt;
-&lt;br /&gt;
-Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;em&gt;GNU Emacs&lt;/em&gt; %&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;scratch&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Messages&lt;/em&gt; %&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
-Que esten cargados con asteriscos &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; indica que estan en RAM (buffer) pero no escritos en disco (ROM).
-&lt;br /&gt;
-&lt;br /&gt;
-Así, si visitas &lt;code class=&quot;highlighter-rouge&quot;&gt;*Messages&lt;/code&gt; observarás que tiene la función de &lt;code class=&quot;highlighter-rouge&quot;&gt;log&lt;/code&gt; o bitácora donde se van acumulando los mensajes que te va dando Emacs.
-&lt;br /&gt;
-&lt;br /&gt;
-Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; Indica que se trabaja en ese buffer&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica sólo lectura&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html&quot;&gt;https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 08 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/08/buffer.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/08/buffer.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>07 Manejo de zonas</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él. &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Selecciona otra ventana &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x o&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Borra la ventana seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Borra todas las ventanas excepto la seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x  1&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Selecciona un buffer en una ventana nueva &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 b&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 f&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Borra la ventana seleccionada y cierra, mata el buffer que contenia &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 0&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Tue, 07 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/07/zonas.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/07/zonas.html</guid>
         
         
       </item>
