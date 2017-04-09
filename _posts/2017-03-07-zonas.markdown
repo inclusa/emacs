@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 07 Zonas
+title: 07 Ventanas
 date:  2017-03-07 00:00:00
 description: Áreas de trabajo
 ---
