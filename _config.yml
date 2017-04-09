@@ -22,3 +22,6 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
+# Port
+port: 4005 # Canvia el port del server al 4001
+
