@@ -5,8 +5,8 @@
     <description>&lt;h3&gt;Iníciate en Emacs sin excusas&lt;/h3&gt;&lt;h1&gt;Emacs&lt;/h1&gt;&lt;h3&gt;Guia de inicio rápida&lt;/h3&gt;Consigue despegar!</description>
     <link>http://inclusa.github.io/emacs/</link>
     <atom:link href="http://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Apr 2017 23:29:01 +0200</pubDate>
-    <lastBuildDate>Sat, 08 Apr 2017 23:29:01 +0200</lastBuildDate>
+    <pubDate>Sun, 09 Apr 2017 13:21:36 +0200</pubDate>
+    <lastBuildDate>Sun, 09 Apr 2017 13:21:36 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -170,7 +170,7 @@
       </item>
     
       <item>
-        <title>19 HEAD Cabececeras de documento</title>
+        <title>19 HEAD</title>
         <description>&lt;p&gt;Empezar el documento &lt;code class=&quot;highlighter-rouge&quot;&gt;.org&lt;/code&gt; con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;#+TITLE: Bullet Journal
@@ -223,7 +223,7 @@
       </item>
     
       <item>
-        <title>18 TODO Listas de tareas</title>
+        <title>18 TODO</title>
         <description>&lt;p&gt;Metodología: OrgMode&lt;/p&gt;
 
 &lt;h1 id=&quot;descripcin&quot;&gt;1. Descripción&lt;/h1&gt;
@@ -254,7 +254,7 @@
       </item>
     
       <item>
-        <title>17 Enlaces</title>
+        <title>17 Links</title>
         <description>&lt;p&gt;Metodologia: OrgMode&lt;/p&gt;
 
 &lt;h1 id=&quot;enlaces&quot;&gt;1. Enlaces&lt;/h1&gt;

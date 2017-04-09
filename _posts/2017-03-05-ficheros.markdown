@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 05 Ficheros y Buffers
+title: 05 Buffers
 date:  2017-03-05 00:00:00 +0600
+description: Memoria volátil
 ---
 
 `Buffer`: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.

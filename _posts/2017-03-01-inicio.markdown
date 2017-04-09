@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "01 Inicio"
+title: 01 Inicio
 date:  2017-03-01 00:00:00 
-categories: inici
+description: Empieza por el principio
 ---
 
 
@@ -16,8 +16,8 @@ Nomenclatura:
 
 `S` - Shift o mayúscula
 
-
-- [Emacs, curso en español)(http://www.lapipaplena.org/emacs/)
+# Observa la perspectiva
+- [Emacs, curso en español](http://www.lapipaplena.org/emacs/)
 - [OrgMode](http://orgmode.org/guide)
 - [Emacs Planet](http://planet.emacs-es.org/)
 - [Referència](http://www.merlos.org/linux/2003/05/emacs.html)

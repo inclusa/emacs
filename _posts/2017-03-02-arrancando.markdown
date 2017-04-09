@@ -2,6 +2,7 @@
 layout: post
 title: 02 Arrancando
 date:  2017-03-02 00:00:00 
+description: Levanta Emacs con o sin entorno gráfico
 ---
 
 

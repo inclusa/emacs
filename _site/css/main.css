@@ -52,15 +52,15 @@ a:hover {
   border-bottom: 1px dotted #03a4fb; }
 
 .post-list {
-  text-align: center; }
+  text-align: left; }
 
 .post-box {
   padding-top: 2em;
   padding-bottom: 2em; }
 
 .post-title {
-  font-size: 20px !important;
-  color: #abc0ca !important; }
+  font-size: 30px !important;
+  color: #40FF00 !important; }
 
 .post-excerpt {
   color: white !important;

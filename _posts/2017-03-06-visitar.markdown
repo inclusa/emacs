@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 06 visitar (abrir) ficheros
+title: 06 Ficheros
 date:  2017-03-06 00:00:00 
+description: Visitar ficheros y gestionarlos
 ---
 
 1. Abrir fichero `C-c C-f`

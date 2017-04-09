@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 19 HEAD Cabececeras de documento
+title: 19 HEAD 
 date:  2017-03-29 00:00:00
+description: Cabeceras del documento
 ---
 
 Empezar el documento `.org` con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.

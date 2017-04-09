@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 17 Enlaces
+title: 17 Links
 date:  2017-03-26 00:00:00
+description: Enlaces
 ---
 
 Metodologia: OrgMode

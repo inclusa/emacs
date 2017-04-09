@@ -2,6 +2,7 @@
 layout: post
 title: 10 Configuración
 date:  2017-03-10 00:00:00
+description: Establecer valores de inicio
 ---
 
 Recordamos comandos esenciales

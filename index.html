@@ -21,7 +21,12 @@ layout: default
     <a class="post-title" href="{{post.url | prepend:site.baseurl }}" > {{ post.title }}</a>
     </div>
     <div class="post-excerpt">
+      {{ post.description | strip_html | truncatewords:10}}
+    </div>
+    <div id='ocult' style='display:none;'>
+    <div class="post-excerpt">
       {{ post.content | strip_html | truncatewords:5}}
+    </div>
     </div>
     <div class="posted">
       posted on

@@ -2,6 +2,7 @@
 layout: post
 title: 13 Notas
 date:  2017-03-13 00:00:00
+description: Tomar notas en archivo específico
 ---
 
 Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.

@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 11 Gestión de ventanas
+title: 11 Ventanas
 date:  2017-03-11 00:00:00
+description: Gestionar las zonas
 ---
 
 

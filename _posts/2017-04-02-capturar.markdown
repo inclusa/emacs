@@ -2,6 +2,7 @@
 layout: post
 title: 22 Captura
 date:  2017-04-02 00:00:00
+description: Método para capturar información
 ---
 
 Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.

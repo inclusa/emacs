@@ -2,6 +2,7 @@
 layout: post
 title: 14 Cortar, Copiar, Pegar
 date:  2017-03-14 00:00:00
+description: Transportar texto
 ---
 
 Utilizaremos la notación `SPC` para simbolizar la barra espaciadora.

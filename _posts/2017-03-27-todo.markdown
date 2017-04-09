@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 18 TODO Listas de tareas
+title: 18 TODO
 date:  2017-03-27 00:00:00
+description: Listas de tareas
 ---
 
 Metodología: OrgMode

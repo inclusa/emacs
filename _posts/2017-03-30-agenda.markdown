@@ -2,6 +2,7 @@
 layout: post
 title: 20 Agenda
 date:  2017-03-30 00:00:00
+description: Teclas rápidas
 ---
 
 Comandos que te introducirán en el uso de la agenda:

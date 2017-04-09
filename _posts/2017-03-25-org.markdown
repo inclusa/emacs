@@ -2,6 +2,7 @@
 layout: post
 title: 16 Org Mode
 date:  2017-03-25 00:00:00
+description: Metodologia productiva
 ---
 
 [Org](http://orgmode.org/) es un modo para matener notas, TODO (listas de tareas) y para panificación de proyectos con rapidez y efectividad en texto plano.

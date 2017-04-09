@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 07 Manejo de zonas
+title: 07 Zonas
 date:  2017-03-07 00:00:00
+description: Áreas de trabajo
 ---
 
 1. Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él. `C-x b`
