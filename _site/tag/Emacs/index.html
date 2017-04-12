@@ -7,32 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Emacs" property="og:site_name">
 
-  <meta content="10 Configuración" property="og:title">
+  <meta content="Posts Tagged &ldquo;Emacs&rdquo;" property="og:title">
 
 
   <meta content="article" property="og:type">
 
 
-  <meta content="Establecer valores de inicio" property="og:description">
+  <meta content="<h3>Iníciate en Emacs sin excusas</h3><h1>Emacs</h1><h3>Guia de inicio rápida</h3>Consigue despegar!" property="og:description">
 
 
-  <meta content="http://inclusa.github.io/emacs/2017/03/10/configuracion.html" property="og:url">
+  <meta content="http://inclusa.github.io/emacs/tag/Emacs/" property="og:url">
 
-
-  <meta content="2017-03-10T01:00:00+01:00" property="article:published_time">
-  <meta content="http://inclusa.github.io/emacs/about/" property="article:author">
 
 
   <meta property="og:image" content="">
 
 
-  
 
-
-  
-
-  <title>10 Configuración</title>
-  <meta name="description" content="Recordamos comandos esenciales">
+  <title>Posts Tagged &amp;ldquo;Emacs&amp;rdquo;</title>
+  <meta name="description" content="<h3>Iníciate en Emacs sin excusas</h3><h1>Emacs</h1><h3>Guia de inicio rápida</h3>Consigue despegar!">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/main.css">
@@ -50,7 +43,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
-  <link rel="canonical" href="http://inclusa.github.io/emacs/2017/03/10/configuracion.html">
+  <link rel="canonical" href="http://inclusa.github.io/emacs/tag/Emacs/">
   <link rel="alternate" type="application/rss+xml" title="Emacs" href="http://inclusa.github.io/emacs/feed.xml">
 </head>
 
@@ -118,60 +111,25 @@
 </section>
 
 <section>
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="post-title-main" itemprop="name headline">10 Configuración</h1>
-      <p class="post-meta"><time datetime="2017-03-10T01:00:00+01:00" itemprop="datePublished">Mar 10, 2017</time></p>
-      
-    </div>
-
-</div>
-
-
-  <div class="post-content container" itemprop="articleBody">
-    <p>Recordamos comandos esenciales</p>
-
+<h2 class="post_title">{.{page.title}}</h2>
 <ul>
-  <li>Buscar archivo C-x f</li>
-  <li>Deshacer C-x u</li>
-  <li>Guardar C-x w</li>
-  <li>Cambio de buffer C-x b</li>
-  <li>Cerrar sessión C-x C-c</li>
-  <li>Guardar C-x C-s</li>
+  {.% for post in site.posts %}
+  {.% for tag in post.tags %}
+  {.% if tag == page.tag %}
+  <li class="archive_list">
+    <time style="color:#666;font-size:11px;" datetime='{.{post.date | date: "%Y-%m-%d"}}'>{.{post.date | date: "%m/%d/%y"}}</time> <a class="archive_list_article_link" href='{.{post.url}}'>{.{post.title}}</a>
+    <p class="summary">{.{post.summary}}</p>
+    <ul class="tag_list">
+      {.% for tag in post.tags %}
+      <li class="inline archive_list"><a class="tag_list_link" href="/tag/{.{ tag }}">{.{ tag }}</a></li>
+      {.% endfor %}
+    </ul>
+  </li>
+  {.% endif %}
+  {.% endfor %}
+  {.% endfor %}
 </ul>
 
-<p>Vamos a mejorar la configuracion para evitar los mensajes de inicio. Abriremos el archivo <code class="highlighter-rouge">.emacs</code> y copiaremos:</p>
-
-<pre><code class="language-emacs">;;; Sin mensaje de bienvenida:
-(setq inhibit-startup-message t)
-;
-;;; No mostrar la barra del menú:
-(menu-bar-mode -1)
-;
-;;; Reemplazar "yes" y "no" por "y" y "n"
-(fset 'yes-or-no-p 'y-or-n-p)
-;
-;;; Mover a la papelera al borrar archivos y directorios:
-(setq delete-by-moving-to-trash t
-trash-directory "~/.local/share/Trash/files")
-;
-;;; guardar la sessión al cerrar emacs y restaurarla
-;;; al arrancar-la de nuevo. Cero (0) para desactivar:
-(desktop-save-mode 1)
-;
-;;; Para que se muestren todos los buffers abiertos al pulsar C-x b (ido):
-(ido-mode 1)
-;;; Ignorar determinados buffers.
-(setq ido-ignore-buffers '("^ " "*Completions*" "*Shell Command Output*"
-                           "*Messages*" "Async Shell Command" "*scratch*"
-                           "*tramp*"))
-</code></pre>
-
-
-  </div>
-
-</article>
 
 </section>
 <nav class="navbar navbar-default navbar-fixed-bottom">
