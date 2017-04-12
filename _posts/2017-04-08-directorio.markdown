@@ -2,6 +2,9 @@
 layout: post
 title: 23 Directorio
 date: 2017-04-08 00:00:00 
+tags:
+- OrgMode
+- Emacs
 description: Configurar directorio por defecto
 ---
 
