@@ -1,0 +1,45 @@
+---
+layout: post
+title: 25 Markdown
+date: dg 16 abr 2017 09:55:25 CEST 
+description: Implementación de markdonw dentro de Emacs 
+keywords: markdown
+coments: true
+---
+
+#emacs
+#markdown
+
+Referencia del desarrollador e instrucciones
+
+http://jblevins.org/projects/markdown-mode/
+
+
+Para escribir en modo markdown dentro de Emacs:
+
+1. Instalar los paquetes necesarios, en caso de no utilizar Ubuntu 16.04 mirar documentación del enlace de referencia. Copiar en terminal este código para instalar estos dos paquetes
+
+```
+sudo apt install elpa-markdown-mode emacs-goodies-el
+```
+2. Activar el modo Markdown dentro de `Emacs` así `M-x markdown-mode`
+
+Ahora ya podemos escribir, veremos pintadas las letras.
+
+#Algunos comandos para probar.
+
+`C-c C-t RET 1` Así escribimos la cabecera de primer nivel
+
+`C-c C-a` Hiperlinks
+
+`C-c C-a l` Inserta Hiperlinks de formulario `[text](url)`
+
+`C-c C-i` Inserta imágenes
+
+C-c C-i i` Inserta imágenes en la región activa de la palabra
+
+
+Toda la documentación en en la web del desarrollador [JBlevins.org](http://jblevins.org/projects/markdown-mode/)
+
+
+Iremos completando documentación poco a poco...
