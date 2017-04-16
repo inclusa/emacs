@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 25 Markdown
+title: 26 Markdown
 date: dg 16 abr 2017 09:55:25 CEST 
 description: Implementación de markdonw dentro de Emacs 
 keywords: markdown
