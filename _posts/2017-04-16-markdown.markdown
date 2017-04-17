@@ -8,13 +8,12 @@ coments: true
 ---
 
 
-
-# #01 Referencia del desarrollador e instrucciones
+# #01 Referencia del desarrollador e instrucciones #
 
 [http://jblevins.org/projects/markdown-mode/](http://jblevins.org/projects/markdown-mode/)
 
 
-# #02 Para escribir en modo markdown dentro de Emacs:
+# #02 Para escribir en modo markdown dentro de Emacs: #
 
 1. Instalar los paquetes necesarios, en caso de no utilizar Ubuntu 16.04 mirar documentación del enlace de referencia. Copiar en terminal este código para instalar estos dos paquetes.
 
@@ -28,67 +27,129 @@ Ahora ya podemos escribir, veremos pintadas las letras.
 
 # #03 Comandos
 
-## 1. Introducción
+## 1. Introducción ##
 
-`C-a` Mnemotécnico `<a>`
+`C-a`          Mnemotécnico `<a>`
 
 `C-c C-a`
 
-`C-c C-t` Mnemotécnico titling (titulación)
+`C-c C-t`      Mnemotécnico titling (titulación)
 
 `C-c <`
 
 `C-c >`
 
-`C-c C-c` Markdown abre un archivo de grupo bajo un prefijo.
+`C-c C-c`      Markdown abre un archivo de grupo bajo un prefijo.
 
-## 2. Hyperlinks
+## 2. Hyperlinks ##
 
-`C-c C-a l` `[text](url)`
+`C-c C-a l`   `[text](url)`
 
-`C-c C-a L` `[text][label]`
+`C-c C-a L`   `[text][label]`
 
 `C-c C-a u`
 
-`C-c C-a f` Pie de página
+`C-c C-a f`   Pie de página
 
-`C-c C-a w` [[WikiLink]]
+`C-c C-a w`   [[WikiLink]]
 
-## 3. Images
+## 3. Images ##
 
-`C-c C-i i` Insertar imágenes
+`C-c C-i i`   Insertar imágenes
 
-`C-c C-i I` Insertar estilo de imagen
+`C-c C-i I`   Insertar estilo de imagen
 
-## 4. Styles
+## 4. Styles ##
 
-`C-c C-s e` Insertar una marca en una región de una parlabra. Ejemplo: itálica (`e` para `<em>`)
+`C-c C-s e`   Insertar una marca en una región de una parlabra. Ejemplo: itálica (`e` para `<em>`)
 
-`C-c C-s s` Insertar negrita `bold` (`<strong>')
+`C-c C-s s`   Insertar negrita `bold` (`<strong>')
 
-`C-c C-s c` Code
+`C-c C-s c`   Code
 
 `C-c C-s C-f` Blockquote
 
-`C-c C-s p` Bloque de blockquote
+`C-c C-s p`   Bloque de blockquote
 
 `C-c C-s C-p` Bloque de región
 
-## 5. Headings
+## 5. Headings ##
 
+`C-c C-t h`   Inserta título automáticamente cambiando caracter por siguiente nivel
 
-`C-c C-t RET 1` Así escribimos la cabecera de primer nivel
+`C-c C-t H`   Inserta título con subrayado simple
 
-`C-c C-a` Hiperlinks
+`C-u C-u`     Prefija, se puede especificar un nivel.
 
-`C-c C-a l` Inserta Hiperlinks de formulario `[text](url)`
+`C-c C-t 1`   Inserta encabezado nivel 1
 
-`C-c C-i` Inserta imágenes
+`C-c C-t 2`   Inserta encabezado nivel 2
 
-C-c C-i i` Inserta imágenes en la región activa de la palabra
+`C-c C-t 3`   Inserta encabezado nivel 3
+
+`C-c C-t 4`   Inserta encabezado nivel 4
+
+`C-c C-t 5`   Inserta encabezado nivel 5
+
+`C-c C-t 6`   Inserta encabezado nivel 6
+
+`C-c C-t !`   Inserta encabezados de nivel 1 `S-1` subrayado `=`
+
+`C-c C-t @`   Inserta encabezados de nivel 2 `S-2` subrayado `-`
+
+`C-c C-k`     Borra el encabezado
+
+`C-y`         Pega en el cabezado
+
+## 6. Horizontal Rules ##
+
+`C-c -`       Inserta raya horizontal
+
+`C-u`         Prefija, inserta última cadena N en N posición (contando desde 1)
+
+## 7. Maintenance Comands ##
+
+Compile `C- C-c m`  corre en otro buffer
+
+Preview `C-c C-c p` corre en la pantalla en buffer
+
+Export `C-c C-c e`  basename.html
+
+Export and View `C-c C-c v` exporta y visualiza en el navegador.
+
+Open `C-c o` abre archivo
+
+Live export `C-c C-c l`
+
+`C-c C-c c RET` revisa referencias indefinidas
+
+`C-c C-c n` renumera con algún orden el buffer de nuestras secuencias
+
+`C-c C-c ]` completa reglas
+
+## 8. Following Links##
+
+`C-c C-o` abre links en el navegador
+
+`C-u` prefijo
+
+`M-p` salta al link previo (previous)
+
+`M-n` salta al próximo link (next)
+
+## 9. Jumping ##
+
+`C-c C-j` salta desde el punto objeto
+
+`TAB` salta hacia delante
+
+`S-TAB` salta hacia atrás
+
+## 10. Promotion and Demotion ##
+
+`C-c C-` decrementa el nivel
+
+`C-c C-=` incrementa el nivel
 
 
 Toda la documentación en en la web del desarrollador [JBlevins.org](http://jblevins.org/projects/markdown-mode/)
-
-
-Iremos completando documentación poco a poco...
