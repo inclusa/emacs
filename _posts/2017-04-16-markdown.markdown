@@ -16,8 +16,9 @@ coments: true
 
 # #02 Para escribir en modo markdown dentro de Emacs:
 
-1. Instalar los paquetes necesarios, en caso de no utilizar Ubuntu 16.04 mirar documentación del enlace de referencia. Copiar en terminal este código para instalar estos dos paquetes
-```
+1. Instalar los paquetes necesarios, en caso de no utilizar Ubuntu 16.04 mirar documentación del enlace de referencia. Copiar en terminal este código para instalar estos dos paquetes.
+
+```bash
 sudo apt install elpa-markdown-mode emacs-goodies-el
 ```
 2. Activar el modo Markdown dentro de `Emacs` así `M-x markdown-mode`
