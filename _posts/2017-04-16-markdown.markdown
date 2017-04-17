@@ -21,6 +21,7 @@ coments: true
 ```bash
 sudo apt install elpa-markdown-mode emacs-goodies-el
 ```
+
 2. Activar el modo Markdown dentro de `Emacs` así `M-x markdown-mode`
 
 Ahora ya podemos escribir, veremos pintadas las letras.
