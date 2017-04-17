@@ -2,19 +2,19 @@
 layout: post
 title: 26 Markdown
 date: dg 16 abr 2017 09:55:25 CEST 
-description: Implementación de markdonw dentro de Emacs 
+description: Implementación de markdown dentro de Emacs 
 keywords: markdown
 coments: true
 ---
 
 
 
-Referencia del desarrollador e instrucciones
+# #01 Referencia del desarrollador e instrucciones
 
 [http://jblevins.org/projects/markdown-mode/](http://jblevins.org/projects/markdown-mode/)
 
 
-Para escribir en modo markdown dentro de Emacs:
+# #02 Para escribir en modo markdown dentro de Emacs:
 
 1. Instalar los paquetes necesarios, en caso de no utilizar Ubuntu 16.04 mirar documentación del enlace de referencia. Copiar en terminal este código para instalar estos dos paquetes
 ```
@@ -24,7 +24,56 @@ sudo apt install elpa-markdown-mode emacs-goodies-el
 
 Ahora ya podemos escribir, veremos pintadas las letras.
 
-# Algunos comandos para probar.
+# #03 Comandos
+
+## 1. Introducción
+
+`C-a` Mnemotécnico `<a>`
+
+`C-c C-a`
+
+`C-c C-t` Mnemotécnico titling (titulación)
+
+`C-c <`
+
+`C-c >`
+
+`C-c C-c` Markdown abre un archivo de grupo bajo un prefijo.
+
+## 2. Hyperlinks
+
+`C-c C-a l` `[text](url)`
+
+`C-c C-a L` `[text][label]`
+
+`C-c C-a u`
+
+`C-c C-a f` Pie de página
+
+`C-c C-a w` [[WikiLink]]
+
+## 3. Images
+
+`C-c C-i i` Insertar imágenes
+
+`C-c C-i I` Insertar estilo de imagen
+
+## 4. Styles
+
+`C-c C-s e` Insertar una marca en una región de una parlabra. Ejemplo: itálica (`e` para `<em>`)
+
+`C-c C-s s` Insertar negrita `bold` (`<strong>')
+
+`C-c C-s c` Code
+
+`C-c C-s C-f` Blockquote
+
+`C-c C-s p` Bloque de blockquote
+
+`C-c C-s C-p` Bloque de región
+
+## 5. Headings
+
 
 `C-c C-t RET 1` Así escribimos la cabecera de primer nivel
 
