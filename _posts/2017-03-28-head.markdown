@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 19 HEAD 
-date:  2017-03-29 00:00:00
+title: 19 Cabeceras
+date:  2017-03-28 00:00:00
 description: Cabeceras del documento
 ---
 
