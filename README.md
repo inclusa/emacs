@@ -1,7 +1,9 @@
-# emacs
-Aprendiendo a utilizar Emacs
+vida
+---------
 
-Entorno para aprender a utilizar Emacs de forma guiada.
+vida is a simple and beautiful jekyll theme.
+You can see demo [here](http://syaning.com/vida/).
 
-Encontrarás todos los pasos en un sólo archivo llamado [guia.md](guia.md)
+### License
 
+MIT

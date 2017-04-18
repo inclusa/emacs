@@ -141,8 +141,6 @@ Live export `C-c C-c l`
 
 `C-c C-j` salta desde el punto objeto
 
-`TAB` salta hacia delante
-
 `S-TAB` salta hacia atrás
 
 ## 10. Promotion and Demotion ##
@@ -153,3 +151,4 @@ Live export `C-c C-c l`
 
 
 Toda la documentación en en la web del desarrollador [JBlevins.org](http://jblevins.org/projects/markdown-mode/)
+

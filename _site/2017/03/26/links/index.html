@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/vida/css/main.css">
+    <title>vida</title>
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <h1 class="site-title"><a href="/vida/">vida</a></h1>
+            <nav class="site-nav">
+                <a href="/vida/about/" class="">About</a>
+            </nav>
+        </header>
+        <article class="post">
+    <h2 class="post-header">17 Links</h2>
+    <p class="post-meta">2017-03-26</p>
+    <p>Metodologia: OrgMode</p>
+
+<h1 id="enlaces">1. Enlaces</h1>
+
+<pre><code class="language-emacs">[[link][Descriptión]]
+</code></pre>
+
+<p>Alternativa</p>
+
+<pre><code class="language-emacs">[[link]]
+</code></pre>
+
+<p>Teclas rápidas</p>
+
+<pre><code class="language-emacs">C-c C-l
+</code></pre>
+
+<h1 id="enlaces-internos">2. Enlaces internos</h1>
+
+<p>Un contexto en el que podemos utilizar enlaces internos es realizando un índice de un documento. Utilizaremos corchetes `[[]] Para marcar el lugar donde pincharemos..</p>
+
+<p>Índice</p>
+
+<pre><code class="language-emacs">[[Future Log]]
+[[Monthy Log]]
+[[Daily Log]]
+</code></pre>
+
+<p>Utilizaremos estos símbolos <code class="highlighter-rouge">&lt;&lt;&gt;&gt;</code> para indicar el destino.</p>
+
+<pre><code class="language-emacs">&lt;&lt;Future Log&gt;&gt;
+&lt;&lt;Monty Log&gt;&gt;
+&lt;&lt;Daily Log&gt;&gt;
+</code></pre>
+
+<h1 id="links-externos">3. Links externos</h1>
+
+<pre><code class="language-emacs">[[http://www.gnu.org/software/emacs/][GNU Emacs]]
+</code></pre>
+
+<h1 id="sintaxis">4. Sintaxis</h1>
+
+<p><code class="highlighter-rouge">C-c l</code> Alamacena un enlace en el buffer</p>
+
+<p><code class="highlighter-rouge">C-c C-l</code> Inserta el enlace almacenado en el buffer</p>
+
+<p><code class="highlighter-rouge">C-c C-l</code> Situándose encima del enlace esconde el enlace (<code class="highlighter-rouge">RET</code>) en la descripción</p>
+
+<p><code class="highlighter-rouge">C-c C-o</code> Abre el enlace</p>
+
+<p><code class="highlighter-rouge">C-c %</code> Marca una posición para volver a ella con el comando <code class="highlighter-rouge">C-c &amp;</code></p>
+
+    
+</article>
+
+    </main>
+    
+</body>
+</html>

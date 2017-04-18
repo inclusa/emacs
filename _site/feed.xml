@@ -1,13 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emacs</title>
-    <description>&lt;h3&gt;Iníciate en Emacs sin excusas&lt;/h3&gt;&lt;h1&gt;Emacs&lt;/h1&gt;&lt;h3&gt;Guia de inicio rápida&lt;/h3&gt;Consigue despegar!</description>
-    <link>http://inclusa.github.io/emacs/</link>
-    <atom:link href="http://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Apr 2017 19:53:43 +0200</pubDate>
-    <lastBuildDate>Wed, 12 Apr 2017 19:53:43 +0200</lastBuildDate>
+    <title>vida</title>
+    <description></description>
+    <link>/vida/</link>
+    <atom:link href="/vida/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 18 Apr 2017 20:30:05 +0200</pubDate>
+    <lastBuildDate>Tue, 18 Apr 2017 20:30:05 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>26 Markdown</title>
+        <description>&lt;h1 id=&quot;referencia-del-desarrollador-e-instrucciones&quot;&gt;#01 Referencia del desarrollador e instrucciones&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jblevins.org/projects/markdown-mode/&quot;&gt;http://jblevins.org/projects/markdown-mode/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;para-escribir-en-modo-markdown-dentro-de-emacs&quot;&gt;#02 Para escribir en modo markdown dentro de Emacs:&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Instalar los paquetes necesarios, en caso de no utilizar Ubuntu 16.04 mirar documentación del enlace de referencia. Copiar en terminal este código para instalar estos dos paquetes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install elpa-markdown-mode emacs-goodies-el
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Activar el modo Markdown dentro de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; así &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x markdown-mode&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ahora ya podemos escribir, veremos pintadas las letras.&lt;/p&gt;
+
+&lt;h1 id=&quot;comandos&quot;&gt;#03 Comandos&lt;/h1&gt;
+
+&lt;h2 id=&quot;introduccin&quot;&gt;1. Introducción&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-a&lt;/code&gt;          Mnemotécnico &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt;      Mnemotécnico titling (titulación)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;lt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;      Markdown abre un archivo de grupo bajo un prefijo.&lt;/p&gt;
+
+&lt;h2 id=&quot;hyperlinks&quot;&gt;2. Hyperlinks&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a l&lt;/code&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;[text](url)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a L&lt;/code&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;[text][label]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a u&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a f&lt;/code&gt;   Pie de página&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a w&lt;/code&gt;   [[WikiLink]]&lt;/p&gt;
+
+&lt;h2 id=&quot;images&quot;&gt;3. Images&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-i i&lt;/code&gt;   Insertar imágenes&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-i I&lt;/code&gt;   Insertar estilo de imagen&lt;/p&gt;
+
+&lt;h2 id=&quot;styles&quot;&gt;4. Styles&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s e&lt;/code&gt;   Insertar una marca en una región de una parlabra. Ejemplo: itálica (&lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt; para &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s s&lt;/code&gt;   Insertar negrita &lt;code class=&quot;highlighter-rouge&quot;&gt;bold&lt;/code&gt; (`&lt;strong&gt;’)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s c&lt;/code&gt;   Code&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s C-f&lt;/code&gt; Blockquote&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s p&lt;/code&gt;   Bloque de blockquote&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s C-p&lt;/code&gt; Bloque de región&lt;/p&gt;
+
+&lt;h2 id=&quot;headings&quot;&gt;5. Headings&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t h&lt;/code&gt;   Inserta título automáticamente cambiando caracter por siguiente nivel&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t H&lt;/code&gt;   Inserta título con subrayado simple&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u C-u&lt;/code&gt;     Prefija, se puede especificar un nivel.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 1&lt;/code&gt;   Inserta encabezado nivel 1&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 2&lt;/code&gt;   Inserta encabezado nivel 2&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 3&lt;/code&gt;   Inserta encabezado nivel 3&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 4&lt;/code&gt;   Inserta encabezado nivel 4&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 5&lt;/code&gt;   Inserta encabezado nivel 5&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 6&lt;/code&gt;   Inserta encabezado nivel 6&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t !&lt;/code&gt;   Inserta encabezados de nivel 1 &lt;code class=&quot;highlighter-rouge&quot;&gt;S-1&lt;/code&gt; subrayado &lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t @&lt;/code&gt;   Inserta encabezados de nivel 2 &lt;code class=&quot;highlighter-rouge&quot;&gt;S-2&lt;/code&gt; subrayado &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-k&lt;/code&gt;     Borra el encabezado&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-y&lt;/code&gt;         Pega en el cabezado&lt;/p&gt;
+
+&lt;h2 id=&quot;horizontal-rules&quot;&gt;6. Horizontal Rules&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c -&lt;/code&gt;       Inserta raya horizontal&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u&lt;/code&gt;         Prefija, inserta última cadena N en N posición (contando desde 1)&lt;/p&gt;
+
+&lt;h2 id=&quot;maintenance-comands&quot;&gt;7. Maintenance Comands&lt;/h2&gt;
+
+&lt;p&gt;Compile &lt;code class=&quot;highlighter-rouge&quot;&gt;C- C-c m&lt;/code&gt;  corre en otro buffer&lt;/p&gt;
+
+&lt;p&gt;Preview &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c p&lt;/code&gt; corre en la pantalla en buffer&lt;/p&gt;
+
+&lt;p&gt;Export &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c e&lt;/code&gt;  basename.html&lt;/p&gt;
+
+&lt;p&gt;Export and View &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c v&lt;/code&gt; exporta y visualiza en el navegador.&lt;/p&gt;
+
+&lt;p&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c o&lt;/code&gt; abre archivo&lt;/p&gt;
+
+&lt;p&gt;Live export &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c l&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c c RET&lt;/code&gt; revisa referencias indefinidas&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c n&lt;/code&gt; renumera con algún orden el buffer de nuestras secuencias&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c ]&lt;/code&gt; completa reglas&lt;/p&gt;
+
+&lt;h2 id=&quot;following-links&quot;&gt;8. Following Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; abre links en el navegador&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u&lt;/code&gt; prefijo&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-p&lt;/code&gt; salta al link previo (previous)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-n&lt;/code&gt; salta al próximo link (next)&lt;/p&gt;
+
+&lt;h2 id=&quot;jumping&quot;&gt;9. Jumping&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-j&lt;/code&gt; salta desde el punto objeto&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-TAB&lt;/code&gt; salta hacia atrás&lt;/p&gt;
+
+&lt;h2 id=&quot;promotion-and-demotion&quot;&gt;10. Promotion and Demotion&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-&lt;/code&gt; decrementa el nivel&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-=&lt;/code&gt; incrementa el nivel&lt;/p&gt;
+
+&lt;p&gt;Toda la documentación en en la web del desarrollador &lt;a href=&quot;http://jblevins.org/projects/markdown-mode/&quot;&gt;JBlevins.org&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 16 Apr 2017 09:55:25 +0200</pubDate>
+        <link>/vida/2017/04/16/markdown/</link>
+        <guid isPermaLink="true">/vida/2017/04/16/markdown/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>25 Themes</title>
+        <description>&lt;p&gt;Incluir themes nuevos&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Según la documentación oficial de &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html&quot;&gt;gnu.org&lt;/a&gt;, o en &lt;a href=&quot;https://www.emacswiki.org/emacs/CustomThemes&quot;&gt;EmacsWiki&lt;/a&gt; nos situamos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt; y allí creamos &lt;code class=&quot;highlighter-rouge&quot;&gt;etc/themes/&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;En el fichero de configuración de &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; incluiremos la ruta:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;emacs
+(add-to-list &#39;custom-theme-load-path &quot;~/.emacs.d/etc/themes/&quot;) 
+&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Para cambiar de theme &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x customize-themes ;;; now press retun&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Podemos bajar themes desde &lt;a href=&quot;https://emacsthemes.com/&quot;&gt;EmacsThemes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Algo importante es que los themes han de acabar en &lt;code class=&quot;highlighter-rouge&quot;&gt;*-theme.el&lt;/code&gt; en caso contrario no se mostrará&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sat, 15 Apr 2017 23:15:07 +0200</pubDate>
+        <link>/vida/2017/04/15/themes/</link>
+        <guid isPermaLink="true">/vida/2017/04/15/themes/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>24 Bookmarks</title>
+        <description>&lt;p&gt;Abrimos un archivo de bookmarks o favoritos&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Abrimos el gestor de bookmarks o favoritos &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x bookmark-bmenu-list&lt;/code&gt; (&lt;strong&gt;bookmark-list&lt;/strong&gt;).&lt;/li&gt;
+  &lt;li&gt;Abrimos el fichero que queremos que se a un bookmark &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+x r m&lt;/code&gt; y pondremos su nombre (&lt;strong&gt;bookmark-bmenu-set&lt;/strong&gt;).&lt;/li&gt;
+  &lt;li&gt;Listamos el archivo &lt;strong&gt;bookmark-bmenu-list&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+x r l&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Abrimos el archivo &lt;strong&gt;bookmark-jump&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+x r b&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Borramos o Renombramos el bookmark
+    &lt;ul&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt; para borrar item.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; para borrar marcadores.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; para borrar el título del ítem.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; para guardar los cambios.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Guardar el archivo bookmark. Llamamos &lt;strong&gt;bookmark-save&lt;/strong&gt; o presionamos &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Podemos configurar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; para que se vaya guardando automáticamente.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq bookmark-save-flag 1) ; para que cada vez que cambie, se guarde
+
+(setq bookmark-save-flag t) ; para que se guarde cuando salga
+
+(setq bookmark-save-flag nil) ; para que nunca se autogruarde
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Podremos configurar las teclas rápidas llamando a &lt;strong&gt;describe-mode&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + h m&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para iniciar el archivo al arrancar Emacs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq inhibit-splash-screen t)
+(require &#39;bookmark)
+(bookmark-bmenu-list)
+(switch-to-buffer &quot;*Bookmark List*&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Guardaremos el archivo en &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.emacs.d/bookmarks&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Por defecto el camino del archivo bookmark está guardado en la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;bookmark-default-file&lt;/code&gt;. Llamaremos &lt;code class=&quot;highlighter-rouge&quot;&gt;describe-variable&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+h v&lt;/code&gt; para ver su valor.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Apr 2017 07:02:06 +0200</pubDate>
+        <link>/vida/2017/04/15/bookmarks/</link>
+        <guid isPermaLink="true">/vida/2017/04/15/bookmarks/</guid>
+        
+        <category>bookmarks</category>
+        
+        
+      </item>
     
       <item>
         <title>23 Directorio</title>
@@ -20,8 +250,8 @@
 &lt;p&gt;De esta forma, cada vez que abramos un archivo con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x f&lt;/code&gt; ya estaremos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;~Documents/BulletJournal/&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Apr 2017 02:00:00 +0200</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/04/08/directorio.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/04/08/directorio.html</guid>
+        <link>/vida/2017/04/08/directorio/</link>
+        <guid isPermaLink="true">/vida/2017/04/08/directorio/</guid>
         
         <category>OrgMode</category>
         
@@ -88,8 +318,8 @@
 &lt;p&gt;Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Apr 2017 02:00:00 +0200</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/04/02/capturar.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/04/02/capturar.html</guid>
+        <link>/vida/2017/04/02/capturar/</link>
+        <guid isPermaLink="true">/vida/2017/04/02/capturar/</guid>
         
         
       </item>
@@ -143,8 +373,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Sat, 01 Apr 2017 02:00:00 +0200</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/04/01/habitos.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/04/01/habitos.html</guid>
+        <link>/vida/2017/04/01/habitos/</link>
+        <guid isPermaLink="true">/vida/2017/04/01/habitos/</guid>
         
         
       </item>
@@ -167,8 +397,8 @@
 
 </description>
         <pubDate>Thu, 30 Mar 2017 02:00:00 +0200</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/30/agenda.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/30/agenda.html</guid>
+        <link>/vida/2017/03/30/agenda/</link>
+        <guid isPermaLink="true">/vida/2017/03/30/agenda/</guid>
         
         
       </item>
@@ -220,8 +450,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 29 Mar 2017 02:00:00 +0200</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/29/head.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/29/head.html</guid>
+        <link>/vida/2017/03/29/head/</link>
+        <guid isPermaLink="true">/vida/2017/03/29/head/</guid>
         
         
       </item>
@@ -251,8 +481,8 @@
 
 </description>
         <pubDate>Mon, 27 Mar 2017 02:00:00 +0200</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/27/todo.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/27/todo.html</guid>
+        <link>/vida/2017/03/27/todo/</link>
+        <guid isPermaLink="true">/vida/2017/03/27/todo/</guid>
         
         
       </item>
@@ -312,78 +542,8 @@
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c %&lt;/code&gt; Marca una posición para volver a ella con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;amp;&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 26 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/26/links.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/26/links.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>16 Org Mode</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://orgmode.org/&quot;&gt;Org&lt;/a&gt; es un modo para matener notas, TODO (listas de tareas) y para panificación de proyectos con rapidez y efectividad en texto plano.&lt;/p&gt;
-
-&lt;p&gt;También es un sistema de autoría y publicación, y apoya el trabajo con código fuente para la programación literal y la investigación reproducible.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/bzZ09dAbLEE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/center&gt;
-</description>
-        <pubDate>Sat, 25 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/25/org.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/25/org.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>15 Resaltado</title>
-        <description>&lt;p&gt;Podemos utilizar el resaltado escribiendo los códigos:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*bold* ==&amp;gt; bold
-~code~ ==&amp;gt; code
-+strike+ ==&amp;gt; strike
-/italic/ ==&amp;gt; italic
-=verbatim= ==&amp;gt; code
-_underline_ ==&amp;gt; underline
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Para crear superíndides:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento^superínidice
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;2&lt;sup&gt;4&lt;/sup&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;2^4&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento_subíndice
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;H_2&lt;/code&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 15 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/15/resaltado.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/15/resaltado.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>14 Cortar, Copiar, Pegar</title>
-        <description>&lt;p&gt;Utilizaremos la notación &lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt; para simbolizar la barra espaciadora.&lt;/p&gt;
-
-&lt;p&gt;Marcar el principio del bloque: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-SPC&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Cortar desde la marca hasta la posición actual: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-w&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Copiar desde la marca a la posición actual: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-w&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Cortar desde la marca hata el final de línea: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-k&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Pegar el último bloque cortado o copiado: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-y&lt;/code&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 14 Mar 2017 01:00:00 +0100</pubDate>
-        <link>http://inclusa.github.io/emacs/2017/03/14/copiar.html</link>
-        <guid isPermaLink="true">http://inclusa.github.io/emacs/2017/03/14/copiar.html</guid>
+        <link>/vida/2017/03/26/links/</link>
+        <guid isPermaLink="true">/vida/2017/03/26/links/</guid>
         
         
       </item>

@@ -2,49 +2,10 @@
 layout: default
 ---
 
-<section>
-  <div class="jumbotron">
-    <div class="container">
-      {{site.description}}
-
-    </div>
-
-</div>
-</section>
-
-<section id="page-content">
-  <div class="container">
-    <div class="post-list">
-  {%  for post in site.posts %}
-  <div class="post-box">
-    <div class="post-title">
-    <a class="post-title" href="{{post.url | prepend:site.baseurl }}" > {{ post.title }}</a>
-    </div>
-    <div class="post-excerpt">
-      {{ post.description | strip_html | truncatewords:10}}
-    </div>
-    <div id='ocult' style='display:none;'>
-    <div class="post-excerpt">
-      {{ post.content | strip_html | truncatewords:5}}
-    </div>
-    </div>
-    <div class="posted">
-      posted on
-      <span class="posted-on">
-
-        {{ post.date | date: "%A, %B %-d, %Y" }}
-      </span>
-      <span class="in">
-        in
-      </span>
-      <span class="categories-on">
-        {% for category in post.categories%}
-        {{category}} &nbsp;{% if forloop.last %}{% else %},{% endif %}
+<div class="home">
+    <ul class="posts">
+        {% for post in site.posts %}
+        <li><span>{{ post.date | date: site.date_format }}</span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
         {% endfor %}
-      </span>
-    </div>
-  </div>
-  {% endfor %}
-  </div>
-</section>
-
+    </ul>
+</div>

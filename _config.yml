@@ -1,27 +1,14 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+title: vida
+baseurl: "/vida"
 
-# Site settings
-title: Emacs
-email: inclusa@gmail.com
-
-#write html inside the double quotes to display in jumbotron
-description: "<h3>Iníciate en Emacs sin excusas</h3><h1>Emacs</h1><h3>Guia de inicio rápida</h3>Consigue despegar!"
-
-
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://inclusa.github.io/emacs" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+date_format: "%Y-%m-%d"
 
 # Build settings
-markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
 
-# Port
-port: 4005 # Canvia el port del server al 4001
-
+# Third-party services
+# just leave someone empty to disable it
+google_analytics:
+disqus_shortname:
