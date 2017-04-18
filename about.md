@@ -13,4 +13,4 @@ La meta es aprender a utilizar Emacs para poder aplicar su metodología `Org Mod
 
 Este website está construido con <a href="(http://jekyllrb.com/" target="_blank">Jekyll</a> a partir del theme <a href="https://github.com/syaning/vida" target="_blank">Vida</a>
 
--- <a href="httpa://inclusa.github.io/">Alfons Rovira</a>
+-- <a href="https://inclusa.github.io/">Alfons Rovira</a>
