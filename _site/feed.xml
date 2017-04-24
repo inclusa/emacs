@@ -3,11 +3,170 @@
   <channel>
     <title>Emacs</title>
     <description></description>
-    <link>/vida/</link>
-    <atom:link href="/vida/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Apr 2017 23:58:31 +0200</pubDate>
-    <lastBuildDate>Tue, 18 Apr 2017 23:58:31 +0200</lastBuildDate>
+    <link>https://inclusa.github.io/emacs/</link>
+    <atom:link href="https://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 24 Apr 2017 07:59:52 +0200</pubDate>
+    <lastBuildDate>Mon, 24 Apr 2017 07:59:52 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>29 Tabñas</title>
+        <description>&lt;p&gt;La utilización de tablas en &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; mediante la metodología &lt;code class=&quot;highlighter-rouge&quot;&gt;Orgmode&lt;/code&gt; es sencilla.&lt;/p&gt;
+
+&lt;p&gt;Partimos de la escritura de código sencillo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;| Item | Nom | Cognom |
+|------+-----+--------+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;En la siguiente línea escribimos una barra vertical. Para pasar a la siguiente columna lo hacemos con la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;. Con lo que podremos escribir las demás columnas.&lt;/p&gt;
+
+&lt;p&gt;Para pasar a la columna de abano sin pasar por todas las columnas escribiremso ala tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt; o Enter.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;image/2017042301.gif&quot; alt=&quot;tablas&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 24 Apr 2017 07:50:55 +0200</pubDate>
+        <link>https://inclusa.github.io/emacs/2017/04/24/tables/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/24/tables/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>28 Exportar</title>
+        <description>&lt;h3 id=&quot;cabeceras&quot;&gt;1. Cabeceras&lt;/h3&gt;
+
+&lt;p&gt;Para exportar datos deberemos incluir la siguiente información en la cabecera del documento y adaptarla a nuestras necesidades:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;     #+TITLE:       título del que se muestrao
+     #+AUTHOR:      autor (por defecto se coge desde user-full-name del sistema)
+     #+DATE:        fecha, fijada, o un Org timestamp
+     #+EMAIL:       tu email (por defecto se coge user-mail-address del sistema)
+     #+LANGUAGE:    lenguaje, por ejemplo  ‘es’ (org-export-default-language)
+     #+OPTIONS:     H:2 num:t toc:t \n:nil ::t |:t ^:t f:t tex:t ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;comandos&quot;&gt;2. Comandos&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e&lt;/code&gt; Comandos de explotación y publicación.&lt;/p&gt;
+
+&lt;h3 id=&quot;codificacin&quot;&gt;3. Codificación&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e t u&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e t U&lt;/code&gt; ambos exportan la codificación a UTF-8.&lt;/p&gt;
+
+&lt;h3 id=&quot;creando-un-archivo-de-html-donde-se-incrusta-cdigo&quot;&gt;4. Creando un archivo de HTML donde se incrusta código&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e h h&lt;/code&gt; Exportar a HTML &lt;code class=&quot;highlighter-rouge&quot;&gt;archivo.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e h o&lt;/code&gt; Exportar a HTML e inmediatamente abrir el navegador sin guardar&lt;/p&gt;
+
+&lt;p&gt;Para incrustar código:&lt;/p&gt;
+
+&lt;p&gt;a. En una línea&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;#+HTML: Código literal HTML code para que se  exportará en esta línea
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;b. En varias líneas&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;     #+BEGIN_EXPORT html
+     Todas las líneas entre estos marcadores serán exportadas literalmente
+     #+END_HTML
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;exportar-a-latex-o-pdf&quot;&gt;5. Exportar a LaTeX o PDF&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l l&lt;/code&gt; Exporta un fichero LaTeX &lt;code class=&quot;highlighter-rouge&quot;&gt;archivo.tex&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l p&lt;/code&gt; Exporta como LaTeX y también PDF&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l o&lt;/code&gt; Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF&lt;/p&gt;
+
+&lt;h3 id=&quot;exportar-calendario&quot;&gt;6. Exportar calendario&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e c f&lt;/code&gt; Crea un archivo iCalendar con extensión &lt;code class=&quot;highlighter-rouge&quot;&gt;.ics&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e c c&lt;/code&gt; Crea un archivo largo de iCalendar con todos los archivos &lt;code class=&quot;highlighter-rouge&quot;&gt;org-agenda-files&lt;/code&gt; y lo escribe cogiendo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-icalendar-combined-agenda-file&lt;/code&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 Apr 2017 06:55:15 +0200</pubDate>
+        <link>https://inclusa.github.io/emacs/2017/04/21/exportar/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/21/exportar/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>27 Columnas</title>
+        <description>&lt;p&gt;La utilización de columnas se basa en el resumen sintético de los datos. Así, observemos este código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;
+* Ejemplo
+** Mi proyecto
+   :PROPERTIES:
+   :COLUMNS:  %20ITEM %9Aprobado(Aprovado?){X} %Persona %11Status %10Time_Spent{:}
+   :Persona_ALL:    Isabel Marc Pilar Pedro Patricia
+   :Status_ALL:   &quot;No iniciado&quot; &quot;Iniciado&quot; &quot;En progreso&quot; &quot;Finalizado&quot;
+   :Aprobado_ALL: &quot;[ ]&quot; &quot;[X]&quot;
+   :END:
+
+*** Item 1
+    :PROPERTIES:
+    :Persona:  Isabel
+    :Time_spent:   1:45
+    :Status:   Finalizado
+    :END:
+
+*** Item 2
+    :PROPERTIES:
+    :Persona:  Marc
+    :Status:   En progreso
+    :Time_spent:   0:15
+    :END:
+
+*** Item 3
+    :PROPERTIES:
+    :Persona:  Patricia
+    :Status:   No iniciado
+    :Aprobado: [X]
+    :END:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Visto así no es fácil de analizar, pero si nos situamos en la línea &lt;code class=&quot;highlighter-rouge&quot;&gt;** Mi proyecto&lt;/code&gt; y ejecutamos los comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-c&lt;/code&gt;, automáticamente vemos las cosas más claras. Después de pulsar dos veces la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt; lo veremos así:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;* Ejemplo
+** Mi proyecto     |          |          |             |  2:00   |
+   :PROPERTIES:...
+
+*** Item 1         |          |  Isabel  | Finalizado  |         |...
+*** Item 2         |          |  Marc    | En progreso |         |...
+*** Item 3         | [X]      |  Patricia| No iniciado |         |...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Para desactivar esta función nos colocaremos en la línea &lt;code class=&quot;highlighter-rouge&quot;&gt;*** Mi proyecto&lt;/code&gt; y pulsaremos la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;q&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ahora nos fijamos en las propiedades las cabeceras:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;   :PROPERTIES:
+   :COLUMNS:  %20ITEM %9Aprobado(Aprovado?){X} %Persona %11Status %10Time_Spent{:}
+   :Persona_ALL:    Isabel Marc Pilar Pedro Patricia
+   :Status_ALL:   &quot;No iniciado&quot; &quot;Iniciado&quot; &quot;En progreso&quot; &quot;Finalizado&quot;
+   :Aprobado_ALL: &quot;[ ]&quot; &quot;[X]&quot;
+   :END:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica que es una nueva columna. &lt;code class=&quot;highlighter-rouge&quot;&gt;20&lt;/code&gt; indica que tiene 20 columnas de ancho. &lt;code class=&quot;highlighter-rouge&quot;&gt;ITEM&lt;/code&gt; hace referencia al título precedido de &lt;code class=&quot;highlighter-rouge&quot;&gt;****&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;Aprobado&lt;/code&gt; indica el campo Aprobado. &lt;code class=&quot;highlighter-rouge&quot;&gt;(Aprobado?)&lt;/code&gt; indica el nombre del campo, que aparecerá en la parte superior, en la parte más alta. &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; indica el formato de tiempo.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Persona_ALL&lt;/code&gt;: Indican todas las personas, de esta forma con las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;SHIFT&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;→&lt;/code&gt; situados en el campo &lt;code class=&quot;highlighter-rouge&quot;&gt;Persona&lt;/code&gt; podremos ir cambiando las personas predefinidas, por eso se predefinen. Esto no limita que podamos escribir más personas en el mismo campo.&lt;/p&gt;
+
+&lt;p&gt;Establece el espacio, anchura,&lt;/p&gt;
+</description>
+        <pubDate>Wed, 19 Apr 2017 00:43:44 +0200</pubDate>
+        <link>https://inclusa.github.io/emacs/2017/04/19/columnas/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/19/columnas/</guid>
+        
+        
+      </item>
     
       <item>
         <title>26 Markdown</title>
@@ -159,8 +318,8 @@
 
 </description>
         <pubDate>Sun, 16 Apr 2017 09:55:25 +0200</pubDate>
-        <link>/vida/2017/04/16/markdown/</link>
-        <guid isPermaLink="true">/vida/2017/04/16/markdown/</guid>
+        <link>https://inclusa.github.io/emacs/2017/04/16/markdown/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/16/markdown/</guid>
         
         
       </item>
@@ -181,8 +340,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 15 Apr 2017 23:15:07 +0200</pubDate>
-        <link>/vida/2017/04/15/themes/</link>
-        <guid isPermaLink="true">/vida/2017/04/15/themes/</guid>
+        <link>https://inclusa.github.io/emacs/2017/04/15/themes/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/15/themes/</guid>
         
         
       </item>
@@ -231,8 +390,8 @@
 &lt;p&gt;Por defecto el camino del archivo bookmark está guardado en la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;bookmark-default-file&lt;/code&gt;. Llamaremos &lt;code class=&quot;highlighter-rouge&quot;&gt;describe-variable&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+h v&lt;/code&gt; para ver su valor.&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Apr 2017 07:02:06 +0200</pubDate>
-        <link>/vida/2017/04/15/bookmarks/</link>
-        <guid isPermaLink="true">/vida/2017/04/15/bookmarks/</guid>
+        <link>https://inclusa.github.io/emacs/2017/04/15/bookmarks/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/15/bookmarks/</guid>
         
         <category>bookmarks</category>
         
@@ -250,8 +409,8 @@
 &lt;p&gt;De esta forma, cada vez que abramos un archivo con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x f&lt;/code&gt; ya estaremos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;~Documents/BulletJournal/&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Apr 2017 02:00:00 +0200</pubDate>
-        <link>/vida/2017/04/08/directorio/</link>
-        <guid isPermaLink="true">/vida/2017/04/08/directorio/</guid>
+        <link>https://inclusa.github.io/emacs/2017/04/08/directorio/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/08/directorio/</guid>
         
         <category>OrgMode</category>
         
@@ -318,8 +477,8 @@
 &lt;p&gt;Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Apr 2017 02:00:00 +0200</pubDate>
-        <link>/vida/2017/04/02/capturar/</link>
-        <guid isPermaLink="true">/vida/2017/04/02/capturar/</guid>
+        <link>https://inclusa.github.io/emacs/2017/04/02/capturar/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/02/capturar/</guid>
         
         
       </item>
@@ -373,8 +532,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Sat, 01 Apr 2017 02:00:00 +0200</pubDate>
-        <link>/vida/2017/04/01/habitos/</link>
-        <guid isPermaLink="true">/vida/2017/04/01/habitos/</guid>
+        <link>https://inclusa.github.io/emacs/2017/04/01/habitos/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/01/habitos/</guid>
         
         
       </item>
@@ -397,153 +556,8 @@
 
 </description>
         <pubDate>Thu, 30 Mar 2017 02:00:00 +0200</pubDate>
-        <link>/vida/2017/03/30/agenda/</link>
-        <guid isPermaLink="true">/vida/2017/03/30/agenda/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>19 HEAD</title>
-        <description>&lt;p&gt;Empezar el documento &lt;code class=&quot;highlighter-rouge&quot;&gt;.org&lt;/code&gt; con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;#+TITLE: Bullet Journal
-#+LANGUAGE: en
-#+AUTHOR: Alfons Rovira
-#+EMAIL: alfons@server
-#+DATE: 2017-03-01
-#+DESCRIPTION: Personal organizer
-#+KEYWORDS: bullet journal gtd emacs org-mode
-#+STARTUP: content
-#+PRIORITIES: 1 2 3
-#+TAGS: init(i) review(r) reject(j)
-#+TODO: TODO(t) | PROCESS(p) | DONE(d) | CANCEL(c)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;campos-descriptivos&quot;&gt;1. Campos descriptivos&lt;/h1&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Sirven para describir el documento, muy útil en caso de que se exporte a otros formatos como html, txt, pdf, etc.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Title: título del documento&lt;/li&gt;
-  &lt;li&gt;Language: lenguaje en el que está escrito&lt;/li&gt;
-  &lt;li&gt;Author: autor del mismo&lt;/li&gt;
-  &lt;li&gt;Email: email de contacto&lt;/li&gt;
-  &lt;li&gt;Date: fecha de inicio o de final del documento&lt;/li&gt;
-  &lt;li&gt;Description: descripción del documento&lt;/li&gt;
-  &lt;li&gt;Keywords: palabras clave&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;campos-interactivos&quot;&gt;2. Campos interactivos&lt;/h1&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Sirve para dar funcionalidades específicas adaptadas a tus necesidaes.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Startup: si contine la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; aparecen desplegadas las categorías al abrir el documento&lt;/li&gt;
-  &lt;li&gt;Priorities: configuración de las prioridades, lo que se pone en lo que se usa, en este caso hemos cambiado las prioridades A, B, C por 1, 2, 3&lt;/li&gt;
-  &lt;li&gt;Tags: etiquetas que usaremos por defecto&lt;/li&gt;
-  &lt;li&gt;ToDo: estados de las tareas que utilizaremos por defecto&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 29 Mar 2017 02:00:00 +0200</pubDate>
-        <link>/vida/2017/03/29/head/</link>
-        <guid isPermaLink="true">/vida/2017/03/29/head/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>18 TODO</title>
-        <description>&lt;p&gt;Metodología: OrgMode&lt;/p&gt;
-
-&lt;h1 id=&quot;descripcin&quot;&gt;1. Descripción&lt;/h1&gt;
-
-&lt;p&gt;Para hacer listas de tareas deberemos utilizar la palabra TODO.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Comprar leche
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;teclas-rpidas&quot;&gt;2. Teclas rápidas&lt;/h1&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt; Rotar los TODO a otro ítem: (sin marca) -&amp;gt; TODO -&amp;gt; PROGRESS -&amp;gt; DONE -&amp;gt; (sin marca)&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-&amp;lt;right&amp;gt;/&amp;lt;left&amp;gt;&lt;/code&gt; Utilizar con flechas. Estado de TODO.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / t&lt;/code&gt; Ver los TODO en árbol.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c a t&lt;/code&gt; Mostrar todos los TODO.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-M-&amp;lt;RET&amp;gt;&lt;/code&gt; Insertar TODO en nueva entrada.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 27 Mar 2017 02:00:00 +0200</pubDate>
-        <link>/vida/2017/03/27/todo/</link>
-        <guid isPermaLink="true">/vida/2017/03/27/todo/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>17 Links</title>
-        <description>&lt;p&gt;Metodologia: OrgMode&lt;/p&gt;
-
-&lt;h1 id=&quot;enlaces&quot;&gt;1. Enlaces&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[link][Descriptión]]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Alternativa&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[link]]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Teclas rápidas&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-c C-l
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;enlaces-internos&quot;&gt;2. Enlaces internos&lt;/h1&gt;
-
-&lt;p&gt;Un contexto en el que podemos utilizar enlaces internos es realizando un índice de un documento. Utilizaremos corchetes `[[]] Para marcar el lugar donde pincharemos..&lt;/p&gt;
-
-&lt;p&gt;Índice&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[Future Log]]
-[[Monthy Log]]
-[[Daily Log]]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Utilizaremos estos símbolos &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/code&gt; para indicar el destino.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;&amp;lt;&amp;lt;Future Log&amp;gt;&amp;gt;
-&amp;lt;&amp;lt;Monty Log&amp;gt;&amp;gt;
-&amp;lt;&amp;lt;Daily Log&amp;gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;links-externos&quot;&gt;3. Links externos&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[http://www.gnu.org/software/emacs/][GNU Emacs]]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;sintaxis&quot;&gt;4. Sintaxis&lt;/h1&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c l&lt;/code&gt; Alamacena un enlace en el buffer&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Inserta el enlace almacenado en el buffer&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Situándose encima del enlace esconde el enlace (&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;) en la descripción&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; Abre el enlace&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c %&lt;/code&gt; Marca una posición para volver a ella con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;amp;&lt;/code&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 26 Mar 2017 01:00:00 +0100</pubDate>
-        <link>/vida/2017/03/26/links/</link>
-        <guid isPermaLink="true">/vida/2017/03/26/links/</guid>
+        <link>https://inclusa.github.io/emacs/2017/03/30/agenda/</link>
+        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/03/30/agenda/</guid>
         
         
       </item>
