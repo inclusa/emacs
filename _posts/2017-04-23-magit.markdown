@@ -15,7 +15,7 @@ Para establecer el repositorio editar el archivo `.emacs` y anadir una de estas 
 
 1. Usar MELPA:
 
-```emacs
+```
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
@@ -38,13 +38,13 @@ Para establecer el repositorio editar el archivo `.emacs` y anadir una de estas 
 
 ### 4. Revisamos la versión
 
-```emacs
+```
 M-x package-install RET magit RET
 ```
 
 Output
 
-```emacs
+```
 Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
 ```
 
