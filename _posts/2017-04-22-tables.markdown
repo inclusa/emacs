@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 29 Tabñas
+title: 29 Tablas
 date: dl 24 abr 2017 07:50:55 CEST 
 description: Utilización de tablas 
 keywords: teblas
@@ -20,6 +20,6 @@ En la siguiente línea escribimos una barra vertical. Para pasar a la siguiente 
 
 Para pasar a la columna de abano sin pasar por todas las columnas escribiremso ala tecla `RET` o Enter.
 
-![tablas](image/2017042301.gif)
+![tablas](images/2017042301.gif)
 
 
