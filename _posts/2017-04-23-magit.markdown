@@ -1,0 +1,69 @@
+---
+layout: post
+title: 30 Magit
+date: dl 24 abr 2017 08:27:06 CEST 
+description: Incorporación de Git dentro de Emacs
+keywords: git
+coments: true
+---
+
+Objetivo: ejecutar GIT dentro de Emacs.
+
+### 1. Instalando desde ELPA
+
+Para establecer el repositorio editar el archivo `.emacs` y anadir una de estas dos opciones:
+
+1. Usar MELPA:
+
+```emacs
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
+```
+2. Usar MELPA-Stable:
+
+```
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+```
+
+### 2. Refrescamos
+
+`M-x package-refresh-contents RET` Desde dentro de Emacs refrescamos el repositorio.
+
+### 3. Instalamos el paquete Magit
+
+`M-x package-install RET magit RET` Así instalamos.
+
+### 4. Revisamos la versión
+
+```emacs
+M-x package-install RET magit RET
+```
+
+Output
+
+```emacs
+Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
+```
+
+### 5. Comandos esenciales
+
+`M-x magit-status` para ver el estaddus de git y el estatus del buffer:
+`s` para apadir a la pila archivos (`git add .`)
+`c c` para hacer crear un comit (escribe el mensaje, después pulsa `C-c C-c` para realizarel commit automáticamente)
+`b b` para crear otra rama
+
+### 6. Otros comandos
+
+`P u` para realizar un `git push`
+`F u` para realizar un `git pull`
+ try to press `TAB`
+
+
+Fuentes
+
+[EmacsWiki](https://www.emacswiki.org/emacs/Magit)
+
+[Magit User Manual](https://magit.vc/manual/magit/index.html#SEC_Contents)
