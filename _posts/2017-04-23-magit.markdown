@@ -62,6 +62,11 @@ Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
  try to press `TAB`
 
 
+### 7. Ejemplo
+
+![magit]((images/magit.png)
+
+
 Fuentes
 
 [EmacsWiki](https://www.emacswiki.org/emacs/Magit)
