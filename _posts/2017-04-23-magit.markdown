@@ -64,7 +64,7 @@ Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
 
 ### 7. Ejemplo
 
-![magit]((images/magit.png)
+![magit]((/images/magit.png)
 
 
 Fuentes
