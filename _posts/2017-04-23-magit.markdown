@@ -51,14 +51,19 @@ Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
 ### 5. Comandos esenciales
 
 `M-x magit-status` para ver el estaddus de git y el estatus del buffer:
-`s` para apadir a la pila archivos (`git add .`)
+
+`s` para añadir a la pila archivos (`git add .`)
+
 `c c` para hacer crear un comit (escribe el mensaje, después pulsa `C-c C-c` para realizarel commit automáticamente)
+
 `b b` para crear otra rama
 
 ### 6. Otros comandos
 
 `P u` para realizar un `git push`
+
 `F u` para realizar un `git pull`
+
  try to press `TAB`
 
 
