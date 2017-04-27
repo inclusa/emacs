@@ -66,8 +66,13 @@ Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
 
  try to press `TAB`
 
+### 7. Flujo de trabajo
 
-### 7. Ejemplo
+`M-x magit-commit` Commit dels canvis, pregunta si es vol afegir a l'stag, finalitzem
+
+`C-c` Per finalitzar
+
+### 8. Ejemplo
 
 ![magit](/images/magit.png)
 
