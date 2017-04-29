@@ -3,14 +3,102 @@
   <channel>
     <title>Emacs</title>
     <description></description>
-    <link>https://inclusa.github.io/emacs/</link>
-    <atom:link href="https://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Apr 2017 07:59:52 +0200</pubDate>
-    <lastBuildDate>Mon, 24 Apr 2017 07:59:52 +0200</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <link>http://localhost:4001https://inclusa.github.io/emacs/</link>
+    <atom:link href="http://localhost:4001https://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 29 Apr 2017 18:30:31 +0200</pubDate>
+    <lastBuildDate>Sat, 29 Apr 2017 18:30:31 +0200</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
     
       <item>
-        <title>29 Tabñas</title>
+        <title>30 Magit</title>
+        <description>&lt;p&gt;Objetivo: ejecutar GIT dentro de Emacs.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-instalando-desde-elpa&quot;&gt;1. Instalando desde ELPA&lt;/h3&gt;
+
+&lt;p&gt;Para establecer el repositorio editar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y anadir una de estas dos opciones:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Usar MELPA:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
+(add-to-list 'package-archives
+             '(&quot;melpa&quot; . &quot;http://melpa.org/packages/&quot;) t)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;Usar MELPA-Stable:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
+(add-to-list 'package-archives
+             '(&quot;melpa-stable&quot; . &quot;http://stable.melpa.org/packages/&quot;) t)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;2-refrescamos&quot;&gt;2. Refrescamos&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-refresh-contents RET&lt;/code&gt; Desde dentro de Emacs refrescamos el repositorio.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-instalamos-el-paquete-magit&quot;&gt;3. Instalamos el paquete Magit&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-install RET magit RET&lt;/code&gt; Así instalamos.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-revisamos-la-versión&quot;&gt;4. Revisamos la versión&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x package-install RET magit RET
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Output&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;5-comandos-esenciales&quot;&gt;5. Comandos esenciales&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-status&lt;/code&gt; para ver el estaddus de git y el estatus del buffer:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; para añadir a la pila archivos (&lt;code class=&quot;highlighter-rouge&quot;&gt;git add .&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c c&lt;/code&gt; para hacer crear un comit (escribe el mensaje, después pulsa &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt; para realizarel commit automáticamente)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;b b&lt;/code&gt; para crear otra rama&lt;/p&gt;
+
+&lt;h3 id=&quot;6-otros-comandos&quot;&gt;6. Otros comandos&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;P u&lt;/code&gt; para realizar un &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;F u&lt;/code&gt; para realizar un &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;try to press &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-flujo-de-trabajo&quot;&gt;7. Flujo de trabajo&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-commit&lt;/code&gt; Commit dels canvis, pregunta si es vol afegir a l’stag, finalitzem&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c&lt;/code&gt; Per finalitzar&lt;/p&gt;
+
+&lt;h3 id=&quot;8-ejemplo&quot;&gt;8. Ejemplo&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/magit.png&quot; alt=&quot;magit&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fuentes&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.emacswiki.org/emacs/Magit&quot;&gt;EmacsWiki&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://magit.vc/manual/magit/index.html#SEC_Contents&quot;&gt;Magit User Manual&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 Apr 2017 08:27:06 +0200</pubDate>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/24/magit/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/24/magit/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>29 Tablas</title>
         <description>&lt;p&gt;La utilización de tablas en &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; mediante la metodología &lt;code class=&quot;highlighter-rouge&quot;&gt;Orgmode&lt;/code&gt; es sencilla.&lt;/p&gt;
 
 &lt;p&gt;Partimos de la escritura de código sencillo:&lt;/p&gt;
@@ -23,19 +111,22 @@
 
 &lt;p&gt;Para pasar a la columna de abano sin pasar por todas las columnas escribiremso ala tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt; o Enter.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;image/2017042301.gif&quot; alt=&quot;tablas&quot; /&gt;&lt;/p&gt;
-
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;| Item | Nom    | Cognom |
+|------+--------+--------+
+| 01   | Pepito | Pérez  |
+| 02   | Pepita | Pérez  |
+&lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Mon, 24 Apr 2017 07:50:55 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/04/24/tables/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/24/tables/</guid>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/24/tables/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/24/tables/</guid>
         
         
       </item>
     
       <item>
         <title>28 Exportar</title>
-        <description>&lt;h3 id=&quot;cabeceras&quot;&gt;1. Cabeceras&lt;/h3&gt;
+        <description>&lt;h3 id=&quot;1-cabeceras&quot;&gt;1. Cabeceras&lt;/h3&gt;
 
 &lt;p&gt;Para exportar datos deberemos incluir la siguiente información en la cabecera del documento y adaptarla a nuestras necesidades:&lt;/p&gt;
 
@@ -47,15 +138,15 @@
      #+OPTIONS:     H:2 num:t toc:t \n:nil ::t |:t ^:t f:t tex:t ...
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&quot;comandos&quot;&gt;2. Comandos&lt;/h3&gt;
+&lt;h3 id=&quot;2-comandos&quot;&gt;2. Comandos&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e&lt;/code&gt; Comandos de explotación y publicación.&lt;/p&gt;
 
-&lt;h3 id=&quot;codificacin&quot;&gt;3. Codificación&lt;/h3&gt;
+&lt;h3 id=&quot;3-codificación&quot;&gt;3. Codificación&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e t u&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e t U&lt;/code&gt; ambos exportan la codificación a UTF-8.&lt;/p&gt;
 
-&lt;h3 id=&quot;creando-un-archivo-de-html-donde-se-incrusta-cdigo&quot;&gt;4. Creando un archivo de HTML donde se incrusta código&lt;/h3&gt;
+&lt;h3 id=&quot;4-creando-un-archivo-de-html-donde-se-incrusta-código&quot;&gt;4. Creando un archivo de HTML donde se incrusta código&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e h h&lt;/code&gt; Exportar a HTML &lt;code class=&quot;highlighter-rouge&quot;&gt;archivo.html&lt;/code&gt;&lt;/p&gt;
 
@@ -75,7 +166,7 @@
      #+END_HTML
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&quot;exportar-a-latex-o-pdf&quot;&gt;5. Exportar a LaTeX o PDF&lt;/h3&gt;
+&lt;h3 id=&quot;5-exportar-a-latex-o-pdf&quot;&gt;5. Exportar a LaTeX o PDF&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l l&lt;/code&gt; Exporta un fichero LaTeX &lt;code class=&quot;highlighter-rouge&quot;&gt;archivo.tex&lt;/code&gt;&lt;/p&gt;
 
@@ -83,15 +174,15 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l o&lt;/code&gt; Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF&lt;/p&gt;
 
-&lt;h3 id=&quot;exportar-calendario&quot;&gt;6. Exportar calendario&lt;/h3&gt;
+&lt;h3 id=&quot;6-exportar-calendario&quot;&gt;6. Exportar calendario&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e c f&lt;/code&gt; Crea un archivo iCalendar con extensión &lt;code class=&quot;highlighter-rouge&quot;&gt;.ics&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e c c&lt;/code&gt; Crea un archivo largo de iCalendar con todos los archivos &lt;code class=&quot;highlighter-rouge&quot;&gt;org-agenda-files&lt;/code&gt; y lo escribe cogiendo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-icalendar-combined-agenda-file&lt;/code&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 21 Apr 2017 06:55:15 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/04/21/exportar/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/21/exportar/</guid>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/21/exportar/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/21/exportar/</guid>
         
         
       </item>
@@ -162,25 +253,25 @@
 &lt;p&gt;Establece el espacio, anchura,&lt;/p&gt;
 </description>
         <pubDate>Wed, 19 Apr 2017 00:43:44 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/04/19/columnas/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/19/columnas/</guid>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/19/columnas/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/19/columnas/</guid>
         
         
       </item>
     
       <item>
         <title>26 Markdown</title>
-        <description>&lt;h1 id=&quot;referencia-del-desarrollador-e-instrucciones&quot;&gt;#01 Referencia del desarrollador e instrucciones&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;01-referencia-del-desarrollador-e-instrucciones&quot;&gt;#01 Referencia del desarrollador e instrucciones&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://jblevins.org/projects/markdown-mode/&quot;&gt;http://jblevins.org/projects/markdown-mode/&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;para-escribir-en-modo-markdown-dentro-de-emacs&quot;&gt;#02 Para escribir en modo markdown dentro de Emacs:&lt;/h1&gt;
+&lt;h1 id=&quot;02-para-escribir-en-modo-markdown-dentro-de-emacs&quot;&gt;#02 Para escribir en modo markdown dentro de Emacs:&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Instalar los paquetes necesarios, en caso de no utilizar Ubuntu 16.04 mirar documentación del enlace de referencia. Copiar en terminal este código para instalar estos dos paquetes.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install elpa-markdown-mode emacs-goodies-el
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install elpa-markdown-mode emacs-goodies-el
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -190,9 +281,9 @@
 
 &lt;p&gt;Ahora ya podemos escribir, veremos pintadas las letras.&lt;/p&gt;
 
-&lt;h1 id=&quot;comandos&quot;&gt;#03 Comandos&lt;/h1&gt;
+&lt;h1 id=&quot;03-comandos&quot;&gt;#03 Comandos&lt;/h1&gt;
 
-&lt;h2 id=&quot;introduccin&quot;&gt;1. Introducción&lt;/h2&gt;
+&lt;h2 id=&quot;1-introducción&quot;&gt;1. Introducción&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-a&lt;/code&gt;          Mnemotécnico &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
@@ -206,7 +297,7 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;      Markdown abre un archivo de grupo bajo un prefijo.&lt;/p&gt;
 
-&lt;h2 id=&quot;hyperlinks&quot;&gt;2. Hyperlinks&lt;/h2&gt;
+&lt;h2 id=&quot;2-hyperlinks&quot;&gt;2. Hyperlinks&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a l&lt;/code&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;[text](url)&lt;/code&gt;&lt;/p&gt;
 
@@ -218,13 +309,13 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a w&lt;/code&gt;   [[WikiLink]]&lt;/p&gt;
 
-&lt;h2 id=&quot;images&quot;&gt;3. Images&lt;/h2&gt;
+&lt;h2 id=&quot;3-images&quot;&gt;3. Images&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-i i&lt;/code&gt;   Insertar imágenes&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-i I&lt;/code&gt;   Insertar estilo de imagen&lt;/p&gt;
 
-&lt;h2 id=&quot;styles&quot;&gt;4. Styles&lt;/h2&gt;
+&lt;h2 id=&quot;4-styles&quot;&gt;4. Styles&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s e&lt;/code&gt;   Insertar una marca en una región de una parlabra. Ejemplo: itálica (&lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt; para &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt;)&lt;/p&gt;
 
@@ -238,7 +329,7 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s C-p&lt;/code&gt; Bloque de región&lt;/p&gt;
 
-&lt;h2 id=&quot;headings&quot;&gt;5. Headings&lt;/h2&gt;
+&lt;h2 id=&quot;5-headings&quot;&gt;5. Headings&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t h&lt;/code&gt;   Inserta título automáticamente cambiando caracter por siguiente nivel&lt;/p&gt;
 
@@ -266,13 +357,13 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-y&lt;/code&gt;         Pega en el cabezado&lt;/p&gt;
 
-&lt;h2 id=&quot;horizontal-rules&quot;&gt;6. Horizontal Rules&lt;/h2&gt;
+&lt;h2 id=&quot;6-horizontal-rules&quot;&gt;6. Horizontal Rules&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c -&lt;/code&gt;       Inserta raya horizontal&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u&lt;/code&gt;         Prefija, inserta última cadena N en N posición (contando desde 1)&lt;/p&gt;
 
-&lt;h2 id=&quot;maintenance-comands&quot;&gt;7. Maintenance Comands&lt;/h2&gt;
+&lt;h2 id=&quot;7-maintenance-comands&quot;&gt;7. Maintenance Comands&lt;/h2&gt;
 
 &lt;p&gt;Compile &lt;code class=&quot;highlighter-rouge&quot;&gt;C- C-c m&lt;/code&gt;  corre en otro buffer&lt;/p&gt;
 
@@ -292,7 +383,7 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c ]&lt;/code&gt; completa reglas&lt;/p&gt;
 
-&lt;h2 id=&quot;following-links&quot;&gt;8. Following Links&lt;/h2&gt;
+&lt;h2 id=&quot;8-following-links&quot;&gt;8. Following Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; abre links en el navegador&lt;/p&gt;
 
@@ -302,13 +393,13 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-n&lt;/code&gt; salta al próximo link (next)&lt;/p&gt;
 
-&lt;h2 id=&quot;jumping&quot;&gt;9. Jumping&lt;/h2&gt;
+&lt;h2 id=&quot;9-jumping&quot;&gt;9. Jumping&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-j&lt;/code&gt; salta desde el punto objeto&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-TAB&lt;/code&gt; salta hacia atrás&lt;/p&gt;
 
-&lt;h2 id=&quot;promotion-and-demotion&quot;&gt;10. Promotion and Demotion&lt;/h2&gt;
+&lt;h2 id=&quot;10-promotion-and-demotion&quot;&gt;10. Promotion and Demotion&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-&lt;/code&gt; decrementa el nivel&lt;/p&gt;
 
@@ -318,8 +409,8 @@
 
 </description>
         <pubDate>Sun, 16 Apr 2017 09:55:25 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/04/16/markdown/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/16/markdown/</guid>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/16/markdown/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/16/markdown/</guid>
         
         
       </item>
@@ -331,17 +422,17 @@
 &lt;ol&gt;
   &lt;li&gt;Según la documentación oficial de &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html&quot;&gt;gnu.org&lt;/a&gt;, o en &lt;a href=&quot;https://www.emacswiki.org/emacs/CustomThemes&quot;&gt;EmacsWiki&lt;/a&gt; nos situamos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt; y allí creamos &lt;code class=&quot;highlighter-rouge&quot;&gt;etc/themes/&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;En el fichero de configuración de &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; incluiremos la ruta:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;emacs
-(add-to-list &#39;custom-theme-load-path &quot;~/.emacs.d/etc/themes/&quot;) 
-&lt;/code&gt;&lt;/li&gt;
+    &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(add-to-list 'custom-theme-load-path &quot;~/.emacs.d/etc/themes/&quot;) 
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
   &lt;li&gt;Para cambiar de theme &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x customize-themes ;;; now press retun&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Podemos bajar themes desde &lt;a href=&quot;https://emacsthemes.com/&quot;&gt;EmacsThemes&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Algo importante es que los themes han de acabar en &lt;code class=&quot;highlighter-rouge&quot;&gt;*-theme.el&lt;/code&gt; en caso contrario no se mostrará&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 15 Apr 2017 23:15:07 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/04/15/themes/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/15/themes/</guid>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/15/themes/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/15/themes/</guid>
         
         
       </item>
@@ -380,7 +471,7 @@
 &lt;p&gt;Para iniciar el archivo al arrancar Emacs:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq inhibit-splash-screen t)
-(require &#39;bookmark)
+(require 'bookmark)
 (bookmark-bmenu-list)
 (switch-to-buffer &quot;*Bookmark List*&quot;)
 &lt;/code&gt;&lt;/pre&gt;
@@ -390,8 +481,8 @@
 &lt;p&gt;Por defecto el camino del archivo bookmark está guardado en la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;bookmark-default-file&lt;/code&gt;. Llamaremos &lt;code class=&quot;highlighter-rouge&quot;&gt;describe-variable&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+h v&lt;/code&gt; para ver su valor.&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Apr 2017 07:02:06 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/04/15/bookmarks/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/15/bookmarks/</guid>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/15/bookmarks/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/15/bookmarks/</guid>
         
         <category>bookmarks</category>
         
@@ -409,8 +500,8 @@
 &lt;p&gt;De esta forma, cada vez que abramos un archivo con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x f&lt;/code&gt; ya estaremos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;~Documents/BulletJournal/&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Apr 2017 02:00:00 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/04/08/directorio/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/08/directorio/</guid>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/08/directorio/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/08/directorio/</guid>
         
         <category>OrgMode</category>
         
@@ -432,7 +523,7 @@
 (setq org-default-notes-file &quot;~/Documents/56_bulletjournal/notes&quot;)
 
 ;; I use C-c c to start capture mode
-(global-set-key (kbd &quot;C-c c&quot;) &#39;org-capture)
+(global-set-key (kbd &quot;C-c c&quot;) 'org-capture)
 
 ;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
 (setq org-capture-templates
@@ -477,8 +568,8 @@
 &lt;p&gt;Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Apr 2017 02:00:00 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/04/02/capturar/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/02/capturar/</guid>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/02/capturar/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/02/capturar/</guid>
         
         
       </item>
@@ -489,7 +580,7 @@
 
 &lt;p&gt;Podemos rastrear nuestros hábitos marcando día y hora de cuándo los hacemos de forma muy fácil.&lt;/p&gt;
 
-&lt;h1 id=&quot;generando-el-cdigo&quot;&gt;1. Generando el código&lt;/h1&gt;
+&lt;h1 id=&quot;1-generando-el-código&quot;&gt;1. Generando el código&lt;/h1&gt;
 
 &lt;p&gt;Primero deberemos definir el hábito y escribir:&lt;/p&gt;
 
@@ -505,7 +596,7 @@
 
 &lt;p&gt;Marcamos en la agenda este hábito &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;, pero editamos la marca añadiendo la hora i las veces que se va a repetir a lo largo del día. &lt;code class=&quot;highlighter-rouge&quot;&gt;05:00 .+1d/2d&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;marcamos-el-hbito&quot;&gt;2. Marcamos el hábito&lt;/h1&gt;
+&lt;h1 id=&quot;2-marcamos-el-hábito&quot;&gt;2. Marcamos el hábito&lt;/h1&gt;
 
 &lt;p&gt;Se trata de pulsar unas teclas que nos iran marcando el momento en el que realizamos el hábito realizando una lista:&lt;/p&gt;
 
@@ -519,7 +610,7 @@
 
 &lt;p&gt;De esta forma se generará una lista de seguimiento del hábito.&lt;/p&gt;
 
-&lt;h1 id=&quot;resultado&quot;&gt;3. Resultado&lt;/h1&gt;
+&lt;h1 id=&quot;3-resultado&quot;&gt;3. Resultado&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Controlar la respiración durante 5 minutos          :init:
     SCHEDULED: &amp;lt;2017-04-02 dg 05:00 .+1d/2d&amp;gt;
@@ -532,32 +623,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Sat, 01 Apr 2017 02:00:00 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/04/01/habitos/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/04/01/habitos/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>20 Agenda</title>
-        <description>&lt;p&gt;Comandos que te introducirán en el uso de la agenda:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x org-agenda&lt;/code&gt; Menú para utilizar la agenda&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-d&lt;/code&gt;     (org-deadline) Inserta fecha final&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;     (org-schedule) Inserta fecha para realizr la tarea&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / d&lt;/code&gt;     (org-check-deadlines) Lista citas por fecha límite&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / b&lt;/code&gt;     (org-check-before-date) Lista citas antes de una fecha&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / a&lt;/code&gt;     (org-check-after-date) Lista citas después de una fecha&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 30 Mar 2017 02:00:00 +0200</pubDate>
-        <link>https://inclusa.github.io/emacs/2017/03/30/agenda/</link>
-        <guid isPermaLink="true">https://inclusa.github.io/emacs/2017/03/30/agenda/</guid>
+        <link>http://localhost:4001https://inclusa.github.io/emacs/2017/04/01/habitos/</link>
+        <guid isPermaLink="true">http://localhost:4001https://inclusa.github.io/emacs/2017/04/01/habitos/</guid>
         
         
       </item>
