@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 24 Bookmarks
-date: ds 15 abr 2017 07:02:06 CEST 
+date: ds 15 apr 2017 07:02:06 CEST 
 tags:
 - bookmarks
 description: Gestión de favoritos
