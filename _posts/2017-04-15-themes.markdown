@@ -17,3 +17,4 @@ Incluir themes nuevos
 3. Para cambiar de theme `M-x customize-themes ;;; now press retun`
 4. Podemos bajar themes desde [EmacsThemes](https://emacsthemes.com/)
 5. Algo importante es que los themes han de acabar en `*-theme.el` en caso contrario no se mostrará
+
