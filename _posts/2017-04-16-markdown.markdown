@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 26 Markdown
-date: dg 16 abr 2017 09:55:25 CEST 
+date: dg 16 apr 2017 09:55:25 CEST 
 description: Implementación de markdown dentro de Emacs 
 keywords: markdown
 coments: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 25 Themes
-date: ds 15 abr 2017 23:15:07 CEST 
+date: ds 15 apr 2017 23:15:07 CEST 
 description: Inclusión de temas bajados desde otros repositorios 
 keywords: themes
 coments: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 27 Columnas
-date: dc 19 abr 2017 00:43:44 CEST 
+date: dc 19 apr 2017 00:43:44 CEST 
 description: Columnas y bases de datos
 keywords: column
 coments: true

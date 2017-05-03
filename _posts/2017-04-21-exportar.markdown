@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 28 Exportar
-date: dv 21 abr 2017 06:55:15 CEST 
+date: dv 21 apr 2017 06:55:15 CEST 
 description: Exportar datoss al format html 
 keywords: export
 coments: true

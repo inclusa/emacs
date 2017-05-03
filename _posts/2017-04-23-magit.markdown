@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 30 Magit
-date: dl 24 abr 2017 08:27:06 CEST 
+date: dl 24 apr 2017 08:27:06 CEST 
 description: Incorporación de Git dentro de Emacs
 keywords: git
 coments: true
