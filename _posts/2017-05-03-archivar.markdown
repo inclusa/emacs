@@ -1,0 +1,17 @@
+---
+layout: post
+title: 31 Archivar
+date: dc 03 mai 2017 18:53:16 CEST 
+description: Archivar
+keywords: archive
+coments: true
+---
+
+
+Cuando un proyecto ha finalizado lo podemos archivar así:
+
+`C-c C-x C-a`     (org-archive-subtree-default)
+
+Para saber más:
+
+[OrgMode](http://orgmode.org/manual/Archiving.html)
