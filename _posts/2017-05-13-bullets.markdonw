@@ -1,0 +1,15 @@
+---
+layout: post
+title: 32 Bulletso
+date:  2017-03-13 00:00:00 
+description: Bullets
+---
+
+Los bullets son viñetas configurables.
+
+Para activar los bullets a mano:
+
+```
+M-x org-bullets-mode
+```
+
