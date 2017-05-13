@@ -1,0 +1,16 @@
+---
+layout: post
+title: 32 Imágenes
+date: ds 13 mai 2017 20:17:13 CEST 
+description: Imágenes 
+keywords: images
+coments: true
+---
+
+Para incrustar imágenes en los documentos lo haremos así:
+
+```
+./image/emacs.png
+```
+
+Deberemos crear un directorio llamado `image` un nivel por debajo y una imagen llamada `emacs.png`
