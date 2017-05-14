@@ -67,3 +67,5 @@ Para ello editamos el archivo `.emacs` y añadiremos las siguientes líneas:
 ```
 
 Ahora ya tendremos disponibles nuestros snippets.
+
+Fuente: [Emacculate](https://www.youtube.com/watch?v=-4O-ZYjQxks)
