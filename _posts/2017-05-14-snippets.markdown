@@ -1,0 +1,69 @@
+---
+layout: post
+title: 35 Snippets
+date: 2017-05-14 00:00:00
+description: snippets
+keywords: snippets
+coments: true
+---
+
+La automatización de texto es algo importante cuando deseas ir rápido, para ello necesitaremos instalar una extensión para llamar al texto automático. A este concepto lo llamamos **snippet**.
+
+Un **snippet** es un texto programado, al cual se le llama con un caracter o palabra clave seguido de la pulsación del tabulador.
+
+Para ello vamos a instalar primero la extensión `yasnippet`.
+
+Así seguiremos los pasos de esta página [EmacsWiki](https://www.emacswiki.org/emacs/Yasnippet).
+
+Una vez instalado ya podremos crear nuestros primeros snippets.
+
+Para ello primero invocaremos el comando para crearlos:
+
+```
+M-x yas-new-snippet
+```
+
+Escribiremos el snippet:
+
+```
+# -*- mode: snippet -*-
+# name: post
+# key: p
+# --
+---
+layout: post
+title: $1
+date: $2 
+description: $3 
+keywords: $4
+coments: true
+---
+
+```
+
+Y lo guardaremos con los comandos `C-c C-c`.
+
+A la hora de guardar nos preguntará dónde queremos guardarlos.
+
+Para organizar bien los snippets lo mejor será antes de crear el snippet crear una página donde vayamos a escribir, en este caso hemos empezado a escribir en markdown por tanto, hemos creado una página `.md`.
+
+En el paso siguiente creamos el snippet y posteriormente guardamos. El programa nos identificará nuestra necesidad, crear un snippet para Markdown, así que nos propondrá una carpeta para guardarlo, en este caso `markdown-mode`, a la cual cosa accederemos.
+
+Para invocar el `snippet` simplemente crearemos un archivo `.md`, escribiremos la la clave, en este caso `p` y el programa nos lanzará el snippet.
+
+Ahora ya tenemos creado el `snippet`, pero para que funcione deberemos decirle a emacs que inicie el programa de cuando arranque.
+
+Para ello editamos el archivo `.emacs` y añadiremos las siguientes líneas:
+
+```emacs
+;;; Activant snippets
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"                 ;; personal snippets
+        ))
+(yas-global-mode 1) ;; or M-x yas-reload-all if you've started YASnippet already.
+;;; Snippets configuració
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+```
+
+Ahora ya tendremos disponibles nuestros snippets.
