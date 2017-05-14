@@ -1,0 +1,23 @@
+---
+layout: post
+title: 36 Buscar
+date: 2017-05-14 01:00:00
+description: Buscar
+keywords: search
+coments: true
+---
+
+Los comandos a tener en cuenta:
+
+`C-s` Busqueda hacia adelante
+
+`C-r` Busqueda hacia atrás
+
+`C-s` o `C-r` Buscar más palabras aprovechando la misma búsqueda
+
+`C-c \` Buscar por tags
+
+`C-c / m TAG` Buscar todas las tags, en la palabra TAG poner la tag concreta
+
+`C-c C-q LEFT` Tag Autocompletar, con las flechas pasamos adelante o atrás las tags.
+
