@@ -33,9 +33,9 @@ Escribiremos el snippet:
 ---
 layout: post
 title: $1
-date: $2 
-description: $3 
-keywords: $4
+date: `(format-time-string "%Y-%m-%d %a %H:%M" (current-time))`
+description: $2 
+keywords: $3
 coments: true
 ---
 
