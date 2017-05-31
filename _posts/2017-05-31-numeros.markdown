@@ -1,0 +1,21 @@
+---
+layout: post
+title: 37 Números
+date: 2017-05-31 dc 18:02
+description: Habilitat números
+keywords: numbers
+coments: true
+---
+
+Para habilitar los números de línea en el lateral invocamos:
+
+```emacs
+M-x linum-mode
+```
+
+Para habilitarlos al arrancar Emacs editarmos `.emacs` y añadimos:
+
+```emacs
+(global-linum-mode t)
+```
+
