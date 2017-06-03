@@ -7,8 +7,23 @@ tags:
 description: Gestión de favoritos
 ---
 
-Abrimos un archivo de bookmarks o favoritos
+### Apuntando a un fichero
 
+Abrimos un archivo de bookmarks o favoritos.
+
+1. Nos situamos en el fichero que queremos añadir al **bookmark** con el comando `C-x C-f`.
+2. Tecleamos `M-x bookmark-set Ctrl-x-r-m` de esta forma grabamos el archivo al bookmark.
+
+### Apuntando a un directorio
+
+1. Abrimos el directorio con los comandos `C-x C-d`.
+2. Grabamos el directorio al bookmark `M-x bookmark-set Ctrl-x r-m`.
+
+### Recuperando los bookmarks
+
+`C-x r-l` y pulsamos sobre el lugar donde queremos ir.
+
+### Editar bookmarks
 
 1. Abrimos el gestor de bookmarks o favoritos `M-x bookmark-bmenu-list` (**bookmark-list**).
 2. Abrimos el fichero que queremos que se a un bookmark `Ctrl+x r m` y pondremos su nombre (**bookmark-bmenu-set**).
