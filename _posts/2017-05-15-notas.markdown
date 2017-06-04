@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 34 Imprimir subárbol
-date: ds 13 mai 2017 20:22:08 CEST 
+date: ds 13 may 2017 20:22:08 CEST 
 description: Selección de nota
 keywords: note
 coments: true
