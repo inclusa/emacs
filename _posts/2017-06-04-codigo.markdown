@@ -25,6 +25,24 @@ i 	#+INDEX: line
 I 	#+INCLUDE: line 
 ```
 
-Para insertar código `< s <TAB>` o lo que es lo mismo `< s`y pulsar la tecla del tabulador.
+Para insertar código `<s <TAB>` o lo que es lo mismo `< s` y pulsar la tecla del tabulador.
 
 Seguiremos la misma lógica para todos los tipos de plantillas.
+
+Obtienes esto:
+
+```
+#+BEGIN_SRC
+
+#+END_SRC
+```
+
+Escribes el tipo de lenguaje que tieres resaltar así:
+
+```
+#+BEGIN_SRC python
+
+#+END_SRC
+```
+
+Cuando exportas a html se visualiza el código con el lexer oportuno y sale pintadito según el lenguaje.
