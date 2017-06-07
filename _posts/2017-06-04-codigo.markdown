@@ -25,7 +25,7 @@ i 	#+INDEX: line
 I 	#+INCLUDE: line 
 ```
 
-Para insertar código `<s <TAB>` o lo que es lo mismo `< s` y pulsar la tecla del tabulador.
+Para insertar código `<s <TAB>` o lo que es lo mismo `<s` y pulsar la tecla del tabulador.
 
 Seguiremos la misma lógica para todos los tipos de plantillas.
 
