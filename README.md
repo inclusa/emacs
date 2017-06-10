@@ -18,5 +18,7 @@ You can see demo [here](http://syaning.com/vida/).
 
 Commands | Descriptions
 --- | ---
-<kbd>Ctrl</kbd><kbd>w</kbd>+<kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> | Navigate via split panels
+<kbd>Ctrl</kbd> | Control
+<kbd>M</kbd> | Alt
+<kbd>S</kbd> | Shift
 </details>
