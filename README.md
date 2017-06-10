@@ -2,15 +2,6 @@
 
 Entorno para aprender a utilizar Emacs de forma guiada.
 
-
-###### License ######
-
-MIT
-
-###### Theme ###### 
-vida is a simple and beautiful jekyll theme.
-You can see demo [here](http://syaning.com/vida/).
-
 ## Commandos Básicos
 </summary>
 <details>
@@ -28,3 +19,10 @@ Commands | Descriptions
 <kbd>Ctrl</kbd> - <kbd>o</kbd> | Lleva el cursor a la próxima ventana 
 <kbd>Ctrl</kbd> - <kbd>x</kbd> - <kbd>k</kbd> | Cierra buffer
 </details>
+
+###### Licencia ######
+
+MIT
+
+###### Theme ###### 
+[Vida](http://syaning.com/vida/).
