@@ -1,0 +1,20 @@
+---
+layout: post
+title: 25 Themes
+date: ds 15 apr 2017 23:15:07 CEST 
+description: Inclusión de temas bajados desde otros repositorios 
+keywords: themes
+coments: true
+---
+
+Incluir themes nuevos
+
+1. Según la documentación oficial de [gnu.org](https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html), o en [EmacsWiki](https://www.emacswiki.org/emacs/CustomThemes) nos situamos en el directorio `.emacs.d` y allí creamos `etc/themes/`.
+2. En el fichero de configuración de `.emacs` incluiremos la ruta:
+```emacs
+(add-to-list 'custom-theme-load-path "~/.emacs.d/etc/themes/") 
+```
+3. Para cambiar de theme `M-x customize-themes ;;; now press retun`
+4. Podemos bajar themes desde [EmacsThemes](https://emacsthemes.com/)
+5. Algo importante es que los themes han de acabar en `*-theme.el` en caso contrario no se mostrará
+

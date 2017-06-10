@@ -1,0 +1,41 @@
+<p>Emacs utiliza por defecto el cifrado de GPG.</p>
+
+<p>De esta manera para podemos cifrar y descrifrar documentos tanto para <code class="highlighter-rouge">claves simétricas</code>, una clave como para <code class="highlighter-rouge">claves asimétricas</code>, dos claves: pública y privada).</p>
+
+<p>Empecemos por lo sencillo: <code class="highlighter-rouge">cifrado simétrico</code>.</p>
+
+<p>Si creamos un documento llamado <code class="highlighter-rouge">a.txt</code>, lo guardamos.</p>
+
+<p>Ahora lo podremos cifrar desde el menú:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Tools &gt; Encryption/Decryption &gt; Encrypt file...
+</code></pre>
+</div>
+
+<p>Lo que hace, por detrás es esto, pero no lo vemos:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>gpg -c a.txt
+</code></pre>
+</div>
+
+<p>Para desdifrar lo que hace es, pero no lo vemos:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>gpg -d a.txt.gpg
+</code></pre>
+</div>
+
+<p>Genera un archivo nuevo <code class="highlighter-rouge">a.txt.gpg</code>, antes nos pide dos veces que le pongamos una contraseña.</p>
+
+<p>El resultado son dos archivos:</p>
+
+<p><code class="highlighter-rouge">a.txt</code> Sin cifrar</p>
+
+<p><code class="highlighter-rouge">a.txt.gpg</code> Cifrado</p>
+
+<p>Subiríamos a la nube el segundo.</p>
+
+<p>Al recuperarlo deberíamos nos pedirá la clave de cifrado.</p>
+
+<p>Al guardarlo, nos volverá a pedir la clave de cifrado dos veces.</p>
+
+<p>Con este procedimineto siempre mantendremos cifrado nuestro archivo, el cual tendrá una primera capa de seguridad, ya no será tan accesible.</p>

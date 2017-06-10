@@ -1,0 +1,37 @@
+---
+layout: post
+title: 12 Unicode
+date:  2017-03-12 00:00:00
+description: Escribir con acentos
+---
+
+Unicode es un estándar de codificación de caracteres diseñado para facilitar el tratamiento informático, transmisión y visualización de textos de múltiples lenguajes y disciplinas técnicas, además de textos clásicos de lenguas muertas. El término Unicode proviene de los tres objetivos perseguidos: universalidad, uniformidad y unicidad.
+
+Los puntos de código de Unicode se identifican por un número entero.
+
+
+- UTF-8: codificación orientada a byte con símbolos de longitud variable.
+- UTF-16: codificación de 16 bits de longitud variable optimizada para la representación del plano básico multilingüe (BMP).
+- UTF-32: codificación de 32 bits de longitud fija, y la más sencilla de las tres.
+
+-- Wikipedia
+
+La forma más rápida de establecer el código unidoce UTF-8 en Emacs, de forma manual seria:
+
+`C-x 8 keymap`
+
+Lo cual quedaría de esta forma si quisiéramos indicar `UTF-8`:
+
+1. Pulsamos `C-x 8 RET`. La tecla `RET` indica que pulsemos la tecla Intro o Retorno.
+
+2. Se nos muestra: `Insert character (Unicode name or hex):`
+
+4. Introducimos exactamente estos caracteres: `utf-8`
+
+
+Así ya podríamos poner acentos.
+
+Fuente:
+
+https://www.emacswiki.org/emacs/UnicodeEncoding
+

@@ -1,0 +1,21 @@
+---
+layout: post
+title: 32 Bullets
+date:  2017-05-13 00:00:00 
+description: Viñetas 
+keywords: bullet
+coments: true
+---
+
+
+Los bullets son viñetas configurables.
+
+Para activar los bullets a mano:
+
+```
+M-x org-bullets-mode
+```
+
+Fuente
+
+[org-bullets-mode](https://github.com/sabof/org-bullets)

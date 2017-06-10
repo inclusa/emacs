@@ -1,0 +1,50 @@
+---
+layout: post
+title: 08 Buffer
+date:  2017-03-08 00:00:00
+description: Gestionar la memoria
+---
+
+# 1. Introducción
+
+Para entender el concepto de `buffer` debemos tener en cuenta que el `buffer` se refiere a la memoria RAM.
+
+Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.
+
+El `buffer` se refiere al espacio concreto que ocupa este archivo en RAM.
+
+Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable `s` a un valor `5`, así: `s = 5`
+
+El la variable `s` queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos `$s` nos devueve su valor, en este caso `5`.
+
+Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.
+
+Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:
+
+*GNU Emacs* %
+
+*scratch*
+
+*Messages* %
+
+Que esten cargados con asteriscos `*` indica que estan en RAM (buffer) pero no escritos en disco (ROM).
+
+Así, si visitas `*Messages` observarás que tiene la función de `log` o bitácora donde se van acumulando los mensajes que te va dando Emacs.
+
+Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.
+
+`.` Indica que se trabaja en ese buffer
+
+`%` Indica sólo lectura
+
+`*` Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)
+
+# 2. Teclas rápidas
+
+Listar buffers `C-x C-b`
+
+Cambiar de buffer `C-x b`
+
+Cerrar buffer `C-x k`
+
+[https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html](https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html)

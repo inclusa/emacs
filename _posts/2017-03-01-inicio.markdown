@@ -1,0 +1,25 @@
+---
+layout: post
+title: 01 Inicio
+date:  2017-03-01 00:00:00 
+description: Empieza por el principio
+---
+
+
+`Meta`: Dominar Emacs nivel inicial en 30 dias.
+
+Nomenclatura:
+
+`C` - Control
+
+`M` - Meta, tecla Alt izquierda o ESC
+
+`S` - Shift o mayúscula
+
+# Observa la perspectiva
+- [Emacs, curso en español](http://www.lapipaplena.org/emacs/)
+- [OrgMode](http://orgmode.org/guide)
+- [Emacs Planet](http://planet.emacs-es.org/)
+- [Referència](http://www.merlos.org/linux/2003/05/emacs.html)
+
+

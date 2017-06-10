@@ -1,0 +1,55 @@
+---
+layout: post
+title: 21 Hábitos
+date:  2017-04-01 00:00:00
+description: Método para rastrear hábitos
+---
+
+Rastrear hábitos es algo importante para poder instaurarlos y consolidarlos.
+
+Podemos rastrear nuestros hábitos marcando día y hora de cuándo los hacemos de forma muy fácil.
+
+# 1. Generando el código
+
+Primero deberemos definir el hábito y escribir:
+
+```emacs
+*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: <2017-04-02 dg 05:00 .+1d/2d>
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: 
+      :END: 
+```
+
+Así definimos el hábito `Controlar la respiración durante 5 minuts.
+
+Marcamos en la agenda este hábito `C-c C-s`, pero editamos la marca añadiendo la hora i las veces que se va a repetir a lo largo del día. `05:00 .+1d/2d`.
+
+# 2. Marcamos el hábito
+
+Se trata de pulsar unas teclas que nos iran marcando el momento en el que realizamos el hábito realizando una lista:
+
+```emacs
+- State "PROCESS"    from "TODO"       [2017-04-01 ds 09:41]
+- State "PROCESS"    from "TODO"       [2017-03-31 dv 21:34]
+```
+
+De esta forma obtendremos un listado de las veces que realizamos el hábito.
+
+Para `marcar el hábito` no situaremos encima de la palabra `TODO` y pulsaremos las teclas `Shift + <right>`, es decir `Mayúscula + flecha derecha`.
+
+De esta forma se generará una lista de seguimiento del hábito.
+
+# 3. Resultado
+
+```emacs
+*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: <2017-04-02 dg 05:00 .+1d/2d>
+    - State "PROCESS"    from "TODO"       [2017-04-01 ds 09:41]
+    - State "PROCESS"    from "TODO"       [2017-03-31 dv 21:34]
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: [2017-04-01 ds 09:41]
+      :END:
+```

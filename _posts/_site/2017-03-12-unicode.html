@@ -1,0 +1,36 @@
+<p>Unicode es un estándar de codificación de caracteres diseñado para facilitar el tratamiento informático, transmisión y visualización de textos de múltiples lenguajes y disciplinas técnicas, además de textos clásicos de lenguas muertas. El término Unicode proviene de los tres objetivos perseguidos: universalidad, uniformidad y unicidad.</p>
+
+<p>Los puntos de código de Unicode se identifican por un número entero.</p>
+
+<ul>
+  <li>UTF-8: codificación orientada a byte con símbolos de longitud variable.</li>
+  <li>UTF-16: codificación de 16 bits de longitud variable optimizada para la representación del plano básico multilingüe (BMP).</li>
+  <li>UTF-32: codificación de 32 bits de longitud fija, y la más sencilla de las tres.</li>
+</ul>
+
+<p>– Wikipedia</p>
+
+<p>La forma más rápida de establecer el código unidoce UTF-8 en Emacs, de forma manual seria:</p>
+
+<p><code class="highlighter-rouge">C-x 8 keymap</code></p>
+
+<p>Lo cual quedaría de esta forma si quisiéramos indicar <code class="highlighter-rouge">UTF-8</code>:</p>
+
+<ol>
+  <li>
+    <p>Pulsamos <code class="highlighter-rouge">C-x 8 RET</code>. La tecla <code class="highlighter-rouge">RET</code> indica que pulsemos la tecla Intro o Retorno.</p>
+  </li>
+  <li>
+    <p>Se nos muestra: <code class="highlighter-rouge">Insert character (Unicode name or hex):</code></p>
+  </li>
+  <li>
+    <p>Introducimos exactamente estos caracteres: <code class="highlighter-rouge">utf-8</code></p>
+  </li>
+</ol>
+
+<p>Así ya podríamos poner acentos.</p>
+
+<p>Fuente:</p>
+
+<p>https://www.emacswiki.org/emacs/UnicodeEncoding</p>
+

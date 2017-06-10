@@ -1,0 +1,29 @@
+---
+layout: post
+title: 29 Tablas
+date: dl 24 apr 2017 07:50:55 CEST 
+description: Utilización de tablas 
+keywords: teblas
+coments: true
+---
+
+La utilización de tablas en `Emacs` mediante la metodología `Orgmode` es sencilla.
+
+Partimos de la escritura de código sencillo:
+
+```emacs
+| Item | Nom | Cognom |
+|------+-----+--------+
+```
+
+En la siguiente línea escribimos una barra vertical. Para pasar a la siguiente columna lo hacemos con la tecla `TAB`. Con lo que podremos escribir las demás columnas.
+
+Para pasar a la columna de abano sin pasar por todas las columnas escribiremso ala tecla `RET` o Enter.
+
+
+```emacs
+| Item | Nom    | Cognom |
+|------+--------+--------+
+| 01   | Pepito | Pérez  |
+| 02   | Pepita | Pérez  |
+```

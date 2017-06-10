@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://inclusa.github.io/emacs/css/main.css">
+    <title>Emacs</title>
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <h1 class="site-title"><a href="https://inclusa.github.io/emacs/">Emacs</a></h1>
+            <nav class="site-nav">
+                <a href="https://inclusa.github.io/emacs/about/" class="">About</a>
+            </nav>
+        </header>
+        <article class="post">
+    <h2 class="post-header">22 Captura</h2>
+    <p class="post-meta">2017-04-02</p>
+    <p>Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.</p>
+
+<p>Así deberemos incluir en el archivo de configuración <code class="highlighter-rouge">.emacs</code> el siguiente código:</p>
+
+<pre><code class="language-emacs">
+;; Plantilles per a capturar
+
+(setq org-directory "~/Documents/56_bulletjournal/org")
+(setq org-default-notes-file "~/Documents/56_bulletjournal/notes")
+
+;; I use C-c c to start capture mode
+(global-set-key (kbd "C-c c") 'org-capture)
+
+;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
+(setq org-capture-templates
+      (quote (("t" "todo" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* TODO %?\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("r" "respond" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* NEXT Respond to %:from on %:subject\nSCHEDULED: %t\n%U\n%a\n" :clock-in t :clock-resume t :immediate-finish t)
+              ("n" "note" entry (file "~~/Documents/56_bulletjournal/org/captura.org")
+               "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("j" "Journal" entry (file+datetree "~/Documents/56_bulletjournal/org/diary.org")
+               "* %?\n%U\n" :clock-in t :clock-resume t)
+              ("w" "org-protocol" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* TODO Review %c\n%U\n" :immediate-finish t)
+              ("m" "Meeting" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* MEETING with %? :MEETING:\n%U" :clock-in t :clock-resume t)
+              ("p" "Phone call" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* PHONE %? :PHONE:\n%U" :clock-in t :clock-resume t)
+              ("h" "Habit" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \"%&lt;&lt;%Y-%m-%d %a .+1d/3d&gt;&gt;\")\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n"))))
+
+</code></pre>
+
+<p>De estar forma presionando las teclas <code class="highlighter-rouge">C-c c</code> obtendremos el menú siguiente:</p>
+
+<pre><code class="language-emacs">Select a capture template
+=========================
+
+[t]     todo
+[r]     respond
+[n]     note
+[j]     Journal
+[w]     org-protocol
+[m]     Meeting
+[p]     Phone call
+[h]     Habit
+--------------------------------------------------------------------------
+[C]     Customize org-capture-templates
+[q]     Abort
+</code></pre>
+<p>Este menú creará un archivo llamado <code class="highlighter-rouge">captura.org</code> o <code class="highlighter-rouge">diary.org</code> donde se irán almacenando muestras capturas.</p>
+
+<p>Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.</p>
+
+    
+</article>
+
+    </main>
+    
+</body>
+</html>

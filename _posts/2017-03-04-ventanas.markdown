@@ -1,0 +1,49 @@
+---
+layout: post
+title: 04 Organizar ventanas
+date:  2017-03-04 00:00:00 
+description: Abrir, cortar y cerar ventanas
+---
+
+# Aclaraciones
+
+`C-x C-c` - Pulsas `Control` y con la tecla de `Control` pulsada pulsas primero `x` y después `c`.<br />
+
+`C-x k` - Pulsas `Control` y `x`. Levantas el dedo de la tecla `Control` y pulsas `k`.<br />
+
+
+# Limpiar minibuffer
+
+`C-g` - Este comando limpia el minibuffer para no encadenar comandos. Una vez limpio ya podemos introducir la secuencia.
+
+
+
+1. Borra ventana activa 
+
+```emacs
+C-x 0
+```
+
+2. Borra todas las ventanas menos la activa
+
+```emacs
+C-x 1
+```
+
+3. Divide horizontalmente la ventana activa en dos ventans
+
+```emacs
+C-x 2
+```
+
+4. Lleva el cursos a la próxima ventana
+
+```emacs
+C-x o
+```
+
+5. Desplaza hacia abajo el texto de la próxima ventana, como si hiciéramos AvPág
+
+```emacs
+C-M-v
+```

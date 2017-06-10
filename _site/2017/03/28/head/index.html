@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://inclusa.github.io/emacs/css/main.css">
+    <title>Emacs</title>
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <h1 class="site-title"><a href="https://inclusa.github.io/emacs/">Emacs</a></h1>
+            <nav class="site-nav">
+                <a href="https://inclusa.github.io/emacs/about/" class="">About</a>
+            </nav>
+        </header>
+        <article class="post">
+    <h2 class="post-header">19 Cabeceras</h2>
+    <p class="post-meta">2017-03-28</p>
+    <p>Empezar el documento <code class="highlighter-rouge">.org</code> con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.</p>
+
+<pre><code class="language-emacs">#+TITLE: Bullet Journal
+#+LANGUAGE: en
+#+AUTHOR: Alfons Rovira
+#+EMAIL: alfons@server
+#+DATE: 2017-03-01
+#+DESCRIPTION: Personal organizer
+#+KEYWORDS: bullet journal gtd emacs org-mode
+#+STARTUP: content
+#+PRIORITIES: 1 2 3
+#+TAGS: init(i) review(r) reject(j)
+#+TODO: TODO(t) | PROCESS(p) | DONE(d) | CANCEL(c)
+</code></pre>
+
+<h1 id="1-campos-descriptivos">1. Campos descriptivos</h1>
+
+<blockquote>
+  <p>Sirven para describir el documento, muy útil en caso de que se exporte a otros formatos como html, txt, pdf, etc.</p>
+</blockquote>
+
+<ul>
+  <li>Title: título del documento</li>
+  <li>Language: lenguaje en el que está escrito</li>
+  <li>Author: autor del mismo</li>
+  <li>Email: email de contacto</li>
+  <li>Date: fecha de inicio o de final del documento</li>
+  <li>Description: descripción del documento</li>
+  <li>Keywords: palabras clave</li>
+</ul>
+
+<h1 id="2-campos-interactivos">2. Campos interactivos</h1>
+
+<blockquote>
+  <p>Sirve para dar funcionalidades específicas adaptadas a tus necesidaes.</p>
+</blockquote>
+
+<ul>
+  <li>Startup: si contine la palabra <code class="highlighter-rouge">content</code> aparecen desplegadas las categorías al abrir el documento</li>
+  <li>Priorities: configuración de las prioridades, lo que se pone en lo que se usa, en este caso hemos cambiado las prioridades A, B, C por 1, 2, 3</li>
+  <li>Tags: etiquetas que usaremos por defecto</li>
+  <li>ToDo: estados de las tareas que utilizaremos por defecto</li>
+</ul>
+
+    
+</article>
+
+    </main>
+    
+</body>
+</html>

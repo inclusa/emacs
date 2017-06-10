@@ -1,0 +1,65 @@
+---
+layout: post
+title: 28 Exportar
+date: dv 21 apr 2017 06:55:15 CEST 
+description: Exportar datoss al format html 
+keywords: export
+coments: true
+---
+
+### 1. Cabeceras
+
+Para exportar datos deberemos incluir la siguiente información en la cabecera del documento y adaptarla a nuestras necesidades:
+
+```emacs
+     #+TITLE:       título del que se muestrao
+     #+AUTHOR:      autor (por defecto se coge desde user-full-name del sistema)
+     #+DATE:        fecha, fijada, o un Org timestamp
+     #+EMAIL:       tu email (por defecto se coge user-mail-address del sistema)
+     #+LANGUAGE:    lenguaje, por ejemplo  ‘es’ (org-export-default-language)
+     #+OPTIONS:     H:2 num:t toc:t \n:nil ::t |:t ^:t f:t tex:t ...
+```
+
+### 2. Comandos
+
+`C-c C-e` Comandos de explotación y publicación.
+
+### 3. Codificación
+
+`C-c C-e t u` y `C-c C-e t U` ambos exportan la codificación a UTF-8.
+
+### 4. Creando un archivo de HTML donde se incrusta código
+
+`C-c C-e h h` Exportar a HTML `archivo.html`
+
+`C-c C-e h o` Exportar a HTML e inmediatamente abrir el navegador sin guardar
+
+Para incrustar código:
+
+a. En una línea
+
+```emacs
+#+HTML: Código literal HTML code para que se  exportará en esta línea
+```
+
+b. En varias líneas
+
+```emacs
+     #+BEGIN_EXPORT html
+     Todas las líneas entre estos marcadores serán exportadas literalmente
+     #+END_HTML
+```
+
+### 5. Exportar a LaTeX o PDF
+
+`C-c C-e l l` Exporta un fichero LaTeX `archivo.tex`
+
+`C-c C-e l p` Exporta como LaTeX y también PDF
+
+`C-c C-e l o` Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF
+
+### 6. Exportar calendario
+
+`C-c C-e c f` Crea un archivo iCalendar con extensión `.ics`
+
+`C-c C-e c c` Crea un archivo largo de iCalendar con todos los archivos `org-agenda-files` y lo escribe cogiendo `org-icalendar-combined-agenda-file`.

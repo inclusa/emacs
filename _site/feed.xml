@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs</title>
+    <description></description>
+    <link>http://localhost:4000https://inclusa.github.io/emacs/</link>
+    <atom:link href="http://localhost:4000https://inclusa.github.io/emacs/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 03 May 2017 19:30:53 +0200</pubDate>
+    <lastBuildDate>Wed, 03 May 2017 19:30:53 +0200</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>31 Archivar</title>
+        <description>&lt;p&gt;Cuando un proyecto ha finalizado lo podemos archivar así:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-a&lt;/code&gt;     (org-archive-subtree-default)&lt;/p&gt;
+
+&lt;p&gt;Para saber más:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://orgmode.org/manual/Archiving.html&quot;&gt;OrgMode&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 May 2017 19:30:33 +0200</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/05/03/archivar/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/05/03/archivar/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>23 Directorio</title>
+        <description>&lt;p&gt;Para configurar el &lt;em&gt;directorio por defecto&lt;/em&gt; y que, así nos apunte rápidamente al directorio donde trabajajos editaremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; e insertaremos este código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq default-directory &quot;~Documents/BulletJournal/&quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De esta forma, cada vez que abramos un archivo con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x f&lt;/code&gt; ya estaremos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;~Documents/BulletJournal/&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Apr 2017 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/04/08/directorio/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/04/08/directorio/</guid>
+        
+        <category>OrgMode</category>
+        
+        <category>Emacs</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>22 Captura</title>
+        <description>&lt;p&gt;Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.&lt;/p&gt;
+
+&lt;p&gt;Así deberemos incluir en el archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; el siguiente código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;
+;; Plantilles per a capturar
+
+(setq org-directory &quot;~/Documents/56_bulletjournal/org&quot;)
+(setq org-default-notes-file &quot;~/Documents/56_bulletjournal/notes&quot;)
+
+;; I use C-c c to start capture mode
+(global-set-key (kbd &quot;C-c c&quot;) 'org-capture)
+
+;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
+(setq org-capture-templates
+      (quote ((&quot;t&quot; &quot;todo&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* TODO %?\n%U\n%a\n&quot; :clock-in t :clock-resume t)
+              (&quot;r&quot; &quot;respond&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* NEXT Respond to %:from on %:subject\nSCHEDULED: %t\n%U\n%a\n&quot; :clock-in t :clock-resume t :immediate-finish t)
+              (&quot;n&quot; &quot;note&quot; entry (file &quot;~~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* %? :NOTE:\n%U\n%a\n&quot; :clock-in t :clock-resume t)
+              (&quot;j&quot; &quot;Journal&quot; entry (file+datetree &quot;~/Documents/56_bulletjournal/org/diary.org&quot;)
+               &quot;* %?\n%U\n&quot; :clock-in t :clock-resume t)
+              (&quot;w&quot; &quot;org-protocol&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* TODO Review %c\n%U\n&quot; :immediate-finish t)
+              (&quot;m&quot; &quot;Meeting&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* MEETING with %? :MEETING:\n%U&quot; :clock-in t :clock-resume t)
+              (&quot;p&quot; &quot;Phone call&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* PHONE %? :PHONE:\n%U&quot; :clock-in t :clock-resume t)
+              (&quot;h&quot; &quot;Habit&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \&quot;%&amp;lt;&amp;lt;%Y-%m-%d %a .+1d/3d&amp;gt;&amp;gt;\&quot;)\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n&quot;))))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De estar forma presionando las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c c&lt;/code&gt; obtendremos el menú siguiente:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;Select a capture template
+=========================
+
+[t]     todo
+[r]     respond
+[n]     note
+[j]     Journal
+[w]     org-protocol
+[m]     Meeting
+[p]     Phone call
+[h]     Habit
+--------------------------------------------------------------------------
+[C]     Customize org-capture-templates
+[q]     Abort
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Este menú creará un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;captura.org&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;diary.org&lt;/code&gt; donde se irán almacenando muestras capturas.&lt;/p&gt;
+
+&lt;p&gt;Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Apr 2017 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/04/02/capturar/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/04/02/capturar/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>21 Hábitos</title>
+        <description>&lt;p&gt;Rastrear hábitos es algo importante para poder instaurarlos y consolidarlos.&lt;/p&gt;
+
+&lt;p&gt;Podemos rastrear nuestros hábitos marcando día y hora de cuándo los hacemos de forma muy fácil.&lt;/p&gt;
+
+&lt;h1 id=&quot;1-generando-el-código&quot;&gt;1. Generando el código&lt;/h1&gt;
+
+&lt;p&gt;Primero deberemos definir el hábito y escribir:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &amp;lt;2017-04-02 dg 05:00 .+1d/2d&amp;gt;
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: 
+      :END: 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Así definimos el hábito `Controlar la respiración durante 5 minuts.&lt;/p&gt;
+
+&lt;p&gt;Marcamos en la agenda este hábito &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;, pero editamos la marca añadiendo la hora i las veces que se va a repetir a lo largo del día. &lt;code class=&quot;highlighter-rouge&quot;&gt;05:00 .+1d/2d&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;2-marcamos-el-hábito&quot;&gt;2. Marcamos el hábito&lt;/h1&gt;
+
+&lt;p&gt;Se trata de pulsar unas teclas que nos iran marcando el momento en el que realizamos el hábito realizando una lista:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;- State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-04-01 ds 09:41]
+- State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-03-31 dv 21:34]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De esta forma obtendremos un listado de las veces que realizamos el hábito.&lt;/p&gt;
+
+&lt;p&gt;Para &lt;code class=&quot;highlighter-rouge&quot;&gt;marcar el hábito&lt;/code&gt; no situaremos encima de la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;TODO&lt;/code&gt; y pulsaremos las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift + &amp;lt;right&amp;gt;&lt;/code&gt;, es decir &lt;code class=&quot;highlighter-rouge&quot;&gt;Mayúscula + flecha derecha&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;De esta forma se generará una lista de seguimiento del hábito.&lt;/p&gt;
+
+&lt;h1 id=&quot;3-resultado&quot;&gt;3. Resultado&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &amp;lt;2017-04-02 dg 05:00 .+1d/2d&amp;gt;
+    - State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-04-01 ds 09:41]
+    - State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-03-31 dv 21:34]
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: [2017-04-01 ds 09:41]
+      :END:
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Sat, 01 Apr 2017 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/04/01/habitos/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/04/01/habitos/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>20 Agenda</title>
+        <description>&lt;p&gt;Comandos que te introducirán en el uso de la agenda:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x org-agenda&lt;/code&gt; Menú para utilizar la agenda&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-d&lt;/code&gt;     (org-deadline) Inserta fecha final&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;     (org-schedule) Inserta fecha para realizr la tarea&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / d&lt;/code&gt;     (org-check-deadlines) Lista citas por fecha límite&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / b&lt;/code&gt;     (org-check-before-date) Lista citas antes de una fecha&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / a&lt;/code&gt;     (org-check-after-date) Lista citas después de una fecha&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 30 Mar 2017 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/03/30/agenda/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/03/30/agenda/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>19 Cabeceras</title>
+        <description>&lt;p&gt;Empezar el documento &lt;code class=&quot;highlighter-rouge&quot;&gt;.org&lt;/code&gt; con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;#+TITLE: Bullet Journal
+#+LANGUAGE: en
+#+AUTHOR: Alfons Rovira
+#+EMAIL: alfons@server
+#+DATE: 2017-03-01
+#+DESCRIPTION: Personal organizer
+#+KEYWORDS: bullet journal gtd emacs org-mode
+#+STARTUP: content
+#+PRIORITIES: 1 2 3
+#+TAGS: init(i) review(r) reject(j)
+#+TODO: TODO(t) | PROCESS(p) | DONE(d) | CANCEL(c)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;1-campos-descriptivos&quot;&gt;1. Campos descriptivos&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sirven para describir el documento, muy útil en caso de que se exporte a otros formatos como html, txt, pdf, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Title: título del documento&lt;/li&gt;
+  &lt;li&gt;Language: lenguaje en el que está escrito&lt;/li&gt;
+  &lt;li&gt;Author: autor del mismo&lt;/li&gt;
+  &lt;li&gt;Email: email de contacto&lt;/li&gt;
+  &lt;li&gt;Date: fecha de inicio o de final del documento&lt;/li&gt;
+  &lt;li&gt;Description: descripción del documento&lt;/li&gt;
+  &lt;li&gt;Keywords: palabras clave&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-campos-interactivos&quot;&gt;2. Campos interactivos&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sirve para dar funcionalidades específicas adaptadas a tus necesidaes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Startup: si contine la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; aparecen desplegadas las categorías al abrir el documento&lt;/li&gt;
+  &lt;li&gt;Priorities: configuración de las prioridades, lo que se pone en lo que se usa, en este caso hemos cambiado las prioridades A, B, C por 1, 2, 3&lt;/li&gt;
+  &lt;li&gt;Tags: etiquetas que usaremos por defecto&lt;/li&gt;
+  &lt;li&gt;ToDo: estados de las tareas que utilizaremos por defecto&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 28 Mar 2017 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/03/28/head/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/03/28/head/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>18 To do</title>
+        <description>&lt;p&gt;Metodología: OrgMode&lt;/p&gt;
+
+&lt;h1 id=&quot;1-descripción&quot;&gt;1. Descripción&lt;/h1&gt;
+
+&lt;p&gt;Para hacer listas de tareas deberemos utilizar la palabra TODO.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Comprar leche
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;2-teclas-rápidas&quot;&gt;2. Teclas rápidas&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt; Rotar los TODO a otro ítem: (sin marca) -&amp;gt; TODO -&amp;gt; PROGRESS -&amp;gt; DONE -&amp;gt; (sin marca)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-&amp;lt;right&amp;gt;/&amp;lt;left&amp;gt;&lt;/code&gt; Utilizar con flechas. Estado de TODO.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / t&lt;/code&gt; Ver los TODO en árbol.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c a t&lt;/code&gt; Mostrar todos los TODO.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-M-&amp;lt;RET&amp;gt;&lt;/code&gt; Insertar TODO en nueva entrada.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 27 Mar 2017 02:00:00 +0200</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/03/27/todo/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/03/27/todo/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>17 Links</title>
+        <description>&lt;p&gt;Metodologia: OrgMode&lt;/p&gt;
+
+&lt;h1 id=&quot;1-enlaces&quot;&gt;1. Enlaces&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[link][Descriptión]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alternativa&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[link]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Teclas rápidas&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-c C-l
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;2-enlaces-internos&quot;&gt;2. Enlaces internos&lt;/h1&gt;
+
+&lt;p&gt;Un contexto en el que podemos utilizar enlaces internos es realizando un índice de un documento. Utilizaremos corchetes `[[]] Para marcar el lugar donde pincharemos..&lt;/p&gt;
+
+&lt;p&gt;Índice&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[Future Log]]
+[[Monthy Log]]
+[[Daily Log]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Utilizaremos estos símbolos &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/code&gt; para indicar el destino.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;&amp;lt;&amp;lt;Future Log&amp;gt;&amp;gt;
+&amp;lt;&amp;lt;Monty Log&amp;gt;&amp;gt;
+&amp;lt;&amp;lt;Daily Log&amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;3-links-externos&quot;&gt;3. Links externos&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[http://www.gnu.org/software/emacs/][GNU Emacs]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;4-sintaxis&quot;&gt;4. Sintaxis&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c l&lt;/code&gt; Alamacena un enlace en el buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Inserta el enlace almacenado en el buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Situándose encima del enlace esconde el enlace (&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;) en la descripción&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; Abre el enlace&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c %&lt;/code&gt; Marca una posición para volver a ella con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;amp;&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/03/26/links/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/03/26/links/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>16 Org Mode</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://orgmode.org/&quot;&gt;Org&lt;/a&gt; es un modo para matener notas, TODO (listas de tareas) y para panificación de proyectos con rapidez y efectividad en texto plano.&lt;/p&gt;
+
+&lt;p&gt;También es un sistema de autoría y publicación, y apoya el trabajo con código fuente para la programación literal y la investigación reproducible.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/bzZ09dAbLEE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+</description>
+        <pubDate>Sat, 25 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/03/25/org/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/03/25/org/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>15 Resaltado</title>
+        <description>&lt;p&gt;Podemos utilizar el resaltado escribiendo los códigos:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*bold* ==&amp;gt; bold
+~code~ ==&amp;gt; code
++strike+ ==&amp;gt; strike
+/italic/ ==&amp;gt; italic
+=verbatim= ==&amp;gt; code
+_underline_ ==&amp;gt; underline
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Para crear superíndides:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento^superínidice
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2&lt;sup&gt;4&lt;/sup&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;2^4&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento_subíndice
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;H_2&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 15 Mar 2017 01:00:00 +0100</pubDate>
+        <link>http://localhost:4000https://inclusa.github.io/emacs/2017/03/15/resaltado/</link>
+        <guid isPermaLink="true">http://localhost:4000https://inclusa.github.io/emacs/2017/03/15/resaltado/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+---
+layout: post
+title: 34 Imprimir subárbol
+date: ds 13 may 2017 20:22:08 CEST 
+description: Selección de nota
+keywords: note
+coments: true
+---
+
+Para imprimir un subárbol de notas debemos situarnos dentro de la nota concreta que queremos imprimir y lanzar estos comandos:
+
+```
+C-c C-x b
+```
+
+Para imrimir en PDF, deberemos situarnos en la ventana donce está la selección de la nota y lanzar estos comandos
+
+```
+Alfons Rovira, [13.05.17 19:23]
+De desta manera, resumiendo:
+
+C-c C-e l p
+```
+

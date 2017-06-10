@@ -1,0 +1,75 @@
+---
+layout: post
+title: 27 Columnas
+date: dc 19 apr 2017 00:43:44 CEST 
+description: Columnas y bases de datos
+keywords: column
+coments: true
+---
+
+La utilización de columnas se basa en el resumen sintético de los datos. Así, observemos este código:
+
+```emacs
+
+* Ejemplo
+** Mi proyecto
+   :PROPERTIES:
+   :COLUMNS:  %20ITEM %9Aprobado(Aprovado?){X} %Persona %11Status %10Time_Spent{:}
+   :Persona_ALL:    Isabel Marc Pilar Pedro Patricia
+   :Status_ALL:   "No iniciado" "Iniciado" "En progreso" "Finalizado"
+   :Aprobado_ALL: "[ ]" "[X]"
+   :END:
+
+*** Item 1
+    :PROPERTIES:
+    :Persona:  Isabel
+    :Time_spent:   1:45
+    :Status:   Finalizado
+    :END:
+
+*** Item 2
+    :PROPERTIES:
+    :Persona:  Marc
+    :Status:   En progreso
+    :Time_spent:   0:15
+    :END:
+
+*** Item 3
+    :PROPERTIES:
+    :Persona:  Patricia
+    :Status:   No iniciado
+    :Aprobado: [X]
+    :END:
+```
+
+Visto así no es fácil de analizar, pero si nos situamos en la línea `** Mi proyecto` y ejecutamos los comandos `C-c C-x C-c`, automáticamente vemos las cosas más claras. Después de pulsar dos veces la tecla `TAB` lo veremos así:
+
+
+```emacs
+* Ejemplo
+** Mi proyecto     |          |          |             |  2:00   |
+   :PROPERTIES:...
+
+*** Item 1         |          |  Isabel  | Finalizado  |         |...
+*** Item 2         |          |  Marc    | En progreso |         |...
+*** Item 3         | [X]      |  Patricia| No iniciado |         |...
+```
+
+Para desactivar esta función nos colocaremos en la línea `*** Mi proyecto` y pulsaremos la tecla `q`.
+
+Ahora nos fijamos en las propiedades las cabeceras:
+
+```emacs
+   :PROPERTIES:
+   :COLUMNS:  %20ITEM %9Aprobado(Aprovado?){X} %Persona %11Status %10Time_Spent{:}
+   :Persona_ALL:    Isabel Marc Pilar Pedro Patricia
+   :Status_ALL:   "No iniciado" "Iniciado" "En progreso" "Finalizado"
+   :Aprobado_ALL: "[ ]" "[X]"
+   :END:
+```
+
+`COLUMNS`: `%` Indica que es una nueva columna. `20` indica que tiene 20 columnas de ancho. `ITEM` hace referencia al título precedido de `****`. `Aprobado` indica el campo Aprobado. `(Aprobado?)` indica el nombre del campo, que aparecerá en la parte superior, en la parte más alta. `{:}` indica el formato de tiempo.
+
+`Persona_ALL`: Indican todas las personas, de esta forma con las teclas `SHIFT` + `→` situados en el campo `Persona` podremos ir cambiando las personas predefinidas, por eso se predefinen. Esto no limita que podamos escribir más personas en el mismo campo.
+
+ Establece el espacio, anchura, 

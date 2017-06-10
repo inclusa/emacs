@@ -1,0 +1,24 @@
+---
+layout: post
+title: 31 Archivar
+date:  dc 03 may 2017 19:30:33 CEST 
+description: Archivar
+keywords: archive
+coments: true
+---
+
+Para que el archivado funcione deberemos configurar al principio del documento el archivo donde se van a guardar los proyectos realizados, en este caso el archivo se llamará `_done`.
+
+`#+ARCHIVE: %s_done::`
+
+Cuando un proyecto ha finalizado lo podemos archivar así:
+
+`C-c C-x C-a`     (org-archive-subtree-default)
+
+Si se trata de un subárbol, o subcontenido dentro de un punto:
+
+`C-c C-x C-s` o bien `C-c $`
+
+Para saber más:
+
+[OrgMode](http://orgmode.org/manual/Archiving.html)
