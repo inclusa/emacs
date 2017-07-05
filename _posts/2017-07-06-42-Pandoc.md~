@@ -1,0 +1,8 @@
+---
+layout: post # page | post
+title: 42 Pandoc
+date: 2017-07-06 
+description:     # Argument
+keywords:        # Paraules clau
+coments: true    # Comentaris activats
+---
