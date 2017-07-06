@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://inclusa.github.io/emacs/css/main.css">
+    <title>Emacs</title>
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <h1 class="site-title"><a href="https://inclusa.github.io/emacs/">Emacs</a></h1>
+            <nav class="site-nav">
+                <a href="https://inclusa.github.io/emacs/about/" class="">About</a>
+            </nav>
+        </header>
+        <article class="post">
+    <h2 class="post-header">41 LaTeX</h2>
+    <p class="post-meta">2017-07-06</p>
+    <p>Instalamos el paquete <code class="highlighter-rouge">AUCTeX</code> desde <a href="https://melpa.org/#/">MELPA</a>, repositorio de Emacs, que se puede consultar via web.</p>
+
+<p>Para poder instalar paquetes de <code class="highlighter-rouge">Emacs</code> deberemos configurar el archivo <code class="highlighter-rouge">.emacs</code> convenientemente. Para ello añadiremos estas líneas:</p>
+
+<pre><code class="language-emacs">;;; #01 Añadir repositorio
+(require 'package) ;; You might already have this line
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(when (&lt; emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize) ;; You might already have this line
+
+;;; #02 Cargar los paquetes del repositorio
+(add-to-list 'package-archives
+'("melpa-stable" . "https://stable.melpa.org/packages/") t)
+</code></pre>
+
+<p>Cuando lo hagamos salimos de <code class="highlighter-rouge">Emacs</code> y volvemos a entrar.</p>
+
+<p>Pasamos a la instalación. Para ello escribimos en <code class="highlighter-rouge">Emacs</code>:</p>
+
+<pre><code class="language-emacs">M-x list-package
+</code></pre>
+
+<p>Esto nos mostrará la lista. Debemos tener en cuenta que a la hora de escribir los comandos en Emacs podemos utilizar la tecla <code class="highlighter-rouge">TAB</code> para que <code class="highlighter-rouge">Emacs</code> pueda intuir el final de la instrucción.</p>
+
+<p>Clicaremos con el ratón el paquete correspondiente o bajaremos el cursor hasta llegar al paquete. Se instalará.</p>
+
+<p>Para ver su funcionamiento podemos bajar una plantilla de LaTeX desde esta página: <a href="https://www.latextemplates.com/template/stylish-article">https://www.latextemplates.com/template/stylish-article</a>. Descomprimiremos el archivo y editaremos el archivo: <code class="highlighter-rouge">archivo.tex</code>.</p>
+
+<p>Miremos la barra de menú que aparece arriba.</p>
+
+<p>Compilaremos en fichero en LaTeX con un botón.</p>
+
+<p>De esta forma obtendremos un archivo PDF generado a partir de la plantilla dada.</p>
+
+    
+</article>
+
+    </main>
+    
+</body>
+</html>

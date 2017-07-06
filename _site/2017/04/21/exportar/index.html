@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://inclusa.github.io/emacs/css/main.css">
+    <title>Emacs</title>
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <h1 class="site-title"><a href="https://inclusa.github.io/emacs/">Emacs</a></h1>
+            <nav class="site-nav">
+                <a href="https://inclusa.github.io/emacs/about/" class="">About</a>
+            </nav>
+        </header>
+        <article class="post">
+    <h2 class="post-header">28 Exportar</h2>
+    <p class="post-meta">2017-04-21</p>
+    <h3 id="1-cabeceras">1. Cabeceras</h3>
+
+<p>Para exportar datos deberemos incluir la siguiente información en la cabecera del documento y adaptarla a nuestras necesidades:</p>
+
+<pre><code class="language-emacs">     #+TITLE:       título del que se muestrao
+     #+AUTHOR:      autor (por defecto se coge desde user-full-name del sistema)
+     #+DATE:        fecha, fijada, o un Org timestamp
+     #+EMAIL:       tu email (por defecto se coge user-mail-address del sistema)
+     #+LANGUAGE:    lenguaje, por ejemplo  ‘es’ (org-export-default-language)
+     #+OPTIONS:     H:2 num:t toc:t \n:nil ::t |:t ^:t f:t tex:t ...
+</code></pre>
+
+<h3 id="2-comandos">2. Comandos</h3>
+
+<p><code class="highlighter-rouge">C-c C-e</code> Comandos de explotación y publicación.</p>
+
+<h3 id="3-codificación">3. Codificación</h3>
+
+<p><code class="highlighter-rouge">C-c C-e t u</code> y <code class="highlighter-rouge">C-c C-e t U</code> ambos exportan la codificación a UTF-8.</p>
+
+<h3 id="4-creando-un-archivo-de-html-donde-se-incrusta-código">4. Creando un archivo de HTML donde se incrusta código</h3>
+
+<p><code class="highlighter-rouge">C-c C-e h h</code> Exportar a HTML <code class="highlighter-rouge">archivo.html</code></p>
+
+<p><code class="highlighter-rouge">C-c C-e h o</code> Exportar a HTML e inmediatamente abrir el navegador sin guardar</p>
+
+<p>Para incrustar código:</p>
+
+<p>a. En una línea</p>
+
+<pre><code class="language-emacs">#+HTML: Código literal HTML code para que se  exportará en esta línea
+</code></pre>
+
+<p>b. En varias líneas</p>
+
+<pre><code class="language-emacs">     #+BEGIN_EXPORT html
+     Todas las líneas entre estos marcadores serán exportadas literalmente
+     #+END_HTML
+</code></pre>
+
+<h3 id="5-exportar-a-latex-o-pdf">5. Exportar a LaTeX o PDF</h3>
+
+<p><code class="highlighter-rouge">C-c C-e l l</code> Exporta un fichero LaTeX <code class="highlighter-rouge">archivo.tex</code></p>
+
+<p><code class="highlighter-rouge">C-c C-e l p</code> Exporta como LaTeX y también PDF</p>
+
+<p><code class="highlighter-rouge">C-c C-e l o</code> Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF</p>
+
+<h3 id="6-exportar-calendario">6. Exportar calendario</h3>
+
+<p><code class="highlighter-rouge">C-c C-e c f</code> Crea un archivo iCalendar con extensión <code class="highlighter-rouge">.ics</code></p>
+
+<p><code class="highlighter-rouge">C-c C-e c c</code> Crea un archivo largo de iCalendar con todos los archivos <code class="highlighter-rouge">org-agenda-files</code> y lo escribe cogiendo <code class="highlighter-rouge">org-icalendar-combined-agenda-file</code>.</p>
+
+    
+</article>
+
+    </main>
+    
+</body>
+</html>
