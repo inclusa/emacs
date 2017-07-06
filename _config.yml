@@ -1,5 +1,6 @@
 title: Emacs
-baseurl: "https://inclusa.github.io/emacs"
+url: http://inclusa.github.io # site url
+baseurl: "/emacs" # apply repo name if use it under gh-pages branch
 
 date_format: "%Y-%m-%d"
 
