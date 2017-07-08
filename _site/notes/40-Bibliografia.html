@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>40 Bibliografia · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="40 Bibliografia" />
+<meta name="twitter:description" content="Documento de trabajo, iremos puliéndolo para explicar cómo insertar referenias bibliográficas.">
+
+<meta name="description" content="Documento de trabajo, iremos puliéndolo para explicar cómo insertar referenias bibliográficas.">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/40-Bibliografia">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>40 Bibliografia</h1>
+		<time>June 17, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Documento de trabajo, iremos puliéndolo para explicar cómo insertar referenias bibliográficas.</p>
+
+<p>Bibtex</p>
+
+<p>Citas bibliográficas automáticas</p>
+
+<ol>
+  <li>Instalamos paquete en Emacs mediante MELPA (Milkypostman’s Emacs Lisp Package Archive) es un repositorio de programas de Emacs.</li>
+</ol>
+
+<p>Elegimos el paquete basado en <a href="http://melpa.org/#/helm-bibtex"><img src="http://melpa.org/packages/helm-bibtex-badge.svg" alt="MELPA" /></a></p>
+
+<p>Iniciamos Emacs y escribimos:</p>
+
+<p><code class="highlighter-rouge">M-x package-install &lt;RET&gt;</code> RET significa que pulsemos la tecla de retorno.</p>
+
+<p>Escribimos <code class="highlighter-rouge">helm-bibtex &lt;RET&gt;</code></p>
+
+<p>Así ya tendremos instalado el paquete.</p>
+
+<ol>
+  <li>Configuramos <strong>org-ref</strong></li>
+</ol>
+
+<p>(setq org-ref-notes-directory “$SOME”
+      org-ref-bibliography-notes “$SOME/index.org”
+      org-ref-default-bibliography ‘(“$SOME/index.bib”)
+      org-ref-pdf-directory “$SOME/lib/”)</p>
+
+<ol>
+  <li>Configuramos <strong>helm-bibtex</strong></li>
+</ol>
+
+<p>(setq helm-bibtex-bibliography “$SOME/index.bib” ;; where your references are stored
+      helm-bibtex-library-path “$SOME/lib/” ;; where your pdfs etc are stored
+      helm-bibtex-notes-path “$SOME/index.org” ;; where your notes are stored
+      bibtex-completion-bibliography “$SOME/index.bib” ;; writing completion
+      bibtex-completion-notes-path “$SOME/index.org”
+)</p>
+
+<ol>
+  <li>Intercalamos dentro de un documento <strong>orgmode</strong></li>
+</ol>
+
+<p>:INTERLEAVE_PDF:</p>
+
+<ol>
+  <li>Referencias</li>
+</ol>
+
+<ul>
+  <li><a href="https://codearsonist.com/reading-for-programmers">Codearsonist</a></li>
+  <li><a href="https://github.com/jkitchin/org-ref/blob/master/org-ref.org">Org-Ref Manual</a></li>
+</ul>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/41-LaTeX" title="NEXT: 41 LaTeX">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/39-Tiempo" title="PREV: 39 Tiempo">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>

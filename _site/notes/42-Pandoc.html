@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>42 Pandoc · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="42 Pandoc" />
+<meta name="twitter:description" content="Emacs dispone de un paquete que integra pandoc en Emacs.">
+
+<meta name="description" content="Emacs dispone de un paquete que integra pandoc en Emacs.">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/42-Pandoc">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>42 Pandoc</h1>
+		<time>July 6, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Emacs dispone de un paquete que integra pandoc en Emacs.</p>
+
+<p>Se trata del paquete <code class="highlighter-rouge">ox-pandoc</code>:</p>
+
+<p>This is another exporter for org-mode that translates Org-mode file to various other formats via Pandoc. You need org-mode version 8.2 or later, and Pandoc 1.13 or later, to use this package. For details, please refer https://github.com/kawabata/ox-pandoc.</p>
+
+<p>Aquí podemos ver con más detalle la explicación:</p>
+
+<p>https://github.com/kawabata/ox-pandoc</p>
+
+<p>Parece que este paquete se basa en este otro desarrollo:</p>
+
+<p>https://github.com/robtillotson/org-pandoc/blob/master/README.org</p>
+
+<p>RESUMIENDO:</p>
+
+<ul>
+  <li>
+    <p>Sin salir de Emacs se puede utilizar toda la potencia de convesión de Pandoc.</p>
+  </li>
+  <li>
+    <p>Debemos configurar correctamente las cabeceras del documento .org para aprovechar estas características.</p>
+  </li>
+</ul>
+
+<p>Ejemplo:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- #+PANDOC_OPTIONS :: Add command line options to the Pandoc process.
+- #+EPUB_RIGHTS :: Set the copyright statement for the ePub metadata.
+- #+EPUB_COVER :: Path to a cover image for ePub output.
+- #+EPUB_STYLESHEET :: Path to a stylesheet for ePub output.
+</code></pre>
+</div>
+
+<p>Entiendo perfectamente que todo esto puede abrumar, para entenderlo necesitamos mucho más tiempo y formación.</p>
+
+<p>Lo más importante es saber qué nos puede ofrecer este paquete, que no es más que:</p>
+
+<p>Emacs + OrgMode + Pandoc</p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/41-LaTeX" title="PREV: 41 LaTeX">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>

@@ -1,28 +1,21 @@
-# Emacs #
+# The Plain v3.0
 
-Entorno para aprender a utilizar Emacs de forma guiada.
+The Plain is a minimalist Jekyll theme, designed to focus on writing that really matters to you and your audience. Everything else is just a distraction. Nothing more other than useful and understandable information sharing. I have made a final update to this theme. This theme is suit best for personal blog type, but not limited to. P/S: This theme is originally inspired from Leonard Lamprecht's original [Jekyll theme](https://github.com/leo/leo.github.io) (thanks!).
 
-## Commandos Básicos
-</summary>
-<details>
-<summary>:black_small_square: Comandos básicos</summary>
+[**Live Demo**](http://heiswayi.github.io/the-plain/)
 
-Commands | Descriptions
---- | ---
-<kbd>Ctrl</kbd> | Control
-<kbd>M</kbd> | Alt
-<kbd>S</kbd> | Shift
-<kbd>Ctrl</kbd> - <kbd>g</kbd> | Limpiar secuencia
-<kbd>Ctrl</kbd> - <kbd>0</kbd> | Borra ventana activa
-<kbd>Ctrl</kbd> - <kbd>1</kbd> | Borra todas las ventanas menos la activa
-<kbd>Ctrl</kbd> - <kbd>2</kbd> | Divide horizontalmente dos ventana
-<kbd>Ctrl</kbd> - <kbd>o</kbd> | Lleva el cursor a la próxima ventana 
-<kbd>Ctrl</kbd> - <kbd>x</kbd> - <kbd>k</kbd> | Cierra buffer
-</details>
+### Screenshot
 
-###### Licencia ######
+![The Plain Screenshot](http://i.imgur.com/8ZXhjfV.png)
 
-MIT
+### Philosophy
 
-###### Theme ###### 
-[Vida](http://syaning.com/vida/).
+> Minimalism is a masterpiece of tranquility. -- Heiswayi Nrird
+
+### License
+
+[MIT](LICENSE.md)
+
+### Credits
+
+Many thanks to this theme [contributors](https://github.com/heiswayi/the-plain/graphs/contributors) that help fixing bugs or enhance this theme source code.

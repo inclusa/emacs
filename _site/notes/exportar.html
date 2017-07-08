@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>28 Exportar · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="28 Exportar" />
+<meta name="twitter:description" content="1. Cabeceras">
+
+<meta name="description" content="1. Cabeceras">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/exportar">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>28 Exportar</h1>
+		<time>April 21, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<h3 id="1-cabeceras">1. Cabeceras</h3>
+
+<p>Para exportar datos deberemos incluir la siguiente información en la cabecera del documento y adaptarla a nuestras necesidades:</p>
+
+<pre><code class="language-emacs">     #+TITLE:       título del que se muestrao
+     #+AUTHOR:      autor (por defecto se coge desde user-full-name del sistema)
+     #+DATE:        fecha, fijada, o un Org timestamp
+     #+EMAIL:       tu email (por defecto se coge user-mail-address del sistema)
+     #+LANGUAGE:    lenguaje, por ejemplo  ‘es’ (org-export-default-language)
+     #+OPTIONS:     H:2 num:t toc:t \n:nil ::t |:t ^:t f:t tex:t ...
+</code></pre>
+
+<h3 id="2-comandos">2. Comandos</h3>
+
+<p><code class="highlighter-rouge">C-c C-e</code> Comandos de explotación y publicación.</p>
+
+<h3 id="3-codificación">3. Codificación</h3>
+
+<p><code class="highlighter-rouge">C-c C-e t u</code> y <code class="highlighter-rouge">C-c C-e t U</code> ambos exportan la codificación a UTF-8.</p>
+
+<h3 id="4-creando-un-archivo-de-html-donde-se-incrusta-código">4. Creando un archivo de HTML donde se incrusta código</h3>
+
+<p><code class="highlighter-rouge">C-c C-e h h</code> Exportar a HTML <code class="highlighter-rouge">archivo.html</code></p>
+
+<p><code class="highlighter-rouge">C-c C-e h o</code> Exportar a HTML e inmediatamente abrir el navegador sin guardar</p>
+
+<p>Para incrustar código:</p>
+
+<p>a. En una línea</p>
+
+<pre><code class="language-emacs">#+HTML: Código literal HTML code para que se  exportará en esta línea
+</code></pre>
+
+<p>b. En varias líneas</p>
+
+<pre><code class="language-emacs">     #+BEGIN_EXPORT html
+     Todas las líneas entre estos marcadores serán exportadas literalmente
+     #+END_HTML
+</code></pre>
+
+<h3 id="5-exportar-a-latex-o-pdf">5. Exportar a LaTeX o PDF</h3>
+
+<p><code class="highlighter-rouge">C-c C-e l l</code> Exporta un fichero LaTeX <code class="highlighter-rouge">archivo.tex</code></p>
+
+<p><code class="highlighter-rouge">C-c C-e l p</code> Exporta como LaTeX y también PDF</p>
+
+<p><code class="highlighter-rouge">C-c C-e l o</code> Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF</p>
+
+<h3 id="6-exportar-calendario">6. Exportar calendario</h3>
+
+<p><code class="highlighter-rouge">C-c C-e c f</code> Crea un archivo iCalendar con extensión <code class="highlighter-rouge">.ics</code></p>
+
+<p><code class="highlighter-rouge">C-c C-e c c</code> Crea un archivo largo de iCalendar con todos los archivos <code class="highlighter-rouge">org-agenda-files</code> y lo escribe cogiendo <code class="highlighter-rouge">org-icalendar-combined-agenda-file</code>.</p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/tables" title="NEXT: 29 Tablas">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/columnas" title="PREV: 27 Columnas">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>

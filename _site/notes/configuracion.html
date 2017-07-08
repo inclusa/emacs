@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>10 Configuración · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="10 Configuración" />
+<meta name="twitter:description" content="Recordamos comandos esenciales">
+
+<meta name="description" content="Recordamos comandos esenciales">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/configuracion">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>10 Configuración</h1>
+		<time>March 10, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Recordamos comandos esenciales</p>
+
+<ul>
+  <li>Buscar archivo C-x f</li>
+  <li>Deshacer C-x u</li>
+  <li>Guardar C-x w</li>
+  <li>Cambio de buffer C-x b</li>
+  <li>Cerrar sessión C-x C-c</li>
+  <li>Guardar C-x C-s</li>
+</ul>
+
+<p>Vamos a mejorar la configuracion para evitar los mensajes de inicio. Abriremos el archivo <code class="highlighter-rouge">.emacs</code> y copiaremos:</p>
+
+<pre><code class="language-emacs">;;; Sin mensaje de bienvenida:
+(setq inhibit-startup-message t)
+;
+;;; No mostrar la barra del menú:
+(menu-bar-mode -1)
+;
+;;; Reemplazar "yes" y "no" por "y" y "n"
+(fset 'yes-or-no-p 'y-or-n-p)
+;
+;;; Mover a la papelera al borrar archivos y directorios:
+(setq delete-by-moving-to-trash t
+trash-directory "~/.local/share/Trash/files")
+;
+;;; guardar la sessión al cerrar emacs y restaurarla
+;;; al arrancar-la de nuevo. Cero (0) para desactivar:
+(desktop-save-mode 1)
+;
+;;; Para que se muestren todos los buffers abiertos al pulsar C-x b (ido):
+(ido-mode 1)
+;;; Ignorar determinados buffers.
+(setq ido-ignore-buffers '("^ " "*Completions*" "*Shell Command Output*"
+                           "*Messages*" "Async Shell Command" "*scratch*"
+                           "*tramp*"))
+</code></pre>
+
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/ventanas" title="NEXT: 11 Ventanas">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/cifrado" title="PREV: 09 Cifrado">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>

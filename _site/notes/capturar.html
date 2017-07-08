@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>22 Captura · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="22 Captura" />
+<meta name="twitter:description" content="Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.">
+
+<meta name="description" content="Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/capturar">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>22 Captura</h1>
+		<time>April 2, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.</p>
+
+<p>Así deberemos incluir en el archivo de configuración <code class="highlighter-rouge">.emacs</code> el siguiente código:</p>
+
+<pre><code class="language-emacs">
+;; Plantilles per a capturar
+
+(setq org-directory "~/Documents/56_bulletjournal/org")
+(setq org-default-notes-file "~/Documents/56_bulletjournal/notes")
+
+;; I use C-c c to start capture mode
+(global-set-key (kbd "C-c c") 'org-capture)
+
+;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
+(setq org-capture-templates
+      (quote (("t" "todo" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* TODO %?\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("r" "respond" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* NEXT Respond to %:from on %:subject\nSCHEDULED: %t\n%U\n%a\n" :clock-in t :clock-resume t :immediate-finish t)
+              ("n" "note" entry (file "~~/Documents/56_bulletjournal/org/captura.org")
+               "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("j" "Journal" entry (file+datetree "~/Documents/56_bulletjournal/org/diary.org")
+               "* %?\n%U\n" :clock-in t :clock-resume t)
+              ("w" "org-protocol" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* TODO Review %c\n%U\n" :immediate-finish t)
+              ("m" "Meeting" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* MEETING with %? :MEETING:\n%U" :clock-in t :clock-resume t)
+              ("p" "Phone call" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* PHONE %? :PHONE:\n%U" :clock-in t :clock-resume t)
+              ("h" "Habit" entry (file "~/Documents/56_bulletjournal/org/captura.org")
+               "* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \"%&lt;&lt;%Y-%m-%d %a .+1d/3d&gt;&gt;\")\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n"))))
+
+</code></pre>
+
+<p>De estar forma presionando las teclas <code class="highlighter-rouge">C-c c</code> obtendremos el menú siguiente:</p>
+
+<pre><code class="language-emacs">Select a capture template
+=========================
+
+[t]     todo
+[r]     respond
+[n]     note
+[j]     Journal
+[w]     org-protocol
+[m]     Meeting
+[p]     Phone call
+[h]     Habit
+--------------------------------------------------------------------------
+[C]     Customize org-capture-templates
+[q]     Abort
+</code></pre>
+<p>Este menú creará un archivo llamado <code class="highlighter-rouge">captura.org</code> o <code class="highlighter-rouge">diary.org</code> donde se irán almacenando muestras capturas.</p>
+
+<p>Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.</p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/directorio" title="NEXT: 23 Directorio">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/habitos" title="PREV: 21 Hábitos">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>21 Hábitos · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="21 Hábitos" />
+<meta name="twitter:description" content="Rastrear hábitos es algo importante para poder instaurarlos y consolidarlos.">
+
+<meta name="description" content="Rastrear hábitos es algo importante para poder instaurarlos y consolidarlos.">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/habitos">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>21 Hábitos</h1>
+		<time>April 1, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Rastrear hábitos es algo importante para poder instaurarlos y consolidarlos.</p>
+
+<p>Podemos rastrear nuestros hábitos marcando día y hora de cuándo los hacemos de forma muy fácil.</p>
+
+<h1 id="1-generando-el-código">1. Generando el código</h1>
+
+<p>Primero deberemos definir el hábito y escribir:</p>
+
+<pre><code class="language-emacs">*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &lt;2017-04-02 dg 05:00 .+1d/2d&gt;
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: 
+      :END: 
+</code></pre>
+
+<p>Así definimos el hábito `Controlar la respiración durante 5 minuts.</p>
+
+<p>Marcamos en la agenda este hábito <code class="highlighter-rouge">C-c C-s</code>, pero editamos la marca añadiendo la hora i las veces que se va a repetir a lo largo del día. <code class="highlighter-rouge">05:00 .+1d/2d</code>.</p>
+
+<h1 id="2-marcamos-el-hábito">2. Marcamos el hábito</h1>
+
+<p>Se trata de pulsar unas teclas que nos iran marcando el momento en el que realizamos el hábito realizando una lista:</p>
+
+<pre><code class="language-emacs">- State "PROCESS"    from "TODO"       [2017-04-01 ds 09:41]
+- State "PROCESS"    from "TODO"       [2017-03-31 dv 21:34]
+</code></pre>
+
+<p>De esta forma obtendremos un listado de las veces que realizamos el hábito.</p>
+
+<p>Para <code class="highlighter-rouge">marcar el hábito</code> no situaremos encima de la palabra <code class="highlighter-rouge">TODO</code> y pulsaremos las teclas <code class="highlighter-rouge">Shift + &lt;right&gt;</code>, es decir <code class="highlighter-rouge">Mayúscula + flecha derecha</code>.</p>
+
+<p>De esta forma se generará una lista de seguimiento del hábito.</p>
+
+<h1 id="3-resultado">3. Resultado</h1>
+
+<pre><code class="language-emacs">*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &lt;2017-04-02 dg 05:00 .+1d/2d&gt;
+    - State "PROCESS"    from "TODO"       [2017-04-01 ds 09:41]
+    - State "PROCESS"    from "TODO"       [2017-03-31 dv 21:34]
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: [2017-04-01 ds 09:41]
+      :END:
+</code></pre>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/capturar" title="NEXT: 22 Captura">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/agenda" title="PREV: 20 Agenda">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>

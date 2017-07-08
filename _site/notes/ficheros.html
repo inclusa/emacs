@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>05 Buffers · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="05 Buffers" />
+<meta name="twitter:description" content="Buffer: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.">
+
+<meta name="description" content="Buffer: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/ficheros">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>05 Buffers</h1>
+		<time>March 5, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p><code class="highlighter-rouge">Buffer</code>: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.</p>
+
+<p><code class="highlighter-rouge">Fichero</code>: conjunto de datos almacenados en el disco. Es inmodificable, aunque se puede borrar y crear otro fichero con distinto nombre y mismo contenido.</p>
+
+<p>Cuando leemos un fichero, lo que realmente hacermos es copiarlo en memoria RAM (buffer), durante su edición lo modificamos en esa zona de memoria. el fichero permanece inalterado hasta que demos la orden específica de grabar en el disco las modificaciones.</p>
+
+<p>No todos los <code class="highlighter-rouge">buffers</code> corresponden a <code class="highlighter-rouge">ficheros</code>.</p>
+
+<p>Cuando se inicia Emacs aparecen estos dos buffers:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">*scratch*</code></li>
+  <li><code class="highlighter-rouge">*messages*</code></li>
+</ul>
+
+<p>Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a un fichero.</p>
+
+<ol>
+  <li>Cerrar el búffer, no modifica el fichero si está guardado, no lo crea en caso de no estarlo.</li>
+</ol>
+
+<pre><code class="language-emacs">C-x k
+</code></pre>
+
+<ol>
+  <li>Incluir acentos: incluye esto <code class="highlighter-rouge">(set-keyboard-coding-system 'utf-8) </code> en el fichero <code class="highlighter-rouge">.emacs</code></li>
+</ol>
+
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/visitar" title="NEXT: 06 Ficheros">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/ventanas" title="PREV: 04 Organizar ventanas">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>

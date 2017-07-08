@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>24 Bookmarks · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="24 Bookmarks" />
+<meta name="twitter:description" content="Apuntando a un fichero">
+
+<meta name="description" content="Apuntando a un fichero">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/bookmarks">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>24 Bookmarks</h1>
+		<time>April 15, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<h3 id="apuntando-a-un-fichero">Apuntando a un fichero</h3>
+
+<p>Abrimos un archivo de bookmarks o favoritos.</p>
+
+<ol>
+  <li>Nos situamos en el fichero que queremos añadir al <strong>bookmark</strong> con el comando <code class="highlighter-rouge">C-x C-f</code>.</li>
+  <li>Tecleamos <code class="highlighter-rouge">M-x bookmark-set Ctrl-x-r-m</code> de esta forma grabamos el archivo al bookmark.</li>
+</ol>
+
+<h3 id="apuntando-a-un-directorio">Apuntando a un directorio</h3>
+
+<ol>
+  <li>Abrimos el directorio con los comandos <code class="highlighter-rouge">C-x C-d</code>.</li>
+  <li>Grabamos el directorio al bookmark <code class="highlighter-rouge">M-x bookmark-set Ctrl-x r-m</code>.</li>
+</ol>
+
+<h3 id="recuperando-los-bookmarks">Recuperando los bookmarks</h3>
+
+<p><code class="highlighter-rouge">C-x r-l</code> y pulsamos sobre el lugar donde queremos ir.</p>
+
+<h3 id="editar-bookmarks">Editar bookmarks</h3>
+
+<ol>
+  <li>Abrimos el gestor de bookmarks o favoritos <code class="highlighter-rouge">M-x bookmark-bmenu-list</code> (<strong>bookmark-list</strong>).</li>
+  <li>Abrimos el fichero que queremos que se a un bookmark <code class="highlighter-rouge">Ctrl+x r m</code> y pondremos su nombre (<strong>bookmark-bmenu-set</strong>).</li>
+  <li>Listamos el archivo <strong>bookmark-bmenu-list</strong> <code class="highlighter-rouge">Ctrl+x r l</code></li>
+  <li>Abrimos el archivo <strong>bookmark-jump</strong> <code class="highlighter-rouge">Ctrl+x r b</code>.</li>
+  <li>Borramos o Renombramos el bookmark
+    <ul>
+      <li>Escribimos <code class="highlighter-rouge">d</code> para borrar item.</li>
+      <li>Escribimos <code class="highlighter-rouge">x</code> para borrar marcadores.</li>
+      <li>Escribimos <code class="highlighter-rouge">r</code> para borrar el título del ítem.</li>
+      <li>Escribimos <code class="highlighter-rouge">s</code> para guardar los cambios.</li>
+    </ul>
+  </li>
+  <li>Guardar el archivo bookmark. Llamamos <strong>bookmark-save</strong> o presionamos <code class="highlighter-rouge">s</code>.</li>
+</ol>
+
+<p>Podemos configurar el archivo <code class="highlighter-rouge">.emacs</code> para que se vaya guardando automáticamente.</p>
+
+<pre><code class="language-emacs">(setq bookmark-save-flag 1) ; para que cada vez que cambie, se guarde
+
+(setq bookmark-save-flag t) ; para que se guarde cuando salga
+
+(setq bookmark-save-flag nil) ; para que nunca se autogruarde
+</code></pre>
+
+<p>Podremos configurar las teclas rápidas llamando a <strong>describe-mode</strong> <code class="highlighter-rouge">Ctrl + h m</code>.</p>
+
+<p>Para iniciar el archivo al arrancar Emacs:</p>
+
+<pre><code class="language-emacs">(setq inhibit-splash-screen t)
+(require 'bookmark)
+(bookmark-bmenu-list)
+(switch-to-buffer "*Bookmark List*")
+</code></pre>
+
+<p>Guardaremos el archivo en <code class="highlighter-rouge">~/.emacs.d/bookmarks</code></p>
+
+<p>Por defecto el camino del archivo bookmark está guardado en la variable <code class="highlighter-rouge">bookmark-default-file</code>. Llamaremos <code class="highlighter-rouge">describe-variable</code> <code class="highlighter-rouge">Ctrl+h v</code> para ver su valor.</p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/themes" title="NEXT: 25 Themes">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/directorio" title="PREV: 23 Directorio">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>

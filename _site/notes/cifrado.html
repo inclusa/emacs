@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>09 Cifrado · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="09 Cifrado" />
+<meta name="twitter:description" content="Emacs utiliza por defecto el cifrado de GPG.">
+
+<meta name="description" content="Emacs utiliza por defecto el cifrado de GPG.">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/cifrado">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>09 Cifrado</h1>
+		<time>March 9, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Emacs utiliza por defecto el cifrado de GPG.</p>
+
+<p>De esta manera para podemos cifrar y descrifrar documentos tanto para <code class="highlighter-rouge">claves simétricas</code>, una clave como para <code class="highlighter-rouge">claves asimétricas</code>, dos claves: pública y privada).</p>
+
+<p>Empecemos por lo sencillo: <code class="highlighter-rouge">cifrado simétrico</code>.</p>
+
+<p>Si creamos un documento llamado <code class="highlighter-rouge">a.txt</code>, lo guardamos.</p>
+
+<p>Ahora lo podremos cifrar desde el menú:</p>
+
+<pre><code class="language-emacs">Tools &gt; Encryption/Decryption &gt; Encrypt file...
+</code></pre>
+
+<p>Lo que hace, por detrás es esto, pero no lo vemos:</p>
+
+<pre><code class="language-emacs">gpg -c a.txt
+</code></pre>
+
+<p>Para desdifrar lo que hace es, pero no lo vemos:</p>
+
+<pre><code class="language-emacs">gpg -d a.txt.gpg
+</code></pre>
+
+<p>Genera un archivo nuevo <code class="highlighter-rouge">a.txt.gpg</code>, antes nos pide dos veces que le pongamos una contraseña.</p>
+
+<p>El resultado son dos archivos:</p>
+
+<p><code class="highlighter-rouge">a.txt</code> Sin cifrar</p>
+
+<p><code class="highlighter-rouge">a.txt.gpg</code> Cifrado</p>
+
+<p>Subiríamos a la nube el segundo.</p>
+
+<p>Al recuperarlo deberíamos nos pedirá la clave de cifrado.</p>
+
+<p>Al guardarlo, nos volverá a pedir la clave de cifrado dos veces.</p>
+
+<p>Con este procedimineto siempre mantendremos cifrado nuestro archivo, el cual tendrá una primera capa de seguridad, ya no será tan accesible.</p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/configuracion" title="NEXT: 10 Configuración">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/buffer" title="PREV: 08 Buffer">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>

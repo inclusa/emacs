@@ -1,17 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emacs</title>
-    <description></description>
-    <link>http://localhost:4000/emacs/</link>
-    <atom:link href="http://localhost:4000/emacs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Jul 2017 03:06:24 +0200</pubDate>
-    <lastBuildDate>Thu, 06 Jul 2017 03:06:24 +0200</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <title>The Plain</title>
+    <description>The Plain is a minimalist Jekyll theme, that's it. Can't say anymore...</description>
+    <link>http://localhost:4000</link>
     
-      <item>
-        <title>42 Pandoc</title>
-        <description>&lt;p&gt;Emacs dispone de un paquete que integra pandoc en Emacs.&lt;/p&gt;
+      
+        <item>
+          <title>42 Pandoc</title>
+          <description>&lt;p&gt;Emacs dispone de un paquete que integra pandoc en Emacs.&lt;/p&gt;
 
 &lt;p&gt;Se trata del paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;ox-pandoc&lt;/code&gt;:&lt;/p&gt;
 
@@ -51,16 +48,16 @@
 
 &lt;p&gt;Emacs + OrgMode + Pandoc&lt;/p&gt;
 </description>
-        <pubDate>Thu, 06 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/07/06/42-Pandoc/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/07/06/42-Pandoc/</guid>
-        
-        
-      </item>
+          <pubDate>2017-07-06T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/42-Pandoc</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/42-Pandoc</guid>
+        </item>
+      
     
-      <item>
-        <title>41 LaTeX</title>
-        <description>&lt;p&gt;Instalamos el paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;AUCTeX&lt;/code&gt; desde &lt;a href=&quot;https://melpa.org/#/&quot;&gt;MELPA&lt;/a&gt;, repositorio de Emacs, que se puede consultar via web.&lt;/p&gt;
+      
+        <item>
+          <title>41 LaTeX</title>
+          <description>&lt;p&gt;Instalamos el paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;AUCTeX&lt;/code&gt; desde &lt;a href=&quot;https://melpa.org/#/&quot;&gt;MELPA&lt;/a&gt;, repositorio de Emacs, que se puede consultar via web.&lt;/p&gt;
 
 &lt;p&gt;Para poder instalar paquetes de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; deberemos configurar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; convenientemente. Para ello añadiremos estas líneas:&lt;/p&gt;
 
@@ -97,16 +94,16 @@
 
 &lt;p&gt;De esta forma obtendremos un archivo PDF generado a partir de la plantilla dada.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 06 Jul 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/07/06/41-LaTeX/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/07/06/41-LaTeX/</guid>
-        
-        
-      </item>
+          <pubDate>2017-07-06T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/41-LaTeX</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/41-LaTeX</guid>
+        </item>
+      
     
-      <item>
-        <title>40 Bibliografia</title>
-        <description>&lt;p&gt;Documento de trabajo, iremos puliéndolo para explicar cómo insertar referenias bibliográficas.&lt;/p&gt;
+      
+        <item>
+          <title>40 Bibliografia</title>
+          <description>&lt;p&gt;Documento de trabajo, iremos puliéndolo para explicar cómo insertar referenias bibliográficas.&lt;/p&gt;
 
 &lt;p&gt;Bibtex&lt;/p&gt;
 
@@ -161,16 +158,16 @@
   &lt;li&gt;&lt;a href=&quot;https://github.com/jkitchin/org-ref/blob/master/org-ref.org&quot;&gt;Org-Ref Manual&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 17 Jun 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/06/17/40-Bibliografia/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/06/17/40-Bibliografia/</guid>
-        
-        
-      </item>
+          <pubDate>2017-06-17T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/40-Bibliografia</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/40-Bibliografia</guid>
+        </item>
+      
     
-      <item>
-        <title>39 Tiempo</title>
-        <description>&lt;p&gt;Para realizar un seguimiento del tiempo que dedicamos a las tareas podemos utilizar esta técnica.&lt;/p&gt;
+      
+        <item>
+          <title>39 Tiempo</title>
+          <description>&lt;p&gt;Para realizar un seguimiento del tiempo que dedicamos a las tareas podemos utilizar esta técnica.&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-i&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;org-clock-in&lt;/code&gt;: Comienza a contar el reloj actual.&lt;/p&gt;
 
@@ -178,16 +175,16 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.blackhats.es/wordpress/?p=214&quot;&gt;Para saber mucho más&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 12 Jun 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/06/12/39-Tiempo/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/06/12/39-Tiempo/</guid>
-        
-        
-      </item>
+          <pubDate>2017-06-12T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/39-Tiempo</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/39-Tiempo</guid>
+        </item>
+      
     
-      <item>
-        <title>38 Codigo</title>
-        <description>&lt;p&gt;Teniendo en cuenta estas templates:&lt;/p&gt;
+      
+        <item>
+          <title>38 Codigo</title>
+          <description>&lt;p&gt;Teniendo en cuenta estas templates:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s 	#+BEGIN_SRC ... #+END_SRC
 e 	#+BEGIN_EXAMPLE ... #+END_EXAMPLE
@@ -227,16 +224,16 @@ I 	#+INCLUDE: line
 
 &lt;p&gt;Cuando exportas a html se visualiza el código con el lexer oportuno y sale pintadito según el lenguaje.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 04 Jun 2017 01:36:00 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/06/04/codigo/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/06/04/codigo/</guid>
-        
-        
-      </item>
+          <pubDate>2017-06-04T01:36:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/codigo</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/codigo</guid>
+        </item>
+      
     
-      <item>
-        <title>37 Números</title>
-        <description>&lt;p&gt;Para habilitar los números de línea en el lateral invocamos:&lt;/p&gt;
+      
+        <item>
+          <title>37 Números</title>
+          <description>&lt;p&gt;Para habilitar los números de línea en el lateral invocamos:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;M-x linum-mode
 &lt;/code&gt;&lt;/pre&gt;
@@ -247,16 +244,16 @@ I 	#+INCLUDE: line
 &lt;/code&gt;&lt;/pre&gt;
 
 </description>
-        <pubDate>Wed, 31 May 2017 18:02:00 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/05/31/numeros/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/05/31/numeros/</guid>
-        
-        
-      </item>
+          <pubDate>2017-05-31T18:02:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/numeros</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/numeros</guid>
+        </item>
+      
     
-      <item>
-        <title>36 Buscar</title>
-        <description>&lt;p&gt;Los comandos a tener en cuenta:&lt;/p&gt;
+      
+        <item>
+          <title>36 Buscar</title>
+          <description>&lt;p&gt;Los comandos a tener en cuenta:&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-s&lt;/code&gt; Busqueda hacia adelante&lt;/p&gt;
 
@@ -271,16 +268,16 @@ I 	#+INCLUDE: line
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-q LEFT&lt;/code&gt; Tag Autocompletar, con las flechas pasamos adelante o atrás las tags.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 14 May 2017 03:00:00 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/05/14/buscar/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/05/14/buscar/</guid>
-        
-        
-      </item>
+          <pubDate>2017-05-14T09:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/buscar</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/buscar</guid>
+        </item>
+      
     
-      <item>
-        <title>35 Snippets</title>
-        <description>&lt;p&gt;La automatización de texto es algo importante cuando deseas ir rápido, para ello necesitaremos instalar una extensión para llamar al texto automático. A este concepto lo llamamos &lt;strong&gt;snippet&lt;/strong&gt;.&lt;/p&gt;
+      
+        <item>
+          <title>35 Snippets</title>
+          <description>&lt;p&gt;La automatización de texto es algo importante cuando deseas ir rápido, para ello necesitaremos instalar una extensión para llamar al texto automático. A este concepto lo llamamos &lt;strong&gt;snippet&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Un &lt;strong&gt;snippet&lt;/strong&gt; es un texto programado, al cual se le llama con un caracter o palabra clave seguido de la pulsación del tabulador.&lt;/p&gt;
 
@@ -342,16 +339,16 @@ coments: true
 
 &lt;p&gt;Fuente: &lt;a href=&quot;https://www.youtube.com/watch?v=-4O-ZYjQxks&quot;&gt;Emacculate&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 14 May 2017 02:00:00 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/05/14/snippets/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/05/14/snippets/</guid>
-        
-        
-      </item>
+          <pubDate>2017-05-14T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/snippets</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/snippets</guid>
+        </item>
+      
     
-      <item>
-        <title>34 Imprimir subárbol</title>
-        <description>&lt;p&gt;Para imprimir un subárbol de notas debemos situarnos dentro de la nota concreta que queremos imprimir y lanzar estos comandos:&lt;/p&gt;
+      
+        <item>
+          <title>34 Imprimir subárbol</title>
+          <description>&lt;p&gt;Para imprimir un subárbol de notas debemos situarnos dentro de la nota concreta que queremos imprimir y lanzar estos comandos:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-c C-x b
 &lt;/code&gt;&lt;/pre&gt;
@@ -367,16 +364,16 @@ C-c C-e l p
 &lt;/div&gt;
 
 </description>
-        <pubDate>Sat, 13 May 2017 20:22:08 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/05/13/notas/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/05/13/notas/</guid>
-        
-        
-      </item>
+          <pubDate>2017-05-13T20:22:08+08:00</pubDate>
+          <link>http://localhost:4000/notes/notas</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/notas</guid>
+        </item>
+      
     
-      <item>
-        <title>33 Imágenes</title>
-        <description>&lt;p&gt;Para incrustar imágenes en los documentos lo haremos así:&lt;/p&gt;
+      
+        <item>
+          <title>33 Imágenes</title>
+          <description>&lt;p&gt;Para incrustar imágenes en los documentos lo haremos así:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./image/emacs.png
 &lt;/code&gt;&lt;/pre&gt;
@@ -384,12 +381,1410 @@ C-c C-e l p
 
 &lt;p&gt;Deberemos crear un directorio llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;image&lt;/code&gt; un nivel por debajo y una imagen llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;emacs.png&lt;/code&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 13 May 2017 20:17:13 +0200</pubDate>
-        <link>http://localhost:4000/emacs/2017/05/13/images/</link>
-        <guid isPermaLink="true">http://localhost:4000/emacs/2017/05/13/images/</guid>
-        
-        
-      </item>
+          <pubDate>2017-05-13T20:17:13+08:00</pubDate>
+          <link>http://localhost:4000/notes/images</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/images</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>32 Bullets</title>
+          <description>&lt;p&gt;Los bullets son viñetas configurables.&lt;/p&gt;
+
+&lt;p&gt;Para activar los bullets a mano:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x org-bullets-mode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Fuente&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/sabof/org-bullets&quot;&gt;org-bullets-mode&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2017-05-13T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/bullets</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/bullets</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>31 Archivar</title>
+          <description>&lt;p&gt;Para que el archivado funcione deberemos configurar al principio del documento el archivo donde se van a guardar los proyectos realizados, en este caso el archivo se llamará &lt;code class=&quot;highlighter-rouge&quot;&gt;_done&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#+ARCHIVE: %s_done::&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cuando un proyecto ha finalizado lo podemos archivar así:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-a&lt;/code&gt;     (org-archive-subtree-default)&lt;/p&gt;
+
+&lt;p&gt;Si se trata de un subárbol, o subcontenido dentro de un punto:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-s&lt;/code&gt; o bien &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c $&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Para saber más:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://orgmode.org/manual/Archiving.html&quot;&gt;OrgMode&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2017-05-03T19:30:33+08:00</pubDate>
+          <link>http://localhost:4000/notes/archivar</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/archivar</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>30 Magit</title>
+          <description>&lt;p&gt;Objetivo: ejecutar GIT dentro de Emacs.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-instalando-desde-elpa&quot;&gt;1. Instalando desde ELPA&lt;/h3&gt;
+
+&lt;p&gt;Para establecer el repositorio editar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y anadir una de estas dos opciones:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Usar MELPA:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
+(add-to-list 'package-archives
+             '(&quot;melpa&quot; . &quot;http://melpa.org/packages/&quot;) t)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;Usar MELPA-Stable:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
+(add-to-list 'package-archives
+             '(&quot;melpa-stable&quot; . &quot;http://stable.melpa.org/packages/&quot;) t)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;2-refrescamos&quot;&gt;2. Refrescamos&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-refresh-contents RET&lt;/code&gt; Desde dentro de Emacs refrescamos el repositorio.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-instalamos-el-paquete-magit&quot;&gt;3. Instalamos el paquete Magit&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-install RET magit RET&lt;/code&gt; Así instalamos.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-revisamos-la-versión&quot;&gt;4. Revisamos la versión&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x package-install RET magit RET
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Output&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;5-comandos-esenciales&quot;&gt;5. Comandos esenciales&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-status&lt;/code&gt; para ver el estaddus de git y el estatus del buffer:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; para añadir a la pila archivos (&lt;code class=&quot;highlighter-rouge&quot;&gt;git add .&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c c&lt;/code&gt; para hacer crear un comit (escribe el mensaje, después pulsa &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt; para realizarel commit automáticamente)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;b b&lt;/code&gt; para crear otra rama&lt;/p&gt;
+
+&lt;h3 id=&quot;6-otros-comandos&quot;&gt;6. Otros comandos&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;P u&lt;/code&gt; para realizar un &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;F u&lt;/code&gt; para realizar un &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;try to press &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-flujo-de-trabajo&quot;&gt;7. Flujo de trabajo&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-commit&lt;/code&gt; Commit dels canvis, pregunta si es vol afegir a l’stag, finalitzem&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c&lt;/code&gt; Per finalitzar&lt;/p&gt;
+
+&lt;h3 id=&quot;8-ejemplo&quot;&gt;8. Ejemplo&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/magit.png&quot; alt=&quot;magit&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fuentes&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.emacswiki.org/emacs/Magit&quot;&gt;EmacsWiki&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://magit.vc/manual/magit/index.html#SEC_Contents&quot;&gt;Magit User Manual&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2017-04-24T08:27:06+08:00</pubDate>
+          <link>http://localhost:4000/notes/magit</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/magit</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>29 Tablas</title>
+          <description>&lt;p&gt;La utilización de tablas en &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; mediante la metodología &lt;code class=&quot;highlighter-rouge&quot;&gt;Orgmode&lt;/code&gt; es sencilla.&lt;/p&gt;
+
+&lt;p&gt;Partimos de la escritura de código sencillo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;| Item | Nom | Cognom |
+|------+-----+--------+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;En la siguiente línea escribimos una barra vertical. Para pasar a la siguiente columna lo hacemos con la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;. Con lo que podremos escribir las demás columnas.&lt;/p&gt;
+
+&lt;p&gt;Para pasar a la columna de abano sin pasar por todas las columnas escribiremso ala tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt; o Enter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;| Item | Nom    | Cognom |
+|------+--------+--------+
+| 01   | Pepito | Pérez  |
+| 02   | Pepita | Pérez  |
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+          <pubDate>2017-04-24T07:50:55+08:00</pubDate>
+          <link>http://localhost:4000/notes/tables</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/tables</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>28 Exportar</title>
+          <description>&lt;h3 id=&quot;1-cabeceras&quot;&gt;1. Cabeceras&lt;/h3&gt;
+
+&lt;p&gt;Para exportar datos deberemos incluir la siguiente información en la cabecera del documento y adaptarla a nuestras necesidades:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;     #+TITLE:       título del que se muestrao
+     #+AUTHOR:      autor (por defecto se coge desde user-full-name del sistema)
+     #+DATE:        fecha, fijada, o un Org timestamp
+     #+EMAIL:       tu email (por defecto se coge user-mail-address del sistema)
+     #+LANGUAGE:    lenguaje, por ejemplo  ‘es’ (org-export-default-language)
+     #+OPTIONS:     H:2 num:t toc:t \n:nil ::t |:t ^:t f:t tex:t ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;2-comandos&quot;&gt;2. Comandos&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e&lt;/code&gt; Comandos de explotación y publicación.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-codificación&quot;&gt;3. Codificación&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e t u&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e t U&lt;/code&gt; ambos exportan la codificación a UTF-8.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-creando-un-archivo-de-html-donde-se-incrusta-código&quot;&gt;4. Creando un archivo de HTML donde se incrusta código&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e h h&lt;/code&gt; Exportar a HTML &lt;code class=&quot;highlighter-rouge&quot;&gt;archivo.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e h o&lt;/code&gt; Exportar a HTML e inmediatamente abrir el navegador sin guardar&lt;/p&gt;
+
+&lt;p&gt;Para incrustar código:&lt;/p&gt;
+
+&lt;p&gt;a. En una línea&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;#+HTML: Código literal HTML code para que se  exportará en esta línea
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;b. En varias líneas&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;     #+BEGIN_EXPORT html
+     Todas las líneas entre estos marcadores serán exportadas literalmente
+     #+END_HTML
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;5-exportar-a-latex-o-pdf&quot;&gt;5. Exportar a LaTeX o PDF&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l l&lt;/code&gt; Exporta un fichero LaTeX &lt;code class=&quot;highlighter-rouge&quot;&gt;archivo.tex&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l p&lt;/code&gt; Exporta como LaTeX y también PDF&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l o&lt;/code&gt; Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF&lt;/p&gt;
+
+&lt;h3 id=&quot;6-exportar-calendario&quot;&gt;6. Exportar calendario&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e c f&lt;/code&gt; Crea un archivo iCalendar con extensión &lt;code class=&quot;highlighter-rouge&quot;&gt;.ics&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e c c&lt;/code&gt; Crea un archivo largo de iCalendar con todos los archivos &lt;code class=&quot;highlighter-rouge&quot;&gt;org-agenda-files&lt;/code&gt; y lo escribe cogiendo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-icalendar-combined-agenda-file&lt;/code&gt;.&lt;/p&gt;
+</description>
+          <pubDate>2017-04-21T06:55:15+08:00</pubDate>
+          <link>http://localhost:4000/notes/exportar</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/exportar</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>27 Columnas</title>
+          <description>&lt;p&gt;La utilización de columnas se basa en el resumen sintético de los datos. Así, observemos este código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;
+* Ejemplo
+** Mi proyecto
+   :PROPERTIES:
+   :COLUMNS:  %20ITEM %9Aprobado(Aprovado?){X} %Persona %11Status %10Time_Spent{:}
+   :Persona_ALL:    Isabel Marc Pilar Pedro Patricia
+   :Status_ALL:   &quot;No iniciado&quot; &quot;Iniciado&quot; &quot;En progreso&quot; &quot;Finalizado&quot;
+   :Aprobado_ALL: &quot;[ ]&quot; &quot;[X]&quot;
+   :END:
+
+*** Item 1
+    :PROPERTIES:
+    :Persona:  Isabel
+    :Time_spent:   1:45
+    :Status:   Finalizado
+    :END:
+
+*** Item 2
+    :PROPERTIES:
+    :Persona:  Marc
+    :Status:   En progreso
+    :Time_spent:   0:15
+    :END:
+
+*** Item 3
+    :PROPERTIES:
+    :Persona:  Patricia
+    :Status:   No iniciado
+    :Aprobado: [X]
+    :END:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Visto así no es fácil de analizar, pero si nos situamos en la línea &lt;code class=&quot;highlighter-rouge&quot;&gt;** Mi proyecto&lt;/code&gt; y ejecutamos los comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-c&lt;/code&gt;, automáticamente vemos las cosas más claras. Después de pulsar dos veces la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt; lo veremos así:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;* Ejemplo
+** Mi proyecto     |          |          |             |  2:00   |
+   :PROPERTIES:...
+
+*** Item 1         |          |  Isabel  | Finalizado  |         |...
+*** Item 2         |          |  Marc    | En progreso |         |...
+*** Item 3         | [X]      |  Patricia| No iniciado |         |...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Para desactivar esta función nos colocaremos en la línea &lt;code class=&quot;highlighter-rouge&quot;&gt;*** Mi proyecto&lt;/code&gt; y pulsaremos la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;q&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ahora nos fijamos en las propiedades las cabeceras:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;   :PROPERTIES:
+   :COLUMNS:  %20ITEM %9Aprobado(Aprovado?){X} %Persona %11Status %10Time_Spent{:}
+   :Persona_ALL:    Isabel Marc Pilar Pedro Patricia
+   :Status_ALL:   &quot;No iniciado&quot; &quot;Iniciado&quot; &quot;En progreso&quot; &quot;Finalizado&quot;
+   :Aprobado_ALL: &quot;[ ]&quot; &quot;[X]&quot;
+   :END:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica que es una nueva columna. &lt;code class=&quot;highlighter-rouge&quot;&gt;20&lt;/code&gt; indica que tiene 20 columnas de ancho. &lt;code class=&quot;highlighter-rouge&quot;&gt;ITEM&lt;/code&gt; hace referencia al título precedido de &lt;code class=&quot;highlighter-rouge&quot;&gt;****&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;Aprobado&lt;/code&gt; indica el campo Aprobado. &lt;code class=&quot;highlighter-rouge&quot;&gt;(Aprobado?)&lt;/code&gt; indica el nombre del campo, que aparecerá en la parte superior, en la parte más alta. &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; indica el formato de tiempo.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Persona_ALL&lt;/code&gt;: Indican todas las personas, de esta forma con las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;SHIFT&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;→&lt;/code&gt; situados en el campo &lt;code class=&quot;highlighter-rouge&quot;&gt;Persona&lt;/code&gt; podremos ir cambiando las personas predefinidas, por eso se predefinen. Esto no limita que podamos escribir más personas en el mismo campo.&lt;/p&gt;
+
+&lt;p&gt;Establece el espacio, anchura,&lt;/p&gt;
+</description>
+          <pubDate>2017-04-19T00:43:44+08:00</pubDate>
+          <link>http://localhost:4000/notes/columnas</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/columnas</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>26 Markdown</title>
+          <description>&lt;h1 id=&quot;01-referencia-del-desarrollador-e-instrucciones&quot;&gt;#01 Referencia del desarrollador e instrucciones&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jblevins.org/projects/markdown-mode/&quot;&gt;http://jblevins.org/projects/markdown-mode/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;02-para-escribir-en-modo-markdown-dentro-de-emacs&quot;&gt;#02 Para escribir en modo markdown dentro de Emacs:&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Instalar los paquetes necesarios, en caso de no utilizar Ubuntu 16.04 mirar documentación del enlace de referencia. Copiar en terminal este código para instalar estos dos paquetes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install elpa-markdown-mode emacs-goodies-el
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Activar el modo Markdown dentro de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; así &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x markdown-mode&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ahora ya podemos escribir, veremos pintadas las letras.&lt;/p&gt;
+
+&lt;h1 id=&quot;03-comandos&quot;&gt;#03 Comandos&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-introducción&quot;&gt;1. Introducción&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-a&lt;/code&gt;          Mnemotécnico &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt;      Mnemotécnico titling (titulación)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;lt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;      Markdown abre un archivo de grupo bajo un prefijo.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-hyperlinks&quot;&gt;2. Hyperlinks&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a l&lt;/code&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;[text](url)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a L&lt;/code&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;[text][label]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a u&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a f&lt;/code&gt;   Pie de página&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a w&lt;/code&gt;   [[WikiLink]]&lt;/p&gt;
+
+&lt;h2 id=&quot;3-images&quot;&gt;3. Images&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-i i&lt;/code&gt;   Insertar imágenes&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-i I&lt;/code&gt;   Insertar estilo de imagen&lt;/p&gt;
+
+&lt;h2 id=&quot;4-styles&quot;&gt;4. Styles&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s e&lt;/code&gt;   Insertar una marca en una región de una parlabra. Ejemplo: itálica (&lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt; para &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s s&lt;/code&gt;   Insertar negrita &lt;code class=&quot;highlighter-rouge&quot;&gt;bold&lt;/code&gt; (`&lt;strong&gt;’)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s c&lt;/code&gt;   Code&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s C-f&lt;/code&gt; Blockquote&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s p&lt;/code&gt;   Bloque de blockquote&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s C-p&lt;/code&gt; Bloque de región&lt;/p&gt;
+
+&lt;h2 id=&quot;5-headings&quot;&gt;5. Headings&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t h&lt;/code&gt;   Inserta título automáticamente cambiando caracter por siguiente nivel&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t H&lt;/code&gt;   Inserta título con subrayado simple&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u C-u&lt;/code&gt;     Prefija, se puede especificar un nivel.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 1&lt;/code&gt;   Inserta encabezado nivel 1&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 2&lt;/code&gt;   Inserta encabezado nivel 2&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 3&lt;/code&gt;   Inserta encabezado nivel 3&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 4&lt;/code&gt;   Inserta encabezado nivel 4&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 5&lt;/code&gt;   Inserta encabezado nivel 5&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 6&lt;/code&gt;   Inserta encabezado nivel 6&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t !&lt;/code&gt;   Inserta encabezados de nivel 1 &lt;code class=&quot;highlighter-rouge&quot;&gt;S-1&lt;/code&gt; subrayado &lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t @&lt;/code&gt;   Inserta encabezados de nivel 2 &lt;code class=&quot;highlighter-rouge&quot;&gt;S-2&lt;/code&gt; subrayado &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-k&lt;/code&gt;     Borra el encabezado&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-y&lt;/code&gt;         Pega en el cabezado&lt;/p&gt;
+
+&lt;h2 id=&quot;6-horizontal-rules&quot;&gt;6. Horizontal Rules&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c -&lt;/code&gt;       Inserta raya horizontal&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u&lt;/code&gt;         Prefija, inserta última cadena N en N posición (contando desde 1)&lt;/p&gt;
+
+&lt;h2 id=&quot;7-maintenance-comands&quot;&gt;7. Maintenance Comands&lt;/h2&gt;
+
+&lt;p&gt;Compile &lt;code class=&quot;highlighter-rouge&quot;&gt;C- C-c m&lt;/code&gt;  corre en otro buffer&lt;/p&gt;
+
+&lt;p&gt;Preview &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c p&lt;/code&gt; corre en la pantalla en buffer&lt;/p&gt;
+
+&lt;p&gt;Export &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c e&lt;/code&gt;  basename.html&lt;/p&gt;
+
+&lt;p&gt;Export and View &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c v&lt;/code&gt; exporta y visualiza en el navegador.&lt;/p&gt;
+
+&lt;p&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c o&lt;/code&gt; abre archivo&lt;/p&gt;
+
+&lt;p&gt;Live export &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c l&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c c RET&lt;/code&gt; revisa referencias indefinidas&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c n&lt;/code&gt; renumera con algún orden el buffer de nuestras secuencias&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c ]&lt;/code&gt; completa reglas&lt;/p&gt;
+
+&lt;h2 id=&quot;8-following-links&quot;&gt;8. Following Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; abre links en el navegador&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u&lt;/code&gt; prefijo&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-p&lt;/code&gt; salta al link previo (previous)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-n&lt;/code&gt; salta al próximo link (next)&lt;/p&gt;
+
+&lt;h2 id=&quot;9-jumping&quot;&gt;9. Jumping&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-j&lt;/code&gt; salta desde el punto objeto&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-TAB&lt;/code&gt; salta hacia atrás&lt;/p&gt;
+
+&lt;h2 id=&quot;10-promotion-and-demotion&quot;&gt;10. Promotion and Demotion&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-&lt;/code&gt; decrementa el nivel&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-=&lt;/code&gt; incrementa el nivel&lt;/p&gt;
+
+&lt;p&gt;Toda la documentación en en la web del desarrollador &lt;a href=&quot;http://jblevins.org/projects/markdown-mode/&quot;&gt;JBlevins.org&lt;/a&gt;&lt;/p&gt;
+
+</description>
+          <pubDate>2017-04-16T09:55:25+08:00</pubDate>
+          <link>http://localhost:4000/notes/markdown</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/markdown</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>25 Themes</title>
+          <description>&lt;p&gt;Incluir themes nuevos&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Según la documentación oficial de &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html&quot;&gt;gnu.org&lt;/a&gt;, o en &lt;a href=&quot;https://www.emacswiki.org/emacs/CustomThemes&quot;&gt;EmacsWiki&lt;/a&gt; nos situamos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt; y allí creamos &lt;code class=&quot;highlighter-rouge&quot;&gt;etc/themes/&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;En el fichero de configuración de &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; incluiremos la ruta:
+    &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(add-to-list 'custom-theme-load-path &quot;~/.emacs.d/etc/themes/&quot;) 
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Para cambiar de theme &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x customize-themes ;;; now press retun&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Podemos bajar themes desde &lt;a href=&quot;https://emacsthemes.com/&quot;&gt;EmacsThemes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Algo importante es que los themes han de acabar en &lt;code class=&quot;highlighter-rouge&quot;&gt;*-theme.el&lt;/code&gt; en caso contrario no se mostrará&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+          <pubDate>2017-04-15T23:15:07+08:00</pubDate>
+          <link>http://localhost:4000/notes/themes</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/themes</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>24 Bookmarks</title>
+          <description>&lt;h3 id=&quot;apuntando-a-un-fichero&quot;&gt;Apuntando a un fichero&lt;/h3&gt;
+
+&lt;p&gt;Abrimos un archivo de bookmarks o favoritos.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Nos situamos en el fichero que queremos añadir al &lt;strong&gt;bookmark&lt;/strong&gt; con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-f&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Tecleamos &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x bookmark-set Ctrl-x-r-m&lt;/code&gt; de esta forma grabamos el archivo al bookmark.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;apuntando-a-un-directorio&quot;&gt;Apuntando a un directorio&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Abrimos el directorio con los comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-d&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Grabamos el directorio al bookmark &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x bookmark-set Ctrl-x r-m&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;recuperando-los-bookmarks&quot;&gt;Recuperando los bookmarks&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x r-l&lt;/code&gt; y pulsamos sobre el lugar donde queremos ir.&lt;/p&gt;
+
+&lt;h3 id=&quot;editar-bookmarks&quot;&gt;Editar bookmarks&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Abrimos el gestor de bookmarks o favoritos &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x bookmark-bmenu-list&lt;/code&gt; (&lt;strong&gt;bookmark-list&lt;/strong&gt;).&lt;/li&gt;
+  &lt;li&gt;Abrimos el fichero que queremos que se a un bookmark &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+x r m&lt;/code&gt; y pondremos su nombre (&lt;strong&gt;bookmark-bmenu-set&lt;/strong&gt;).&lt;/li&gt;
+  &lt;li&gt;Listamos el archivo &lt;strong&gt;bookmark-bmenu-list&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+x r l&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Abrimos el archivo &lt;strong&gt;bookmark-jump&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+x r b&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Borramos o Renombramos el bookmark
+    &lt;ul&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt; para borrar item.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; para borrar marcadores.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; para borrar el título del ítem.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; para guardar los cambios.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Guardar el archivo bookmark. Llamamos &lt;strong&gt;bookmark-save&lt;/strong&gt; o presionamos &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Podemos configurar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; para que se vaya guardando automáticamente.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq bookmark-save-flag 1) ; para que cada vez que cambie, se guarde
+
+(setq bookmark-save-flag t) ; para que se guarde cuando salga
+
+(setq bookmark-save-flag nil) ; para que nunca se autogruarde
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Podremos configurar las teclas rápidas llamando a &lt;strong&gt;describe-mode&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + h m&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para iniciar el archivo al arrancar Emacs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq inhibit-splash-screen t)
+(require 'bookmark)
+(bookmark-bmenu-list)
+(switch-to-buffer &quot;*Bookmark List*&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Guardaremos el archivo en &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.emacs.d/bookmarks&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Por defecto el camino del archivo bookmark está guardado en la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;bookmark-default-file&lt;/code&gt;. Llamaremos &lt;code class=&quot;highlighter-rouge&quot;&gt;describe-variable&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+h v&lt;/code&gt; para ver su valor.&lt;/p&gt;
+</description>
+          <pubDate>2017-04-15T07:02:06+08:00</pubDate>
+          <link>http://localhost:4000/notes/bookmarks</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/bookmarks</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>23 Directorio</title>
+          <description>&lt;p&gt;Para configurar el &lt;em&gt;directorio por defecto&lt;/em&gt; y que, así nos apunte rápidamente al directorio donde trabajajos editaremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; e insertaremos este código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq default-directory &quot;~Documents/BulletJournal/&quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De esta forma, cada vez que abramos un archivo con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x f&lt;/code&gt; ya estaremos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;~Documents/BulletJournal/&lt;/code&gt;&lt;/p&gt;
+</description>
+          <pubDate>2017-04-08T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/directorio</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/directorio</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>22 Captura</title>
+          <description>&lt;p&gt;Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.&lt;/p&gt;
+
+&lt;p&gt;Así deberemos incluir en el archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; el siguiente código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;
+;; Plantilles per a capturar
+
+(setq org-directory &quot;~/Documents/56_bulletjournal/org&quot;)
+(setq org-default-notes-file &quot;~/Documents/56_bulletjournal/notes&quot;)
+
+;; I use C-c c to start capture mode
+(global-set-key (kbd &quot;C-c c&quot;) 'org-capture)
+
+;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
+(setq org-capture-templates
+      (quote ((&quot;t&quot; &quot;todo&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* TODO %?\n%U\n%a\n&quot; :clock-in t :clock-resume t)
+              (&quot;r&quot; &quot;respond&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* NEXT Respond to %:from on %:subject\nSCHEDULED: %t\n%U\n%a\n&quot; :clock-in t :clock-resume t :immediate-finish t)
+              (&quot;n&quot; &quot;note&quot; entry (file &quot;~~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* %? :NOTE:\n%U\n%a\n&quot; :clock-in t :clock-resume t)
+              (&quot;j&quot; &quot;Journal&quot; entry (file+datetree &quot;~/Documents/56_bulletjournal/org/diary.org&quot;)
+               &quot;* %?\n%U\n&quot; :clock-in t :clock-resume t)
+              (&quot;w&quot; &quot;org-protocol&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* TODO Review %c\n%U\n&quot; :immediate-finish t)
+              (&quot;m&quot; &quot;Meeting&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* MEETING with %? :MEETING:\n%U&quot; :clock-in t :clock-resume t)
+              (&quot;p&quot; &quot;Phone call&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* PHONE %? :PHONE:\n%U&quot; :clock-in t :clock-resume t)
+              (&quot;h&quot; &quot;Habit&quot; entry (file &quot;~/Documents/56_bulletjournal/org/captura.org&quot;)
+               &quot;* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \&quot;%&amp;lt;&amp;lt;%Y-%m-%d %a .+1d/3d&amp;gt;&amp;gt;\&quot;)\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n&quot;))))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De estar forma presionando las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c c&lt;/code&gt; obtendremos el menú siguiente:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;Select a capture template
+=========================
+
+[t]     todo
+[r]     respond
+[n]     note
+[j]     Journal
+[w]     org-protocol
+[m]     Meeting
+[p]     Phone call
+[h]     Habit
+--------------------------------------------------------------------------
+[C]     Customize org-capture-templates
+[q]     Abort
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Este menú creará un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;captura.org&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;diary.org&lt;/code&gt; donde se irán almacenando muestras capturas.&lt;/p&gt;
+
+&lt;p&gt;Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.&lt;/p&gt;
+</description>
+          <pubDate>2017-04-02T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/capturar</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/capturar</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>21 Hábitos</title>
+          <description>&lt;p&gt;Rastrear hábitos es algo importante para poder instaurarlos y consolidarlos.&lt;/p&gt;
+
+&lt;p&gt;Podemos rastrear nuestros hábitos marcando día y hora de cuándo los hacemos de forma muy fácil.&lt;/p&gt;
+
+&lt;h1 id=&quot;1-generando-el-código&quot;&gt;1. Generando el código&lt;/h1&gt;
+
+&lt;p&gt;Primero deberemos definir el hábito y escribir:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &amp;lt;2017-04-02 dg 05:00 .+1d/2d&amp;gt;
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: 
+      :END: 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Así definimos el hábito `Controlar la respiración durante 5 minuts.&lt;/p&gt;
+
+&lt;p&gt;Marcamos en la agenda este hábito &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;, pero editamos la marca añadiendo la hora i las veces que se va a repetir a lo largo del día. &lt;code class=&quot;highlighter-rouge&quot;&gt;05:00 .+1d/2d&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;2-marcamos-el-hábito&quot;&gt;2. Marcamos el hábito&lt;/h1&gt;
+
+&lt;p&gt;Se trata de pulsar unas teclas que nos iran marcando el momento en el que realizamos el hábito realizando una lista:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;- State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-04-01 ds 09:41]
+- State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-03-31 dv 21:34]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De esta forma obtendremos un listado de las veces que realizamos el hábito.&lt;/p&gt;
+
+&lt;p&gt;Para &lt;code class=&quot;highlighter-rouge&quot;&gt;marcar el hábito&lt;/code&gt; no situaremos encima de la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;TODO&lt;/code&gt; y pulsaremos las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift + &amp;lt;right&amp;gt;&lt;/code&gt;, es decir &lt;code class=&quot;highlighter-rouge&quot;&gt;Mayúscula + flecha derecha&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;De esta forma se generará una lista de seguimiento del hábito.&lt;/p&gt;
+
+&lt;h1 id=&quot;3-resultado&quot;&gt;3. Resultado&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Controlar la respiración durante 5 minutos          :init:
+    SCHEDULED: &amp;lt;2017-04-02 dg 05:00 .+1d/2d&amp;gt;
+    - State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-04-01 ds 09:41]
+    - State &quot;PROCESS&quot;    from &quot;TODO&quot;       [2017-03-31 dv 21:34]
+    :PROPERTIES:
+    :STYLE: habit
+    :LAST_REPEAT: [2017-04-01 ds 09:41]
+      :END:
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+          <pubDate>2017-04-01T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/habitos</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/habitos</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>20 Agenda</title>
+          <description>&lt;p&gt;Comandos que te introducirán en el uso de la agenda:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x org-agenda&lt;/code&gt; Menú para utilizar la agenda&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-d&lt;/code&gt;     (org-deadline) Inserta fecha final&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;     (org-schedule) Inserta fecha para realizr la tarea&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / d&lt;/code&gt;     (org-check-deadlines) Lista citas por fecha límite&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / b&lt;/code&gt;     (org-check-before-date) Lista citas antes de una fecha&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / a&lt;/code&gt;     (org-check-after-date) Lista citas después de una fecha&lt;/p&gt;
+
+</description>
+          <pubDate>2017-03-30T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/agenda</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/agenda</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>19 Cabeceras</title>
+          <description>&lt;p&gt;Empezar el documento &lt;code class=&quot;highlighter-rouge&quot;&gt;.org&lt;/code&gt; con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;#+TITLE: Bullet Journal
+#+LANGUAGE: en
+#+AUTHOR: Alfons Rovira
+#+EMAIL: alfons@server
+#+DATE: 2017-03-01
+#+DESCRIPTION: Personal organizer
+#+KEYWORDS: bullet journal gtd emacs org-mode
+#+STARTUP: content
+#+PRIORITIES: 1 2 3
+#+TAGS: init(i) review(r) reject(j)
+#+TODO: TODO(t) | PROCESS(p) | DONE(d) | CANCEL(c)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;1-campos-descriptivos&quot;&gt;1. Campos descriptivos&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sirven para describir el documento, muy útil en caso de que se exporte a otros formatos como html, txt, pdf, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Title: título del documento&lt;/li&gt;
+  &lt;li&gt;Language: lenguaje en el que está escrito&lt;/li&gt;
+  &lt;li&gt;Author: autor del mismo&lt;/li&gt;
+  &lt;li&gt;Email: email de contacto&lt;/li&gt;
+  &lt;li&gt;Date: fecha de inicio o de final del documento&lt;/li&gt;
+  &lt;li&gt;Description: descripción del documento&lt;/li&gt;
+  &lt;li&gt;Keywords: palabras clave&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-campos-interactivos&quot;&gt;2. Campos interactivos&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sirve para dar funcionalidades específicas adaptadas a tus necesidaes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Startup: si contine la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; aparecen desplegadas las categorías al abrir el documento&lt;/li&gt;
+  &lt;li&gt;Priorities: configuración de las prioridades, lo que se pone en lo que se usa, en este caso hemos cambiado las prioridades A, B, C por 1, 2, 3&lt;/li&gt;
+  &lt;li&gt;Tags: etiquetas que usaremos por defecto&lt;/li&gt;
+  &lt;li&gt;ToDo: estados de las tareas que utilizaremos por defecto&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+          <pubDate>2017-03-28T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/head</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/head</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>18 To do</title>
+          <description>&lt;p&gt;Metodología: OrgMode&lt;/p&gt;
+
+&lt;h1 id=&quot;1-descripción&quot;&gt;1. Descripción&lt;/h1&gt;
+
+&lt;p&gt;Para hacer listas de tareas deberemos utilizar la palabra TODO.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*** TODO Comprar leche
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;2-teclas-rápidas&quot;&gt;2. Teclas rápidas&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt; Rotar los TODO a otro ítem: (sin marca) -&amp;gt; TODO -&amp;gt; PROGRESS -&amp;gt; DONE -&amp;gt; (sin marca)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-&amp;lt;right&amp;gt;/&amp;lt;left&amp;gt;&lt;/code&gt; Utilizar con flechas. Estado de TODO.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / t&lt;/code&gt; Ver los TODO en árbol.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c a t&lt;/code&gt; Mostrar todos los TODO.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-M-&amp;lt;RET&amp;gt;&lt;/code&gt; Insertar TODO en nueva entrada.&lt;/p&gt;
+
+</description>
+          <pubDate>2017-03-27T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/todo</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/todo</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>17 Links</title>
+          <description>&lt;p&gt;Metodologia: OrgMode&lt;/p&gt;
+
+&lt;h1 id=&quot;1-enlaces&quot;&gt;1. Enlaces&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[link][Descriptión]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alternativa&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[link]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Teclas rápidas&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-c C-l
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;2-enlaces-internos&quot;&gt;2. Enlaces internos&lt;/h1&gt;
+
+&lt;p&gt;Un contexto en el que podemos utilizar enlaces internos es realizando un índice de un documento. Utilizaremos corchetes `[[]] Para marcar el lugar donde pincharemos..&lt;/p&gt;
+
+&lt;p&gt;Índice&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[Future Log]]
+[[Monthy Log]]
+[[Daily Log]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Utilizaremos estos símbolos &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/code&gt; para indicar el destino.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;&amp;lt;&amp;lt;Future Log&amp;gt;&amp;gt;
+&amp;lt;&amp;lt;Monty Log&amp;gt;&amp;gt;
+&amp;lt;&amp;lt;Daily Log&amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;3-links-externos&quot;&gt;3. Links externos&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;[[http://www.gnu.org/software/emacs/][GNU Emacs]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;4-sintaxis&quot;&gt;4. Sintaxis&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c l&lt;/code&gt; Alamacena un enlace en el buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Inserta el enlace almacenado en el buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Situándose encima del enlace esconde el enlace (&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;) en la descripción&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; Abre el enlace&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c %&lt;/code&gt; Marca una posición para volver a ella con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;amp;&lt;/code&gt;&lt;/p&gt;
+</description>
+          <pubDate>2017-03-26T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/links</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/links</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>16 Org Mode</title>
+          <description>&lt;p&gt;&lt;a href=&quot;http://orgmode.org/&quot;&gt;Org&lt;/a&gt; es un modo para matener notas, TODO (listas de tareas) y para panificación de proyectos con rapidez y efectividad en texto plano.&lt;/p&gt;
+
+&lt;p&gt;También es un sistema de autoría y publicación, y apoya el trabajo con código fuente para la programación literal y la investigación reproducible.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/bzZ09dAbLEE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+</description>
+          <pubDate>2017-03-25T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/org</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/org</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>15 Resaltado</title>
+          <description>&lt;p&gt;Podemos utilizar el resaltado escribiendo los códigos:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;*bold* ==&amp;gt; bold
+~code~ ==&amp;gt; code
++strike+ ==&amp;gt; strike
+/italic/ ==&amp;gt; italic
+=verbatim= ==&amp;gt; code
+_underline_ ==&amp;gt; underline
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Para crear superíndides:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento^superínidice
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2&lt;sup&gt;4&lt;/sup&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;2^4&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento_subíndice
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;H_2&lt;/code&gt;&lt;/p&gt;
+
+</description>
+          <pubDate>2017-03-15T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/resaltado</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/resaltado</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>14 Cortar, Copiar, Pegar</title>
+          <description>&lt;p&gt;Utilizaremos la notación &lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt; para simbolizar la barra espaciadora.&lt;/p&gt;
+
+&lt;p&gt;Marcar el principio del bloque: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-SPC&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cortar desde la marca hasta la posición actual: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-w&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Copiar desde la marca a la posición actual: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-w&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cortar desde la marca hata el final de línea: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-k&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Pegar el último bloque cortado o copiado: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-y&lt;/code&gt;&lt;/p&gt;
+
+</description>
+          <pubDate>2017-03-14T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/copiar</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/copiar</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>13 Notas</title>
+          <description>&lt;p&gt;Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.&lt;/p&gt;
+
+&lt;p&gt;Para acceder al Bloc de Notas &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x remember&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Se nos abrirá un archivo donce podremos escribir.&lt;/p&gt;
+
+&lt;p&gt;Lo guardaremos así: &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;De esta manera nos guardará este archivo en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt;, nombrandolo notes.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d/notes&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo que nos creará una bitácora genial en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;notes&lt;/code&gt; que incluirá el día y la hora, un comentario y la ruta del archivo del que nos referimos así:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;** Wed Mar 22 20:45:31 2017 (hola)
+
+hola
+
+/home/usuario/bulletjournal.org
+
+** Wed Mar 22 20:46:50 2017 (adiós)
+
+adiós
+
+/home/usuario/bulletjournal.org
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+          <pubDate>2017-03-13T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/notas</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/notas</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>12 Unicode</title>
+          <description>&lt;p&gt;Unicode es un estándar de codificación de caracteres diseñado para facilitar el tratamiento informático, transmisión y visualización de textos de múltiples lenguajes y disciplinas técnicas, además de textos clásicos de lenguas muertas. El término Unicode proviene de los tres objetivos perseguidos: universalidad, uniformidad y unicidad.&lt;/p&gt;
+
+&lt;p&gt;Los puntos de código de Unicode se identifican por un número entero.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;UTF-8: codificación orientada a byte con símbolos de longitud variable.&lt;/li&gt;
+  &lt;li&gt;UTF-16: codificación de 16 bits de longitud variable optimizada para la representación del plano básico multilingüe (BMP).&lt;/li&gt;
+  &lt;li&gt;UTF-32: codificación de 32 bits de longitud fija, y la más sencilla de las tres.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;– Wikipedia&lt;/p&gt;
+
+&lt;p&gt;La forma más rápida de establecer el código unidoce UTF-8 en Emacs, de forma manual seria:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 8 keymap&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo cual quedaría de esta forma si quisiéramos indicar &lt;code class=&quot;highlighter-rouge&quot;&gt;UTF-8&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pulsamos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 8 RET&lt;/code&gt;. La tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt; indica que pulsemos la tecla Intro o Retorno.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Se nos muestra: &lt;code class=&quot;highlighter-rouge&quot;&gt;Insert character (Unicode name or hex):&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Introducimos exactamente estos caracteres: &lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Así ya podríamos poner acentos.&lt;/p&gt;
+
+&lt;p&gt;Fuente:&lt;/p&gt;
+
+&lt;p&gt;https://www.emacswiki.org/emacs/UnicodeEncoding&lt;/p&gt;
+
+</description>
+          <pubDate>2017-03-12T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/unicode</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/unicode</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>11 Ventanas</title>
+          <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 1&lt;/code&gt; - Ver una sola ventana.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 2&lt;/code&gt; - Divide la ventana actual en dos filas&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 3&lt;/code&gt; - Divide la ventana actual en dos columnas&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt; - (cero) Elimina la ventana actual.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt; - Cambiar el buffer de la venana actual. En minibuffer aparece prompt&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x o&lt;/code&gt; - Cambiar de ventana cuando el aréa de trabajo está dividida en varias ventanas&lt;/p&gt;
+
+</description>
+          <pubDate>2017-03-11T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/ventanas</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/ventanas</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>10 Configuración</title>
+          <description>&lt;p&gt;Recordamos comandos esenciales&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Buscar archivo C-x f&lt;/li&gt;
+  &lt;li&gt;Deshacer C-x u&lt;/li&gt;
+  &lt;li&gt;Guardar C-x w&lt;/li&gt;
+  &lt;li&gt;Cambio de buffer C-x b&lt;/li&gt;
+  &lt;li&gt;Cerrar sessión C-x C-c&lt;/li&gt;
+  &lt;li&gt;Guardar C-x C-s&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vamos a mejorar la configuracion para evitar los mensajes de inicio. Abriremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y copiaremos:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;;;; Sin mensaje de bienvenida:
+(setq inhibit-startup-message t)
+;
+;;; No mostrar la barra del menú:
+(menu-bar-mode -1)
+;
+;;; Reemplazar &quot;yes&quot; y &quot;no&quot; por &quot;y&quot; y &quot;n&quot;
+(fset 'yes-or-no-p 'y-or-n-p)
+;
+;;; Mover a la papelera al borrar archivos y directorios:
+(setq delete-by-moving-to-trash t
+trash-directory &quot;~/.local/share/Trash/files&quot;)
+;
+;;; guardar la sessión al cerrar emacs y restaurarla
+;;; al arrancar-la de nuevo. Cero (0) para desactivar:
+(desktop-save-mode 1)
+;
+;;; Para que se muestren todos los buffers abiertos al pulsar C-x b (ido):
+(ido-mode 1)
+;;; Ignorar determinados buffers.
+(setq ido-ignore-buffers '(&quot;^ &quot; &quot;*Completions*&quot; &quot;*Shell Command Output*&quot;
+                           &quot;*Messages*&quot; &quot;Async Shell Command&quot; &quot;*scratch*&quot;
+                           &quot;*tramp*&quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+          <pubDate>2017-03-10T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/configuracion</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/configuracion</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>09 Cifrado</title>
+          <description>&lt;p&gt;Emacs utiliza por defecto el cifrado de GPG.&lt;/p&gt;
+
+&lt;p&gt;De esta manera para podemos cifrar y descrifrar documentos tanto para &lt;code class=&quot;highlighter-rouge&quot;&gt;claves simétricas&lt;/code&gt;, una clave como para &lt;code class=&quot;highlighter-rouge&quot;&gt;claves asimétricas&lt;/code&gt;, dos claves: pública y privada).&lt;/p&gt;
+
+&lt;p&gt;Empecemos por lo sencillo: &lt;code class=&quot;highlighter-rouge&quot;&gt;cifrado simétrico&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si creamos un documento llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt&lt;/code&gt;, lo guardamos.&lt;/p&gt;
+
+&lt;p&gt;Ahora lo podremos cifrar desde el menú:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;Tools &amp;gt; Encryption/Decryption &amp;gt; Encrypt file...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Lo que hace, por detrás es esto, pero no lo vemos:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;gpg -c a.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Para desdifrar lo que hace es, pero no lo vemos:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;gpg -d a.txt.gpg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Genera un archivo nuevo &lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt;, antes nos pide dos veces que le pongamos una contraseña.&lt;/p&gt;
+
+&lt;p&gt;El resultado son dos archivos:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt&lt;/code&gt; Sin cifrar&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt; Cifrado&lt;/p&gt;
+
+&lt;p&gt;Subiríamos a la nube el segundo.&lt;/p&gt;
+
+&lt;p&gt;Al recuperarlo deberíamos nos pedirá la clave de cifrado.&lt;/p&gt;
+
+&lt;p&gt;Al guardarlo, nos volverá a pedir la clave de cifrado dos veces.&lt;/p&gt;
+
+&lt;p&gt;Con este procedimineto siempre mantendremos cifrado nuestro archivo, el cual tendrá una primera capa de seguridad, ya no será tan accesible.&lt;/p&gt;
+</description>
+          <pubDate>2017-03-09T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/cifrado</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/cifrado</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>08 Buffer</title>
+          <description>&lt;h1 id=&quot;1-introducción&quot;&gt;1. Introducción&lt;/h1&gt;
+
+&lt;p&gt;Para entender el concepto de &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; debemos tener en cuenta que el &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere a la memoria RAM.&lt;/p&gt;
+
+&lt;p&gt;Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.&lt;/p&gt;
+
+&lt;p&gt;El &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere al espacio concreto que ocupa este archivo en RAM.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; a un valor &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;, así: &lt;code class=&quot;highlighter-rouge&quot;&gt;s = 5&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;El la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos &lt;code class=&quot;highlighter-rouge&quot;&gt;$s&lt;/code&gt; nos devueve su valor, en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.&lt;/p&gt;
+
+&lt;p&gt;Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;GNU Emacs&lt;/em&gt; %&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;scratch&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Messages&lt;/em&gt; %&lt;/p&gt;
+
+&lt;p&gt;Que esten cargados con asteriscos &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; indica que estan en RAM (buffer) pero no escritos en disco (ROM).&lt;/p&gt;
+
+&lt;p&gt;Así, si visitas &lt;code class=&quot;highlighter-rouge&quot;&gt;*Messages&lt;/code&gt; observarás que tiene la función de &lt;code class=&quot;highlighter-rouge&quot;&gt;log&lt;/code&gt; o bitácora donde se van acumulando los mensajes que te va dando Emacs.&lt;/p&gt;
+
+&lt;p&gt;Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; Indica que se trabaja en ese buffer&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica sólo lectura&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)&lt;/p&gt;
+
+&lt;h1 id=&quot;2-teclas-rápidas&quot;&gt;2. Teclas rápidas&lt;/h1&gt;
+
+&lt;p&gt;Listar buffers &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-b&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cambiar de buffer &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cerrar buffer &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x k&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html&quot;&gt;https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2017-03-08T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/buffer</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/buffer</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>07 Ventanas</title>
+          <description>&lt;ol&gt;
+  &lt;li&gt;Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él. &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Selecciona otra ventana &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x o&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Borra la ventana seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Borra todas las ventanas excepto la seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x  1&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Selecciona un buffer en una ventana nueva &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 b&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 f&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Borra la ventana seleccionada y cierra, mata el buffer que contenia &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 0&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+          <pubDate>2017-03-07T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/zonas</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/zonas</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>06 Ficheros</title>
+          <description>&lt;ol&gt;
+  &lt;li&gt;Abrir fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-f&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Abrir directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x d&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Grabar en disco &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-s&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Grabar el buffer con otro nombre &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-w&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x s&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Cerrar buffer, sin guardar, no modifica archivo creado &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x k&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+          <pubDate>2017-03-06T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/visitar</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/visitar</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>05 Buffers</title>
+          <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Buffer&lt;/code&gt;: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Fichero&lt;/code&gt;: conjunto de datos almacenados en el disco. Es inmodificable, aunque se puede borrar y crear otro fichero con distinto nombre y mismo contenido.&lt;/p&gt;
+
+&lt;p&gt;Cuando leemos un fichero, lo que realmente hacermos es copiarlo en memoria RAM (buffer), durante su edición lo modificamos en esa zona de memoria. el fichero permanece inalterado hasta que demos la orden específica de grabar en el disco las modificaciones.&lt;/p&gt;
+
+&lt;p&gt;No todos los &lt;code class=&quot;highlighter-rouge&quot;&gt;buffers&lt;/code&gt; corresponden a &lt;code class=&quot;highlighter-rouge&quot;&gt;ficheros&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cuando se inicia Emacs aparecen estos dos buffers:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*scratch*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*messages*&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a un fichero.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Cerrar el búffer, no modifica el fichero si está guardado, no lo crea en caso de no estarlo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-x k
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Incluir acentos: incluye esto &lt;code class=&quot;highlighter-rouge&quot;&gt;(set-keyboard-coding-system 'utf-8) &lt;/code&gt; en el fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+          <pubDate>2017-03-05T02:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/ficheros</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/ficheros</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>04 Organizar ventanas</title>
+          <description>&lt;h1 id=&quot;aclaraciones&quot;&gt;Aclaraciones&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-c&lt;/code&gt; - Pulsas &lt;code class=&quot;highlighter-rouge&quot;&gt;Control&lt;/code&gt; y con la tecla de &lt;code class=&quot;highlighter-rouge&quot;&gt;Control&lt;/code&gt; pulsada pulsas primero &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; y después &lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt;.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x k&lt;/code&gt; - Pulsas &lt;code class=&quot;highlighter-rouge&quot;&gt;Control&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt;. Levantas el dedo de la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;Control&lt;/code&gt; y pulsas &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt;.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;limpiar-minibuffer&quot;&gt;Limpiar minibuffer&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-g&lt;/code&gt; - Este comando limpia el minibuffer para no encadenar comandos. Una vez limpio ya podemos introducir la secuencia.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Borra ventana activa&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-x 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Borra todas las ventanas menos la activa&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-x 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Divide horizontalmente la ventana activa en dos ventans&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-x 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lleva el cursos a la próxima ventana&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-x o
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Desplaza hacia abajo el texto de la próxima ventana, como si hiciéramos AvPág&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-M-v
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+          <pubDate>2017-03-04T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/ventanas</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/ventanas</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>03 Zonas</title>
+          <description>&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Barra de menú&lt;/code&gt;: situada arriba&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Point&lt;/code&gt; o punto de escritura en una &lt;code class=&quot;highlighter-rouge&quot;&gt;ventana de edición&lt;/code&gt; o ventanas si decidimos partirlas: situada en la parte central.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Línea de modo&lt;/code&gt;: situada abajo, en video inverso. Muestra información variada&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Área de eco&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;minibuffer&lt;/code&gt;: ambos aparecen en la última línea&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Área de eco&lt;/code&gt;: aparece sólo al escribir una combinación de teclas. Lo escrito hace eco o tiene su salida en la pantalla.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Minibúffer&lt;/code&gt;: sirve para escribir argumentos que se hayan de pasar a un comando&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para salir del minibuffer, zona donde escribimos comandos, debemos apretar C-g, ya que de lo contrario, se encadenaran los comandos.&lt;/p&gt;
+
+</description>
+          <pubDate>2017-03-03T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/zonas</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/zonas</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>02 Arrancando</title>
+          <description>&lt;ol&gt;
+  &lt;li&gt;Arrancar Emacs modo gráfico&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;emacs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Arrancar Emacs modo terminal&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;emacs --no-window-system
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Suspender ejecución Emacs&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-z
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Detiene Emacs y pregunta si guarda el fichero&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-x C-c
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+          <pubDate>2017-03-02T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/arrancando</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/arrancando</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>01 Inicio</title>
+          <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Meta&lt;/code&gt;: Dominar Emacs nivel inicial en 30 dias.&lt;/p&gt;
+
+&lt;p&gt;Nomenclatura:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C&lt;/code&gt; - Control&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M&lt;/code&gt; - Meta, tecla Alt izquierda o ESC&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; - Shift o mayúscula&lt;/p&gt;
+
+&lt;h1 id=&quot;observa-la-perspectiva&quot;&gt;Observa la perspectiva&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.lapipaplena.org/emacs/&quot;&gt;Emacs, curso en español&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://orgmode.org/guide&quot;&gt;OrgMode&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://planet.emacs-es.org/&quot;&gt;Emacs Planet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.merlos.org/linux/2003/05/emacs.html&quot;&gt;Referència&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+          <pubDate>2017-03-01T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/notes/inicio</link>
+          <guid isPermaLink="true">http://localhost:4000/notes/inicio</guid>
+        </item>
+      
     
   </channel>
 </rss>

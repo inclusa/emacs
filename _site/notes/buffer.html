@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>08 Buffer · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="08 Buffer" />
+<meta name="twitter:description" content="1. Introducción">
+
+<meta name="description" content="1. Introducción">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/buffer">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>08 Buffer</h1>
+		<time>March 8, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<h1 id="1-introducción">1. Introducción</h1>
+
+<p>Para entender el concepto de <code class="highlighter-rouge">buffer</code> debemos tener en cuenta que el <code class="highlighter-rouge">buffer</code> se refiere a la memoria RAM.</p>
+
+<p>Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.</p>
+
+<p>El <code class="highlighter-rouge">buffer</code> se refiere al espacio concreto que ocupa este archivo en RAM.</p>
+
+<p>Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable <code class="highlighter-rouge">s</code> a un valor <code class="highlighter-rouge">5</code>, así: <code class="highlighter-rouge">s = 5</code></p>
+
+<p>El la variable <code class="highlighter-rouge">s</code> queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos <code class="highlighter-rouge">$s</code> nos devueve su valor, en este caso <code class="highlighter-rouge">5</code>.</p>
+
+<p>Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.</p>
+
+<p>Fijemonos en el menú Buffers de Emacs. Encontramos tres buffers que se cargan siempre:</p>
+
+<p><em>GNU Emacs</em> %</p>
+
+<p><em>scratch</em></p>
+
+<p><em>Messages</em> %</p>
+
+<p>Que esten cargados con asteriscos <code class="highlighter-rouge">*</code> indica que estan en RAM (buffer) pero no escritos en disco (ROM).</p>
+
+<p>Así, si visitas <code class="highlighter-rouge">*Messages</code> observarás que tiene la función de <code class="highlighter-rouge">log</code> o bitácora donde se van acumulando los mensajes que te va dando Emacs.</p>
+
+<p>Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.</p>
+
+<p><code class="highlighter-rouge">.</code> Indica que se trabaja en ese buffer</p>
+
+<p><code class="highlighter-rouge">%</code> Indica sólo lectura</p>
+
+<p><code class="highlighter-rouge">*</code> Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)</p>
+
+<h1 id="2-teclas-rápidas">2. Teclas rápidas</h1>
+
+<p>Listar buffers <code class="highlighter-rouge">C-x C-b</code></p>
+
+<p>Cambiar de buffer <code class="highlighter-rouge">C-x b</code></p>
+
+<p>Cerrar buffer <code class="highlighter-rouge">C-x k</code></p>
+
+<p><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html">https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html</a></p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/cifrado" title="NEXT: 09 Cifrado">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/zonas" title="PREV: 07 Ventanas">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>
