@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>43 Pomodoro · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="43 Pomodoro" />
+<meta name="twitter:description" content="Utilizar la técnica de time boxing va bien para acotar tiempo para concentrarse y para medir lo que nos puede costar algo.">
+
+<meta name="description" content="Utilizar la técnica de time boxing va bien para acotar tiempo para concentrarse y para medir lo que nos puede costar algo.">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/touch-icon.png">
+<link rel="stylesheet" href="/assets/core.css">
+<link rel="canonical" href="/notes/43-Pomodoro">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>43 Pomodoro</h1>
+		<time>July 8, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Utilizar la técnica de <strong>time boxing</strong> va bien para acotar tiempo para concentrarse y para medir lo que nos puede costar algo.</p>
+
+<p>Emacs incorpora una plugin llamado <code class="highlighter-rouge">pomidor</code> que nos puede ayudar.</p>
+
+<p>Para instalarlo necesitamos primero escribir este código en el archivo <code class="highlighter-rouge">.emacs</code> para que arranque la referencia al repositorio y pueda encontrarlo:</p>
+
+<pre><code class="language-emacs">;;; #14 Añadir repositorio
+(require 'package) ;; You might already have this line
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(when (&lt; emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize) ;; You might already have this line
+
+;;; #15 Carga los paquestes del repositorio
+(add-to-list 'package-archives
+'("melpa-stable" . "https://stable.melpa.org/packages/") t)
+</code></pre>
+
+<p>Se trata del repositorio <a href="https://melpa.org/#/">MELPA</a> (Milkypostman’s Emacs Lisp Package Archive).</p>
+
+<h3 id="instalar">Instalar</h3>
+
+<pre><code class="language-emacs">M-x pomidor
+</code></pre>
+
+<h3 id="instrucciones">Instrucciones</h3>
+
+<p>Podemos ver las instrucciones en el repositorio del autor <a href="https://github.com/TatriX/pomidor">https://github.com/TatriX/pomidor</a>.</p>
+
+<h3 id="ponlo-en-marcha">Ponlo en marcha</h3>
+
+<pre><code class="language-emacs">M-x pomidor
+</code></pre>
+
+<h3 id="imagen">Imagen</h3>
+
+<p><img src="https://camo.githubusercontent.com/4e43b7f0b302d640be87ac02960b78babafb267d/687474703a2f2f692e696d6775722e636f6d2f77714a304f7a382e706e67" alt="Pomidor" /></p>
+
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/notes/44-IRC" title="NEXT: 44 IRC">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/notes/42-Pandoc" title="PREV: 42 Pandoc">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2017 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>
