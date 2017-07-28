@@ -1,0 +1,11 @@
+#+TITLE:  Emacs, itienerario de aprendizaje
+#+AUTHOR: Alfons Rovira
+#+EMAIL:  inclusa@gmail.com
+#+LANGUAGE: es
+ #+DATE:  March, 1th 2017
+
+# Emacs #
+
+Itinerario de aprendizaje
+
+[https://inclusa.github.io/emacs/](https://inclusa.github.io/emacs/)
