@@ -11,6 +11,8 @@
           <description>&lt;p&gt;Para configurar las cabeceras:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://orgmode.org/manual/In_002dbuffer-settings.html#In_002dbuffer-settings&quot;&gt;http://orgmode.org/manual/In_002dbuffer-settings.html#In_002dbuffer-settings&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Las cabeceras son configuracines de la funcionalidad de elementos como tareas, priodidad, etc. También se utilizan como parámetros de metainformación a la hora de exportar.&lt;/p&gt;
 </description>
           <pubDate>2017-07-24T00:00:00+08:00</pubDate>
           <link>http://localhost:4000/notes/45-Summary</link>
