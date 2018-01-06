@@ -7,6 +7,118 @@
     
       
         <item>
+          <title>52 Org Kanban</title>
+          <description>&lt;p&gt;Perseguimos esta situación:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://asciinema.org/a/4gijw6gs9jlcf5dxnlj0f12bh&quot;&gt;Vídeo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Primero vemos si está en el repositorio con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: package-list-packages&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Comprobamos que no está, por tanto, deberemos instalarlo de forma manual.&lt;/p&gt;
+
+&lt;p&gt;Para ello instalaremos de manera manual el paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban&lt;/code&gt; desde el repositorio del desarrollador siguiendo estos pasos.&lt;/p&gt;
+
+&lt;p&gt;El repositorio del &lt;a href=&quot;https://github.com/gizmomogwai/org-kanban&quot;&gt;desarrollador&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Bajaremos el archivo: &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; así:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/gizmomogwai/org-kanban/master/org-kanban.el
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ahora tendremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; que instalaremos de manera manual.&lt;/p&gt;
+
+&lt;p&gt;Para ello invocamos el comando para instalar de forma manual: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: load-file&lt;/code&gt; pulsaremos &lt;strong&gt;intro&lt;/strong&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;), a continuación escribimos el camino donde encontrará el archivo que hemos bajado.&lt;/p&gt;
+
+&lt;p&gt;Se instala rápidamente.&lt;/p&gt;
+
+&lt;p&gt;Vemos que tiene algunas dependencias:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'org)
+(require 'dash)
+(require 'subr-x)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Las instalamos mediante este procedimiento: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: package-list-packages&lt;/code&gt;, lo que nos dará una lista de paquetes para instalar.&lt;/p&gt;
+
+&lt;p&gt;Instalamos las dependencias, al menos hemos instalado &lt;code class=&quot;highlighter-rouge&quot;&gt;dash&lt;/code&gt;, es una libreria avanzada para trabajar con tablas.&lt;/p&gt;
+
+&lt;p&gt;A continuación creamos una lista de &lt;code class=&quot;highlighter-rouge&quot;&gt;TODO&lt;/code&gt;, así:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-orgmode&quot;&gt;* TODO Comprar el pan
+* TODO Comprar lentejas
+* PROCESS Encargar pizza
+* WAIT Comprar detergente
+
+#+BEGIN: kanban
+#+END:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Bien pues ya tenemos todo preparado para generarla.&lt;/p&gt;
+
+&lt;p&gt;A continuación nos situamos en esta línea ` #+BEGIN: kanban&lt;code class=&quot;highlighter-rouge&quot;&gt; y pulsamos &lt;/code&gt;C-c C-c`&lt;/p&gt;
+
+&lt;p&gt;Esto nos generará el siguiente código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-orgmode&quot;&gt; #+BEGIN: kanban
+  | TODO                 | PROCESS            | WAIT                   | HABIT | DONE | CANCEL |
+  |----------------------+--------------------+------------------------+-------+------+--------|
+  | [[Comprar el pan]]   |                    |                        |       |      |        |
+  | [[Comprar lentejas]] |                    |                        |       |      |        |
+  |                      | [[Encargar pizza]] |                        |       |      |        |
+  |                      |                    | [[Comprar detergente]] |       |      |        |
+ #+END:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Debemos tener en cuenta que las cabeceras dependerán de la explicitación de las mismas que tengamos en la parte superior del documento, en este caso estaban definidas al princio del documento así:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-orgmode&quot;&gt;#+TODO: TODO(t) | PROCESS(p) | WAIT(w) | HABIT(h) | DONE(d) | CANCEL(c)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Para mover las tareas de una columna a otra deberemos activar el modo &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: org-kanban/shift&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nos fijaremos en la parte de abajo de la ventana, pues tendremos las teclas para mover a la izquierda &lt;code class=&quot;highlighter-rouge&quot;&gt;j&lt;/code&gt; y a la derecha &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Al cambiar a la fila de abajo deberemos activar de nuevo el modo para mover las columnas &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: org-kanban/shift&lt;/code&gt;.&lt;/p&gt;
+</description>
+          <pubDate>2018-01-06T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/52-Org-Kanban</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/52-Org-Kanban</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>51 Calculator</title>
+          <description>&lt;p&gt;Emacs puede utilizarse como una calculadora básica o como una calculadora cintífica.&lt;/p&gt;
+
+&lt;p&gt;Para entrar en modo calculadora &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x **&lt;/code&gt; o bien &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x * c&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para saber más:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_mono/calc.html&quot;&gt;https://www.gnu.org/software/emacs/manual/html_mono/calc.html&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2017-10-31T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/51-Calculator</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/51-Calculator</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>50 Videos OrgMode</title>
+          <description>&lt;p&gt;Podemos encontrar vídeos para aprender OrgMode en este enlace:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&quot;&gt;https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2017-10-31T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/50-Videos</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/50-Videos</guid>
+        </item>
+      
+    
+      
+        <item>
           <title>49 Org Mode en Mapas Mentales</title>
           <description>&lt;p&gt;&lt;a href=&quot;http://orgmode.org/manual/index.html&quot;&gt;The Org Mode Manual&lt;/a&gt;&lt;/p&gt;
 

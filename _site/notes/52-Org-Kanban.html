@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>52 Org Kanban · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HeiswayiNrird" />
+<meta name="twitter:title" content="52 Org Kanban" />
+<meta name="twitter:description" content="Perseguimos esta situación:">
+
+<meta name="description" content="Perseguimos esta situación:">
+
+
+	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
+
+
+<link rel="icon" href="/emacs/assets/favicon.png">
+<link rel="apple-touch-icon" href="/emacs/assets/touch-icon.png">
+<link rel="stylesheet" href="/emacs/assets/core.css">
+<link rel="canonical" href="/emacs/notes/52-Org-Kanban">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/emacs/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/emacs/">
+		<!-- <img src="http://www.gravatar.com/avatar/2b38b1b0e7e08b69379bd61582adf0c8.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>52 Org Kanban</h1>
+		<time>January 6, 2018</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Perseguimos esta situación:</p>
+
+<p><a href="https://asciinema.org/a/4gijw6gs9jlcf5dxnlj0f12bh">Vídeo</a></p>
+
+<p>Primero vemos si está en el repositorio con el comando <code class="highlighter-rouge">M-x: package-list-packages</code></p>
+
+<p>Comprobamos que no está, por tanto, deberemos instalarlo de forma manual.</p>
+
+<p>Para ello instalaremos de manera manual el paquete <code class="highlighter-rouge">org-kanban</code> desde el repositorio del desarrollador siguiendo estos pasos.</p>
+
+<p>El repositorio del <a href="https://github.com/gizmomogwai/org-kanban">desarrollador</a></p>
+
+<p>Bajaremos el archivo: <code class="highlighter-rouge">org-kanban.el</code> así:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>wget https://raw.githubusercontent.com/gizmomogwai/org-kanban/master/org-kanban.el
+</code></pre>
+</div>
+
+<p>Ahora tendremos el archivo <code class="highlighter-rouge">org-kanban.el</code> que instalaremos de manera manual.</p>
+
+<p>Para ello invocamos el comando para instalar de forma manual: <code class="highlighter-rouge">M-x: load-file</code> pulsaremos <strong>intro</strong> (<code class="highlighter-rouge">RET</code>), a continuación escribimos el camino donde encontrará el archivo que hemos bajado.</p>
+
+<p>Se instala rápidamente.</p>
+
+<p>Vemos que tiene algunas dependencias:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>(require 'org)
+(require 'dash)
+(require 'subr-x)
+</code></pre>
+</div>
+
+<p>Las instalamos mediante este procedimiento: <code class="highlighter-rouge">M-x: package-list-packages</code>, lo que nos dará una lista de paquetes para instalar.</p>
+
+<p>Instalamos las dependencias, al menos hemos instalado <code class="highlighter-rouge">dash</code>, es una libreria avanzada para trabajar con tablas.</p>
+
+<p>A continuación creamos una lista de <code class="highlighter-rouge">TODO</code>, así:</p>
+
+<pre><code class="language-orgmode">* TODO Comprar el pan
+* TODO Comprar lentejas
+* PROCESS Encargar pizza
+* WAIT Comprar detergente
+
+#+BEGIN: kanban
+#+END:
+</code></pre>
+
+<p>Bien pues ya tenemos todo preparado para generarla.</p>
+
+<p>A continuación nos situamos en esta línea ` #+BEGIN: kanban<code class="highlighter-rouge"> y pulsamos </code>C-c C-c`</p>
+
+<p>Esto nos generará el siguiente código:</p>
+
+<pre><code class="language-orgmode"> #+BEGIN: kanban
+  | TODO                 | PROCESS            | WAIT                   | HABIT | DONE | CANCEL |
+  |----------------------+--------------------+------------------------+-------+------+--------|
+  | [[Comprar el pan]]   |                    |                        |       |      |        |
+  | [[Comprar lentejas]] |                    |                        |       |      |        |
+  |                      | [[Encargar pizza]] |                        |       |      |        |
+  |                      |                    | [[Comprar detergente]] |       |      |        |
+ #+END:
+</code></pre>
+<p>Debemos tener en cuenta que las cabeceras dependerán de la explicitación de las mismas que tengamos en la parte superior del documento, en este caso estaban definidas al princio del documento así:</p>
+
+<pre><code class="language-orgmode">#+TODO: TODO(t) | PROCESS(p) | WAIT(w) | HABIT(h) | DONE(d) | CANCEL(c)
+</code></pre>
+
+<p>Para mover las tareas de una columna a otra deberemos activar el modo <code class="highlighter-rouge">M-x: org-kanban/shift</code>.</p>
+
+<p>Nos fijaremos en la parte de abajo de la ventana, pues tendremos las teclas para mover a la izquierda <code class="highlighter-rouge">j</code> y a la derecha <code class="highlighter-rouge">k</code>.</p>
+
+<p>Al cambiar a la fila de abajo deberemos activar de nuevo el modo para mover las columnas <code class="highlighter-rouge">M-x: org-kanban/shift</code>.</p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+		<a class="home" href="/emacs/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/emacs/notes/51-Calculator" title="PREV: 51 Calculator">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2018 YOUR_NAME</span>
+</div>
+
+
+	</body>
+
+</html>
