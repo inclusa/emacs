@@ -32,7 +32,7 @@
 
 &lt;p&gt;Se instala rápidamente.&lt;/p&gt;
 
-&lt;p&gt;Vemos que tiene algunas dependencias:&lt;/p&gt;
+&lt;p&gt;Dentro del mismo archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; vemos que tiene algunas dependencias:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'org)
 (require 'dash)
@@ -57,7 +57,7 @@
 
 &lt;p&gt;Bien pues ya tenemos todo preparado para generarla.&lt;/p&gt;
 
-&lt;p&gt;A continuación nos situamos en esta línea ` #+BEGIN: kanban&lt;code class=&quot;highlighter-rouge&quot;&gt; y pulsamos &lt;/code&gt;C-c C-c`&lt;/p&gt;
+&lt;p&gt;A continuación nos situamos en esta línea &lt;code class=&quot;highlighter-rouge&quot;&gt;#+BEGIN: kanban&lt;/code&gt; y pulsamos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Esto nos generará el siguiente código:&lt;/p&gt;
 
@@ -80,6 +80,8 @@
 &lt;p&gt;Nos fijaremos en la parte de abajo de la ventana, pues tendremos las teclas para mover a la izquierda &lt;code class=&quot;highlighter-rouge&quot;&gt;j&lt;/code&gt; y a la derecha &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Al cambiar a la fila de abajo deberemos activar de nuevo el modo para mover las columnas &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: org-kanban/shift&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/orgmode/org-kanban.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
           <pubDate>2018-01-06T00:00:00+08:00</pubDate>
           <link>http://localhost:4000/emacs/notes/52-Org-Kanban</link>
