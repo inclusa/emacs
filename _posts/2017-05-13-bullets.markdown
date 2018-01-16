@@ -22,6 +22,8 @@ Para arrancar este modo tendremos que escribir en el archivo de configuración d
 (setq 'org-bullets-mode)
 ```
 
+![Bullets](../assets/orgmode/17_bullets.jpg)
+
 Fuente
 
 [org-bullets-mode](https://github.com/sabof/org-bullets)

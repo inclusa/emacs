@@ -84,6 +84,11 @@
 
 <p>Se instala rápidamente.</p>
 
+<p>Para que esta utilidad se carge al abrir <strong>Emacs</strong> deberemos incorporar la siguiente línea a nuestro archivo de configuración <code class="highlighter-rouge">.emacs</code>:</p>
+
+<pre><code class="language-lisp">(load "~/.emacs.d/lisp/org-kanban.el")
+</code></pre>
+
 <p>Dentro del mismo archivo <code class="highlighter-rouge">org-kanban.el</code> vemos que tiene algunas dependencias:</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>(require 'org)
@@ -133,13 +138,19 @@
 
 <p>Al cambiar a la fila de abajo deberemos activar de nuevo el modo para mover las columnas <code class="highlighter-rouge">M-x: org-kanban/shift</code>.</p>
 
-<p><img src="../assets/orgmode/org-kanban.gif" alt="" /></p>
+<p>Para que el archivo <code class="highlighter-rouge">dd</code>
+<img src="../assets/orgmode/org-kanban.gif" alt="" /></p>
+
+<p>Otra referencia muy intresante la podemos encontrar en el blog de <a href="https://ugeek.github.io/Kanban-para-Org-Mode/">uGeek</a> donde se explican algunos aspectos con mayor amplitud.</p>
 
 
 </article>
 
 <div class="page-navigation">
 	
+    <a class="next" href="/emacs/notes/53-Multiterminal" title="NEXT: 53 Multiterminal">&lt;&lt;</a>
+		<span> &middot; </span>
+  
 		<a class="home" href="/emacs/" title="Back to Homepage">Home</a>
   
 		<span> &middot; </span>

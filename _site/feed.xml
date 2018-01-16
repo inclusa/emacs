@@ -7,6 +7,33 @@
     
       
         <item>
+          <title>53 Multiterminal</title>
+          <description>&lt;p&gt;El objetivo es disponer de una terminal con opcion de multiplexado dentro de Emacs.&lt;/p&gt;
+
+&lt;p&gt;Pasos&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Instalarla dentro de Emacs así: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-list-packages&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Buscar paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;multi-term&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Llamar al paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x multi-term&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Referencia para aprender más: &lt;a href=&quot;https://www.emacswiki.org/emacs/MultiTerm&quot;&gt;https://www.emacswiki.org/emacs/MultiTerm&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2018-01-15T08:00:00+08:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/53-Multiterminal</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/53-Multiterminal</guid>
+        </item>
+      
+    
+      
+        <item>
           <title>52 Org Kanban</title>
           <description>&lt;p&gt;Perseguimos esta situación:&lt;/p&gt;
 
@@ -31,6 +58,11 @@
 &lt;p&gt;Para ello invocamos el comando para instalar de forma manual: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: load-file&lt;/code&gt; pulsaremos &lt;strong&gt;intro&lt;/strong&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;), a continuación escribimos el camino donde encontrará el archivo que hemos bajado.&lt;/p&gt;
 
 &lt;p&gt;Se instala rápidamente.&lt;/p&gt;
+
+&lt;p&gt;Para que esta utilidad se carge al abrir &lt;strong&gt;Emacs&lt;/strong&gt; deberemos incorporar la siguiente línea a nuestro archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(load &quot;~/.emacs.d/lisp/org-kanban.el&quot;)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Dentro del mismo archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; vemos que tiene algunas dependencias:&lt;/p&gt;
 
@@ -81,7 +113,10 @@
 
 &lt;p&gt;Al cambiar a la fila de abajo deberemos activar de nuevo el modo para mover las columnas &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: org-kanban/shift&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/orgmode/org-kanban.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Para que el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;dd&lt;/code&gt;
+&lt;img src=&quot;../assets/orgmode/org-kanban.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Otra referencia muy intresante la podemos encontrar en el blog de &lt;a href=&quot;https://ugeek.github.io/Kanban-para-Org-Mode/&quot;&gt;uGeek&lt;/a&gt; donde se explican algunos aspectos con mayor amplitud.&lt;/p&gt;
 </description>
           <pubDate>2018-01-06T00:00:00+08:00</pubDate>
           <link>http://localhost:4000/emacs/notes/52-Org-Kanban</link>
@@ -712,6 +747,14 @@ C-c C-e l p
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x org-bullets-mode
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;p&gt;Para arrancar este modo tendremos que escribir en el archivo de configuración de &lt;strong&gt;Emacs&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; esta línea:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(setq 'org-bullets-mode)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/orgmode/17_bullets.jpg&quot; alt=&quot;Bullets&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Fuente&lt;/p&gt;
 
