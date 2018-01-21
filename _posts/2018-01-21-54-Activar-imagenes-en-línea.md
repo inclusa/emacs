@@ -1,6 +1,6 @@
 ---
 layout: post # 
-title: 54 Activar imagenes en línea # Generat automàticament
+title: 54 Imágenes
 date: 2018-01-21 # Data
 description: Activar imágenes  # Argument
 keywords: images # Paraules clau
@@ -26,3 +26,5 @@ Por otra parte, podemos activar la imagen, en caso de no poner cabeceras, con es
 ```emacs
 C-c C-x C-v
 ```
+
+![](../assets/orgmode/imagenes.png)

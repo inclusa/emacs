@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
-	<title>53 Multiterminal · The Plain</title>
+	<title>54 Imágenes · The Plain</title>
 
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@HeiswayiNrird" />
-<meta name="twitter:title" content="53 Multiterminal" />
-<meta name="twitter:description" content="El objetivo es disponer de una terminal con opcion de multiplexado dentro de Emacs.">
+<meta name="twitter:title" content="54 Imágenes" />
+<meta name="twitter:description" content="Para activar las imágenes en línea deberemos incluir en la cabecera del documento:">
 
-<meta name="description" content="El objetivo es disponer de una terminal con opcion de multiplexado dentro de Emacs.">
+<meta name="description" content="Para activar las imágenes en línea deberemos incluir en la cabecera del documento:">
 
 
 	<meta name="google-site-verification" content="epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o">
@@ -24,7 +24,7 @@
 <link rel="icon" href="/emacs/assets/favicon.png">
 <link rel="apple-touch-icon" href="/emacs/assets/touch-icon.png">
 <link rel="stylesheet" href="/emacs/assets/core.css">
-<link rel="canonical" href="/emacs/notes/53-Multiterminal">
+<link rel="canonical" href="/emacs/notes/54-Activar-imagenes-en-l%C3%ADnea">
 <link rel="alternate" type="application/atom+xml" title="The Plain" href="/emacs/feed.xml" />
 
 
@@ -54,42 +54,40 @@
 			<article>
 
 	<div class="center">
-		<h1>53 Multiterminal</h1>
-		<time>January 15, 2018</time>
+		<h1>54 Imágenes</h1>
+		<time>January 21, 2018</time>
 	</div>
 
 	<div class="divider"></div>
 
-	<p>El objetivo es disponer de una terminal con opcion de multiplexado dentro de Emacs.</p>
+	<p>Para activar las imágenes en línea deberemos incluir en la cabecera del documento:</p>
 
-<p>Pasos</p>
+<pre><code class="language-emacs">#+STARTUP: inlineimages
+</code></pre>
 
-<ol>
-  <li>
-    <p>Instalarla dentro de Emacs así: <code class="highlighter-rouge">M-x package-list-packages</code>.</p>
-  </li>
-  <li>
-    <p>Buscar paquete <code class="highlighter-rouge">multi-term</code></p>
-  </li>
-  <li>
-    <p>Llamar al paquete <code class="highlighter-rouge">M-x multi-term</code>.</p>
-  </li>
-</ol>
+<p>De esta forma, al incluir una imagen así:</p>
 
-<p>Referencia para aprender más: <a href="https://www.emacswiki.org/emacs/MultiTerm">https://www.emacswiki.org/emacs/MultiTerm</a></p>
+<pre><code class="language-emacs">[[./image/emacs.png]]
+</code></pre>
+
+<p>Obtendremos la imagen incrustada en el documento.</p>
+
+<p>Por otra parte, podemos activar la imagen, en caso de no poner cabeceras, con esta combinación de teclas:</p>
+
+<pre><code class="language-emacs">C-c C-x C-v
+</code></pre>
+
+<p><img src="../assets/orgmode/imagenes.png" alt="" /></p>
 
 
 </article>
 
 <div class="page-navigation">
 	
-    <a class="next" href="/emacs/notes/54-Activar-imagenes-en-l%C3%ADnea" title="NEXT: 54 Imágenes">&lt;&lt;</a>
-		<span> &middot; </span>
-  
 		<a class="home" href="/emacs/" title="Back to Homepage">Home</a>
   
 		<span> &middot; </span>
-    <a class="prev" href="/emacs/notes/52-Org-Kanban" title="PREV: 52 Org Kanban">&gt;&gt;</a>
+    <a class="prev" href="/emacs/notes/53-Multiterminal" title="PREV: 53 Multiterminal">&gt;&gt;</a>
   
 </div>
 
