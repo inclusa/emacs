@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>55 Truncar líneas · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:title" content="55 Truncar líneas" />
+<meta name="twitter:description" content="Para establecer un hook, que no es otra cosa que realizar algo en cierta situación determinada, deberemos configurar el archivo .emacs de nuestro home estableciendo el código que realice esta función.">
+
+<meta name="description" content="Para establecer un hook, que no es otra cosa que realizar algo en cierta situación determinada, deberemos configurar el archivo .emacs de nuestro home establ...">
+
+
+
+<link rel="icon" href="/emacs/assets/favicon.png">
+<link rel="apple-touch-icon" href="/emacs/assets/touch-icon.png">
+<link rel="stylesheet" href="/emacs/assets/core.css">
+<link rel="canonical" href="/emacs/notes/55-Truncar-l%C3%ADneas">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/emacs/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/emacs/">
+		<!-- <img src="http://www.gravatar.com/avatar/.png?s=80" class="gravatar"> -->
+                <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>55 Truncar líneas</h1>
+		<time>February 16, 2018</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Para establecer un <code class="highlighter-rouge">hook</code>, que no es otra cosa que realizar algo en cierta situación determinada, deberemos configurar el archivo <code class="highlighter-rouge">.emacs</code> de nuestro <code class="highlighter-rouge">home</code> estableciendo el código que realice esta función.</p>
+
+<p>En esta ocasión nuestro objetivo es que nos trunque las línias largas para poder leerlas en la siguiente línea y, así, tener que desplazarnos hacia la derecha.</p>
+
+<p>Para ello editamos <code class="highlighter-rouge">.emacs</code> y añadiremos este código:</p>
+
+<pre><code class="language-emacs">(defun my-compilation-mode-hook ()
+  (setq truncate-lines nil) ;; automatically becomes buffer local
+    (set (make-local-variable 'truncate-partial-width-windows) nil))
+    (add-hook 'compilation-mode-hook 'my-compilation-mode-hook)')')))
+</code></pre>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/emacs/notes/56-Mouse" title="NEXT: 56 Mouse">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/emacs/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/emacs/notes/54-Activar-imagenes-en-l%C3%ADnea" title="PREV: 54 Imágenes">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2018 Alfons Rovira</span>
+</div>
+
+
+	</body>
+
+</html>

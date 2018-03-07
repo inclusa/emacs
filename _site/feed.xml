@@ -7,6 +7,53 @@
     
       
         <item>
+          <title>56 Mouse</title>
+          <description>&lt;p&gt;Para utilizar el ratón con en &lt;strong&gt;Emacs&lt;/strong&gt; con la metodologia &lt;strong&gt;OrgMode&lt;/strong&gt; debemos activarlo en el archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; añadiendo estas líneas:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;;; Cargar org-mouse
+(require 'org-mouse)')
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Anterioromente deberemos instalar el paquete en nuestro &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;, lo que bajará el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-mouse.el&lt;/code&gt; a nuestra carpeta situada en &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para instalarlo debermos acceder a &lt;code class=&quot;highlighter-rouge&quot;&gt;list-packages&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;En caso de que no cargue podemos cargarlo de forma manual así: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x org-mouse&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Podemos visualizar el resultado en este &lt;a href=&quot;https://drive.google.com/file/d/17xlBRqbdchIBA3g-0FE_MuF4uZoquisP/view&quot;&gt;enlace&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fuente: &lt;a href=&quot;https://ondahostil.wordpress.com/2018/02/19/lo-que-he-aprendido-el-raton-y-org-mode/comment-page-1/&quot;&gt;OndaHostil&lt;/a&gt;&lt;/p&gt;
+
+</description>
+          <pubDate>2018-02-24T00:00:00+01:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/56-Mouse</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/56-Mouse</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>55 Truncar líneas</title>
+          <description>&lt;p&gt;Para establecer un &lt;code class=&quot;highlighter-rouge&quot;&gt;hook&lt;/code&gt;, que no es otra cosa que realizar algo en cierta situación determinada, deberemos configurar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; de nuestro &lt;code class=&quot;highlighter-rouge&quot;&gt;home&lt;/code&gt; estableciendo el código que realice esta función.&lt;/p&gt;
+
+&lt;p&gt;En esta ocasión nuestro objetivo es que nos trunque las línias largas para poder leerlas en la siguiente línea y, así, tener que desplazarnos hacia la derecha.&lt;/p&gt;
+
+&lt;p&gt;Para ello editamos &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y añadiremos este código:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(defun my-compilation-mode-hook ()
+  (setq truncate-lines nil) ;; automatically becomes buffer local
+    (set (make-local-variable 'truncate-partial-width-windows) nil))
+    (add-hook 'compilation-mode-hook 'my-compilation-mode-hook)')')))
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+          <pubDate>2018-02-16T00:00:00+01:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/55-Truncar-l%C3%ADneas</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/55-Truncar-l%C3%ADneas</guid>
+        </item>
+      
+    
+      
+        <item>
           <title>54 Imágenes</title>
           <description>&lt;p&gt;Para activar las imágenes en línea deberemos incluir en la cabecera del documento:&lt;/p&gt;
 
@@ -27,7 +74,7 @@
 
 &lt;p&gt;&lt;img src=&quot;../assets/orgmode/imagenes.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
-          <pubDate>2018-01-21T00:00:00+08:00</pubDate>
+          <pubDate>2018-01-21T00:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/54-Activar-imagenes-en-l%C3%ADnea</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/54-Activar-imagenes-en-l%C3%ADnea</guid>
         </item>
@@ -54,7 +101,7 @@
 
 &lt;p&gt;Referencia para aprender más: &lt;a href=&quot;https://www.emacswiki.org/emacs/MultiTerm&quot;&gt;https://www.emacswiki.org/emacs/MultiTerm&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2018-01-15T08:00:00+08:00</pubDate>
+          <pubDate>2018-01-15T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/53-Multiterminal</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/53-Multiterminal</guid>
         </item>
@@ -146,7 +193,7 @@
 
 &lt;p&gt;Otra referencia muy intresante la podemos encontrar en el blog de &lt;a href=&quot;https://ugeek.github.io/Kanban-para-Org-Mode/&quot;&gt;uGeek&lt;/a&gt; donde se explican algunos aspectos con mayor amplitud.&lt;/p&gt;
 </description>
-          <pubDate>2018-01-06T00:00:00+08:00</pubDate>
+          <pubDate>2018-01-06T00:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/52-Org-Kanban</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/52-Org-Kanban</guid>
         </item>
@@ -163,7 +210,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_mono/calc.html&quot;&gt;https://www.gnu.org/software/emacs/manual/html_mono/calc.html&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-10-31T00:00:00+08:00</pubDate>
+          <pubDate>2017-10-31T00:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/51-Calculator</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/51-Calculator</guid>
         </item>
@@ -176,7 +223,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&quot;&gt;https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-10-31T00:00:00+08:00</pubDate>
+          <pubDate>2017-10-31T00:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/50-Videos</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/50-Videos</guid>
         </item>
@@ -223,7 +270,7 @@
 
 &lt;p&gt;&lt;img src=&quot;../assets/orgmode/16.png&quot; alt=&quot;Index&quot; /&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-09-16T00:00:00+08:00</pubDate>
+          <pubDate>2017-09-16T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/49-Org-Mode-en-Mapas-Mentales</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/49-Org-Mode-en-Mapas-Mentales</guid>
         </item>
@@ -240,7 +287,7 @@
 
 &lt;p&gt;Fuente: &lt;a href=&quot;http://www.nongnu.org/emacs-man-es/index_169.html#SEC169&quot;&gt;NonGNU&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-08-02T00:00:00+08:00</pubDate>
+          <pubDate>2017-08-02T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/48-Insertar-archivo</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/48-Insertar-archivo</guid>
         </item>
@@ -257,7 +304,7 @@
 
 &lt;p&gt;Fuente: &lt;a href=&quot;http://wwwae.ciemat.es/~oglez/webcms/oginfo/combinaciones_emacs.html&quot;&gt;http://wwwae.ciemat.es/~oglez/webcms/oginfo/combinaciones_emacs.html&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-07-30T00:00:00+08:00</pubDate>
+          <pubDate>2017-07-30T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/47-Tama%C3%B1o-de-letra-modo-gr%C3%A1fico</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/47-Tama%C3%B1o-de-letra-modo-gr%C3%A1fico</guid>
         </item>
@@ -278,7 +325,7 @@
 
 &lt;p&gt;Fuente: &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Printing.html&quot;&gt;Emacs&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-07-29T00:00:00+08:00</pubDate>
+          <pubDate>2017-07-29T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/46-Imprimir</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/46-Imprimir</guid>
         </item>
@@ -293,7 +340,7 @@
 
 &lt;p&gt;Las cabeceras son configuracines de la funcionalidad de elementos como tareas, priodidad, etc. También se utilizan como parámetros de metainformación a la hora de exportar.&lt;/p&gt;
 </description>
-          <pubDate>2017-07-24T00:00:00+08:00</pubDate>
+          <pubDate>2017-07-24T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/45-Summary</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/45-Summary</guid>
         </item>
@@ -325,7 +372,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
-          <pubDate>2017-07-09T00:00:00+08:00</pubDate>
+          <pubDate>2017-07-09T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/44-IRC</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/44-IRC</guid>
         </item>
@@ -375,7 +422,7 @@
 &lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/4e43b7f0b302d640be87ac02960b78babafb267d/687474703a2f2f692e696d6775722e636f6d2f77714a304f7a382e706e67&quot; alt=&quot;Pomidor&quot; /&gt;&lt;/p&gt;
 
 </description>
-          <pubDate>2017-07-08T00:00:00+08:00</pubDate>
+          <pubDate>2017-07-08T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/43-Pomodoro</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/43-Pomodoro</guid>
         </item>
@@ -426,7 +473,7 @@
 
 &lt;p&gt;Emacs + OrgMode + Pandoc&lt;/p&gt;
 </description>
-          <pubDate>2017-07-06T00:00:00+08:00</pubDate>
+          <pubDate>2017-07-06T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/42-Pandoc</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/42-Pandoc</guid>
         </item>
@@ -472,7 +519,7 @@
 
 &lt;p&gt;De esta forma obtendremos un archivo PDF generado a partir de la plantilla dada.&lt;/p&gt;
 </description>
-          <pubDate>2017-07-06T00:00:00+08:00</pubDate>
+          <pubDate>2017-07-06T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/41-LaTeX</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/41-LaTeX</guid>
         </item>
@@ -536,7 +583,7 @@
   &lt;li&gt;&lt;a href=&quot;https://github.com/jkitchin/org-ref/blob/master/org-ref.org&quot;&gt;Org-Ref Manual&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-          <pubDate>2017-06-17T00:00:00+08:00</pubDate>
+          <pubDate>2017-06-17T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/40-Bibliografia</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/40-Bibliografia</guid>
         </item>
@@ -553,7 +600,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.blackhats.es/wordpress/?p=214&quot;&gt;Para saber mucho más&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-06-12T00:00:00+08:00</pubDate>
+          <pubDate>2017-06-12T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/39-Tiempo</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/39-Tiempo</guid>
         </item>
@@ -602,7 +649,7 @@ I 	#+INCLUDE: line
 
 &lt;p&gt;Cuando exportas a html se visualiza el código con el lexer oportuno y sale pintadito según el lenguaje.&lt;/p&gt;
 </description>
-          <pubDate>2017-06-04T01:36:00+08:00</pubDate>
+          <pubDate>2017-06-04T01:36:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/codigo</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/codigo</guid>
         </item>
@@ -622,7 +669,7 @@ I 	#+INCLUDE: line
 &lt;/code&gt;&lt;/pre&gt;
 
 </description>
-          <pubDate>2017-05-31T18:02:00+08:00</pubDate>
+          <pubDate>2017-05-31T18:02:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/numeros</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/numeros</guid>
         </item>
@@ -646,7 +693,7 @@ I 	#+INCLUDE: line
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-q LEFT&lt;/code&gt; Tag Autocompletar, con las flechas pasamos adelante o atrás las tags.&lt;/p&gt;
 
 </description>
-          <pubDate>2017-05-14T09:00:00+08:00</pubDate>
+          <pubDate>2017-05-14T03:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/buscar</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/buscar</guid>
         </item>
@@ -717,7 +764,7 @@ coments: true
 
 &lt;p&gt;Fuente: &lt;a href=&quot;https://www.youtube.com/watch?v=-4O-ZYjQxks&quot;&gt;Emacculate&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-05-14T08:00:00+08:00</pubDate>
+          <pubDate>2017-05-14T02:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/snippets</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/snippets</guid>
         </item>
@@ -742,7 +789,7 @@ C-c C-e l p
 &lt;/div&gt;
 
 </description>
-          <pubDate>2017-05-13T20:22:08+08:00</pubDate>
+          <pubDate>2017-05-13T20:22:08+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/notas</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/notas</guid>
         </item>
@@ -759,7 +806,7 @@ C-c C-e l p
 
 &lt;p&gt;Deberemos crear un directorio llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;image&lt;/code&gt; un nivel por debajo y una imagen llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;emacs.png&lt;/code&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-05-13T20:17:13+08:00</pubDate>
+          <pubDate>2017-05-13T20:17:13+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/images</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/images</guid>
         </item>
@@ -788,7 +835,7 @@ C-c C-e l p
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/sabof/org-bullets&quot;&gt;org-bullets-mode&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-05-13T08:00:00+08:00</pubDate>
+          <pubDate>2017-05-13T02:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/bullets</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/bullets</guid>
         </item>
@@ -813,7 +860,7 @@ C-c C-e l p
 
 &lt;p&gt;&lt;a href=&quot;http://orgmode.org/manual/Archiving.html&quot;&gt;OrgMode&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-05-03T19:30:33+08:00</pubDate>
+          <pubDate>2017-05-03T19:30:33+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/archivar</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/archivar</guid>
         </item>
@@ -901,7 +948,7 @@ C-c C-e l p
 
 &lt;p&gt;&lt;a href=&quot;https://magit.vc/manual/magit/index.html#SEC_Contents&quot;&gt;Magit User Manual&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-04-24T08:27:06+08:00</pubDate>
+          <pubDate>2017-04-24T08:27:06+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/magit</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/magit</guid>
         </item>
@@ -928,7 +975,7 @@ C-c C-e l p
 | 02   | Pepita | Pérez  |
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-          <pubDate>2017-04-24T07:50:55+08:00</pubDate>
+          <pubDate>2017-04-24T07:50:55+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/tables</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/tables</guid>
         </item>
@@ -991,7 +1038,7 @@ C-c C-e l p
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e c c&lt;/code&gt; Crea un archivo largo de iCalendar con todos los archivos &lt;code class=&quot;highlighter-rouge&quot;&gt;org-agenda-files&lt;/code&gt; y lo escribe cogiendo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-icalendar-combined-agenda-file&lt;/code&gt;.&lt;/p&gt;
 </description>
-          <pubDate>2017-04-21T06:55:15+08:00</pubDate>
+          <pubDate>2017-04-21T06:55:15+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/exportar</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/exportar</guid>
         </item>
@@ -1063,7 +1110,7 @@ C-c C-e l p
 
 &lt;p&gt;Establece el espacio, anchura,&lt;/p&gt;
 </description>
-          <pubDate>2017-04-19T00:43:44+08:00</pubDate>
+          <pubDate>2017-04-19T00:43:44+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/columnas</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/columnas</guid>
         </item>
@@ -1219,7 +1266,7 @@ C-c C-e l p
 &lt;p&gt;Toda la documentación en en la web del desarrollador &lt;a href=&quot;http://jblevins.org/projects/markdown-mode/&quot;&gt;JBlevins.org&lt;/a&gt;&lt;/p&gt;
 
 </description>
-          <pubDate>2017-04-16T09:55:25+08:00</pubDate>
+          <pubDate>2017-04-16T09:55:25+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/markdown</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/markdown</guid>
         </item>
@@ -1242,7 +1289,7 @@ C-c C-e l p
 &lt;/ol&gt;
 
 </description>
-          <pubDate>2017-04-15T23:15:07+08:00</pubDate>
+          <pubDate>2017-04-15T23:15:07+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/themes</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/themes</guid>
         </item>
@@ -1312,7 +1359,7 @@ C-c C-e l p
 
 &lt;p&gt;Por defecto el camino del archivo bookmark está guardado en la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;bookmark-default-file&lt;/code&gt;. Llamaremos &lt;code class=&quot;highlighter-rouge&quot;&gt;describe-variable&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+h v&lt;/code&gt; para ver su valor.&lt;/p&gt;
 </description>
-          <pubDate>2017-04-15T07:02:06+08:00</pubDate>
+          <pubDate>2017-04-15T07:02:06+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/bookmarks</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/bookmarks</guid>
         </item>
@@ -1329,7 +1376,7 @@ C-c C-e l p
 
 &lt;p&gt;De esta forma, cada vez que abramos un archivo con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x f&lt;/code&gt; ya estaremos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;~Documents/BulletJournal/&lt;/code&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-04-08T08:00:00+08:00</pubDate>
+          <pubDate>2017-04-08T02:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/directorio</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/directorio</guid>
         </item>
@@ -1393,7 +1440,7 @@ C-c C-e l p
 
 &lt;p&gt;Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.&lt;/p&gt;
 </description>
-          <pubDate>2017-04-02T08:00:00+08:00</pubDate>
+          <pubDate>2017-04-02T02:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/capturar</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/capturar</guid>
         </item>
@@ -1448,7 +1495,7 @@ C-c C-e l p
       :END:
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-          <pubDate>2017-04-01T08:00:00+08:00</pubDate>
+          <pubDate>2017-04-01T02:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/habitos</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/habitos</guid>
         </item>
@@ -1472,7 +1519,7 @@ C-c C-e l p
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / a&lt;/code&gt;     (org-check-after-date) Lista citas después de una fecha&lt;/p&gt;
 
 </description>
-          <pubDate>2017-03-30T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-30T02:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/agenda</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/agenda</guid>
         </item>
@@ -1525,7 +1572,7 @@ C-c C-e l p
   &lt;li&gt;ToDo: estados de las tareas que utilizaremos por defecto&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-          <pubDate>2017-03-28T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-28T02:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/head</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/head</guid>
         </item>
@@ -1533,7 +1580,7 @@ C-c C-e l p
     
       
         <item>
-          <title>18 To do</title>
+          <title>18 TODO</title>
           <description>&lt;p&gt;Metodología: OrgMode&lt;/p&gt;
 
 &lt;h1 id=&quot;1-descripción&quot;&gt;1. Descripción&lt;/h1&gt;
@@ -1556,7 +1603,7 @@ C-c C-e l p
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-M-&amp;lt;RET&amp;gt;&lt;/code&gt; Insertar TODO en nueva entrada.&lt;/p&gt;
 
 </description>
-          <pubDate>2017-03-27T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-27T02:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/todo</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/todo</guid>
         </item>
@@ -1617,7 +1664,7 @@ C-c C-e l p
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c %&lt;/code&gt; Marca una posición para volver a ella con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;amp;&lt;/code&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-03-26T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-26T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/links</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/links</guid>
         </item>
@@ -1634,7 +1681,7 @@ C-c C-e l p
 &lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/bzZ09dAbLEE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
 </description>
-          <pubDate>2017-03-25T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-25T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/org</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/org</guid>
         </item>
@@ -1665,7 +1712,7 @@ _underline_ ==&amp;gt; underline
 &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;H_2&lt;/code&gt;&lt;/p&gt;
 
 </description>
-          <pubDate>2017-03-15T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-15T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/resaltado</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/resaltado</guid>
         </item>
@@ -1687,7 +1734,7 @@ _underline_ ==&amp;gt; underline
 &lt;p&gt;Pegar el último bloque cortado o copiado: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-y&lt;/code&gt;&lt;/p&gt;
 
 </description>
-          <pubDate>2017-03-14T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-14T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/copiar</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/copiar</guid>
         </item>
@@ -1723,7 +1770,7 @@ adiós
 /home/usuario/bulletjournal.org
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-          <pubDate>2017-03-13T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-13T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/notas</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/notas</guid>
         </item>
@@ -1769,7 +1816,7 @@ adiós
 &lt;p&gt;https://www.emacswiki.org/emacs/UnicodeEncoding&lt;/p&gt;
 
 </description>
-          <pubDate>2017-03-12T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-12T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/unicode</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/unicode</guid>
         </item>
@@ -1791,7 +1838,7 @@ adiós
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x o&lt;/code&gt; - Cambiar de ventana cuando el aréa de trabajo está dividida en varias ventanas&lt;/p&gt;
 
 </description>
-          <pubDate>2017-03-11T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-11T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/ventanas</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/ventanas</guid>
         </item>
@@ -1839,7 +1886,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 </description>
-          <pubDate>2017-03-10T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-10T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/configuracion</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/configuracion</guid>
         </item>
@@ -1887,7 +1934,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 
 &lt;p&gt;Con este procedimineto siempre mantendremos cifrado nuestro archivo, el cual tendrá una primera capa de seguridad, ya no será tan accesible.&lt;/p&gt;
 </description>
-          <pubDate>2017-03-09T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-09T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/cifrado</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/cifrado</guid>
         </item>
@@ -1940,7 +1987,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 
 &lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html&quot;&gt;https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html&lt;/a&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-03-08T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-08T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/buffer</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/buffer</guid>
         </item>
@@ -1959,7 +2006,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
   &lt;li&gt;Borra la ventana seleccionada y cierra, mata el buffer que contenia &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 0&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-          <pubDate>2017-03-07T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-07T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/zonas</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/zonas</guid>
         </item>
@@ -1977,7 +2024,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
   &lt;li&gt;Cerrar buffer, sin guardar, no modifica archivo creado &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x k&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-          <pubDate>2017-03-06T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-06T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/visitar</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/visitar</guid>
         </item>
@@ -2015,7 +2062,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 &lt;/ol&gt;
 
 </description>
-          <pubDate>2017-03-05T02:00:00+08:00</pubDate>
+          <pubDate>2017-03-04T19:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/ficheros</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/ficheros</guid>
         </item>
@@ -2069,7 +2116,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-M-v
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-          <pubDate>2017-03-04T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-04T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/ventanas</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/ventanas</guid>
         </item>
@@ -2101,7 +2148,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 &lt;p&gt;Para salir del minibuffer, zona donde escribimos comandos, debemos apretar C-g, ya que de lo contrario, se encadenaran los comandos.&lt;/p&gt;
 
 </description>
-          <pubDate>2017-03-03T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-03T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/zonas</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/zonas</guid>
         </item>
@@ -2138,7 +2185,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;C-x C-c
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-          <pubDate>2017-03-02T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-02T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/arrancando</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/arrancando</guid>
         </item>
@@ -2166,7 +2213,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 &lt;/ul&gt;
 
 </description>
-          <pubDate>2017-03-01T08:00:00+08:00</pubDate>
+          <pubDate>2017-03-01T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/inicio</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/inicio</guid>
         </item>
