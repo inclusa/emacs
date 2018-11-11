@@ -7,6 +7,33 @@
     
       
         <item>
+          <title>58 Ejemplos</title>
+          <description>&lt;p&gt;&lt;a href=&quot;http://ehneilsen.net/notebook/orgExamples/org-examples.html&quot;&gt;Ejemplos&lt;/a&gt; para saber lo que queremos hacer.&lt;/p&gt;
+</description>
+          <pubDate>2018-11-01T00:00:00+01:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/58-Ejemplos</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/58-Ejemplos</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>57 Atajos</title>
+          <description>&lt;p&gt;Dos referencias:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf&quot;&gt;Reference Card&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wildunix.es/posts/emacs/&quot;&gt;wildunix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+          <pubDate>2018-10-24T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/57-Atajos</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/57-Atajos</guid>
+        </item>
+      
+    
+      
+        <item>
           <title>56 Mouse</title>
           <description>&lt;p&gt;Para utilizar el ratón con en &lt;strong&gt;Emacs&lt;/strong&gt; con la metodologia &lt;strong&gt;OrgMode&lt;/strong&gt; debemos activarlo en el archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; añadiendo estas líneas:&lt;/p&gt;
 
@@ -124,9 +151,8 @@
 
 &lt;p&gt;Bajaremos el archivo: &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; así:&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/gizmomogwai/org-kanban/master/org-kanban.el
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/gizmomogwai/org-kanban/master/org-kanban.el
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Ahora tendremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; que instalaremos de manera manual.&lt;/p&gt;
 
@@ -141,11 +167,10 @@
 
 &lt;p&gt;Dentro del mismo archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; vemos que tiene algunas dependencias:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'org)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'org)
 (require 'dash)
 (require 'subr-x)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Las instalamos mediante este procedimiento: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: package-list-packages&lt;/code&gt;, lo que nos dará una lista de paquetes para instalar.&lt;/p&gt;
 
@@ -355,9 +380,8 @@
   &lt;li&gt;Llamamos al plugin&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x erc
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x erc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -368,9 +392,8 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/join debian
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/join debian
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
           <pubDate>2017-07-09T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/44-IRC</link>
@@ -421,6 +444,102 @@
 
 &lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/4e43b7f0b302d640be87ac02960b78babafb267d/687474703a2f2f692e696d6775722e636f6d2f77714a304f7a382e706e67&quot; alt=&quot;Pomidor&quot; /&gt;&lt;/p&gt;
 
+&lt;h2 id=&quot;keybindings&quot;&gt;Keybindings&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Key&lt;/th&gt;
+      &lt;th&gt;Descrición&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Enter&lt;/td&gt;
+      &lt;td&gt;Iniciar nuevo pomodoro&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Space&lt;/td&gt;
+      &lt;td&gt;Iniciar un break&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;R&lt;/td&gt;
+      &lt;td&gt;Resetear el timer&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;q&lt;/td&gt;
+      &lt;td&gt;Salir del buffer pomidor&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Q&lt;/td&gt;
+      &lt;td&gt;Apagar pomidor&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;adaptación---customization&quot;&gt;Adaptación - Customization&lt;/h2&gt;
+
+&lt;p&gt;Puedes adaptarlo con &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x customize-group RET pomidor&lt;/code&gt; o editando &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para cambiar timer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-seconds (* 25 60)) ; 25 minutos
+(setq pomidor-break-seconds (* 5 60)) ; 5 minutos
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Para desactivar los sonidos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-sound-tick nil
+      pomidor-sound-tack nil
+      pomidor-sound-overwork (expand-file-name (concat pomidor-dir &quot;overwork.wav&quot;))
+	  pomidor-sound-break-over (expand-file-name (concat (getenv &quot;HOME&quot;) &quot;/Music/overwork.wav&quot;)))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para cambiar la apareincia tu puedes adaptar o configurar el tema directamente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;;; for a full list of available faces see `customize' or search for `defface' in the source code
+(progn
+  (set-face-attribute 'pomidor-break-face nil :foreground &quot;#00ff00&quot;)
+  (set-face-attribute 'pomidor-overwork-face nil :foreground &quot;#00abff&quot;)
+  (set-face-attribute 'pomidor-skip-face nil :foreground &quot;#abbac3&quot;)
+  (set-face-attribute 'pomidor-work-face nil :foreground &quot;#ff0000&quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;sonidos&quot;&gt;Sonidos&lt;/h2&gt;
+
+&lt;p&gt;Si tu Emacs no puede reproducir sonidos tu puedes proveerlo con una función para ello:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-play-sound-file
+      (lambda (file)
+        (start-process &quot;my-pomidor-play-sound&quot;
+                       nil
+                       &quot;mplayer&quot;
+                       file)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;notificación&quot;&gt;Notificación&lt;/h2&gt;
+
+&lt;p&gt;Por defecto &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor&lt;/code&gt; mostrará una notificación una vez por minuto.
+Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt; documentación para aprender cómo configurarlo.&lt;/p&gt;
+
+&lt;p&gt;Tu puedes cambiar la notificación globalmente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq alert-default-style 'libnotify)
+;; or 'growl (see alert docs)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Puedes cambiar la notificación configurando la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-alert&lt;/code&gt; (defaults to &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-default-alert&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-alert (lambda () (alert &quot;OMG!11&quot;)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Puedes configurar &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-update-hook&lt;/code&gt; para hacer que trabaje cada vez que se actualice.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(defun my-pomidor-update-hook ()
+  (alert &quot;Zzz&quot;))
+
+(add-hook 'pomidor-update-hook #'my-pomidor-update-hook)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Puedes ajustar el intervalo de actualización configurando la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-update-interval&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-update-interval 30) ; seconds
+&lt;/code&gt;&lt;/pre&gt;
 </description>
           <pubDate>2017-07-08T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/43-Pomodoro</link>
@@ -460,12 +579,11 @@
 
 &lt;p&gt;Ejemplo:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- #+PANDOC_OPTIONS :: Add command line options to the Pandoc process.
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- #+PANDOC_OPTIONS :: Add command line options to the Pandoc process.
 - #+EPUB_RIGHTS :: Set the copyright statement for the ePub metadata.
 - #+EPUB_COVER :: Path to a cover image for ePub output.
 - #+EPUB_STYLESHEET :: Path to a stylesheet for ePub output.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Entiendo perfectamente que todo esto puede abrumar, para entenderlo necesitamos mucho más tiempo y formación.&lt;/p&gt;
 
@@ -611,7 +729,7 @@
           <title>38 Codigo</title>
           <description>&lt;p&gt;Teniendo en cuenta estas templates:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s 	#+BEGIN_SRC ... #+END_SRC
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s 	#+BEGIN_SRC ... #+END_SRC
 e 	#+BEGIN_EXAMPLE ... #+END_EXAMPLE
 q 	#+BEGIN_QUOTE ... #+END_QUOTE
 v 	#+BEGIN_VERSE ... #+END_VERSE
@@ -624,8 +742,7 @@ a 	#+BEGIN_EXPORT ascii ... #+END_EXPORT
 A 	#+ASCII:
 i 	#+INDEX: line
 I 	#+INCLUDE: line 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Para insertar código &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;s &amp;lt;TAB&amp;gt;&lt;/code&gt; o lo que es lo mismo &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;s&lt;/code&gt; y pulsar la tecla del tabulador.&lt;/p&gt;
 
@@ -633,19 +750,17 @@ I 	#+INCLUDE: line
 
 &lt;p&gt;Obtienes esto:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+BEGIN_SRC
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+BEGIN_SRC
 
 #+END_SRC
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Escribes el tipo de lenguaje que tieres resaltar así:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+BEGIN_SRC python
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+BEGIN_SRC python
 
 #+END_SRC
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Cuando exportas a html se visualiza el código con el lexer oportuno y sale pintadito según el lenguaje.&lt;/p&gt;
 </description>
@@ -714,13 +829,12 @@ I 	#+INCLUDE: line
 
 &lt;p&gt;Para ello primero invocaremos el comando para crearlos:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x yas-new-snippet
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x yas-new-snippet
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Escribiremos el snippet:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# -*- mode: snippet -*-
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# -*- mode: snippet -*-
 # name: post
 # key: p
 # --
@@ -733,8 +847,7 @@ keywords: $3
 coments: true
 ---
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Y lo guardaremos con los comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;.&lt;/p&gt;
 
@@ -775,18 +888,16 @@ coments: true
           <title>34 Imprimir subárbol</title>
           <description>&lt;p&gt;Para imprimir un subárbol de notas debemos situarnos dentro de la nota concreta que queremos imprimir y lanzar estos comandos:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-c C-x b
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-c C-x b
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Para imrimir en PDF, deberemos situarnos en la ventana donce está la selección de la nota y lanzar estos comandos&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Alfons Rovira, [13.05.17 19:23]
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Alfons Rovira, [13.05.17 19:23]
 De desta manera, resumiendo:
 
 C-c C-e l p
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
           <pubDate>2017-05-13T20:22:08+02:00</pubDate>
@@ -800,9 +911,8 @@ C-c C-e l p
           <title>33 Imágenes</title>
           <description>&lt;p&gt;Para incrustar imágenes en los documentos lo haremos así:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./image/emacs.png
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./image/emacs.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Deberemos crear un directorio llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;image&lt;/code&gt; un nivel por debajo y una imagen llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;emacs.png&lt;/code&gt;&lt;/p&gt;
 </description>
@@ -819,15 +929,13 @@ C-c C-e l p
 
 &lt;p&gt;Para activar los bullets a mano:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x org-bullets-mode
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x org-bullets-mode
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Para arrancar este modo tendremos que escribir en el archivo de configuración de &lt;strong&gt;Emacs&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; esta línea:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(setq 'org-bullets-mode)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(setq 'org-bullets-mode)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/orgmode/17_bullets.jpg&quot; alt=&quot;Bullets&quot; /&gt;&lt;/p&gt;
 
@@ -879,20 +987,18 @@ C-c C-e l p
   &lt;li&gt;Usar MELPA:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
 (add-to-list 'package-archives
              '(&quot;melpa&quot; . &quot;http://melpa.org/packages/&quot;) t)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ol&gt;
   &lt;li&gt;Usar MELPA-Stable:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
 (add-to-list 'package-archives
              '(&quot;melpa-stable&quot; . &quot;http://stable.melpa.org/packages/&quot;) t)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;2-refrescamos&quot;&gt;2. Refrescamos&lt;/h3&gt;
 
@@ -904,15 +1010,13 @@ C-c C-e l p
 
 &lt;h3 id=&quot;4-revisamos-la-versión&quot;&gt;4. Revisamos la versión&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x package-install RET magit RET
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x package-install RET magit RET
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Output&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;5-comandos-esenciales&quot;&gt;5. Comandos esenciales&lt;/h3&gt;
 
@@ -1104,7 +1208,7 @@ C-c C-e l p
    :END:
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica que es una nueva columna. &lt;code class=&quot;highlighter-rouge&quot;&gt;20&lt;/code&gt; indica que tiene 20 columnas de ancho. &lt;code class=&quot;highlighter-rouge&quot;&gt;ITEM&lt;/code&gt; hace referencia al título precedido de &lt;code class=&quot;highlighter-rouge&quot;&gt;****&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;Aprobado&lt;/code&gt; indica el campo Aprobado. &lt;code class=&quot;highlighter-rouge&quot;&gt;(Aprobado?)&lt;/code&gt; indica el nombre del campo, que aparecerá en la parte superior, en la parte más alta. &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; indica el formato de tiempo.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica que es una nueva columna. &lt;code class=&quot;highlighter-rouge&quot;&gt;20&lt;/code&gt; indica que tiene 20 columnas de ancho. &lt;code class=&quot;highlighter-rouge&quot;&gt;ITEM&lt;/code&gt; hace referencia al título precedido de &lt;code class=&quot;highlighter-rouge&quot;&gt;****&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;Aprobado&lt;/code&gt; indica el campo Aprobado. &lt;code class=&quot;highlighter-rouge&quot;&gt;(Aprobado?)&lt;/code&gt; indica el nombre del campo, que aparecerá en la parte superior, en la parte más alta. &lt;code class=&quot;highlighter-rouge&quot;&gt;{:}&lt;/code&gt; indica el formato de tiempo.&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Persona_ALL&lt;/code&gt;: Indican todas las personas, de esta forma con las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;SHIFT&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;→&lt;/code&gt; situados en el campo &lt;code class=&quot;highlighter-rouge&quot;&gt;Persona&lt;/code&gt; podremos ir cambiando las personas predefinidas, por eso se predefinen. Esto no limita que podamos escribir más personas en el mismo campo.&lt;/p&gt;
 
@@ -1129,9 +1233,8 @@ C-c C-e l p
   &lt;li&gt;Instalar los paquetes necesarios, en caso de no utilizar Ubuntu 16.04 mirar documentación del enlace de referencia. Copiar en terminal este código para instalar estos dos paquetes.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install elpa-markdown-mode emacs-goodies-el
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;elpa-markdown-mode emacs-goodies-el
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Activar el modo Markdown dentro de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; así &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x markdown-mode&lt;/code&gt;&lt;/li&gt;
@@ -1241,7 +1344,7 @@ C-c C-e l p
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c ]&lt;/code&gt; completa reglas&lt;/p&gt;
 
-&lt;h2 id=&quot;8-following-links&quot;&gt;8. Following Links&lt;/h2&gt;
+&lt;h2 id=&quot;8-following-links&quot;&gt;8. Following Links##&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; abre links en el navegador&lt;/p&gt;
 

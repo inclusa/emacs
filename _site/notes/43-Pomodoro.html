@@ -98,6 +98,102 @@
 
 <p><img src="https://camo.githubusercontent.com/4e43b7f0b302d640be87ac02960b78babafb267d/687474703a2f2f692e696d6775722e636f6d2f77714a304f7a382e706e67" alt="Pomidor" /></p>
 
+<h2 id="keybindings">Keybindings</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Descrición</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Enter</td>
+      <td>Iniciar nuevo pomodoro</td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>Iniciar un break</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>Resetear el timer</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>Salir del buffer pomidor</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td>Apagar pomidor</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="adaptación---customization">Adaptación - Customization</h2>
+
+<p>Puedes adaptarlo con <code class="highlighter-rouge">M-x customize-group RET pomidor</code> o editando <code class="highlighter-rouge">.emacs</code>.</p>
+
+<p>Para cambiar timer:</p>
+
+<pre><code class="language-lisp">(setq pomidor-seconds (* 25 60)) ; 25 minutos
+(setq pomidor-break-seconds (* 5 60)) ; 5 minutos
+
+</code></pre>
+
+<p>Para desactivar los sonidos:</p>
+<pre><code class="language-lisp">(setq pomidor-sound-tick nil
+      pomidor-sound-tack nil
+      pomidor-sound-overwork (expand-file-name (concat pomidor-dir "overwork.wav"))
+	  pomidor-sound-break-over (expand-file-name (concat (getenv "HOME") "/Music/overwork.wav")))
+</code></pre>
+<p>Para cambiar la apareincia tu puedes adaptar o configurar el tema directamente:</p>
+<pre><code class="language-lisp">;; for a full list of available faces see `customize' or search for `defface' in the source code
+(progn
+  (set-face-attribute 'pomidor-break-face nil :foreground "#00ff00")
+  (set-face-attribute 'pomidor-overwork-face nil :foreground "#00abff")
+  (set-face-attribute 'pomidor-skip-face nil :foreground "#abbac3")
+  (set-face-attribute 'pomidor-work-face nil :foreground "#ff0000"))
+</code></pre>
+
+<h2 id="sonidos">Sonidos</h2>
+
+<p>Si tu Emacs no puede reproducir sonidos tu puedes proveerlo con una función para ello:</p>
+
+<pre><code class="language-lisp">(setq pomidor-play-sound-file
+      (lambda (file)
+        (start-process "my-pomidor-play-sound"
+                       nil
+                       "mplayer"
+                       file)))
+</code></pre>
+
+<h2 id="notificación">Notificación</h2>
+
+<p>Por defecto <code class="highlighter-rouge">pomidor</code> mostrará una notificación una vez por minuto.
+Mira <a href="https://github.com/jwiegley/alert/">alert</a> documentación para aprender cómo configurarlo.</p>
+
+<p>Tu puedes cambiar la notificación globalmente:</p>
+<pre><code class="language-lisp">(setq alert-default-style 'libnotify)
+;; or 'growl (see alert docs)
+</code></pre>
+
+<p>Puedes cambiar la notificación configurando la variable <code class="highlighter-rouge">pomidor-alert</code> (defaults to <code class="highlighter-rouge">pomidor-default-alert</code>):</p>
+
+<pre><code class="language-lisp">(setq pomidor-alert (lambda () (alert "OMG!11")))
+</code></pre>
+
+<p>Puedes configurar <code class="highlighter-rouge">pomidor-update-hook</code> para hacer que trabaje cada vez que se actualice.</p>
+<pre><code class="language-lisp">(defun my-pomidor-update-hook ()
+  (alert "Zzz"))
+
+(add-hook 'pomidor-update-hook #'my-pomidor-update-hook)
+</code></pre>
+
+<p>Puedes ajustar el intervalo de actualización configurando la variable <code class="highlighter-rouge">pomidor-update-interval</code></p>
+<pre><code class="language-lisp">(setq pomidor-update-interval 30) ; seconds
+</code></pre>
 
 
 </article>
