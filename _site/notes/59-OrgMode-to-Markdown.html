@@ -7,22 +7,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
-	<title>29 Tablas · The Plain</title>
+	<title>59 OrgMode to Markdown · The Plain</title>
 
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
-<meta name="twitter:title" content="29 Tablas" />
-<meta name="twitter:description" content="La utilización de tablas en Emacs mediante la metodología Orgmode es sencilla.">
+<meta name="twitter:title" content="59 OrgMode to Markdown" />
+<meta name="twitter:description" content="Cuando necesitamos convertir un archivo escrito en OrgMode a Markdon utilizaremos esta sintaxis:">
 
-<meta name="description" content="La utilización de tablas en Emacs mediante la metodología Orgmode es sencilla.">
+<meta name="description" content="Cuando necesitamos convertir un archivo escrito en OrgMode a Markdon utilizaremos esta sintaxis:">
 
 
 
 <link rel="icon" href="/emacs/assets/favicon.png">
 <link rel="apple-touch-icon" href="/emacs/assets/touch-icon.png">
 <link rel="stylesheet" href="/emacs/assets/core.css">
-<link rel="canonical" href="/emacs/notes/tables">
+<link rel="canonical" href="/emacs/notes/59-OrgMode-to-Markdown">
 <link rel="alternate" type="application/atom+xml" title="The Plain" href="/emacs/feed.xml" />
 
 
@@ -52,42 +52,26 @@
 			<article>
 
 	<div class="center">
-		<h1>29 Tablas</h1>
-		<time>April 24, 2017</time>
+		<h1>59 OrgMode to Markdown</h1>
+		<time>February 23, 2019</time>
 	</div>
 
 	<div class="divider"></div>
 
-	<p>La utilización de tablas en <code class="highlighter-rouge">Emacs</code> mediante la metodología <code class="highlighter-rouge">Orgmode</code> es sencilla.</p>
+	<p>Cuando necesitamos convertir un archivo escrito en OrgMode a Markdon utilizaremos esta sintaxis:</p>
 
-<p>Partimos de la escritura de código sencillo:</p>
-
-<pre><code class="language-emacs">| Item | Nom | Cognom |
-|------+-----+--------+
-</code></pre>
-
-<p>En la siguiente línea escribimos una barra vertical. Para pasar a la siguiente columna lo hacemos con la tecla <code class="highlighter-rouge">TAB</code>. Con lo que podremos escribir las demás columnas.</p>
-
-<p>Para pasar a la columna de abano sin pasar por todas las columnas escribiremso ala tecla <code class="highlighter-rouge">RET</code> o Enter.</p>
-
-<pre><code class="language-emacs">| Item | Nom    | Cognom |
-|------+--------+--------+
-| 01   | Pepito | Pérez  |
-| 02   | Pepita | Pérez  |
-</code></pre>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pandoc <span class="nt">-f</span> org file.org <span class="nt">-o</span> file.md
+</code></pre></div></div>
 
 
 </article>
 
 <div class="page-navigation">
 	
-    <a class="next" href="/emacs/notes/magit" title="NEXT: 30 Magit">&lt;&lt;</a>
-		<span> &middot; </span>
-  
 		<a class="home" href="/emacs/" title="Back to Homepage">Home</a>
   
 		<span> &middot; </span>
-    <a class="prev" href="/emacs/notes/exportar" title="PREV: 28 Exportar">&gt;&gt;</a>
+    <a class="prev" href="/emacs/notes/58-Ejemplos" title="PREV: 58 Ejemplos">&gt;&gt;</a>
   
 </div>
 
