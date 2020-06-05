@@ -1,0 +1,25 @@
+I"�<p>Objetivo: incorporar un navegador de texto plano dentro de Spacemacs para poder navegar bien por la web o por documentos estructurados con enlaces, como manuales, sin salir de Spacemacs.</p>
+
+<p><a href="http://w3m.sourceforge.net/">w3m</a> es un navegador de terminal, escrito a partir de otro navegador de terminal <a href="https://lynx.browser.org/">Lynx</a>. Se trata de un navegador parecido a <a href="http://links.twibright.com/">links</a>.</p>
+
+<p>Listamos los navegadores de terminal más interesantes en GNU/Linux:</p>
+
+<ul>
+  <li><a href="http://w3m.sourceforge.net/">w3m</a></li>
+  <li><a href="https://lynx.browser.org/">Lynx</a></li>
+  <li><a href="http://www.jikos.cz/~mikulas/links/">links</a></li>
+  <li><a href="http://links.twibright.com/">links2</a></li>
+  <li><a href="http://www.elinks.cz/">elinks</a></li>
+</ul>
+
+<p>Se trata de navegadores de texto plano, no precisamente modernos, pero que nos pueden servir para diversos objetivos, como navegar sin entorno gráfico o incrustar el navegador dentro de Emacs/Spacemacs.</p>
+
+<p>Para instalar w3m en Spacemacs seguiremos estos pasos para configurarlo en <strong>Spacemacs</strong>:</p>
+
+<ol>
+  <li>Clonaremos este repositorio <code class="highlighter-rouge">git clone https://github.com/venmos/w3m-layer.git ~/.emacs.d/private/w3m</code> en <code class="highlighter-rouge">.emacs/private</code> en el caso de <code class="highlighter-rouge">Spacemacs</code>.</li>
+  <li>Declararemos el <strong>layer</strong> en el archivo <code class="highlighter-rouge">.spacemacs</code> en esta sección <code class="highlighter-rouge">setq-default dotspacemacs-configuration-layers</code> como <code class="highlighter-rouge">w3c</code>.</li>
+  <li>Finalmente accederemos a él mediante <code class="highlighter-rouge">M-x w3c</code></li>
+  <li>Podemos ver los <a href="https://github.com/venmos/w3m-layer#key-bindings">shorcuts</a> y aprendernos los más importantes.</li>
+</ol>
+:ET

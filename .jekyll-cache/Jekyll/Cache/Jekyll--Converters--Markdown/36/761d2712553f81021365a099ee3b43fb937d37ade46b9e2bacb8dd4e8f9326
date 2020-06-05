@@ -1,0 +1,28 @@
+I"�<ol>
+  <li>Arrancar Emacs modo gráfico</li>
+</ol>
+
+<pre><code class="language-emacs">emacs
+</code></pre>
+
+<ol>
+  <li>Arrancar Emacs modo terminal</li>
+</ol>
+
+<pre><code class="language-emacs">emacs --no-window-system
+</code></pre>
+
+<ol>
+  <li>Suspender ejecución Emacs</li>
+</ol>
+
+<pre><code class="language-emacs">C-z
+</code></pre>
+
+<ol>
+  <li>Detiene Emacs y pregunta si guarda el fichero</li>
+</ol>
+
+<pre><code class="language-emacs">C-x C-c
+</code></pre>
+:ET

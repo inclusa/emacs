@@ -1,0 +1,19 @@
+I"E<p>Para activar las imágenes en línea deberemos incluir en la cabecera del documento:</p>
+
+<pre><code class="language-emacs">#+STARTUP: inlineimages
+</code></pre>
+
+<p>De esta forma, al incluir una imagen así:</p>
+
+<pre><code class="language-emacs">[[./image/emacs.png]]
+</code></pre>
+
+<p>Obtendremos la imagen incrustada en el documento.</p>
+
+<p>Por otra parte, podemos activar la imagen, en caso de no poner cabeceras, con esta combinación de teclas:</p>
+
+<pre><code class="language-emacs">C-c C-x C-v
+</code></pre>
+
+<p><img src="../assets/orgmode/imagenes.png" alt="" /></p>
+:ET

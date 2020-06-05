@@ -1,0 +1,81 @@
+I"�<p>Perseguimos esta situación:</p>
+
+<p><a href="https://asciinema.org/a/4gijw6gs9jlcf5dxnlj0f12bh">Vídeo</a></p>
+
+<p>Primero vemos si está en el repositorio con el comando <code class="highlighter-rouge">M-x: package-list-packages</code></p>
+
+<p>Comprobamos que no está, por tanto, deberemos instalarlo de forma manual.</p>
+
+<p>Para ello instalaremos de manera manual el paquete <code class="highlighter-rouge">org-kanban</code> desde el repositorio del desarrollador siguiendo estos pasos.</p>
+
+<p>El repositorio del <a href="https://github.com/gizmomogwai/org-kanban">desarrollador</a></p>
+
+<p>Bajaremos el archivo: <code class="highlighter-rouge">org-kanban.el</code> así:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://raw.githubusercontent.com/gizmomogwai/org-kanban/master/org-kanban.el
+</code></pre></div></div>
+
+<p>Ahora tendremos el archivo <code class="highlighter-rouge">org-kanban.el</code> que instalaremos de manera manual.</p>
+
+<p>Para ello invocamos el comando para instalar de forma manual: <code class="highlighter-rouge">M-x: load-file</code> pulsaremos <strong>intro</strong> (<code class="highlighter-rouge">RET</code>), a continuación escribimos el camino donde encontrará el archivo que hemos bajado.</p>
+
+<p>Se instala rápidamente.</p>
+
+<p>Para que esta utilidad se carge al abrir <strong>Emacs</strong> deberemos incorporar la siguiente línea a nuestro archivo de configuración <code class="highlighter-rouge">.emacs</code>:</p>
+
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nb">load</span> <span class="s">"~/.emacs.d/lisp/org-kanban.el"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Dentro del mismo archivo <code class="highlighter-rouge">org-kanban.el</code> vemos que tiene algunas dependencias:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(require 'org)
+(require 'dash)
+(require 'subr-x)
+</code></pre></div></div>
+
+<p>Las instalamos mediante este procedimiento: <code class="highlighter-rouge">M-x: package-list-packages</code>, lo que nos dará una lista de paquetes para instalar.</p>
+
+<p>Instalamos las dependencias, al menos hemos instalado <code class="highlighter-rouge">dash</code>, es una libreria avanzada para trabajar con tablas.</p>
+
+<p>A continuación creamos una lista de <code class="highlighter-rouge">TODO</code>, así:</p>
+
+<pre><code class="language-orgmode">* TODO Comprar el pan
+* TODO Comprar lentejas
+* PROCESS Encargar pizza
+* WAIT Comprar detergente
+
+#+BEGIN: kanban
+#+END:
+</code></pre>
+
+<p>Bien pues ya tenemos todo preparado para generarla.</p>
+
+<p>A continuación nos situamos en esta línea <code class="highlighter-rouge">#+BEGIN: kanban</code> y pulsamos <code class="highlighter-rouge">C-c C-c</code></p>
+
+<p>Esto nos generará el siguiente código:</p>
+
+<pre><code class="language-orgmode"> #+BEGIN: kanban
+  | TODO                 | PROCESS            | WAIT                   | HABIT | DONE | CANCEL |
+  |----------------------+--------------------+------------------------+-------+------+--------|
+  | [[Comprar el pan]]   |                    |                        |       |      |        |
+  | [[Comprar lentejas]] |                    |                        |       |      |        |
+  |                      | [[Encargar pizza]] |                        |       |      |        |
+  |                      |                    | [[Comprar detergente]] |       |      |        |
+ #+END:
+</code></pre>
+<p>Debemos tener en cuenta que las cabeceras dependerán de la explicitación de las mismas que tengamos en la parte superior del documento, en este caso estaban definidas al princio del documento así:</p>
+
+<pre><code class="language-orgmode">#+TODO: TODO(t) | PROCESS(p) | WAIT(w) | HABIT(h) | DONE(d) | CANCEL(c)
+</code></pre>
+
+<p>Para mover las tareas de una columna a otra deberemos activar el modo <code class="highlighter-rouge">M-x: org-kanban/shift</code>.</p>
+
+<p>Nos fijaremos en la parte de abajo de la ventana, pues tendremos las teclas para mover a la izquierda <code class="highlighter-rouge">j</code> y a la derecha <code class="highlighter-rouge">k</code>.</p>
+
+<p>Al cambiar a la fila de abajo deberemos activar de nuevo el modo para mover las columnas <code class="highlighter-rouge">M-x: org-kanban/shift</code>.</p>
+
+<p>Para que el archivo <code class="highlighter-rouge">dd</code>
+<img src="../assets/orgmode/org-kanban.gif" alt="" /></p>
+
+<p>Otra referencia muy intresante la podemos encontrar en el blog de <a href="https://ugeek.github.io/Kanban-para-Org-Mode/">uGeek</a> donde se explican algunos aspectos con mayor amplitud.</p>
+:ET

@@ -1,0 +1,9 @@
+I"H<ol>
+  <li>Abrir fichero <code class="highlighter-rouge">C-c C-f</code></li>
+  <li>Abrir directorio <code class="highlighter-rouge">C-x d</code></li>
+  <li>Grabar en disco <code class="highlighter-rouge">C-x C-s</code></li>
+  <li>Grabar el buffer con otro nombre <code class="highlighter-rouge">C-x C-w</code></li>
+  <li>En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo <code class="highlighter-rouge">C-x s</code></li>
+  <li>Cerrar buffer, sin guardar, no modifica archivo creado <code class="highlighter-rouge">C-x k</code></li>
+</ol>
+:ET

@@ -1,0 +1,18 @@
+I"9<p>El objetivo es disponer de una terminal con opcion de multiplexado dentro de Emacs.</p>
+
+<p>Pasos</p>
+
+<ol>
+  <li>
+    <p>Instalarla dentro de Emacs así: <code class="highlighter-rouge">M-x package-list-packages</code>.</p>
+  </li>
+  <li>
+    <p>Buscar paquete <code class="highlighter-rouge">multi-term</code></p>
+  </li>
+  <li>
+    <p>Llamar al paquete <code class="highlighter-rouge">M-x multi-term</code>.</p>
+  </li>
+</ol>
+
+<p>Referencia para aprender más: <a href="https://www.emacswiki.org/emacs/MultiTerm">https://www.emacswiki.org/emacs/MultiTerm</a></p>
+:ET

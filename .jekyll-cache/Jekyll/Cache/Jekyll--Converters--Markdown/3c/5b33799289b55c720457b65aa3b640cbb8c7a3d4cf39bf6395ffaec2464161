@@ -1,0 +1,5 @@
+I"6<p>Cuando necesitamos convertir un archivo escrito en OrgMode a Markdon utilizaremos esta sintaxis:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pandoc <span class="nt">-f</span> org file.org <span class="nt">-o</span> file.md
+</code></pre></div></div>
+:ET

@@ -1,0 +1,60 @@
+I"�<p>La automatización de texto es algo importante cuando deseas ir rápido, para ello necesitaremos instalar una extensión para llamar al texto automático. A este concepto lo llamamos <strong>snippet</strong>.</p>
+
+<p>Un <strong>snippet</strong> es un texto programado, al cual se le llama con un caracter o palabra clave seguido de la pulsación del tabulador.</p>
+
+<p>Para ello vamos a instalar primero la extensión <code class="highlighter-rouge">yasnippet</code>.</p>
+
+<p>Así seguiremos los pasos de esta página <a href="https://www.emacswiki.org/emacs/Yasnippet">EmacsWiki</a>.</p>
+
+<p>Una vez instalado ya podremos crear nuestros primeros snippets.</p>
+
+<p>Para ello primero invocaremos el comando para crearlos:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M-x yas-new-snippet
+</code></pre></div></div>
+
+<p>Escribiremos el snippet:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># -*- mode: snippet -*-
+# name: post
+# key: p
+# --
+---
+layout: post
+title: $1
+date: `(format-time-string "%Y-%m-%d %a %H:%M" (current-time))`
+description: $2 
+keywords: $3
+coments: true
+---
+
+</code></pre></div></div>
+
+<p>Y lo guardaremos con los comandos <code class="highlighter-rouge">C-c C-c</code>.</p>
+
+<p>A la hora de guardar nos preguntará dónde queremos guardarlos.</p>
+
+<p>Para organizar bien los snippets lo mejor será antes de crear el snippet crear una página donde vayamos a escribir, en este caso hemos empezado a escribir en markdown por tanto, hemos creado una página <code class="highlighter-rouge">.md</code>.</p>
+
+<p>En el paso siguiente creamos el snippet y posteriormente guardamos. El programa nos identificará nuestra necesidad, crear un snippet para Markdown, así que nos propondrá una carpeta para guardarlo, en este caso <code class="highlighter-rouge">markdown-mode</code>, a la cual cosa accederemos.</p>
+
+<p>Para invocar el <code class="highlighter-rouge">snippet</code> simplemente crearemos un archivo <code class="highlighter-rouge">.md</code>, escribiremos la la clave, en este caso <code class="highlighter-rouge">p</code> y el programa nos lanzará el snippet.</p>
+
+<p>Ahora ya tenemos creado el <code class="highlighter-rouge">snippet</code>, pero para que funcione deberemos decirle a emacs que inicie el programa de cuando arranque.</p>
+
+<p>Para ello editamos el archivo <code class="highlighter-rouge">.emacs</code> y añadiremos las siguientes líneas:</p>
+
+<pre><code class="language-emacs">;;; Activant snippets
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"                 ;; personal snippets
+        ))
+(yas-global-mode 1) ;; or M-x yas-reload-all if you've started YASnippet already.
+;;; Snippets configuració
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+</code></pre>
+
+<p>Ahora ya tendremos disponibles nuestros snippets.</p>
+
+<p>Fuente: <a href="https://www.youtube.com/watch?v=-4O-ZYjQxks">Emacculate</a></p>
+:ET

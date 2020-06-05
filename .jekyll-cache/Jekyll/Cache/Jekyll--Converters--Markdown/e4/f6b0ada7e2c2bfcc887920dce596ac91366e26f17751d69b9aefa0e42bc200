@@ -1,0 +1,13 @@
+I"X<p>Utilizaremos la notación <code class="highlighter-rouge">SPC</code> para simbolizar la barra espaciadora.</p>
+
+<p>Marcar el principio del bloque: <code class="highlighter-rouge">Ctrl-SPC</code></p>
+
+<p>Cortar desde la marca hasta la posición actual: <code class="highlighter-rouge">Ctrl-w</code></p>
+
+<p>Copiar desde la marca a la posición actual: <code class="highlighter-rouge">M-w</code></p>
+
+<p>Cortar desde la marca hata el final de línea: <code class="highlighter-rouge">Ctrl-k</code></p>
+
+<p>Pegar el último bloque cortado o copiado: <code class="highlighter-rouge">Ctrl-y</code></p>
+
+:ET

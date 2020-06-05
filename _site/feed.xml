@@ -7,6 +7,595 @@
     
       
         <item>
+          <title>66 Spacemacs</title>
+          <description>&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;;; -&lt;span class=&quot;ge&quot;&gt;*- mode: emacs-lisp -*&lt;/span&gt;-
+;; This file is loaded by Spacemacs at startup.
+;; It must be stored in your home directory.
+
+(defun dotspacemacs/layers ()
+  &quot;Configuration Layers declaration.
+You should not put any user code in this function besides modifying the variable
+values.&quot;
+  (setq-default
+   ;; Base distribution to use. This is a layer contained in the directory
+   ;; &lt;span class=&quot;sb&quot;&gt;`+distribution'. For now available distributions are `&lt;/span&gt;spacemacs-base'
+   ;; or &lt;span class=&quot;sb&quot;&gt;`spacemacs'. (default 'spacemacs)
+   dotspacemacs-distribution 'spacemacs
+   ;; Lazy installation of layers (i.e. layers are installed only when a file
+   ;; with a supported type is opened). Possible values are `&lt;/span&gt;all', &lt;span class=&quot;sb&quot;&gt;`unused'
+   ;; and `&lt;/span&gt;nil'. &lt;span class=&quot;sb&quot;&gt;`unused' will lazy install only unused layers (i.e. layers
+   ;; not listed in variable `&lt;/span&gt;dotspacemacs-configuration-layers'), &lt;span class=&quot;sb&quot;&gt;`all' will
+   ;; lazy install any layer that support lazy installation even the layers
+   ;; listed in `&lt;/span&gt;dotspacemacs-configuration-layers'. &lt;span class=&quot;sb&quot;&gt;`nil' disable the lazy
+   ;; installation feature and you have to explicitly list a layer in the
+   ;; variable `&lt;/span&gt;dotspacemacs-configuration-layers' to install it.
+   ;; (default 'unused)
+   dotspacemacs-enable-lazy-installation 'unused
+   ;; If non-nil then Spacemacs will ask for confirmation before installing
+   ;; a layer lazily. (default t)
+   dotspacemacs-ask-for-lazy-installation t
+   ;; If non-nil layers with lazy install support are lazy installed.
+   ;; List of additional paths where to look for configuration layers.
+   ;; Paths must have a trailing slash (i.e. &lt;span class=&quot;sb&quot;&gt;`~/.mycontribs/')
+   dotspacemacs-configuration-layer-path '()
+   ;; List of configuration layers to load.
+   dotspacemacs-configuration-layers
+   '(
+     html
+     nginx
+     ;; ----------------------------------------------------------------
+     ;; Example of useful layers you may want to use right away.
+     ;; Uncomment some layer names and press &amp;lt;SPC f e R&amp;gt; (Vim style) or
+     ;; &amp;lt;M-m f e R&amp;gt; (Emacs style) to install them.
+     ;; ----------------------------------------------------------------
+     helm
+     auto-completion
+     better-defaults
+     beamer
+     csv
+     dash
+     django
+     emacs-lisp
+     emoji
+     git
+     latex
+     markdown
+     org
+     python
+     pandoc
+     ruby
+     ruby-on-rails
+     shell
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+     spell-checking
+     syntax-checking
+     treemacs
+     treemacs-evil
+     version-control
+     sql
+     yaml
+     )
+   ;; List of additional packages that will be installed without being
+   ;; wrapped in a layer. If you need some configuration for these
+   ;; packages, then consider creating a layer. You can also put the
+   ;; configuration in `&lt;/span&gt;dotspacemacs/user-config'.
+   dotspacemacs-additional-packages '()
+   ;; A list of packages that cannot be updated.
+   dotspacemacs-frozen-packages '()
+   ;; A list of packages that will not be installed and loaded.
+   dotspacemacs-excluded-packages '()
+   ;; Defines the behaviour of Spacemacs when installing packages.
+   ;; Possible values are &lt;span class=&quot;sb&quot;&gt;`used-only', `&lt;/span&gt;used-but-keep-unused' and &lt;span class=&quot;sb&quot;&gt;`all'.
+   ;; `&lt;/span&gt;used-only' installs only explicitly used packages and uninstall any
+   ;; unused packages as well as their unused dependencies.
+   ;; &lt;span class=&quot;sb&quot;&gt;`used-but-keep-unused' installs only the used packages but won't uninstall
+   ;; them if they become unused. `&lt;/span&gt;all' installs &lt;span class=&quot;ge&quot;&gt;*all*&lt;/span&gt; packages supported by
+   ;; Spacemacs and never uninstall them. (default is &lt;span class=&quot;sb&quot;&gt;`used-only')
+   dotspacemacs-install-packages 'used-only))
+
+(defun dotspacemacs/init ()
+  &quot;Initialization function.
+This function is called at the very startup of Spacemacs initialization
+before layers configuration.
+You should not put any user code in there besides modifying the variable
+values.&quot;
+  ;; This setq-default sexp is an exhaustive list of all the supported
+  ;; spacemacs settings.
+  (setq-default
+   ;; If non nil ELPA repositories are contacted via HTTPS whenever it's
+   ;; possible. Set it to nil if you have no way to use HTTPS in your
+   ;; environment, otherwise it is strongly recommended to let it set to t.
+   ;; This variable has no effect if Emacs is launched with the parameter
+   ;; `&lt;/span&gt;--insecure' which forces the value of this variable to nil.
+   ;; (default t)
+   dotspacemacs-elpa-https t
+   ;; Maximum allowed time in seconds to contact an ELPA repository.
+   dotspacemacs-elpa-timeout 5
+   ;; If non nil then spacemacs will check for updates at startup
+   ;; when the current branch is not &lt;span class=&quot;sb&quot;&gt;`develop'. Note that checking for
+   ;; new versions works via git commands, thus it calls GitHub services
+   ;; whenever you start Emacs. (default nil)
+   dotspacemacs-check-for-update nil
+   ;; If non-nil, a form that evaluates to a package directory. For example, to
+   ;; use different package directories for different Emacs versions, set this
+   ;; to `&lt;/span&gt;emacs-version'.
+   dotspacemacs-elpa-subdirectory nil
+   ;; One of &lt;span class=&quot;sb&quot;&gt;`vim', `&lt;/span&gt;emacs' or &lt;span class=&quot;sb&quot;&gt;`hybrid'.
+   ;; `&lt;/span&gt;hybrid' is like &lt;span class=&quot;sb&quot;&gt;`vim' except that `&lt;/span&gt;insert state' is replaced by the
+   ;; &lt;span class=&quot;sb&quot;&gt;`hybrid state' with `&lt;/span&gt;emacs' key bindings. The value can also be a list
+   ;; with &lt;span class=&quot;sb&quot;&gt;`:variables' keyword (similar to layers). Check the editing styles
+   ;; section of the documentation for details on available variables.
+   ;; (default 'vim)
+   dotspacemacs-editing-style 'hybrid
+   ;; If non nil output loading progress in `&lt;/span&gt;&lt;span class=&quot;ge&quot;&gt;*Messages*&lt;/span&gt;' buffer. (default nil)
+   dotspacemacs-verbose-loading nil
+   ;; Specify the startup banner. Default value is &lt;span class=&quot;sb&quot;&gt;`official', it displays
+   ;; the official spacemacs logo. An integer value is the index of text
+   ;; banner, `&lt;/span&gt;random' chooses a random text banner in &lt;span class=&quot;sb&quot;&gt;`core/banners'
+   ;; directory. A string value must be a path to an image format supported
+   ;; by your Emacs build.
+   ;; If the value is nil then no banner is displayed. (default 'official)
+   dotspacemacs-startup-banner 'official
+   ;; List of items to show in startup buffer or an association list of
+   ;; the form `&lt;/span&gt;(list-type . list-size)&lt;span class=&quot;sb&quot;&gt;`. If nil then it is disabled.
+   ;; Possible values for list-type are:
+   ;; `&lt;/span&gt;recents' &lt;span class=&quot;sb&quot;&gt;`bookmarks' `&lt;/span&gt;projects' &lt;span class=&quot;sb&quot;&gt;`agenda' `&lt;/span&gt;todos'.&quot;
+   ;; List sizes may be nil, in which case
+   ;; &lt;span class=&quot;sb&quot;&gt;`spacemacs-buffer-startup-lists-length' takes effect.
+   dotspacemacs-startup-lists '((recents . 5)
+                                (projects . 7))
+   ;; True if the home buffer should respond to resize events.
+   dotspacemacs-startup-buffer-responsive t
+   ;; Default major mode of the scratch buffer (default `&lt;/span&gt;text-mode')
+   dotspacemacs-scratch-mode 'text-mode
+   ;; List of themes, the first of the list is loaded when spacemacs starts.
+   ;; Press &lt;span class=&quot;nt&quot;&gt;&amp;lt;SPC&amp;gt;&lt;/span&gt; T n to cycle to the next theme in the list (works great
+   ;; with 2 themes variants, one dark and one light)
+   dotspacemacs-themes '(spacemacs-dark
+                         spacemacs-light)
+   ;; If non nil the cursor color matches the state color in GUI Emacs.
+   dotspacemacs-colorize-cursor-according-to-state t
+   ;; Default font, or prioritized list of fonts. &lt;span class=&quot;sb&quot;&gt;`powerline-scale' allows to
+   ;; quickly tweak the mode-line size to make separators look not too crappy.
+   dotspacemacs-default-font '(&quot;Source Code Pro&quot;
+                               :size 13
+                               :weight normal
+                               :width normal
+                               :powerline-scale 1.1)
+   ;; The leader key
+   dotspacemacs-leader-key &quot;SPC&quot;
+   ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
+   ;; (default &quot;SPC&quot;)
+   dotspacemacs-emacs-command-key &quot;SPC&quot;
+   ;; The key used for Vim Ex commands (default &quot;:&quot;)
+   dotspacemacs-ex-command-key &quot;:&quot;
+   ;; The leader key accessible in `&lt;/span&gt;emacs state' and &lt;span class=&quot;sb&quot;&gt;`insert state'
+   ;; (default &quot;M-m&quot;)
+   dotspacemacs-emacs-leader-key &quot;M-m&quot;
+   ;; Major mode leader key is a shortcut key which is the equivalent of
+   ;; pressing `&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;leader&amp;gt;&lt;/span&gt; m&lt;span class=&quot;sb&quot;&gt;`. Set it to `&lt;/span&gt;nil&lt;span class=&quot;sb&quot;&gt;` to disable it. (default &quot;,&quot;)
+   dotspacemacs-major-mode-leader-key &quot;,&quot;
+   ;; Major mode leader key accessible in `&lt;/span&gt;emacs state' and &lt;span class=&quot;sb&quot;&gt;`insert state'.
+   ;; (default &quot;C-M-m&quot;)
+   dotspacemacs-major-mode-emacs-leader-key &quot;C-M-m&quot;
+   ;; These variables control whether separate commands are bound in the GUI to
+   ;; the key pairs C-i, TAB and C-m, RET.
+   ;; Setting it to a non-nil value, allows for separate commands under &amp;lt;C-i&amp;gt;
+   ;; and TAB or &amp;lt;C-m&amp;gt; and RET.
+   ;; In the terminal, these pairs are generally indistinguishable, so this only
+   ;; works in the GUI. (default nil)
+   dotspacemacs-distinguish-gui-tab nil
+   ;; If non nil `&lt;/span&gt;Y' is remapped to &lt;span class=&quot;sb&quot;&gt;`y$' in Evil states. (default nil)
+   dotspacemacs-remap-Y-to-y$ nil
+   ;; If non-nil, the shift mappings `&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;' retain visual state if used
+   ;; there. (default t)
+   dotspacemacs-retain-visual-state-on-shift t
+   ;; If non-nil, J and K move lines up and down when in visual mode.
+   ;; (default nil)
+   dotspacemacs-visual-line-move-text nil
+   ;; If non nil, inverse the meaning of &lt;span class=&quot;sb&quot;&gt;`g' in `&lt;/span&gt;:substitute' Evil ex-command.
+   ;; (default nil)
+   dotspacemacs-ex-substitute-global nil
+   ;; Name of the default layout (default &quot;Default&quot;)
+   dotspacemacs-default-layout-name &quot;Default&quot;
+   ;; If non nil the default layout name is displayed in the mode-line.
+   ;; (default nil)
+   dotspacemacs-display-default-layout nil
+   ;; If non nil then the last auto saved layouts are resume automatically upon
+   ;; start. (default nil)
+   dotspacemacs-auto-resume-layouts nil
+   ;; Size (in MB) above which spacemacs will prompt to open the large file
+   ;; literally to avoid performance issues. Opening a file literally means that
+   ;; no major mode or minor modes are active. (default is 1)
+   dotspacemacs-large-file-size 1
+   ;; Location where to auto-save files. Possible values are &lt;span class=&quot;sb&quot;&gt;`original' to
+   ;; auto-save the file in-place, `&lt;/span&gt;cache' to auto-save the file to another
+   ;; file stored in the cache directory and &lt;span class=&quot;sb&quot;&gt;`nil' to disable auto-saving.
+   ;; (default 'cache)
+   dotspacemacs-auto-save-file-location 'cache
+   ;; Maximum number of rollback slots to keep in the cache. (default 5)
+   dotspacemacs-max-rollback-slots 5
+   ;; If non nil, `&lt;/span&gt;helm' will try to minimize the space it uses. (default nil)
+   dotspacemacs-helm-resize nil
+   ;; if non nil, the helm header is hidden when there is only one source.
+   ;; (default nil)
+   dotspacemacs-helm-no-header nil
+   ;; define the position to display &lt;span class=&quot;sb&quot;&gt;`helm', options are `&lt;/span&gt;bottom', &lt;span class=&quot;sb&quot;&gt;`top',
+   ;; `&lt;/span&gt;left', or &lt;span class=&quot;sb&quot;&gt;`right'. (default 'bottom)
+   dotspacemacs-helm-position 'bottom
+   ;; Controls fuzzy matching in helm. If set to `&lt;/span&gt;always', force fuzzy matching
+   ;; in all non-asynchronous sources. If set to &lt;span class=&quot;sb&quot;&gt;`source', preserve individual
+   ;; source settings. Else, disable fuzzy matching in all sources.
+   ;; (default 'always)
+   dotspacemacs-helm-use-fuzzy 'always
+   ;; If non nil the paste micro-state is enabled. When enabled pressing `&lt;/span&gt;p&lt;span class=&quot;sb&quot;&gt;`
+   ;; several times cycle between the kill ring content. (default nil)
+   dotspacemacs-enable-paste-transient-state nil
+   ;; Which-key delay in seconds. The which-key buffer is the popup listing
+   ;; the commands bound to the current keystroke sequence. (default 0.4)
+   dotspacemacs-which-key-delay 0.4
+   ;; Which-key frame position. Possible values are `&lt;/span&gt;right', &lt;span class=&quot;sb&quot;&gt;`bottom' and
+   ;; `&lt;/span&gt;right-then-bottom'. right-then-bottom tries to display the frame to the
+   ;; right; if there is insufficient space it displays it at the bottom.
+   ;; (default 'bottom)
+   dotspacemacs-which-key-position 'bottom
+   ;; If non nil a progress bar is displayed when spacemacs is loading. This
+   ;; may increase the boot time on some systems and emacs builds, set it to
+   ;; nil to boost the loading time. (default t)
+   dotspacemacs-loading-progress-bar t
+   ;; If non nil the frame is fullscreen when Emacs starts up. (default nil)
+   ;; (Emacs 24.4+ only)
+   dotspacemacs-fullscreen-at-startup nil
+   ;; If non nil &lt;span class=&quot;sb&quot;&gt;`spacemacs/toggle-fullscreen' will not use native fullscreen.
+   ;; Use to disable fullscreen animations in OSX. (default nil)
+   dotspacemacs-fullscreen-use-non-native nil
+   ;; If non nil the frame is maximized when Emacs starts up.
+   ;; Takes effect only if `&lt;/span&gt;dotspacemacs-fullscreen-at-startup' is nil.
+   ;; (default nil) (Emacs 24.4+ only)
+   dotspacemacs-maximized-at-startup nil
+   ;; A value from the range (0..100), in increasing opacity, which describes
+   ;; the transparency level of a frame when it's active or selected.
+   ;; Transparency can be toggled through &lt;span class=&quot;sb&quot;&gt;`toggle-transparency'. (default 90)
+   dotspacemacs-active-transparency 90
+   ;; A value from the range (0..100), in increasing opacity, which describes
+   ;; the transparency level of a frame when it's inactive or deselected.
+   ;; Transparency can be toggled through `&lt;/span&gt;toggle-transparency'. (default 90)
+   dotspacemacs-inactive-transparency 90
+   ;; If non nil show the titles of transient states. (default t)
+   dotspacemacs-show-transient-state-title t
+   ;; If non nil show the color guide hint for transient state keys. (default t)
+   dotspacemacs-show-transient-state-color-guide t
+   ;; If non nil unicode symbols are displayed in the mode line. (default t)
+   dotspacemacs-mode-line-unicode-symbols t
+   ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
+   ;; scrolling overrides the default behavior of Emacs which recenters point
+   ;; when it reaches the top or bottom of the screen. (default t)
+   dotspacemacs-smooth-scrolling t
+   ;; Control line numbers activation.
+   ;; If set to &lt;span class=&quot;sb&quot;&gt;`t' or `&lt;/span&gt;relative' line numbers are turned on in all &lt;span class=&quot;sb&quot;&gt;`prog-mode' and
+   ;; `&lt;/span&gt;text-mode' derivatives. If set to &lt;span class=&quot;sb&quot;&gt;`relative', line numbers are relative.
+   ;; This variable can also be set to a property list for finer control:
+   ;; '(:relative nil
+   ;;   :disabled-for-modes dired-mode
+   ;;                       doc-view-mode
+   ;;                       markdown-mode
+   ;;                       org-mode
+   ;;                       pdf-view-mode
+   ;;                       text-mode
+   ;;   :size-limit-kb 1000)
+   ;; (default nil)
+   ;; dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
+   ;; Code folding method. Possible values are `&lt;/span&gt;evil' and &lt;span class=&quot;sb&quot;&gt;`origami'.
+   ;; (default 'evil)
+   dotspacemacs-folding-method 'evil
+   ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
+   ;; (default nil)
+   dotspacemacs-smartparens-strict-mode nil
+   ;; If non-nil pressing the closing parenthesis `&lt;/span&gt;)' key in insert mode passes
+   ;; over any automatically added closing parenthesis, bracket, quote, etc…
+   ;; This can be temporary disabled by pressing &lt;span class=&quot;sb&quot;&gt;`C-q' before `&lt;/span&gt;)'. (default nil)
+   dotspacemacs-smart-closing-parenthesis nil
+   ;; Select a scope to highlight delimiters. Possible values are &lt;span class=&quot;sb&quot;&gt;`any',
+   ;; `&lt;/span&gt;current', &lt;span class=&quot;sb&quot;&gt;`all' or `&lt;/span&gt;nil'. Default is &lt;span class=&quot;sb&quot;&gt;`all' (highlight any scope and
+   ;; emphasis the current one). (default 'all)
+   dotspacemacs-highlight-delimiters 'all
+   ;; If non nil, advise quit functions to keep server open when quitting.
+   ;; (default nil)
+   dotspacemacs-persistent-server nil
+   ;; List of search tool executable names. Spacemacs uses the first installed
+   ;; tool of the list. Supported tools are `&lt;/span&gt;ag', &lt;span class=&quot;sb&quot;&gt;`pt', `&lt;/span&gt;ack' and &lt;span class=&quot;sb&quot;&gt;`grep'.
+   ;; (default '(&quot;ag&quot; &quot;pt&quot; &quot;ack&quot; &quot;grep&quot;))
+   dotspacemacs-search-tools '(&quot;ag&quot; &quot;pt&quot; &quot;ack&quot; &quot;grep&quot;)
+   ;; The default package repository used if no explicit repository has been
+   ;; specified with an installed package.
+   ;; Not used for now. (default nil)
+   dotspacemacs-default-package-repository nil
+   ;; Delete whitespace while saving buffer. Possible values are `&lt;/span&gt;all'
+   ;; to aggressively delete empty line and long sequences of whitespace,
+   ;; &lt;span class=&quot;sb&quot;&gt;`trailing' to delete only the whitespace at end of lines, `&lt;/span&gt;changed'to
+   ;; delete only whitespace for changed lines or &lt;span class=&quot;sb&quot;&gt;`nil' to disable cleanup.
+   ;; (default nil)
+   dotspacemacs-whitespace-cleanup nil
+   ))
+
+(defun dotspacemacs/user-init ()
+  &quot;Initialization function for user code.
+It is called immediately after `&lt;/span&gt;dotspacemacs/init', before layer configuration
+executes.
+ This function is mostly useful for variables that need to be set
+before packages are loaded. If you are unsure, you should try in setting them in
+&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;dotspacemacs/user-config' first.&quot;
+  )
+
+(defun dotspacemacs/user-config ()
+  &quot;Configuration function for user code.
+This function is called at the very end of Spacemacs initialization after
+layers configuration.
+This is the place where most of your configurations should be done. Unless it is
+explicitly specified that a variable should be set before a package is loaded,
+you should place your code here.&quot;
+  )
+
+;; Do not write anything past this comment. This is where Emacs will
+;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(evil-want-Y-yank-to-eol nil)
+ '(org-agenda-files nil)
+ '(package-selected-packages
+   (quote
+    (mode-icons helm-img treemacs origami pandoc-mode ox-pandoc ht web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data nginx-mode zeal-at-point yapfify yaml-mode xterm-color unfill sql-indent smeargle shell-pop rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv pyvenv pytest pyenv-mode py-isort projectile-rails rake inflections pony-mode pip-requirements orgit org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download mwim multi-term mmm-mode minitest markdown-toc markdown-mode magit-gitflow magit-popup live-py-mode hy-mode dash-functional htmlize helm-pydoc helm-gitignore helm-dash dash-docs helm-company helm-c-yasnippet gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gh-md fuzzy flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck feature-mode evil-magit magit transient git-commit with-editor eshell-z eshell-prompt-extras esh-help emoji-cheat-sheet-plus diff-hl cython-mode csv-mode company-statistics company-emoji company-auctex company-anaconda company chruby bundler inf-ruby auto-yasnippet yasnippet auto-dictionary auctex anaconda-mode pythonic ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family &quot;Source Code Pro&quot; :foundry &quot;ADBE&quot; :slant normal :weight normal :height 98 :width normal)))))
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+          <pubDate>2020-05-30T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/66-Spacemacs</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/66-Spacemacs</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>65 w3m</title>
+          <description>&lt;p&gt;Objetivo: incorporar un navegador de texto plano dentro de Spacemacs para poder navegar bien por la web o por documentos estructurados con enlaces, como manuales, sin salir de Spacemacs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://w3m.sourceforge.net/&quot;&gt;w3m&lt;/a&gt; es un navegador de terminal, escrito a partir de otro navegador de terminal &lt;a href=&quot;https://lynx.browser.org/&quot;&gt;Lynx&lt;/a&gt;. Se trata de un navegador parecido a &lt;a href=&quot;http://links.twibright.com/&quot;&gt;links&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Listamos los navegadores de terminal más interesantes en GNU/Linux:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://w3m.sourceforge.net/&quot;&gt;w3m&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lynx.browser.org/&quot;&gt;Lynx&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.jikos.cz/~mikulas/links/&quot;&gt;links&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://links.twibright.com/&quot;&gt;links2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.elinks.cz/&quot;&gt;elinks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Se trata de navegadores de texto plano, no precisamente modernos, pero que nos pueden servir para diversos objetivos, como navegar sin entorno gráfico o incrustar el navegador dentro de Emacs/Spacemacs.&lt;/p&gt;
+
+&lt;p&gt;Para instalar w3m en Spacemacs seguiremos estos pasos para configurarlo en &lt;strong&gt;Spacemacs&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Clonaremos este repositorio &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/venmos/w3m-layer.git ~/.emacs.d/private/w3m&lt;/code&gt; en &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs/private&lt;/code&gt; en el caso de &lt;code class=&quot;highlighter-rouge&quot;&gt;Spacemacs&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Declararemos el &lt;strong&gt;layer&lt;/strong&gt; en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.spacemacs&lt;/code&gt; en esta sección &lt;code class=&quot;highlighter-rouge&quot;&gt;setq-default dotspacemacs-configuration-layers&lt;/code&gt; como &lt;code class=&quot;highlighter-rouge&quot;&gt;w3c&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Finalmente accederemos a él mediante &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x w3c&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Podemos ver los &lt;a href=&quot;https://github.com/venmos/w3m-layer#key-bindings&quot;&gt;shorcuts&lt;/a&gt; y aprendernos los más importantes.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+          <pubDate>2019-08-04T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/65-w3m</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/65-w3m</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>64 Magit</title>
+          <description>&lt;p&gt;Magit es una extensión fantástica que dota de funcionalidad GIT a Emacs.&lt;/p&gt;
+
+&lt;p&gt;https://magit.vc/&lt;/p&gt;
+
+&lt;p&gt;Así utilizo GIT dentro de Spacemacs o lo que es lo mismo Emacs.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-m g s&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-stage-file&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-comit c&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Editamos el commit y pulsamos la confirmación con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-push u&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Recuerdo que &lt;code class=&quot;highlighter-rouge&quot;&gt;M&lt;/code&gt; en &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; significa &lt;code class=&quot;highlighter-rouge&quot;&gt;Meta&lt;/code&gt; o lo que es lo mismo, se refiere a la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;Alt&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Por tanto &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x&lt;/code&gt; significa &lt;code class=&quot;highlighter-rouge&quot;&gt;Alt + x&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para que funcione hay que tener instalado &lt;code class=&quot;highlighter-rouge&quot;&gt;Magit&lt;/code&gt; dentro de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;.&lt;/p&gt;
+</description>
+          <pubDate>2019-07-17T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/64-Magit</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/64-Magit</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>63 Spacemacs</title>
+          <description>&lt;h3 id=&quot;0-introducción&quot;&gt;0. Introducción&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Spacemacs&lt;/strong&gt; es una nueva experiencia de &lt;strong&gt;Emacs&lt;/strong&gt;, se trata de una configuración sofisticada y pulida, centrada en la ergonomía, la mnemotécnia y la consistencia.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Spacemacs&lt;/strong&gt; mezcla el estilo de edición de &lt;strong&gt;Emacs&lt;/strong&gt; y &lt;strong&gt;Vim&lt;/strong&gt;, pudiéndose configurar su estilo de edición para trabajar con uno de los dos o con los dos al mismo tiempo utilizando el modo &lt;strong&gt;hybrid&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si eres nuevo de &lt;strong&gt;Spacemacs&lt;/strong&gt; es aconsejable que configures el modo &lt;strong&gt;hybrid&lt;/strong&gt;, ya que muchas de las explicaciones toman esta configuración para realizar las explicaciones.&lt;/p&gt;
+
+&lt;p&gt;Sea cual sea la configuración base podrás cambiarla posteriormente introduciendo uno de estos comandos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC t E e&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;M-m t E e&lt;/code&gt;: enable/disable emacs editing style&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC t E h&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;M-m t E h&lt;/code&gt;: enable/disable hybrid editing style&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estando en modo &lt;code class=&quot;highlighter-rouge&quot;&gt;hybrid&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt; significa pulsar la &lt;code class=&quot;highlighter-rouge&quot;&gt;barra espaciadora&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;La configuración de &lt;strong&gt;Spacemacs&lt;/strong&gt; se guardará en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.spacemacs&lt;/code&gt; de tu &lt;code class=&quot;highlighter-rouge&quot;&gt;/home&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si has cambiado el estilo de edición y lo quieres mantener cada vez que inicies el sistema puedes dejar estas líneas en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.spacemacs&lt;/code&gt; así:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt; EDITAT: Edició de l&lt;span class=&quot;s1&quot;&gt;'estil per defecte
+   ;; dotspacemacs-editing-style '&lt;/span&gt;emacs
+   &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt; dotspacemacs-editing-style &lt;span class=&quot;s1&quot;&gt;'vim
+   dotspacemacs-editing-style '&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;hybrid :variables
+                                       hybrid-mode-default-state &lt;span class=&quot;s1&quot;&gt;'hybrid)
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;De esta manera quedará seleccionada la opción &lt;code class=&quot;highlighter-rouge&quot;&gt;hybrid&lt;/code&gt; cada vez que inicies `Spacemacs**. Además será fácil cambiar de opción por defecto, pues solo habrá que comentar o descomentar la opción más conveniente de las tres.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-características&quot;&gt;1. Características&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gran documentación&lt;/li&gt;
+  &lt;li&gt;Hermosa GUI&lt;/li&gt;
+  &lt;li&gt;Excelente ergonomía&lt;/li&gt;
+  &lt;li&gt;Enlaces de teclas mnemotécnicas&lt;/li&gt;
+  &lt;li&gt;Paquetes bien organizados por capas de configuración&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-instalación&quot;&gt;2. Instalación&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;PASO 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Si tiene una configuración de Emacs existente, haga una copia de seguridad primero:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~
+ &lt;span class=&quot;nb&quot;&gt;mv&lt;/span&gt; .emacs.d .emacs.d.bak
+ &lt;span class=&quot;nb&quot;&gt;mv&lt;/span&gt; .emacs .emacs.bak 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;No olvide realizar una copia de seguridad y eliminar el archivo `~/.emacs** , de lo contrario, &lt;strong&gt;Spacemacs NO SE CARGARÁ&lt;/strong&gt;, ya que ese archivo evita que &lt;strong&gt;Emacs&lt;/strong&gt; cargue el archivo de inicialización adecuado.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PASO 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Clona el repositorio:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone https://github.com/syl20bnr/spacemacs ~ /.emacs.d 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;` es la rama estable y es inmutable, &lt;strong&gt;NO le hagas ninguna modificación o romperás el mecanismo de actualización&lt;/strong&gt;. Si desea bifurcar Spacemacs, use de forma segura la rama de develop donde maneja la actualización manualmente.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PASO 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;(Opcional) Instale la fuente &lt;a href=&quot;https://github.com/adobe-fonts/source-code-pro&quot;&gt;Source Code Pro&lt;/a&gt;, también se puede bajar de &lt;a href=&quot;https://fonts.google.com/specimen/Source+Code+Pro&quot;&gt;Google Fonts&lt;/a&gt; o desde su lugar original en [Adobe Fonts](https://www.adobe.com/es/products/type/font-information/source-code-pro-readme-file.html**.&lt;/p&gt;
+
+&lt;p&gt;Si está ejecutando en el terminal, también deberá cambiar la configuración de la fuente de su terminal.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PASO 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Lanzamiento de Emacs. Spacemacs instalará automáticamente los paquetes que requiera. Si recibe un error con respecto a las descargas de paquetes, puede intentar deshabilitar el protocolo HTTPS iniciando Emacs con&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  emacs &lt;span class=&quot;nt&quot;&gt;--insecure&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;O puede configurar &lt;code class=&quot;highlighter-rouge&quot;&gt;dotspacemacs-elpa-https&lt;/code&gt; en nil en su &lt;code class=&quot;highlighter-rouge&quot;&gt;dotspacemacs-elpa-https&lt;/code&gt; para eliminar la necesidad de iniciar &lt;strong&gt;Emacs&lt;/strong&gt;* con el argumento &lt;code class=&quot;highlighter-rouge&quot;&gt;--insecure&lt;/code&gt;. Es posible que desee borrar su directorio .`emacs.d/elpa** antes de hacer esto, para que todos los paquetes dañados que haya descargado se reinstalen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PASO 5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Reinicie Emacs para completar la instalación.&lt;/p&gt;
+
+&lt;h3 id=&quot;fuentes&quot;&gt;Fuentes&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Webs&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://spacemacs.org/&quot;&gt;Spacemacs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/syl20bnr/spacemacs&quot;&gt;Spacemacs GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/spacemacs&quot;&gt;Spacemacs Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://spacemacs.org/news/news01.html&quot;&gt;Spacemacs News&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://indigocat.wordpress.com/2017/09/03/spacemacs-el-oh-my-zsh-para-emacs/&quot;&gt;indigocat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Vídeos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLrJ2YN5y27KLhd3yNs2dR8_inqtEiEweE&quot;&gt;Spacemacs ABC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+          <pubDate>2019-06-29T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/63-Spacemacs</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/63-Spacemacs</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>62 irb - Ruby Terminal</title>
+          <description>&lt;p&gt;Trabajar con la terminal interactiva de Ruby nos puede ser de gran ayuda sin necesidad de salir de Emacs.&lt;/p&gt;
+
+&lt;p&gt;Podemos instalar el paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;inf-ruby&lt;/code&gt; desde &lt;strong&gt;MELPA&lt;/strong&gt; o ir directamente al repositorio:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/nonsequitur/inf-ruby&quot;&gt;https://github.com/nonsequitur/inf-ruby&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2019-05-01T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/62-irb-Ruby-Terminal</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/62-irb-Ruby-Terminal</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>61 Snippets</title>
+          <description>&lt;p&gt;Cuando programamos o escribimos texto recurrente necesitamos ayudarnos de ciertas funcionalidades.&lt;/p&gt;
+
+&lt;p&gt;Los &lt;strong&gt;snippets&lt;/strong&gt; son trozos de texto que llamamos de manera sencilla y se escriben con una estructura, pudiéndose incorporar puntos de entrada.&lt;/p&gt;
+
+&lt;p&gt;Podemos encontrar una buena colección de ellos en este repositorio:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/achamian/yasnippet&quot;&gt;https://github.com/achamian/yasnippet&lt;/a&gt;&lt;/p&gt;
+</description>
+          <pubDate>2019-05-01T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/61-Snippets</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/61-Snippets</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>60 Recopilaciones</title>
+          <description>&lt;p&gt;Algunas recopilaciones muy interesantes para establecer el vector de aprendizaje:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ugeek.github.io/blog/post/2019-03-15-cursos-webs-grupos-tutoriales-todo-sobre-emacs-y-orgmode.html&quot;&gt;uGeek&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/emacs-tw/awesome-emacs&quot;&gt;Awesome Emacs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://web.archive.org/web/20180525181639/http://quijotelibre.com/recursos-gnu-emacs-y-org-mode/&quot;&gt;Quijote Libre&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+          <pubDate>2019-03-17T00:00:00+01:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/60-Recopilaciones</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/60-Recopilaciones</guid>
+        </item>
+      
+    
+      
+        <item>
           <title>59 OrgMode to Markdown</title>
           <description>&lt;p&gt;Cuando necesitamos convertir un archivo escrito en OrgMode a Markdon utilizaremos esta sintaxis:&lt;/p&gt;
 
@@ -51,9 +640,9 @@
           <title>56 Mouse</title>
           <description>&lt;p&gt;Para utilizar el ratón con en &lt;strong&gt;Emacs&lt;/strong&gt; con la metodologia &lt;strong&gt;OrgMode&lt;/strong&gt; debemos activarlo en el archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; añadiendo estas líneas:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;;; Cargar org-mouse
-(require 'org-mouse)')
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; Cargar org-mouse&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;'org-mouse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Anterioromente deberemos instalar el paquete en nuestro &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;, lo que bajará el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-mouse.el&lt;/code&gt; a nuestra carpeta situada en &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt;.&lt;/p&gt;
 
@@ -176,8 +765,8 @@
 
 &lt;p&gt;Para que esta utilidad se carge al abrir &lt;strong&gt;Emacs&lt;/strong&gt; deberemos incorporar la siguiente línea a nuestro archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(load &quot;~/.emacs.d/lisp/org-kanban.el&quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;~/.emacs.d/lisp/org-kanban.el&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Dentro del mismo archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; vemos que tiene algunas dependencias:&lt;/p&gt;
 
@@ -497,37 +1086,37 @@
 
 &lt;p&gt;Para cambiar timer:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-seconds (* 25 60)) ; 25 minutos
-(setq pomidor-break-seconds (* 5 60)) ; 5 minutos
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pomidor-seconds&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; 25 minutos&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pomidor-break-seconds&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; 5 minutos&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Para desactivar los sonidos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-sound-tick nil
-      pomidor-sound-tack nil
-      pomidor-sound-overwork (expand-file-name (concat pomidor-dir &quot;overwork.wav&quot;))
-	  pomidor-sound-break-over (expand-file-name (concat (getenv &quot;HOME&quot;) &quot;/Music/overwork.wav&quot;)))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pomidor-sound-tick&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;pomidor-sound-tack&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;pomidor-sound-overwork&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;expand-file-name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;concat&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pomidor-dir&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;overwork.wav&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+	  &lt;span class=&quot;nv&quot;&gt;pomidor-sound-break-over&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;expand-file-name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;concat&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;getenv&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;HOME&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/Music/overwork.wav&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Para cambiar la apareincia tu puedes adaptar o configurar el tema directamente:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;;; for a full list of available faces see `customize' or search for `defface' in the source code
-(progn
-  (set-face-attribute 'pomidor-break-face nil :foreground &quot;#00ff00&quot;)
-  (set-face-attribute 'pomidor-overwork-face nil :foreground &quot;#00abff&quot;)
-  (set-face-attribute 'pomidor-skip-face nil :foreground &quot;#abbac3&quot;)
-  (set-face-attribute 'pomidor-work-face nil :foreground &quot;#ff0000&quot;))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; for a full list of available faces see `customize' or search for `defface' in the source code&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;progn&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-face-attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;'pomidor-break-face&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:foreground&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;#00ff00&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-face-attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;'pomidor-overwork-face&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:foreground&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;#00abff&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-face-attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;'pomidor-skip-face&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:foreground&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;#abbac3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-face-attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;'pomidor-work-face&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:foreground&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;#ff0000&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;sonidos&quot;&gt;Sonidos&lt;/h2&gt;
 
 &lt;p&gt;Si tu Emacs no puede reproducir sonidos tu puedes proveerlo con una función para ello:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-play-sound-file
-      (lambda (file)
-        (start-process &quot;my-pomidor-play-sound&quot;
-                       nil
-                       &quot;mplayer&quot;
-                       file)))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pomidor-play-sound-file&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;start-process&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;my-pomidor-play-sound&quot;&lt;/span&gt;
+                       &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;
+                       &lt;span class=&quot;s&quot;&gt;&quot;mplayer&quot;&lt;/span&gt;
+                       &lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;notificación&quot;&gt;Notificación&lt;/h2&gt;
 
@@ -535,25 +1124,25 @@
 Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt; documentación para aprender cómo configurarlo.&lt;/p&gt;
 
 &lt;p&gt;Tu puedes cambiar la notificación globalmente:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq alert-default-style 'libnotify)
-;; or 'growl (see alert docs)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;alert-default-style&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;'libnotify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; or 'growl (see alert docs)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Puedes cambiar la notificación configurando la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-alert&lt;/code&gt; (defaults to &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-default-alert&lt;/code&gt;):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-alert (lambda () (alert &quot;OMG!11&quot;)))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pomidor-alert&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alert&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;OMG!11&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Puedes configurar &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-update-hook&lt;/code&gt; para hacer que trabaje cada vez que se actualice.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(defun my-pomidor-update-hook ()
-  (alert &quot;Zzz&quot;))
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;defun&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;my-pomidor-update-hook&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alert&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Zzz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 
-(add-hook 'pomidor-update-hook #'my-pomidor-update-hook)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;add-hook&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;'pomidor-update-hook&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#'&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;my-pomidor-update-hook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Puedes ajustar el intervalo de actualización configurando la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-update-interval&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-lisp&quot;&gt;(setq pomidor-update-interval 30) ; seconds
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pomidor-update-interval&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; seconds&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
           <pubDate>2017-07-08T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/43-Pomodoro</link>

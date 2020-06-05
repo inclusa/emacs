@@ -1,0 +1,10 @@
+I"X<ol>
+  <li>Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él. <code class="highlighter-rouge">C-x b</code></li>
+  <li>Selecciona otra ventana <code class="highlighter-rouge">C-x o</code></li>
+  <li>Borra la ventana seleccionada <code class="highlighter-rouge">C-x 0</code></li>
+  <li>Borra todas las ventanas excepto la seleccionada <code class="highlighter-rouge">C-x  1</code></li>
+  <li>Selecciona un buffer en una ventana nueva <code class="highlighter-rouge">C-x 4 b</code></li>
+  <li>Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada <code class="highlighter-rouge">C-x 4 f</code></li>
+  <li>Borra la ventana seleccionada y cierra, mata el buffer que contenia <code class="highlighter-rouge">C-x 4 0</code></li>
+</ol>
+:ET

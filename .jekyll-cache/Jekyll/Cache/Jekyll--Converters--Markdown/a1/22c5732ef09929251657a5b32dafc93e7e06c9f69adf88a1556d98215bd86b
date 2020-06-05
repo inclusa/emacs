@@ -1,0 +1,41 @@
+I"�<p>Emacs dispone de varios paquetes que integran <a href="http://pandoc.org/">pandoc</a> en Emacs.</p>
+
+<p>Uno de estos paquetes es <code class="highlighter-rouge">pandoc-mode</code>. Este plugin nos aporta un menú donde podemos indicar el archivo fuente, y el archivo final que queremos obtener. Al indicar el comando <code class="highlighter-rouge">pandoc run</code>el programa convertirá el creará un nuevo archivo con el formato indicado.</p>
+
+<p>Otro plugin que podremos utilizar es <code class="highlighter-rouge">ox-pandoc</code>:</p>
+
+<p>This is another exporter for org-mode that translates Org-mode file to various other formats via Pandoc. You need org-mode version 8.2 or later, and Pandoc 1.13 or later, to use this package. For details, please refer https://github.com/kawabata/ox-pandoc.</p>
+
+<p>Aquí podemos ver con más detalle la explicación:</p>
+
+<p>https://github.com/kawabata/ox-pandoc</p>
+
+<p>Parece que este paquete se basa en este otro desarrollo:</p>
+
+<p>https://github.com/robtillotson/org-pandoc/blob/master/README.org</p>
+
+<p>RESUMIENDO:</p>
+
+<ul>
+  <li>
+    <p>Sin salir de Emacs se puede utilizar toda la potencia de convesión de Pandoc.</p>
+  </li>
+  <li>
+    <p>Debemos configurar correctamente las cabeceras del documento .org para aprovechar estas características.</p>
+  </li>
+</ul>
+
+<p>Ejemplo:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- #+PANDOC_OPTIONS :: Add command line options to the Pandoc process.
+- #+EPUB_RIGHTS :: Set the copyright statement for the ePub metadata.
+- #+EPUB_COVER :: Path to a cover image for ePub output.
+- #+EPUB_STYLESHEET :: Path to a stylesheet for ePub output.
+</code></pre></div></div>
+
+<p>Entiendo perfectamente que todo esto puede abrumar, para entenderlo necesitamos mucho más tiempo y formación.</p>
+
+<p>Lo más importante es saber qué nos puede ofrecer este paquete, que no es más que:</p>
+
+<p>Emacs + OrgMode + Pandoc</p>
+:ET

@@ -1,0 +1,27 @@
+I"^<p>Magit es una extensión fantástica que dota de funcionalidad GIT a Emacs.</p>
+
+<p>https://magit.vc/</p>
+
+<p>Así utilizo GIT dentro de Spacemacs o lo que es lo mismo Emacs.</p>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge">M-m g s</code> o <code class="highlighter-rouge">M-x magit-stage-file</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">M-x magit-comit c</code></p>
+  </li>
+</ol>
+
+<p>Editamos el commit y pulsamos la confirmación con <code class="highlighter-rouge">C-c C-c</code></p>
+
+<ol>
+  <li><code class="highlighter-rouge">M-x magit-push u</code></li>
+</ol>
+
+<p>Recuerdo que <code class="highlighter-rouge">M</code> en <code class="highlighter-rouge">Emacs</code> significa <code class="highlighter-rouge">Meta</code> o lo que es lo mismo, se refiere a la tecla <code class="highlighter-rouge">Alt</code>.</p>
+
+<p>Por tanto <code class="highlighter-rouge">M-x</code> significa <code class="highlighter-rouge">Alt + x</code>.</p>
+
+<p>Para que funcione hay que tener instalado <code class="highlighter-rouge">Magit</code> dentro de <code class="highlighter-rouge">Emacs</code>.</p>
+:ET

@@ -137,37 +137,37 @@
 
 <p>Para cambiar timer:</p>
 
-<pre><code class="language-lisp">(setq pomidor-seconds (* 25 60)) ; 25 minutos
-(setq pomidor-break-seconds (* 5 60)) ; 5 minutos
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">pomidor-seconds</span> <span class="p">(</span><span class="nb">*</span> <span class="mi">25</span> <span class="mi">60</span><span class="p">))</span> <span class="c1">; 25 minutos</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">pomidor-break-seconds</span> <span class="p">(</span><span class="nb">*</span> <span class="mi">5</span> <span class="mi">60</span><span class="p">))</span> <span class="c1">; 5 minutos</span>
 
-</code></pre>
+</code></pre></div></div>
 
 <p>Para desactivar los sonidos:</p>
-<pre><code class="language-lisp">(setq pomidor-sound-tick nil
-      pomidor-sound-tack nil
-      pomidor-sound-overwork (expand-file-name (concat pomidor-dir "overwork.wav"))
-	  pomidor-sound-break-over (expand-file-name (concat (getenv "HOME") "/Music/overwork.wav")))
-</code></pre>
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">pomidor-sound-tick</span> <span class="no">nil</span>
+      <span class="nv">pomidor-sound-tack</span> <span class="no">nil</span>
+      <span class="nv">pomidor-sound-overwork</span> <span class="p">(</span><span class="nv">expand-file-name</span> <span class="p">(</span><span class="nv">concat</span> <span class="nv">pomidor-dir</span> <span class="s">"overwork.wav"</span><span class="p">))</span>
+	  <span class="nv">pomidor-sound-break-over</span> <span class="p">(</span><span class="nv">expand-file-name</span> <span class="p">(</span><span class="nv">concat</span> <span class="p">(</span><span class="nv">getenv</span> <span class="s">"HOME"</span><span class="p">)</span> <span class="s">"/Music/overwork.wav"</span><span class="p">)))</span>
+</code></pre></div></div>
 <p>Para cambiar la apareincia tu puedes adaptar o configurar el tema directamente:</p>
-<pre><code class="language-lisp">;; for a full list of available faces see `customize' or search for `defface' in the source code
-(progn
-  (set-face-attribute 'pomidor-break-face nil :foreground "#00ff00")
-  (set-face-attribute 'pomidor-overwork-face nil :foreground "#00abff")
-  (set-face-attribute 'pomidor-skip-face nil :foreground "#abbac3")
-  (set-face-attribute 'pomidor-work-face nil :foreground "#ff0000"))
-</code></pre>
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">;; for a full list of available faces see `customize' or search for `defface' in the source code</span>
+<span class="p">(</span><span class="k">progn</span>
+  <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">'pomidor-break-face</span> <span class="no">nil</span> <span class="ss">:foreground</span> <span class="s">"#00ff00"</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">'pomidor-overwork-face</span> <span class="no">nil</span> <span class="ss">:foreground</span> <span class="s">"#00abff"</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">'pomidor-skip-face</span> <span class="no">nil</span> <span class="ss">:foreground</span> <span class="s">"#abbac3"</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">'pomidor-work-face</span> <span class="no">nil</span> <span class="ss">:foreground</span> <span class="s">"#ff0000"</span><span class="p">))</span>
+</code></pre></div></div>
 
 <h2 id="sonidos">Sonidos</h2>
 
 <p>Si tu Emacs no puede reproducir sonidos tu puedes proveerlo con una función para ello:</p>
 
-<pre><code class="language-lisp">(setq pomidor-play-sound-file
-      (lambda (file)
-        (start-process "my-pomidor-play-sound"
-                       nil
-                       "mplayer"
-                       file)))
-</code></pre>
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">pomidor-play-sound-file</span>
+      <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">file</span><span class="p">)</span>
+        <span class="p">(</span><span class="nv">start-process</span> <span class="s">"my-pomidor-play-sound"</span>
+                       <span class="no">nil</span>
+                       <span class="s">"mplayer"</span>
+                       <span class="nv">file</span><span class="p">)))</span>
+</code></pre></div></div>
 
 <h2 id="notificación">Notificación</h2>
 
@@ -175,25 +175,25 @@
 Mira <a href="https://github.com/jwiegley/alert/">alert</a> documentación para aprender cómo configurarlo.</p>
 
 <p>Tu puedes cambiar la notificación globalmente:</p>
-<pre><code class="language-lisp">(setq alert-default-style 'libnotify)
-;; or 'growl (see alert docs)
-</code></pre>
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">alert-default-style</span> <span class="ss">'libnotify</span><span class="p">)</span>
+<span class="c1">;; or 'growl (see alert docs)</span>
+</code></pre></div></div>
 
 <p>Puedes cambiar la notificación configurando la variable <code class="highlighter-rouge">pomidor-alert</code> (defaults to <code class="highlighter-rouge">pomidor-default-alert</code>):</p>
 
-<pre><code class="language-lisp">(setq pomidor-alert (lambda () (alert "OMG!11")))
-</code></pre>
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">pomidor-alert</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">()</span> <span class="p">(</span><span class="nv">alert</span> <span class="s">"OMG!11"</span><span class="p">)))</span>
+</code></pre></div></div>
 
 <p>Puedes configurar <code class="highlighter-rouge">pomidor-update-hook</code> para hacer que trabaje cada vez que se actualice.</p>
-<pre><code class="language-lisp">(defun my-pomidor-update-hook ()
-  (alert "Zzz"))
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-pomidor-update-hook</span> <span class="p">()</span>
+  <span class="p">(</span><span class="nv">alert</span> <span class="s">"Zzz"</span><span class="p">))</span>
 
-(add-hook 'pomidor-update-hook #'my-pomidor-update-hook)
-</code></pre>
+<span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'pomidor-update-hook</span> <span class="nf">#'</span><span class="nv">my-pomidor-update-hook</span><span class="p">)</span>
+</code></pre></div></div>
 
 <p>Puedes ajustar el intervalo de actualización configurando la variable <code class="highlighter-rouge">pomidor-update-interval</code></p>
-<pre><code class="language-lisp">(setq pomidor-update-interval 30) ; seconds
-</code></pre>
+<div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">pomidor-update-interval</span> <span class="mi">30</span><span class="p">)</span> <span class="c1">; seconds</span>
+</code></pre></div></div>
 
 
 </article>
@@ -214,7 +214,7 @@ Mira <a href="https://github.com/jwiegley/alert/">alert</a> documentación para 
 
 		<div class="footer">
   <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
-  <span class="block">&copy; 2019 Alfons Rovira</span>
+  <span class="block">&copy; 2020 Alfons Rovira</span>
 </div>
 
 

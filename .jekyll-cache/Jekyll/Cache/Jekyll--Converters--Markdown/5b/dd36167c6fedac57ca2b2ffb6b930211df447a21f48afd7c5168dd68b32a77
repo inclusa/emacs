@@ -1,0 +1,8 @@
+I"A<p>Con <code class="highlighter-rouge">Emacs</code> podemos incrustar el contenido de un archivo externo justo en el lugar en el que estamos escribiendo, de esta manera no es necesario copiar y pegar el archivo, simplemente lo invocamos y el programa se encarga de incrustar el contenido del archivo invocado.</p>
+
+<p>Comandos:</p>
+
+<p><code class="highlighter-rouge">M-x insert-file</code> o <code class="highlighter-rouge">C-x i</code>: inserta una copia del archivo invocado.</p>
+
+<p>Fuente: <a href="http://www.nongnu.org/emacs-man-es/index_169.html#SEC169">NonGNU</a></p>
+:ET

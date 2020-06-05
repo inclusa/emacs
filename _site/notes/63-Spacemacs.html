@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>63 Spacemacs · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:title" content="63 Spacemacs" />
+<meta name="twitter:description" content="0. Introducción">
+
+<meta name="description" content="0. Introducción">
+
+
+
+<link rel="icon" href="/emacs/assets/favicon.png">
+<link rel="apple-touch-icon" href="/emacs/assets/touch-icon.png">
+<link rel="stylesheet" href="/emacs/assets/core.css">
+<link rel="canonical" href="/emacs/notes/63-Spacemacs">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/emacs/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/emacs/">
+		<!-- <img src="http://www.gravatar.com/avatar/.png?s=80" class="gravatar"> -->
+                    <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>63 Spacemacs</h1>
+		<time>June 29, 2019</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<h3 id="0-introducción">0. Introducción</h3>
+
+<p><strong>Spacemacs</strong> es una nueva experiencia de <strong>Emacs</strong>, se trata de una configuración sofisticada y pulida, centrada en la ergonomía, la mnemotécnia y la consistencia.</p>
+
+<p><strong>Spacemacs</strong> mezcla el estilo de edición de <strong>Emacs</strong> y <strong>Vim</strong>, pudiéndose configurar su estilo de edición para trabajar con uno de los dos o con los dos al mismo tiempo utilizando el modo <strong>hybrid</strong>.</p>
+
+<p>Si eres nuevo de <strong>Spacemacs</strong> es aconsejable que configures el modo <strong>hybrid</strong>, ya que muchas de las explicaciones toman esta configuración para realizar las explicaciones.</p>
+
+<p>Sea cual sea la configuración base podrás cambiarla posteriormente introduciendo uno de estos comandos:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">SPC t E e</code> or <code class="highlighter-rouge">M-m t E e</code>: enable/disable emacs editing style</li>
+  <li><code class="highlighter-rouge">SPC t E h</code> or <code class="highlighter-rouge">M-m t E h</code>: enable/disable hybrid editing style</li>
+</ul>
+
+<p>Estando en modo <code class="highlighter-rouge">hybrid</code>, <code class="highlighter-rouge">SPC</code> significa pulsar la <code class="highlighter-rouge">barra espaciadora</code>.</p>
+
+<p>La configuración de <strong>Spacemacs</strong> se guardará en el archivo <code class="highlighter-rouge">.spacemacs</code> de tu <code class="highlighter-rouge">/home</code>.</p>
+
+<p>Si has cambiado el estilo de edición y lo quieres mantener cada vez que inicies el sistema puedes dejar estas líneas en el archivo <code class="highlighter-rouge">.spacemacs</code> así:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="p">;;</span> EDITAT: Edició de l<span class="s1">'estil per defecte
+   ;; dotspacemacs-editing-style '</span>emacs
+   <span class="p">;;</span> dotspacemacs-editing-style <span class="s1">'vim
+   dotspacemacs-editing-style '</span><span class="o">(</span>hybrid :variables
+                                       hybrid-mode-default-state <span class="s1">'hybrid)
+</span></code></pre></div></div>
+
+<p>De esta manera quedará seleccionada la opción <code class="highlighter-rouge">hybrid</code> cada vez que inicies `Spacemacs**. Además será fácil cambiar de opción por defecto, pues solo habrá que comentar o descomentar la opción más conveniente de las tres.</p>
+
+<h3 id="1-características">1. Características</h3>
+
+<ul>
+  <li>Gran documentación</li>
+  <li>Hermosa GUI</li>
+  <li>Excelente ergonomía</li>
+  <li>Enlaces de teclas mnemotécnicas</li>
+  <li>Paquetes bien organizados por capas de configuración</li>
+</ul>
+
+<h3 id="2-instalación">2. Instalación</h3>
+
+<p><strong>PASO 1</strong></p>
+
+<p>Si tiene una configuración de Emacs existente, haga una copia de seguridad primero:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cd</span> ~
+ <span class="nb">mv</span> .emacs.d .emacs.d.bak
+ <span class="nb">mv</span> .emacs .emacs.bak 
+</code></pre></div></div>
+
+<p>No olvide realizar una copia de seguridad y eliminar el archivo `~/.emacs** , de lo contrario, <strong>Spacemacs NO SE CARGARÁ</strong>, ya que ese archivo evita que <strong>Emacs</strong> cargue el archivo de inicialización adecuado.</p>
+
+<p><strong>PASO 2</strong></p>
+
+<p>Clona el repositorio:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git clone https://github.com/syl20bnr/spacemacs ~ /.emacs.d 
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">master</code>` es la rama estable y es inmutable, <strong>NO le hagas ninguna modificación o romperás el mecanismo de actualización</strong>. Si desea bifurcar Spacemacs, use de forma segura la rama de develop donde maneja la actualización manualmente.</p>
+
+<p><strong>PASO 3</strong></p>
+
+<p>(Opcional) Instale la fuente <a href="https://github.com/adobe-fonts/source-code-pro">Source Code Pro</a>, también se puede bajar de <a href="https://fonts.google.com/specimen/Source+Code+Pro">Google Fonts</a> o desde su lugar original en [Adobe Fonts](https://www.adobe.com/es/products/type/font-information/source-code-pro-readme-file.html**.</p>
+
+<p>Si está ejecutando en el terminal, también deberá cambiar la configuración de la fuente de su terminal.</p>
+
+<p><strong>PASO 4</strong></p>
+
+<p>Lanzamiento de Emacs. Spacemacs instalará automáticamente los paquetes que requiera. Si recibe un error con respecto a las descargas de paquetes, puede intentar deshabilitar el protocolo HTTPS iniciando Emacs con</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  emacs <span class="nt">--insecure</span>
+</code></pre></div></div>
+
+<p>O puede configurar <code class="highlighter-rouge">dotspacemacs-elpa-https</code> en nil en su <code class="highlighter-rouge">dotspacemacs-elpa-https</code> para eliminar la necesidad de iniciar <strong>Emacs</strong>* con el argumento <code class="highlighter-rouge">--insecure</code>. Es posible que desee borrar su directorio .`emacs.d/elpa** antes de hacer esto, para que todos los paquetes dañados que haya descargado se reinstalen.</p>
+
+<p><strong>PASO 5</strong></p>
+
+<p>Reinicie Emacs para completar la instalación.</p>
+
+<h3 id="fuentes">Fuentes</h3>
+
+<p><strong>Webs</strong></p>
+
+<ul>
+  <li><a href="http://spacemacs.org/">Spacemacs</a></li>
+  <li><a href="https://github.com/syl20bnr/spacemacs">Spacemacs GitHub</a></li>
+  <li><a href="https://twitter.com/spacemacs">Spacemacs Twitter</a></li>
+  <li><a href="http://spacemacs.org/news/news01.html">Spacemacs News</a></li>
+  <li><a href="https://indigocat.wordpress.com/2017/09/03/spacemacs-el-oh-my-zsh-para-emacs/">indigocat</a></li>
+</ul>
+
+<p><strong>Vídeos</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/playlist?list=PLrJ2YN5y27KLhd3yNs2dR8_inqtEiEweE">Spacemacs ABC</a></li>
+</ul>
+
+
+</article>
+
+<div class="page-navigation">
+	
+    <a class="next" href="/emacs/notes/64-Magit" title="NEXT: 64 Magit">&lt;&lt;</a>
+		<span> &middot; </span>
+  
+		<a class="home" href="/emacs/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/emacs/notes/62-irb-Ruby-Terminal" title="PREV: 62 irb - Ruby Terminal">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2020 Alfons Rovira</span>
+</div>
+
+
+	</body>
+
+</html>

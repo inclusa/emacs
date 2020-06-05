@@ -1,0 +1,16 @@
+I"�<p>Para que el archivado funcione deberemos configurar al principio del documento el archivo donde se van a guardar los proyectos realizados, en este caso el archivo se llamará <code class="highlighter-rouge">_done</code>.</p>
+
+<p><code class="highlighter-rouge">#+ARCHIVE: %s_done::</code></p>
+
+<p>Cuando un proyecto ha finalizado lo podemos archivar así:</p>
+
+<p><code class="highlighter-rouge">C-c C-x C-a</code>     (org-archive-subtree-default)</p>
+
+<p>Si se trata de un subárbol, o subcontenido dentro de un punto:</p>
+
+<p><code class="highlighter-rouge">C-c C-x C-s</code> o bien <code class="highlighter-rouge">C-c $</code></p>
+
+<p>Para saber más:</p>
+
+<p><a href="http://orgmode.org/manual/Archiving.html">OrgMode</a></p>
+:ET

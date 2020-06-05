@@ -1,0 +1,23 @@
+I"F<ol>
+  <li>
+    <p><code class="highlighter-rouge">Barra de menú</code>: situada arriba</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Point</code> o punto de escritura en una <code class="highlighter-rouge">ventana de edición</code> o ventanas si decidimos partirlas: situada en la parte central.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Línea de modo</code>: situada abajo, en video inverso. Muestra información variada</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Área de eco</code> y <code class="highlighter-rouge">minibuffer</code>: ambos aparecen en la última línea</p>
+  </li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">Área de eco</code>: aparece sólo al escribir una combinación de teclas. Lo escrito hace eco o tiene su salida en la pantalla.</li>
+  <li><code class="highlighter-rouge">Minibúffer</code>: sirve para escribir argumentos que se hayan de pasar a un comando</li>
+</ul>
+
+<p>Para salir del minibuffer, zona donde escribimos comandos, debemos apretar C-g, ya que de lo contrario, se encadenaran los comandos.</p>
+
+:ET

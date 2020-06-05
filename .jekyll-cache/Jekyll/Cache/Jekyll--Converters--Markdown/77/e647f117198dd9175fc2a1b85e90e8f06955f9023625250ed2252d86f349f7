@@ -1,0 +1,12 @@
+I"z<p>Para establecer un <code class="highlighter-rouge">hook</code>, que no es otra cosa que realizar algo en cierta situación determinada, deberemos configurar el archivo <code class="highlighter-rouge">.emacs</code> de nuestro <code class="highlighter-rouge">home</code> estableciendo el código que realice esta función.</p>
+
+<p>En esta ocasión nuestro objetivo es que nos trunque las línias largas para poder leerlas en la siguiente línea y, así, tener que desplazarnos hacia la derecha.</p>
+
+<p>Para ello editamos <code class="highlighter-rouge">.emacs</code> y añadiremos este código:</p>
+
+<pre><code class="language-emacs">(defun my-compilation-mode-hook ()
+  (setq truncate-lines nil) ;; automatically becomes buffer local
+    (set (make-local-variable 'truncate-partial-width-windows) nil))
+    (add-hook 'compilation-mode-hook 'my-compilation-mode-hook)')')))
+</code></pre>
+:ET

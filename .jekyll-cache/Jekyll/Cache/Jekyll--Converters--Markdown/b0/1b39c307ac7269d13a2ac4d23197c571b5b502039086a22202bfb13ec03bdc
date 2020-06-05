@@ -1,0 +1,29 @@
+I"l<p><code class="highlighter-rouge">Buffer</code>: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.</p>
+
+<p><code class="highlighter-rouge">Fichero</code>: conjunto de datos almacenados en el disco. Es inmodificable, aunque se puede borrar y crear otro fichero con distinto nombre y mismo contenido.</p>
+
+<p>Cuando leemos un fichero, lo que realmente hacermos es copiarlo en memoria RAM (buffer), durante su edición lo modificamos en esa zona de memoria. el fichero permanece inalterado hasta que demos la orden específica de grabar en el disco las modificaciones.</p>
+
+<p>No todos los <code class="highlighter-rouge">buffers</code> corresponden a <code class="highlighter-rouge">ficheros</code>.</p>
+
+<p>Cuando se inicia Emacs aparecen estos dos buffers:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">*scratch*</code></li>
+  <li><code class="highlighter-rouge">*messages*</code></li>
+</ul>
+
+<p>Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a un fichero.</p>
+
+<ol>
+  <li>Cerrar el búffer, no modifica el fichero si está guardado, no lo crea en caso de no estarlo.</li>
+</ol>
+
+<pre><code class="language-emacs">C-x k
+</code></pre>
+
+<ol>
+  <li>Incluir acentos: incluye esto <code class="highlighter-rouge">(set-keyboard-coding-system 'utf-8) </code> en el fichero <code class="highlighter-rouge">.emacs</code></li>
+</ol>
+
+:ET
