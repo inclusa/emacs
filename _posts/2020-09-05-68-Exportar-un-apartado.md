@@ -14,7 +14,7 @@ Imaginemos que hemos desarrollado un documento largo:
 ```txt
 * Index
 * GTD
-* Dssing Thingking
+* Dessign Thinking
 ```
 
 Desplegado obtendríamos algo así:
