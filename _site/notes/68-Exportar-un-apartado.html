@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>68 Exportar un apartado · The Plain</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:title" content="68 Exportar un apartado" />
+<meta name="twitter:description" content="Leyendo el blog de uGeek he aprendido a aislar un apartado en un buffer, una ventana, y a imprimirlo posteriormente.">
+
+<meta name="description" content="Leyendo el blog de uGeek he aprendido a aislar un apartado en un buffer, una ventana, y a imprimirlo posteriormente.">
+
+
+
+<link rel="icon" href="/emacs/assets/favicon.png">
+<link rel="apple-touch-icon" href="/emacs/assets/touch-icon.png">
+<link rel="stylesheet" href="/emacs/assets/core.css">
+<link rel="canonical" href="/emacs/notes/68-Exportar-un-apartado">
+<link rel="alternate" type="application/atom+xml" title="The Plain" href="/emacs/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/emacs/">
+		<!-- <img src="http://www.gravatar.com/avatar/.png?s=80" class="gravatar"> -->
+                    <img src="https://www.gnu.org/software/emacs/images/emacs.png">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>68 Exportar un apartado</h1>
+		<time>September 5, 2020</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>Leyendo el blog de <a href="https://ugeek.github.io/blog/post/2020-09-03-visualizar-aparte-una-cabecera-de-un-orgmode-en-emacs.html">uGeek</a> he aprendido a aislar un apartado en un buffer, una ventana, y a imprimirlo posteriormente.</p>
+
+<p>Imaginemos que hemos desarrollado un documento largo:</p>
+
+<pre><code class="language-txt">* Index
+* GTD
+* Dssing Thingking
+</code></pre>
+
+<p>Desplegado obtendríamos algo así:</p>
+
+<pre><code class="language-txt">* Index
+* GTD
+** Dimensions
+*** Control
+**** Capturar
+**** Aclarir
+**** Organitzar
+**** Reflexionar
+**** Comprometre's
+*** Perspectiva
+**** Propòsits - Principis
+**** Visió
+**** Metes
+**** Àrees de responsabilitat
+**** Projectes
+**** Accions
+** Matriu d'autogestió
+*** Bajo Control + Baja Perspectiva
+   - Negatiu: Víctima
+   - Positiu: Capacitat de resposta
+*** Alt Control + Baixa Perspectiva
+   - Negatiu: Micromanager
+   - Positiu: Implementador
+*** Bajo Control + Alta Perspectiva
+   - Negatiu: Creador boig
+   - Positiu: Visionari
+*** Bajo Control + Baja Perspectiva
+   - Negatiu: Autocomplacència
+   - Positiu: Comandant en cap
+* Dessign Thinking
+   1. Empatitza
+   2. Defineix
+   3. Idea
+   4. Prototipa
+   5. Testeja
+</code></pre>
+
+<p>Si nos situáramos en el apartado <code class="language-plaintext highlighter-rouge">* GTD</code> y ejecutáramos los comandos <code class="language-plaintext highlighter-rouge">Ctrl-c Ctrl-x b</code> obtendríamos un nuevo buffer, una ventana con el contenido únicament del apartado <code class="language-plaintext highlighter-rouge">* GTD</code>.</p>
+
+<p>Ahora que ya tenemos el contenido aislado queremos exportarlo a diferentes formatos, procedemos a exportarlo a:</p>
+
+<ul>
+  <li>Texto Plan txt: <code class="language-plaintext highlighter-rouge">Ctrl-c Ctrl-e t u</code>. Ontendremos un nuevo archivo con el mismo nombre que el archivo original, aunque con la extensión <code class="language-plaintext highlighter-rouge">.txt</code>.</li>
+  <li>PDF: <code class="language-plaintext highlighter-rouge">Ctrl-c Ctrl-e l p</code>.</li>
+  <li>Markdown: <code class="language-plaintext highlighter-rouge">Crtl-c Ctrl-e M m</code>.</li>
+</ul>
+
+<p><img src="../img/nota.png" alt="Nota" /></p>
+
+<p>En la parte de abajo se puede ver el buffer con la información aislada, generada a partir del primer documento mucho más largo.</p>
+
+<p>En la parte de arriba se puede ver el archivo <code class="language-plaintext highlighter-rouge">txt</code> generado.</p>
+
+
+
+</article>
+
+<div class="page-navigation">
+	
+		<a class="home" href="/emacs/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/emacs/notes/67-Spacemacs-mode-insecure" title="PREV: 67 Spacemacs mode insecure">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; <a href="http://github.com/heiswayi/the-plain" title="a minimalist Jekyll theme for personal blog">The Plain theme</a> by <a href="http://heiswayi.github.io">Heiswayi Nrird</a>.</span>
+  <span class="block">&copy; 2020 Alfons Rovira</span>
+</div>
+
+
+	</body>
+
+</html>
