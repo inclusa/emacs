@@ -1,8 +1,8 @@
-I"�!<p>Utilizar la técnica de <strong>time boxing</strong> va bien para acotar tiempo para concentrarse y para medir lo que nos puede costar algo.</p>
+I"�"<p>Utilizar la técnica de <strong>time boxing</strong> va bien para acotar tiempo para concentrarse y para medir lo que nos puede costar algo.</p>
 
-<p>Emacs incorpora una plugin llamado <code class="highlighter-rouge">pomidor</code> que nos puede ayudar.</p>
+<p>Emacs incorpora una plugin llamado <code class="language-plaintext highlighter-rouge">pomidor</code> que nos puede ayudar.</p>
 
-<p>Para instalarlo necesitamos primero escribir este código en el archivo <code class="highlighter-rouge">.emacs</code> para que arranque la referencia al repositorio y pueda encontrarlo:</p>
+<p>Para instalarlo necesitamos primero escribir este código en el archivo <code class="language-plaintext highlighter-rouge">.emacs</code> para que arranque la referencia al repositorio y pueda encontrarlo:</p>
 
 <pre><code class="language-emacs">;;; #14 Añadir repositorio
 (require 'package) ;; You might already have this line
@@ -73,7 +73,7 @@
 
 <h2 id="adaptación---customization">Adaptación - Customization</h2>
 
-<p>Puedes adaptarlo con <code class="highlighter-rouge">M-x customize-group RET pomidor</code> o editando <code class="highlighter-rouge">.emacs</code>.</p>
+<p>Puedes adaptarlo con <code class="language-plaintext highlighter-rouge">M-x customize-group RET pomidor</code> o editando <code class="language-plaintext highlighter-rouge">.emacs</code>.</p>
 
 <p>Para cambiar timer:</p>
 
@@ -111,7 +111,7 @@
 
 <h2 id="notificación">Notificación</h2>
 
-<p>Por defecto <code class="highlighter-rouge">pomidor</code> mostrará una notificación una vez por minuto.
+<p>Por defecto <code class="language-plaintext highlighter-rouge">pomidor</code> mostrará una notificación una vez por minuto.
 Mira <a href="https://github.com/jwiegley/alert/">alert</a> documentación para aprender cómo configurarlo.</p>
 
 <p>Tu puedes cambiar la notificación globalmente:</p>
@@ -119,19 +119,19 @@ Mira <a href="https://github.com/jwiegley/alert/">alert</a> documentación para 
 <span class="c1">;; or 'growl (see alert docs)</span>
 </code></pre></div></div>
 
-<p>Puedes cambiar la notificación configurando la variable <code class="highlighter-rouge">pomidor-alert</code> (defaults to <code class="highlighter-rouge">pomidor-default-alert</code>):</p>
+<p>Puedes cambiar la notificación configurando la variable <code class="language-plaintext highlighter-rouge">pomidor-alert</code> (defaults to <code class="language-plaintext highlighter-rouge">pomidor-default-alert</code>):</p>
 
 <div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">pomidor-alert</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">()</span> <span class="p">(</span><span class="nv">alert</span> <span class="s">"OMG!11"</span><span class="p">)))</span>
 </code></pre></div></div>
 
-<p>Puedes configurar <code class="highlighter-rouge">pomidor-update-hook</code> para hacer que trabaje cada vez que se actualice.</p>
+<p>Puedes configurar <code class="language-plaintext highlighter-rouge">pomidor-update-hook</code> para hacer que trabaje cada vez que se actualice.</p>
 <div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-pomidor-update-hook</span> <span class="p">()</span>
   <span class="p">(</span><span class="nv">alert</span> <span class="s">"Zzz"</span><span class="p">))</span>
 
 <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">'pomidor-update-hook</span> <span class="nf">#'</span><span class="nv">my-pomidor-update-hook</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>Puedes ajustar el intervalo de actualización configurando la variable <code class="highlighter-rouge">pomidor-update-interval</code></p>
+<p>Puedes ajustar el intervalo de actualización configurando la variable <code class="language-plaintext highlighter-rouge">pomidor-update-interval</code></p>
 <div class="language-lisp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">setq</span> <span class="nv">pomidor-update-interval</span> <span class="mi">30</span><span class="p">)</span> <span class="c1">; seconds</span>
 </code></pre></div></div>
 :ET

@@ -1,6 +1,6 @@
-I"M<p>Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.</p>
+I"�<p>Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.</p>
 
-<p>Así deberemos incluir en el archivo de configuración <code class="highlighter-rouge">.emacs</code> el siguiente código:</p>
+<p>Así deberemos incluir en el archivo de configuración <code class="language-plaintext highlighter-rouge">.emacs</code> el siguiente código:</p>
 
 <pre><code class="language-emacs">
 ;; Plantilles per a capturar
@@ -32,7 +32,7 @@
 
 </code></pre>
 
-<p>De estar forma presionando las teclas <code class="highlighter-rouge">C-c c</code> obtendremos el menú siguiente:</p>
+<p>De estar forma presionando las teclas <code class="language-plaintext highlighter-rouge">C-c c</code> obtendremos el menú siguiente:</p>
 
 <pre><code class="language-emacs">Select a capture template
 =========================
@@ -49,7 +49,7 @@
 [C]     Customize org-capture-templates
 [q]     Abort
 </code></pre>
-<p>Este menú creará un archivo llamado <code class="highlighter-rouge">captura.org</code> o <code class="highlighter-rouge">diary.org</code> donde se irán almacenando muestras capturas.</p>
+<p>Este menú creará un archivo llamado <code class="language-plaintext highlighter-rouge">captura.org</code> o <code class="language-plaintext highlighter-rouge">diary.org</code> donde se irán almacenando muestras capturas.</p>
 
 <p>Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.</p>
 :ET

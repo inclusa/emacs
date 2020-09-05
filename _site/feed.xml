@@ -7,6 +7,96 @@
     
       
         <item>
+          <title>68 Exportar un apartado</title>
+          <description>&lt;p&gt;Leyendo el blog de &lt;a href=&quot;https://ugeek.github.io/blog/post/2020-09-03-visualizar-aparte-una-cabecera-de-un-orgmode-en-emacs.html&quot;&gt;uGeek&lt;/a&gt; he aprendido a aislar un apartado en un buffer, una ventana, y a imprimirlo posteriormente.&lt;/p&gt;
+
+&lt;p&gt;Imaginemos que hemos desarrollado un documento largo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;* Index
+* GTD
+* Dssing Thingking
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Desplegado obtendríamos algo así:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;* Index
+* GTD
+** Dimensions
+*** Control
+**** Capturar
+**** Aclarir
+**** Organitzar
+**** Reflexionar
+**** Comprometre's
+*** Perspectiva
+**** Propòsits - Principis
+**** Visió
+**** Metes
+**** Àrees de responsabilitat
+**** Projectes
+**** Accions
+** Matriu d'autogestió
+*** Bajo Control + Baja Perspectiva
+   - Negatiu: Víctima
+   - Positiu: Capacitat de resposta
+*** Alt Control + Baixa Perspectiva
+   - Negatiu: Micromanager
+   - Positiu: Implementador
+*** Bajo Control + Alta Perspectiva
+   - Negatiu: Creador boig
+   - Positiu: Visionari
+*** Bajo Control + Baja Perspectiva
+   - Negatiu: Autocomplacència
+   - Positiu: Comandant en cap
+* Dessign Thinking
+   1. Empatitza
+   2. Defineix
+   3. Idea
+   4. Prototipa
+   5. Testeja
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Si nos situáramos en el apartado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;* GTD&lt;/code&gt; y ejecutáramos los comandos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-c Ctrl-x b&lt;/code&gt; obtendríamos un nuevo buffer, una ventana con el contenido únicament del apartado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;* GTD&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ahora que ya tenemos el contenido aislado queremos exportarlo a diferentes formatos, procedemos a exportarlo a:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Texto Plan txt: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-c Ctrl-e t u&lt;/code&gt;. Ontendremos un nuevo archivo con el mismo nombre que el archivo original, aunque con la extensión &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.txt&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;PDF: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-c Ctrl-e l p&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Markdown: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Crtl-c Ctrl-e M m&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../img/nota.png&quot; alt=&quot;Nota&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En la parte de abajo se puede ver el buffer con la información aislada, generada a partir del primer documento mucho más largo.&lt;/p&gt;
+
+&lt;p&gt;En la parte de arriba se puede ver el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;txt&lt;/code&gt; generado.&lt;/p&gt;
+
+</description>
+          <pubDate>2020-09-05T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/68-Exportar-un-apartado</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/68-Exportar-un-apartado</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>67 Spacemacs mode insecure</title>
+          <description>&lt;p&gt;Me encontré en la situación de que habían 7 paquestes que no se podian descargar porque, tal vez, no estaban actualizacos des del repositorio MELPA.&lt;/p&gt;
+
+&lt;p&gt;La situación se solucionó arrancando en modo insiguro la primera vez, de esta forma se actualizaon los paquestes necesarios. En adelante arrancamos Spacemacs como lo venimos haciendo y no hubo más problema.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;emacs &lt;span class=&quot;nt&quot;&gt;--insecure&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+          <pubDate>2020-06-05T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/67-Spacemacs-mode-insecure</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/67-Spacemacs-mode-insecure</guid>
+        </item>
+      
+    
+      
+        <item>
           <title>66 Spacemacs</title>
           <description>&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;;; -&lt;span class=&quot;ge&quot;&gt;*- mode: emacs-lisp -*&lt;/span&gt;-
 ;; This file is loaded by Spacemacs at startup.
@@ -388,9 +478,9 @@ you should place your code here.&quot;
 &lt;p&gt;Para instalar w3m en Spacemacs seguiremos estos pasos para configurarlo en &lt;strong&gt;Spacemacs&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Clonaremos este repositorio &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/venmos/w3m-layer.git ~/.emacs.d/private/w3m&lt;/code&gt; en &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs/private&lt;/code&gt; en el caso de &lt;code class=&quot;highlighter-rouge&quot;&gt;Spacemacs&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Declararemos el &lt;strong&gt;layer&lt;/strong&gt; en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.spacemacs&lt;/code&gt; en esta sección &lt;code class=&quot;highlighter-rouge&quot;&gt;setq-default dotspacemacs-configuration-layers&lt;/code&gt; como &lt;code class=&quot;highlighter-rouge&quot;&gt;w3c&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Finalmente accederemos a él mediante &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x w3c&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Clonaremos este repositorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone https://github.com/venmos/w3m-layer.git ~/.emacs.d/private/w3m&lt;/code&gt; en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs/private&lt;/code&gt; en el caso de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spacemacs&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Declararemos el &lt;strong&gt;layer&lt;/strong&gt; en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.spacemacs&lt;/code&gt; en esta sección &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setq-default dotspacemacs-configuration-layers&lt;/code&gt; como &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w3c&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Finalmente accederemos a él mediante &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x w3c&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Podemos ver los &lt;a href=&quot;https://github.com/venmos/w3m-layer#key-bindings&quot;&gt;shorcuts&lt;/a&gt; y aprendernos los más importantes.&lt;/li&gt;
 &lt;/ol&gt;
 </description>
@@ -411,24 +501,24 @@ you should place your code here.&quot;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-m g s&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-stage-file&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-m g s&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x magit-stage-file&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-comit c&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x magit-comit c&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Editamos el commit y pulsamos la confirmación con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Editamos el commit y pulsamos la confirmación con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-push u&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x magit-push u&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Recuerdo que &lt;code class=&quot;highlighter-rouge&quot;&gt;M&lt;/code&gt; en &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; significa &lt;code class=&quot;highlighter-rouge&quot;&gt;Meta&lt;/code&gt; o lo que es lo mismo, se refiere a la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;Alt&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Recuerdo que &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M&lt;/code&gt; en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; significa &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Meta&lt;/code&gt; o lo que es lo mismo, se refiere a la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Por tanto &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x&lt;/code&gt; significa &lt;code class=&quot;highlighter-rouge&quot;&gt;Alt + x&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Por tanto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x&lt;/code&gt; significa &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + x&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Para que funcione hay que tener instalado &lt;code class=&quot;highlighter-rouge&quot;&gt;Magit&lt;/code&gt; dentro de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para que funcione hay que tener instalado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Magit&lt;/code&gt; dentro de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;.&lt;/p&gt;
 </description>
           <pubDate>2019-07-17T00:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/64-Magit</link>
@@ -450,15 +540,15 @@ you should place your code here.&quot;
 &lt;p&gt;Sea cual sea la configuración base podrás cambiarla posteriormente introduciendo uno de estos comandos:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC t E e&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;M-m t E e&lt;/code&gt;: enable/disable emacs editing style&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC t E h&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;M-m t E h&lt;/code&gt;: enable/disable hybrid editing style&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SPC t E e&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-m t E e&lt;/code&gt;: enable/disable emacs editing style&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SPC t E h&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-m t E h&lt;/code&gt;: enable/disable hybrid editing style&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Estando en modo &lt;code class=&quot;highlighter-rouge&quot;&gt;hybrid&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt; significa pulsar la &lt;code class=&quot;highlighter-rouge&quot;&gt;barra espaciadora&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Estando en modo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hybrid&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SPC&lt;/code&gt; significa pulsar la &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;barra espaciadora&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;La configuración de &lt;strong&gt;Spacemacs&lt;/strong&gt; se guardará en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.spacemacs&lt;/code&gt; de tu &lt;code class=&quot;highlighter-rouge&quot;&gt;/home&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de &lt;strong&gt;Spacemacs&lt;/strong&gt; se guardará en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.spacemacs&lt;/code&gt; de tu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Si has cambiado el estilo de edición y lo quieres mantener cada vez que inicies el sistema puedes dejar estas líneas en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.spacemacs&lt;/code&gt; así:&lt;/p&gt;
+&lt;p&gt;Si has cambiado el estilo de edición y lo quieres mantener cada vez que inicies el sistema puedes dejar estas líneas en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.spacemacs&lt;/code&gt; así:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt; EDITAT: Edició de l&lt;span class=&quot;s1&quot;&gt;'estil per defecte
    ;; dotspacemacs-editing-style '&lt;/span&gt;emacs
@@ -467,7 +557,7 @@ you should place your code here.&quot;
                                        hybrid-mode-default-state &lt;span class=&quot;s1&quot;&gt;'hybrid)
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;De esta manera quedará seleccionada la opción &lt;code class=&quot;highlighter-rouge&quot;&gt;hybrid&lt;/code&gt; cada vez que inicies `Spacemacs**. Además será fácil cambiar de opción por defecto, pues solo habrá que comentar o descomentar la opción más conveniente de las tres.&lt;/p&gt;
+&lt;p&gt;De esta manera quedará seleccionada la opción &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hybrid&lt;/code&gt; cada vez que inicies `Spacemacs**. Además será fácil cambiar de opción por defecto, pues solo habrá que comentar o descomentar la opción más conveniente de las tres.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-características&quot;&gt;1. Características&lt;/h3&gt;
 
@@ -499,7 +589,7 @@ you should place your code here.&quot;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone https://github.com/syl20bnr/spacemacs ~ /.emacs.d 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;` es la rama estable y es inmutable, &lt;strong&gt;NO le hagas ninguna modificación o romperás el mecanismo de actualización&lt;/strong&gt;. Si desea bifurcar Spacemacs, use de forma segura la rama de develop donde maneja la actualización manualmente.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt;` es la rama estable y es inmutable, &lt;strong&gt;NO le hagas ninguna modificación o romperás el mecanismo de actualización&lt;/strong&gt;. Si desea bifurcar Spacemacs, use de forma segura la rama de develop donde maneja la actualización manualmente.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;PASO 3&lt;/strong&gt;&lt;/p&gt;
 
@@ -514,7 +604,7 @@ you should place your code here.&quot;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  emacs &lt;span class=&quot;nt&quot;&gt;--insecure&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;O puede configurar &lt;code class=&quot;highlighter-rouge&quot;&gt;dotspacemacs-elpa-https&lt;/code&gt; en nil en su &lt;code class=&quot;highlighter-rouge&quot;&gt;dotspacemacs-elpa-https&lt;/code&gt; para eliminar la necesidad de iniciar &lt;strong&gt;Emacs&lt;/strong&gt;* con el argumento &lt;code class=&quot;highlighter-rouge&quot;&gt;--insecure&lt;/code&gt;. Es posible que desee borrar su directorio .`emacs.d/elpa** antes de hacer esto, para que todos los paquetes dañados que haya descargado se reinstalen.&lt;/p&gt;
+&lt;p&gt;O puede configurar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotspacemacs-elpa-https&lt;/code&gt; en nil en su &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotspacemacs-elpa-https&lt;/code&gt; para eliminar la necesidad de iniciar &lt;strong&gt;Emacs&lt;/strong&gt;* con el argumento &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--insecure&lt;/code&gt;. Es posible que desee borrar su directorio .`emacs.d/elpa** antes de hacer esto, para que todos los paquetes dañados que haya descargado se reinstalen.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;PASO 5&lt;/strong&gt;&lt;/p&gt;
 
@@ -549,7 +639,7 @@ you should place your code here.&quot;
           <title>62 irb - Ruby Terminal</title>
           <description>&lt;p&gt;Trabajar con la terminal interactiva de Ruby nos puede ser de gran ayuda sin necesidad de salir de Emacs.&lt;/p&gt;
 
-&lt;p&gt;Podemos instalar el paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;inf-ruby&lt;/code&gt; desde &lt;strong&gt;MELPA&lt;/strong&gt; o ir directamente al repositorio:&lt;/p&gt;
+&lt;p&gt;Podemos instalar el paquete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inf-ruby&lt;/code&gt; desde &lt;strong&gt;MELPA&lt;/strong&gt; o ir directamente al repositorio:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/nonsequitur/inf-ruby&quot;&gt;https://github.com/nonsequitur/inf-ruby&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -638,17 +728,17 @@ you should place your code here.&quot;
       
         <item>
           <title>56 Mouse</title>
-          <description>&lt;p&gt;Para utilizar el ratón con en &lt;strong&gt;Emacs&lt;/strong&gt; con la metodologia &lt;strong&gt;OrgMode&lt;/strong&gt; debemos activarlo en el archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; añadiendo estas líneas:&lt;/p&gt;
+          <description>&lt;p&gt;Para utilizar el ratón con en &lt;strong&gt;Emacs&lt;/strong&gt; con la metodologia &lt;strong&gt;OrgMode&lt;/strong&gt; debemos activarlo en el archivo de configuración &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; añadiendo estas líneas:&lt;/p&gt;
 
 &lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; Cargar org-mouse&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;'org-mouse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Anterioromente deberemos instalar el paquete en nuestro &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;, lo que bajará el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-mouse.el&lt;/code&gt; a nuestra carpeta situada en &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Anterioromente deberemos instalar el paquete en nuestro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;, lo que bajará el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org-mouse.el&lt;/code&gt; a nuestra carpeta situada en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Para instalarlo debermos acceder a &lt;code class=&quot;highlighter-rouge&quot;&gt;list-packages&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para instalarlo debermos acceder a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list-packages&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;En caso de que no cargue podemos cargarlo de forma manual así: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x org-mouse&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En caso de que no cargue podemos cargarlo de forma manual así: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x org-mouse&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Podemos visualizar el resultado en este &lt;a href=&quot;https://drive.google.com/file/d/17xlBRqbdchIBA3g-0FE_MuF4uZoquisP/view&quot;&gt;enlace&lt;/a&gt;.&lt;/p&gt;
 
@@ -664,11 +754,11 @@ you should place your code here.&quot;
       
         <item>
           <title>55 Truncar líneas</title>
-          <description>&lt;p&gt;Para establecer un &lt;code class=&quot;highlighter-rouge&quot;&gt;hook&lt;/code&gt;, que no es otra cosa que realizar algo en cierta situación determinada, deberemos configurar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; de nuestro &lt;code class=&quot;highlighter-rouge&quot;&gt;home&lt;/code&gt; estableciendo el código que realice esta función.&lt;/p&gt;
+          <description>&lt;p&gt;Para establecer un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hook&lt;/code&gt;, que no es otra cosa que realizar algo en cierta situación determinada, deberemos configurar el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; de nuestro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;home&lt;/code&gt; estableciendo el código que realice esta función.&lt;/p&gt;
 
 &lt;p&gt;En esta ocasión nuestro objetivo es que nos trunque las línias largas para poder leerlas en la siguiente línea y, así, tener que desplazarnos hacia la derecha.&lt;/p&gt;
 
-&lt;p&gt;Para ello editamos &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y añadiremos este código:&lt;/p&gt;
+&lt;p&gt;Para ello editamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y añadiremos este código:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(defun my-compilation-mode-hook ()
   (setq truncate-lines nil) ;; automatically becomes buffer local
@@ -719,13 +809,13 @@ you should place your code here.&quot;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Instalarla dentro de Emacs así: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-list-packages&lt;/code&gt;.&lt;/p&gt;
+    &lt;p&gt;Instalarla dentro de Emacs así: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x package-list-packages&lt;/code&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Buscar paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;multi-term&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Buscar paquete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;multi-term&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Llamar al paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x multi-term&lt;/code&gt;.&lt;/p&gt;
+    &lt;p&gt;Llamar al paquete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x multi-term&lt;/code&gt;.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -744,42 +834,42 @@ you should place your code here.&quot;
 
 &lt;p&gt;&lt;a href=&quot;https://asciinema.org/a/4gijw6gs9jlcf5dxnlj0f12bh&quot;&gt;Vídeo&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Primero vemos si está en el repositorio con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: package-list-packages&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Primero vemos si está en el repositorio con el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x: package-list-packages&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Comprobamos que no está, por tanto, deberemos instalarlo de forma manual.&lt;/p&gt;
 
-&lt;p&gt;Para ello instalaremos de manera manual el paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban&lt;/code&gt; desde el repositorio del desarrollador siguiendo estos pasos.&lt;/p&gt;
+&lt;p&gt;Para ello instalaremos de manera manual el paquete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org-kanban&lt;/code&gt; desde el repositorio del desarrollador siguiendo estos pasos.&lt;/p&gt;
 
 &lt;p&gt;El repositorio del &lt;a href=&quot;https://github.com/gizmomogwai/org-kanban&quot;&gt;desarrollador&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Bajaremos el archivo: &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; así:&lt;/p&gt;
+&lt;p&gt;Bajaremos el archivo: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; así:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/gizmomogwai/org-kanban/master/org-kanban.el
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Ahora tendremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; que instalaremos de manera manual.&lt;/p&gt;
+&lt;p&gt;Ahora tendremos el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; que instalaremos de manera manual.&lt;/p&gt;
 
-&lt;p&gt;Para ello invocamos el comando para instalar de forma manual: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: load-file&lt;/code&gt; pulsaremos &lt;strong&gt;intro&lt;/strong&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;), a continuación escribimos el camino donde encontrará el archivo que hemos bajado.&lt;/p&gt;
+&lt;p&gt;Para ello invocamos el comando para instalar de forma manual: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x: load-file&lt;/code&gt; pulsaremos &lt;strong&gt;intro&lt;/strong&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RET&lt;/code&gt;), a continuación escribimos el camino donde encontrará el archivo que hemos bajado.&lt;/p&gt;
 
 &lt;p&gt;Se instala rápidamente.&lt;/p&gt;
 
-&lt;p&gt;Para que esta utilidad se carge al abrir &lt;strong&gt;Emacs&lt;/strong&gt; deberemos incorporar la siguiente línea a nuestro archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Para que esta utilidad se carge al abrir &lt;strong&gt;Emacs&lt;/strong&gt; deberemos incorporar la siguiente línea a nuestro archivo de configuración &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;~/.emacs.d/lisp/org-kanban.el&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Dentro del mismo archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; vemos que tiene algunas dependencias:&lt;/p&gt;
+&lt;p&gt;Dentro del mismo archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org-kanban.el&lt;/code&gt; vemos que tiene algunas dependencias:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'org)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'org)
 (require 'dash)
 (require 'subr-x)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Las instalamos mediante este procedimiento: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: package-list-packages&lt;/code&gt;, lo que nos dará una lista de paquetes para instalar.&lt;/p&gt;
+&lt;p&gt;Las instalamos mediante este procedimiento: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x: package-list-packages&lt;/code&gt;, lo que nos dará una lista de paquetes para instalar.&lt;/p&gt;
 
-&lt;p&gt;Instalamos las dependencias, al menos hemos instalado &lt;code class=&quot;highlighter-rouge&quot;&gt;dash&lt;/code&gt;, es una libreria avanzada para trabajar con tablas.&lt;/p&gt;
+&lt;p&gt;Instalamos las dependencias, al menos hemos instalado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dash&lt;/code&gt;, es una libreria avanzada para trabajar con tablas.&lt;/p&gt;
 
-&lt;p&gt;A continuación creamos una lista de &lt;code class=&quot;highlighter-rouge&quot;&gt;TODO&lt;/code&gt;, así:&lt;/p&gt;
+&lt;p&gt;A continuación creamos una lista de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TODO&lt;/code&gt;, así:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-orgmode&quot;&gt;* TODO Comprar el pan
 * TODO Comprar lentejas
@@ -792,7 +882,7 @@ you should place your code here.&quot;
 
 &lt;p&gt;Bien pues ya tenemos todo preparado para generarla.&lt;/p&gt;
 
-&lt;p&gt;A continuación nos situamos en esta línea &lt;code class=&quot;highlighter-rouge&quot;&gt;#+BEGIN: kanban&lt;/code&gt; y pulsamos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;A continuación nos situamos en esta línea &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#+BEGIN: kanban&lt;/code&gt; y pulsamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Esto nos generará el siguiente código:&lt;/p&gt;
 
@@ -810,13 +900,13 @@ you should place your code here.&quot;
 &lt;pre&gt;&lt;code class=&quot;language-orgmode&quot;&gt;#+TODO: TODO(t) | PROCESS(p) | WAIT(w) | HABIT(h) | DONE(d) | CANCEL(c)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Para mover las tareas de una columna a otra deberemos activar el modo &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: org-kanban/shift&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mover las tareas de una columna a otra deberemos activar el modo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x: org-kanban/shift&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Nos fijaremos en la parte de abajo de la ventana, pues tendremos las teclas para mover a la izquierda &lt;code class=&quot;highlighter-rouge&quot;&gt;j&lt;/code&gt; y a la derecha &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Nos fijaremos en la parte de abajo de la ventana, pues tendremos las teclas para mover a la izquierda &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;j&lt;/code&gt; y a la derecha &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Al cambiar a la fila de abajo deberemos activar de nuevo el modo para mover las columnas &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x: org-kanban/shift&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Al cambiar a la fila de abajo deberemos activar de nuevo el modo para mover las columnas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x: org-kanban/shift&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Para que el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;dd&lt;/code&gt;
+&lt;p&gt;Para que el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dd&lt;/code&gt;
 &lt;img src=&quot;../assets/orgmode/org-kanban.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Otra referencia muy intresante la podemos encontrar en el blog de &lt;a href=&quot;https://ugeek.github.io/Kanban-para-Org-Mode/&quot;&gt;uGeek&lt;/a&gt; donde se explican algunos aspectos con mayor amplitud.&lt;/p&gt;
@@ -832,7 +922,7 @@ you should place your code here.&quot;
           <title>51 Calculator</title>
           <description>&lt;p&gt;Emacs puede utilizarse como una calculadora básica o como una calculadora cintífica.&lt;/p&gt;
 
-&lt;p&gt;Para entrar en modo calculadora &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x **&lt;/code&gt; o bien &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x * c&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para entrar en modo calculadora &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x **&lt;/code&gt; o bien &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x * c&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Para saber más:&lt;/p&gt;
 
@@ -907,11 +997,11 @@ you should place your code here.&quot;
       
         <item>
           <title>48 Insertar archivo</title>
-          <description>&lt;p&gt;Con &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; podemos incrustar el contenido de un archivo externo justo en el lugar en el que estamos escribiendo, de esta manera no es necesario copiar y pegar el archivo, simplemente lo invocamos y el programa se encarga de incrustar el contenido del archivo invocado.&lt;/p&gt;
+          <description>&lt;p&gt;Con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; podemos incrustar el contenido de un archivo externo justo en el lugar en el que estamos escribiendo, de esta manera no es necesario copiar y pegar el archivo, simplemente lo invocamos y el programa se encarga de incrustar el contenido del archivo invocado.&lt;/p&gt;
 
 &lt;p&gt;Comandos:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x insert-file&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x i&lt;/code&gt;: inserta una copia del archivo invocado.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x insert-file&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x i&lt;/code&gt;: inserta una copia del archivo invocado.&lt;/p&gt;
 
 &lt;p&gt;Fuente: &lt;a href=&quot;http://www.nongnu.org/emacs-man-es/index_169.html#SEC169&quot;&gt;NonGNU&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -926,9 +1016,9 @@ you should place your code here.&quot;
           <title>47 Tamaño de letra modo gráfico</title>
           <description>&lt;p&gt;Para cambiar el tamaño de letra modo grafico:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-+&lt;/code&gt; Aumentar el tamaño de la letra modo gráfico.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x C-+&lt;/code&gt; Aumentar el tamaño de la letra modo gráfico.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C--&lt;/code&gt; Disminuir el tamaño de la letra modo gráfico.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x C--&lt;/code&gt; Disminuir el tamaño de la letra modo gráfico.&lt;/p&gt;
 
 &lt;p&gt;Fuente: &lt;a href=&quot;http://wwwae.ciemat.es/~oglez/webcms/oginfo/combinaciones_emacs.html&quot;&gt;http://wwwae.ciemat.es/~oglez/webcms/oginfo/combinaciones_emacs.html&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -943,13 +1033,13 @@ you should place your code here.&quot;
           <title>46 Imprimir</title>
           <description>&lt;p&gt;Para imprimir deberemos utilizar los siguientes comandos según sea lo que necesitemos:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x print-buffer&lt;/code&gt;: imprime la copia impresa del buffer actual incluyendo encabezamientos y números de página.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x print-buffer&lt;/code&gt;: imprime la copia impresa del buffer actual incluyendo encabezamientos y números de página.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x lpr-buffer&lt;/code&gt;: imprime la copia impresa del buffer actual sin ningún título de la página.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x lpr-buffer&lt;/code&gt;: imprime la copia impresa del buffer actual sin ningún título de la página.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x print region&lt;/code&gt;: lo mismo que &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x print-buffer&lt;/code&gt;, pero sólo implime la región actual.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x print region&lt;/code&gt;: lo mismo que &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x print-buffer&lt;/code&gt;, pero sólo implime la región actual.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x lpr-region&lt;/code&gt;: lo mismo que &lt;code class=&quot;highlighter-rouge&quot;&gt;lpr-buffer&lt;/code&gt;, pero sól imprime la región actual.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x lpr-region&lt;/code&gt;: lo mismo que &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lpr-buffer&lt;/code&gt;, pero sól imprime la región actual.&lt;/p&gt;
 
 &lt;p&gt;Fuente: &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Printing.html&quot;&gt;Emacs&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -977,25 +1067,25 @@ you should place your code here.&quot;
       
         <item>
           <title>44 IRC</title>
-          <description>&lt;p&gt;Para conectarnos dentro de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;:&lt;/p&gt;
+          <description>&lt;p&gt;Para conectarnos dentro de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Llamamos al plugin&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x erc
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x erc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Nos conectamos a &lt;code class=&quot;highlighter-rouge&quot;&gt;irc.freenode.org&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Nos conectamos a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;irc.freenode.org&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Entramos en una sala:&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/join debian
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/join debian
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
           <pubDate>2017-07-09T00:00:00+02:00</pubDate>
@@ -1009,9 +1099,9 @@ you should place your code here.&quot;
           <title>43 Pomodoro</title>
           <description>&lt;p&gt;Utilizar la técnica de &lt;strong&gt;time boxing&lt;/strong&gt; va bien para acotar tiempo para concentrarse y para medir lo que nos puede costar algo.&lt;/p&gt;
 
-&lt;p&gt;Emacs incorpora una plugin llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor&lt;/code&gt; que nos puede ayudar.&lt;/p&gt;
+&lt;p&gt;Emacs incorpora una plugin llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pomidor&lt;/code&gt; que nos puede ayudar.&lt;/p&gt;
 
-&lt;p&gt;Para instalarlo necesitamos primero escribir este código en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; para que arranque la referencia al repositorio y pueda encontrarlo:&lt;/p&gt;
+&lt;p&gt;Para instalarlo necesitamos primero escribir este código en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; para que arranque la referencia al repositorio y pueda encontrarlo:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;;;; #14 Añadir repositorio
 (require 'package) ;; You might already have this line
@@ -1082,7 +1172,7 @@ you should place your code here.&quot;
 
 &lt;h2 id=&quot;adaptación---customization&quot;&gt;Adaptación - Customization&lt;/h2&gt;
 
-&lt;p&gt;Puedes adaptarlo con &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x customize-group RET pomidor&lt;/code&gt; o editando &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Puedes adaptarlo con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x customize-group RET pomidor&lt;/code&gt; o editando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Para cambiar timer:&lt;/p&gt;
 
@@ -1120,7 +1210,7 @@ you should place your code here.&quot;
 
 &lt;h2 id=&quot;notificación&quot;&gt;Notificación&lt;/h2&gt;
 
-&lt;p&gt;Por defecto &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor&lt;/code&gt; mostrará una notificación una vez por minuto.
+&lt;p&gt;Por defecto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pomidor&lt;/code&gt; mostrará una notificación una vez por minuto.
 Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt; documentación para aprender cómo configurarlo.&lt;/p&gt;
 
 &lt;p&gt;Tu puedes cambiar la notificación globalmente:&lt;/p&gt;
@@ -1128,19 +1218,19 @@ Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt
 &lt;span class=&quot;c1&quot;&gt;;; or 'growl (see alert docs)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Puedes cambiar la notificación configurando la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-alert&lt;/code&gt; (defaults to &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-default-alert&lt;/code&gt;):&lt;/p&gt;
+&lt;p&gt;Puedes cambiar la notificación configurando la variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pomidor-alert&lt;/code&gt; (defaults to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pomidor-default-alert&lt;/code&gt;):&lt;/p&gt;
 
 &lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pomidor-alert&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alert&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;OMG!11&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Puedes configurar &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-update-hook&lt;/code&gt; para hacer que trabaje cada vez que se actualice.&lt;/p&gt;
+&lt;p&gt;Puedes configurar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pomidor-update-hook&lt;/code&gt; para hacer que trabaje cada vez que se actualice.&lt;/p&gt;
 &lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;defun&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;my-pomidor-update-hook&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alert&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Zzz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 
 &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;add-hook&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;'pomidor-update-hook&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#'&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;my-pomidor-update-hook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Puedes ajustar el intervalo de actualización configurando la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;pomidor-update-interval&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Puedes ajustar el intervalo de actualización configurando la variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pomidor-update-interval&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;language-lisp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pomidor-update-interval&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; seconds&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
@@ -1155,9 +1245,9 @@ Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt
           <title>42 Pandoc</title>
           <description>&lt;p&gt;Emacs dispone de varios paquetes que integran &lt;a href=&quot;http://pandoc.org/&quot;&gt;pandoc&lt;/a&gt; en Emacs.&lt;/p&gt;
 
-&lt;p&gt;Uno de estos paquetes es &lt;code class=&quot;highlighter-rouge&quot;&gt;pandoc-mode&lt;/code&gt;. Este plugin nos aporta un menú donde podemos indicar el archivo fuente, y el archivo final que queremos obtener. Al indicar el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;pandoc run&lt;/code&gt;el programa convertirá el creará un nuevo archivo con el formato indicado.&lt;/p&gt;
+&lt;p&gt;Uno de estos paquetes es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandoc-mode&lt;/code&gt;. Este plugin nos aporta un menú donde podemos indicar el archivo fuente, y el archivo final que queremos obtener. Al indicar el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandoc run&lt;/code&gt;el programa convertirá el creará un nuevo archivo con el formato indicado.&lt;/p&gt;
 
-&lt;p&gt;Otro plugin que podremos utilizar es &lt;code class=&quot;highlighter-rouge&quot;&gt;ox-pandoc&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Otro plugin que podremos utilizar es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ox-pandoc&lt;/code&gt;:&lt;/p&gt;
 
 &lt;p&gt;This is another exporter for org-mode that translates Org-mode file to various other formats via Pandoc. You need org-mode version 8.2 or later, and Pandoc 1.13 or later, to use this package. For details, please refer https://github.com/kawabata/ox-pandoc.&lt;/p&gt;
 
@@ -1182,7 +1272,7 @@ Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt
 
 &lt;p&gt;Ejemplo:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- #+PANDOC_OPTIONS :: Add command line options to the Pandoc process.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- #+PANDOC_OPTIONS :: Add command line options to the Pandoc process.
 - #+EPUB_RIGHTS :: Set the copyright statement for the ePub metadata.
 - #+EPUB_COVER :: Path to a cover image for ePub output.
 - #+EPUB_STYLESHEET :: Path to a stylesheet for ePub output.
@@ -1203,9 +1293,9 @@ Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt
       
         <item>
           <title>41 LaTeX</title>
-          <description>&lt;p&gt;Instalamos el paquete &lt;code class=&quot;highlighter-rouge&quot;&gt;AUCTeX&lt;/code&gt; desde &lt;a href=&quot;https://melpa.org/#/&quot;&gt;MELPA&lt;/a&gt;, repositorio de Emacs, que se puede consultar via web.&lt;/p&gt;
+          <description>&lt;p&gt;Instalamos el paquete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AUCTeX&lt;/code&gt; desde &lt;a href=&quot;https://melpa.org/#/&quot;&gt;MELPA&lt;/a&gt;, repositorio de Emacs, que se puede consultar via web.&lt;/p&gt;
 
-&lt;p&gt;Para poder instalar paquetes de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; deberemos configurar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; convenientemente. Para ello añadiremos estas líneas:&lt;/p&gt;
+&lt;p&gt;Para poder instalar paquetes de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; deberemos configurar el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; convenientemente. Para ello añadiremos estas líneas:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;;;; #01 Añadir repositorio
 (require 'package) ;; You might already have this line
@@ -1221,18 +1311,18 @@ Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt
 '(&quot;melpa-stable&quot; . &quot;https://stable.melpa.org/packages/&quot;) t)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Cuando lo hagamos salimos de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; y volvemos a entrar.&lt;/p&gt;
+&lt;p&gt;Cuando lo hagamos salimos de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; y volvemos a entrar.&lt;/p&gt;
 
-&lt;p&gt;Pasamos a la instalación. Para ello escribimos en &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Pasamos a la instalación. Para ello escribimos en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;M-x list-package
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Esto nos mostrará la lista. Debemos tener en cuenta que a la hora de escribir los comandos en Emacs podemos utilizar la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt; para que &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; pueda intuir el final de la instrucción.&lt;/p&gt;
+&lt;p&gt;Esto nos mostrará la lista. Debemos tener en cuenta que a la hora de escribir los comandos en Emacs podemos utilizar la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TAB&lt;/code&gt; para que &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; pueda intuir el final de la instrucción.&lt;/p&gt;
 
 &lt;p&gt;Clicaremos con el ratón el paquete correspondiente o bajaremos el cursor hasta llegar al paquete. Se instalará.&lt;/p&gt;
 
-&lt;p&gt;Para ver su funcionamiento podemos bajar una plantilla de LaTeX desde esta página: &lt;a href=&quot;https://www.latextemplates.com/template/stylish-article&quot;&gt;https://www.latextemplates.com/template/stylish-article&lt;/a&gt;. Descomprimiremos el archivo y editaremos el archivo: &lt;code class=&quot;highlighter-rouge&quot;&gt;archivo.tex&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para ver su funcionamiento podemos bajar una plantilla de LaTeX desde esta página: &lt;a href=&quot;https://www.latextemplates.com/template/stylish-article&quot;&gt;https://www.latextemplates.com/template/stylish-article&lt;/a&gt;. Descomprimiremos el archivo y editaremos el archivo: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo.tex&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Miremos la barra de menú que aparece arriba.&lt;/p&gt;
 
@@ -1263,9 +1353,9 @@ Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt
 
 &lt;p&gt;Iniciamos Emacs y escribimos:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-install &amp;lt;RET&amp;gt;&lt;/code&gt; RET significa que pulsemos la tecla de retorno.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x package-install &amp;lt;RET&amp;gt;&lt;/code&gt; RET significa que pulsemos la tecla de retorno.&lt;/p&gt;
 
-&lt;p&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;helm-bibtex &amp;lt;RET&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Escribimos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;helm-bibtex &amp;lt;RET&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Así ya tendremos instalado el paquete.&lt;/p&gt;
 
@@ -1315,9 +1405,9 @@ Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt
           <title>39 Tiempo</title>
           <description>&lt;p&gt;Para realizar un seguimiento del tiempo que dedicamos a las tareas podemos utilizar esta técnica.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-i&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;org-clock-in&lt;/code&gt;: Comienza a contar el reloj actual.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-x C-i&lt;/code&gt; - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org-clock-in&lt;/code&gt;: Comienza a contar el reloj actual.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-o&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;org-clock-out&lt;/code&gt;: Detiene el contador de un reloj añadiendo un timestamp frente a la fecha detenida.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-x C-o&lt;/code&gt; - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org-clock-out&lt;/code&gt;: Detiene el contador de un reloj añadiendo un timestamp frente a la fecha detenida.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.blackhats.es/wordpress/?p=214&quot;&gt;Para saber mucho más&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -1332,7 +1422,7 @@ Mira &lt;a href=&quot;https://github.com/jwiegley/alert/&quot;&gt;alert&lt;/a&gt
           <title>38 Codigo</title>
           <description>&lt;p&gt;Teniendo en cuenta estas templates:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s 	#+BEGIN_SRC ... #+END_SRC
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s 	#+BEGIN_SRC ... #+END_SRC
 e 	#+BEGIN_EXAMPLE ... #+END_EXAMPLE
 q 	#+BEGIN_QUOTE ... #+END_QUOTE
 v 	#+BEGIN_VERSE ... #+END_VERSE
@@ -1347,20 +1437,20 @@ i 	#+INDEX: line
 I 	#+INCLUDE: line 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Para insertar código &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;s &amp;lt;TAB&amp;gt;&lt;/code&gt; o lo que es lo mismo &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;s&lt;/code&gt; y pulsar la tecla del tabulador.&lt;/p&gt;
+&lt;p&gt;Para insertar código &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;s &amp;lt;TAB&amp;gt;&lt;/code&gt; o lo que es lo mismo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;s&lt;/code&gt; y pulsar la tecla del tabulador.&lt;/p&gt;
 
 &lt;p&gt;Seguiremos la misma lógica para todos los tipos de plantillas.&lt;/p&gt;
 
 &lt;p&gt;Obtienes esto:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+BEGIN_SRC
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+BEGIN_SRC
 
 #+END_SRC
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Escribes el tipo de lenguaje que tieres resaltar así:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+BEGIN_SRC python
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+BEGIN_SRC python
 
 #+END_SRC
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1381,7 +1471,7 @@ I 	#+INCLUDE: line
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;M-x linum-mode
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Para habilitarlos al arrancar Emacs editarmos &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y añadimos:&lt;/p&gt;
+&lt;p&gt;Para habilitarlos al arrancar Emacs editarmos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y añadimos:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(global-linum-mode t)
 &lt;/code&gt;&lt;/pre&gt;
@@ -1398,17 +1488,17 @@ I 	#+INCLUDE: line
           <title>36 Buscar</title>
           <description>&lt;p&gt;Los comandos a tener en cuenta:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-s&lt;/code&gt; Busqueda hacia adelante&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-s&lt;/code&gt; Busqueda hacia adelante&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-r&lt;/code&gt; Busqueda hacia atrás&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-r&lt;/code&gt; Busqueda hacia atrás&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-s&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;C-r&lt;/code&gt; Buscar más palabras aprovechando la misma búsqueda&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-s&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-r&lt;/code&gt; Buscar más palabras aprovechando la misma búsqueda&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c \&lt;/code&gt; Buscar por tags&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c \&lt;/code&gt; Buscar por tags&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / m TAG&lt;/code&gt; Buscar todas las tags, en la palabra TAG poner la tag concreta&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c / m TAG&lt;/code&gt; Buscar todas las tags, en la palabra TAG poner la tag concreta&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-q LEFT&lt;/code&gt; Tag Autocompletar, con las flechas pasamos adelante o atrás las tags.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-q LEFT&lt;/code&gt; Tag Autocompletar, con las flechas pasamos adelante o atrás las tags.&lt;/p&gt;
 
 </description>
           <pubDate>2017-05-14T03:00:00+02:00</pubDate>
@@ -1424,7 +1514,7 @@ I 	#+INCLUDE: line
 
 &lt;p&gt;Un &lt;strong&gt;snippet&lt;/strong&gt; es un texto programado, al cual se le llama con un caracter o palabra clave seguido de la pulsación del tabulador.&lt;/p&gt;
 
-&lt;p&gt;Para ello vamos a instalar primero la extensión &lt;code class=&quot;highlighter-rouge&quot;&gt;yasnippet&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para ello vamos a instalar primero la extensión &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yasnippet&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Así seguiremos los pasos de esta página &lt;a href=&quot;https://www.emacswiki.org/emacs/Yasnippet&quot;&gt;EmacsWiki&lt;/a&gt;.&lt;/p&gt;
 
@@ -1432,12 +1522,12 @@ I 	#+INCLUDE: line
 
 &lt;p&gt;Para ello primero invocaremos el comando para crearlos:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x yas-new-snippet
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x yas-new-snippet
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Escribiremos el snippet:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# -*- mode: snippet -*-
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# -*- mode: snippet -*-
 # name: post
 # key: p
 # --
@@ -1452,19 +1542,19 @@ coments: true
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Y lo guardaremos con los comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Y lo guardaremos con los comandos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;A la hora de guardar nos preguntará dónde queremos guardarlos.&lt;/p&gt;
 
-&lt;p&gt;Para organizar bien los snippets lo mejor será antes de crear el snippet crear una página donde vayamos a escribir, en este caso hemos empezado a escribir en markdown por tanto, hemos creado una página &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para organizar bien los snippets lo mejor será antes de crear el snippet crear una página donde vayamos a escribir, en este caso hemos empezado a escribir en markdown por tanto, hemos creado una página &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;En el paso siguiente creamos el snippet y posteriormente guardamos. El programa nos identificará nuestra necesidad, crear un snippet para Markdown, así que nos propondrá una carpeta para guardarlo, en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;markdown-mode&lt;/code&gt;, a la cual cosa accederemos.&lt;/p&gt;
+&lt;p&gt;En el paso siguiente creamos el snippet y posteriormente guardamos. El programa nos identificará nuestra necesidad, crear un snippet para Markdown, así que nos propondrá una carpeta para guardarlo, en este caso &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;markdown-mode&lt;/code&gt;, a la cual cosa accederemos.&lt;/p&gt;
 
-&lt;p&gt;Para invocar el &lt;code class=&quot;highlighter-rouge&quot;&gt;snippet&lt;/code&gt; simplemente crearemos un archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt;, escribiremos la la clave, en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt; y el programa nos lanzará el snippet.&lt;/p&gt;
+&lt;p&gt;Para invocar el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;snippet&lt;/code&gt; simplemente crearemos un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt;, escribiremos la la clave, en este caso &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;p&lt;/code&gt; y el programa nos lanzará el snippet.&lt;/p&gt;
 
-&lt;p&gt;Ahora ya tenemos creado el &lt;code class=&quot;highlighter-rouge&quot;&gt;snippet&lt;/code&gt;, pero para que funcione deberemos decirle a emacs que inicie el programa de cuando arranque.&lt;/p&gt;
+&lt;p&gt;Ahora ya tenemos creado el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;snippet&lt;/code&gt;, pero para que funcione deberemos decirle a emacs que inicie el programa de cuando arranque.&lt;/p&gt;
 
-&lt;p&gt;Para ello editamos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y añadiremos las siguientes líneas:&lt;/p&gt;
+&lt;p&gt;Para ello editamos el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y añadiremos las siguientes líneas:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;;;; Activant snippets
 (setq yas-snippet-dirs
@@ -1491,12 +1581,12 @@ coments: true
           <title>34 Imprimir subárbol</title>
           <description>&lt;p&gt;Para imprimir un subárbol de notas debemos situarnos dentro de la nota concreta que queremos imprimir y lanzar estos comandos:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-c C-x b
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C-c C-x b
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Para imrimir en PDF, deberemos situarnos en la ventana donce está la selección de la nota y lanzar estos comandos&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Alfons Rovira, [13.05.17 19:23]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Alfons Rovira, [13.05.17 19:23]
 De desta manera, resumiendo:
 
 C-c C-e l p
@@ -1514,10 +1604,10 @@ C-c C-e l p
           <title>33 Imágenes</title>
           <description>&lt;p&gt;Para incrustar imágenes en los documentos lo haremos así:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./image/emacs.png
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./image/emacs.png
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Deberemos crear un directorio llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;image&lt;/code&gt; un nivel por debajo y una imagen llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;emacs.png&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Deberemos crear un directorio llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image&lt;/code&gt; un nivel por debajo y una imagen llamada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;emacs.png&lt;/code&gt;&lt;/p&gt;
 </description>
           <pubDate>2017-05-13T20:17:13+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/images</link>
@@ -1532,12 +1622,12 @@ C-c C-e l p
 
 &lt;p&gt;Para activar los bullets a mano:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x org-bullets-mode
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x org-bullets-mode
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Para arrancar este modo tendremos que escribir en el archivo de configuración de &lt;strong&gt;Emacs&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; esta línea:&lt;/p&gt;
+&lt;p&gt;Para arrancar este modo tendremos que escribir en el archivo de configuración de &lt;strong&gt;Emacs&lt;/strong&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; esta línea:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(setq 'org-bullets-mode)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(setq 'org-bullets-mode)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;../assets/orgmode/17_bullets.jpg&quot; alt=&quot;Bullets&quot; /&gt;&lt;/p&gt;
@@ -1555,17 +1645,17 @@ C-c C-e l p
       
         <item>
           <title>31 Archivar</title>
-          <description>&lt;p&gt;Para que el archivado funcione deberemos configurar al principio del documento el archivo donde se van a guardar los proyectos realizados, en este caso el archivo se llamará &lt;code class=&quot;highlighter-rouge&quot;&gt;_done&lt;/code&gt;.&lt;/p&gt;
+          <description>&lt;p&gt;Para que el archivado funcione deberemos configurar al principio del documento el archivo donde se van a guardar los proyectos realizados, en este caso el archivo se llamará &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_done&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#+ARCHIVE: %s_done::&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#+ARCHIVE: %s_done::&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Cuando un proyecto ha finalizado lo podemos archivar así:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-a&lt;/code&gt;     (org-archive-subtree-default)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-x C-a&lt;/code&gt;     (org-archive-subtree-default)&lt;/p&gt;
 
 &lt;p&gt;Si se trata de un subárbol, o subcontenido dentro de un punto:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-s&lt;/code&gt; o bien &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c $&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-x C-s&lt;/code&gt; o bien &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c $&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Para saber más:&lt;/p&gt;
 
@@ -1584,13 +1674,13 @@ C-c C-e l p
 
 &lt;h3 id=&quot;1-instalando-desde-elpa&quot;&gt;1. Instalando desde ELPA&lt;/h3&gt;
 
-&lt;p&gt;Para establecer el repositorio editar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y anadir una de estas dos opciones:&lt;/p&gt;
+&lt;p&gt;Para establecer el repositorio editar el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y anadir una de estas dos opciones:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Usar MELPA:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
 (add-to-list 'package-archives
              '(&quot;melpa&quot; . &quot;http://melpa.org/packages/&quot;) t)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1598,52 +1688,52 @@ C-c C-e l p
   &lt;li&gt;Usar MELPA-Stable:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(require 'package)
 (add-to-list 'package-archives
              '(&quot;melpa-stable&quot; . &quot;http://stable.melpa.org/packages/&quot;) t)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;2-refrescamos&quot;&gt;2. Refrescamos&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-refresh-contents RET&lt;/code&gt; Desde dentro de Emacs refrescamos el repositorio.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x package-refresh-contents RET&lt;/code&gt; Desde dentro de Emacs refrescamos el repositorio.&lt;/p&gt;
 
 &lt;h3 id=&quot;3-instalamos-el-paquete-magit&quot;&gt;3. Instalamos el paquete Magit&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x package-install RET magit RET&lt;/code&gt; Así instalamos.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x package-install RET magit RET&lt;/code&gt; Así instalamos.&lt;/p&gt;
 
 &lt;h3 id=&quot;4-revisamos-la-versión&quot;&gt;4. Revisamos la versión&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x package-install RET magit RET
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;M-x package-install RET magit RET
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Output&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;5-comandos-esenciales&quot;&gt;5. Comandos esenciales&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-status&lt;/code&gt; para ver el estaddus de git y el estatus del buffer:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x magit-status&lt;/code&gt; para ver el estaddus de git y el estatus del buffer:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; para añadir a la pila archivos (&lt;code class=&quot;highlighter-rouge&quot;&gt;git add .&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt; para añadir a la pila archivos (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add .&lt;/code&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c c&lt;/code&gt; para hacer crear un comit (escribe el mensaje, después pulsa &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt; para realizarel commit automáticamente)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c c&lt;/code&gt; para hacer crear un comit (escribe el mensaje, después pulsa &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt; para realizarel commit automáticamente)&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;b b&lt;/code&gt; para crear otra rama&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b b&lt;/code&gt; para crear otra rama&lt;/p&gt;
 
 &lt;h3 id=&quot;6-otros-comandos&quot;&gt;6. Otros comandos&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;P u&lt;/code&gt; para realizar un &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;P u&lt;/code&gt; para realizar un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;F u&lt;/code&gt; para realizar un &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;F u&lt;/code&gt; para realizar un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;try to press &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;try to press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TAB&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;7-flujo-de-trabajo&quot;&gt;7. Flujo de trabajo&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x magit-commit&lt;/code&gt; Commit dels canvis, pregunta si es vol afegir a l’stag, finalitzem&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x magit-commit&lt;/code&gt; Commit dels canvis, pregunta si es vol afegir a l’stag, finalitzem&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c&lt;/code&gt; Per finalitzar&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c&lt;/code&gt; Per finalitzar&lt;/p&gt;
 
 &lt;h3 id=&quot;8-ejemplo&quot;&gt;8. Ejemplo&lt;/h3&gt;
 
@@ -1664,7 +1754,7 @@ C-c C-e l p
       
         <item>
           <title>29 Tablas</title>
-          <description>&lt;p&gt;La utilización de tablas en &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; mediante la metodología &lt;code class=&quot;highlighter-rouge&quot;&gt;Orgmode&lt;/code&gt; es sencilla.&lt;/p&gt;
+          <description>&lt;p&gt;La utilización de tablas en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; mediante la metodología &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Orgmode&lt;/code&gt; es sencilla.&lt;/p&gt;
 
 &lt;p&gt;Partimos de la escritura de código sencillo:&lt;/p&gt;
 
@@ -1672,9 +1762,9 @@ C-c C-e l p
 |------+-----+--------+
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;En la siguiente línea escribimos una barra vertical. Para pasar a la siguiente columna lo hacemos con la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;. Con lo que podremos escribir las demás columnas.&lt;/p&gt;
+&lt;p&gt;En la siguiente línea escribimos una barra vertical. Para pasar a la siguiente columna lo hacemos con la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TAB&lt;/code&gt;. Con lo que podremos escribir las demás columnas.&lt;/p&gt;
 
-&lt;p&gt;Para pasar a la columna de abano sin pasar por todas las columnas escribiremso ala tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt; o Enter.&lt;/p&gt;
+&lt;p&gt;Para pasar a la columna de abano sin pasar por todas las columnas escribiremso ala tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RET&lt;/code&gt; o Enter.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;| Item | Nom    | Cognom |
 |------+--------+--------+
@@ -1705,17 +1795,17 @@ C-c C-e l p
 
 &lt;h3 id=&quot;2-comandos&quot;&gt;2. Comandos&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e&lt;/code&gt; Comandos de explotación y publicación.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e&lt;/code&gt; Comandos de explotación y publicación.&lt;/p&gt;
 
 &lt;h3 id=&quot;3-codificación&quot;&gt;3. Codificación&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e t u&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e t U&lt;/code&gt; ambos exportan la codificación a UTF-8.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e t u&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e t U&lt;/code&gt; ambos exportan la codificación a UTF-8.&lt;/p&gt;
 
 &lt;h3 id=&quot;4-creando-un-archivo-de-html-donde-se-incrusta-código&quot;&gt;4. Creando un archivo de HTML donde se incrusta código&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e h h&lt;/code&gt; Exportar a HTML &lt;code class=&quot;highlighter-rouge&quot;&gt;archivo.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e h h&lt;/code&gt; Exportar a HTML &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo.html&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e h o&lt;/code&gt; Exportar a HTML e inmediatamente abrir el navegador sin guardar&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e h o&lt;/code&gt; Exportar a HTML e inmediatamente abrir el navegador sin guardar&lt;/p&gt;
 
 &lt;p&gt;Para incrustar código:&lt;/p&gt;
 
@@ -1733,17 +1823,17 @@ C-c C-e l p
 
 &lt;h3 id=&quot;5-exportar-a-latex-o-pdf&quot;&gt;5. Exportar a LaTeX o PDF&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l l&lt;/code&gt; Exporta un fichero LaTeX &lt;code class=&quot;highlighter-rouge&quot;&gt;archivo.tex&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e l l&lt;/code&gt; Exporta un fichero LaTeX &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;archivo.tex&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l p&lt;/code&gt; Exporta como LaTeX y también PDF&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e l p&lt;/code&gt; Exporta como LaTeX y también PDF&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e l o&lt;/code&gt; Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e l o&lt;/code&gt; Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF&lt;/p&gt;
 
 &lt;h3 id=&quot;6-exportar-calendario&quot;&gt;6. Exportar calendario&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e c f&lt;/code&gt; Crea un archivo iCalendar con extensión &lt;code class=&quot;highlighter-rouge&quot;&gt;.ics&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e c f&lt;/code&gt; Crea un archivo iCalendar con extensión &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.ics&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-e c c&lt;/code&gt; Crea un archivo largo de iCalendar con todos los archivos &lt;code class=&quot;highlighter-rouge&quot;&gt;org-agenda-files&lt;/code&gt; y lo escribe cogiendo &lt;code class=&quot;highlighter-rouge&quot;&gt;org-icalendar-combined-agenda-file&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-e c c&lt;/code&gt; Crea un archivo largo de iCalendar con todos los archivos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org-agenda-files&lt;/code&gt; y lo escribe cogiendo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org-icalendar-combined-agenda-file&lt;/code&gt;.&lt;/p&gt;
 </description>
           <pubDate>2017-04-21T06:55:15+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/exportar</link>
@@ -1788,7 +1878,7 @@ C-c C-e l p
     :END:
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Visto así no es fácil de analizar, pero si nos situamos en la línea &lt;code class=&quot;highlighter-rouge&quot;&gt;** Mi proyecto&lt;/code&gt; y ejecutamos los comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-x C-c&lt;/code&gt;, automáticamente vemos las cosas más claras. Después de pulsar dos veces la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt; lo veremos así:&lt;/p&gt;
+&lt;p&gt;Visto así no es fácil de analizar, pero si nos situamos en la línea &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;** Mi proyecto&lt;/code&gt; y ejecutamos los comandos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-x C-c&lt;/code&gt;, automáticamente vemos las cosas más claras. Después de pulsar dos veces la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TAB&lt;/code&gt; lo veremos así:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;* Ejemplo
 ** Mi proyecto     |          |          |             |  2:00   |
@@ -1799,7 +1889,7 @@ C-c C-e l p
 *** Item 3         | [X]      |  Patricia| No iniciado |         |...
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Para desactivar esta función nos colocaremos en la línea &lt;code class=&quot;highlighter-rouge&quot;&gt;*** Mi proyecto&lt;/code&gt; y pulsaremos la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;q&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para desactivar esta función nos colocaremos en la línea &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*** Mi proyecto&lt;/code&gt; y pulsaremos la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;q&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Ahora nos fijamos en las propiedades las cabeceras:&lt;/p&gt;
 
@@ -1811,9 +1901,9 @@ C-c C-e l p
    :END:
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;COLUMNS&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica que es una nueva columna. &lt;code class=&quot;highlighter-rouge&quot;&gt;20&lt;/code&gt; indica que tiene 20 columnas de ancho. &lt;code class=&quot;highlighter-rouge&quot;&gt;ITEM&lt;/code&gt; hace referencia al título precedido de &lt;code class=&quot;highlighter-rouge&quot;&gt;****&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;Aprobado&lt;/code&gt; indica el campo Aprobado. &lt;code class=&quot;highlighter-rouge&quot;&gt;(Aprobado?)&lt;/code&gt; indica el nombre del campo, que aparecerá en la parte superior, en la parte más alta. &lt;code class=&quot;highlighter-rouge&quot;&gt;{:}&lt;/code&gt; indica el formato de tiempo.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;COLUMNS&lt;/code&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica que es una nueva columna. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;20&lt;/code&gt; indica que tiene 20 columnas de ancho. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ITEM&lt;/code&gt; hace referencia al título precedido de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;****&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Aprobado&lt;/code&gt; indica el campo Aprobado. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(Aprobado?)&lt;/code&gt; indica el nombre del campo, que aparecerá en la parte superior, en la parte más alta. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{:}&lt;/code&gt; indica el formato de tiempo.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Persona_ALL&lt;/code&gt;: Indican todas las personas, de esta forma con las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;SHIFT&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;→&lt;/code&gt; situados en el campo &lt;code class=&quot;highlighter-rouge&quot;&gt;Persona&lt;/code&gt; podremos ir cambiando las personas predefinidas, por eso se predefinen. Esto no limita que podamos escribir más personas en el mismo campo.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Persona_ALL&lt;/code&gt;: Indican todas las personas, de esta forma con las teclas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHIFT&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;→&lt;/code&gt; situados en el campo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Persona&lt;/code&gt; podremos ir cambiando las personas predefinidas, por eso se predefinen. Esto no limita que podamos escribir más personas en el mismo campo.&lt;/p&gt;
 
 &lt;p&gt;Establece el espacio, anchura,&lt;/p&gt;
 </description>
@@ -1840,7 +1930,7 @@ C-c C-e l p
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Activar el modo Markdown dentro de &lt;code class=&quot;highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; así &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x markdown-mode&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Activar el modo Markdown dentro de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Emacs&lt;/code&gt; así &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x markdown-mode&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Ahora ya podemos escribir, veremos pintadas las letras.&lt;/p&gt;
@@ -1849,125 +1939,125 @@ C-c C-e l p
 
 &lt;h2 id=&quot;1-introducción&quot;&gt;1. Introducción&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-a&lt;/code&gt;          Mnemotécnico &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-a&lt;/code&gt;          Mnemotécnico &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-a&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt;      Mnemotécnico titling (titulación)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt;      Mnemotécnico titling (titulación)&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;lt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c &amp;lt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c &amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;      Markdown abre un archivo de grupo bajo un prefijo.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;      Markdown abre un archivo de grupo bajo un prefijo.&lt;/p&gt;
 
 &lt;h2 id=&quot;2-hyperlinks&quot;&gt;2. Hyperlinks&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a l&lt;/code&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;[text](url)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-a l&lt;/code&gt;   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[text](url)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a L&lt;/code&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;[text][label]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-a L&lt;/code&gt;   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[text][label]&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a u&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-a u&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a f&lt;/code&gt;   Pie de página&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-a f&lt;/code&gt;   Pie de página&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-a w&lt;/code&gt;   [[WikiLink]]&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-a w&lt;/code&gt;   [[WikiLink]]&lt;/p&gt;
 
 &lt;h2 id=&quot;3-images&quot;&gt;3. Images&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-i i&lt;/code&gt;   Insertar imágenes&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-i i&lt;/code&gt;   Insertar imágenes&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-i I&lt;/code&gt;   Insertar estilo de imagen&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-i I&lt;/code&gt;   Insertar estilo de imagen&lt;/p&gt;
 
 &lt;h2 id=&quot;4-styles&quot;&gt;4. Styles&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s e&lt;/code&gt;   Insertar una marca en una región de una parlabra. Ejemplo: itálica (&lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt; para &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-s e&lt;/code&gt;   Insertar una marca en una región de una parlabra. Ejemplo: itálica (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; para &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s s&lt;/code&gt;   Insertar negrita &lt;code class=&quot;highlighter-rouge&quot;&gt;bold&lt;/code&gt; (`&lt;strong&gt;’)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-s s&lt;/code&gt;   Insertar negrita &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bold&lt;/code&gt; (`&lt;strong&gt;’)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s c&lt;/code&gt;   Code&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-s c&lt;/code&gt;   Code&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s C-f&lt;/code&gt; Blockquote&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-s C-f&lt;/code&gt; Blockquote&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s p&lt;/code&gt;   Bloque de blockquote&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-s p&lt;/code&gt;   Bloque de blockquote&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s C-p&lt;/code&gt; Bloque de región&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-s C-p&lt;/code&gt; Bloque de región&lt;/p&gt;
 
 &lt;h2 id=&quot;5-headings&quot;&gt;5. Headings&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t h&lt;/code&gt;   Inserta título automáticamente cambiando caracter por siguiente nivel&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t h&lt;/code&gt;   Inserta título automáticamente cambiando caracter por siguiente nivel&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t H&lt;/code&gt;   Inserta título con subrayado simple&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t H&lt;/code&gt;   Inserta título con subrayado simple&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u C-u&lt;/code&gt;     Prefija, se puede especificar un nivel.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-u C-u&lt;/code&gt;     Prefija, se puede especificar un nivel.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 1&lt;/code&gt;   Inserta encabezado nivel 1&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t 1&lt;/code&gt;   Inserta encabezado nivel 1&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 2&lt;/code&gt;   Inserta encabezado nivel 2&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t 2&lt;/code&gt;   Inserta encabezado nivel 2&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 3&lt;/code&gt;   Inserta encabezado nivel 3&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t 3&lt;/code&gt;   Inserta encabezado nivel 3&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 4&lt;/code&gt;   Inserta encabezado nivel 4&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t 4&lt;/code&gt;   Inserta encabezado nivel 4&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 5&lt;/code&gt;   Inserta encabezado nivel 5&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t 5&lt;/code&gt;   Inserta encabezado nivel 5&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t 6&lt;/code&gt;   Inserta encabezado nivel 6&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t 6&lt;/code&gt;   Inserta encabezado nivel 6&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t !&lt;/code&gt;   Inserta encabezados de nivel 1 &lt;code class=&quot;highlighter-rouge&quot;&gt;S-1&lt;/code&gt; subrayado &lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t !&lt;/code&gt;   Inserta encabezados de nivel 1 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S-1&lt;/code&gt; subrayado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t @&lt;/code&gt;   Inserta encabezados de nivel 2 &lt;code class=&quot;highlighter-rouge&quot;&gt;S-2&lt;/code&gt; subrayado &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t @&lt;/code&gt;   Inserta encabezados de nivel 2 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S-2&lt;/code&gt; subrayado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-k&lt;/code&gt;     Borra el encabezado&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-k&lt;/code&gt;     Borra el encabezado&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-y&lt;/code&gt;         Pega en el cabezado&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-y&lt;/code&gt;         Pega en el cabezado&lt;/p&gt;
 
 &lt;h2 id=&quot;6-horizontal-rules&quot;&gt;6. Horizontal Rules&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c -&lt;/code&gt;       Inserta raya horizontal&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c -&lt;/code&gt;       Inserta raya horizontal&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u&lt;/code&gt;         Prefija, inserta última cadena N en N posición (contando desde 1)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-u&lt;/code&gt;         Prefija, inserta última cadena N en N posición (contando desde 1)&lt;/p&gt;
 
 &lt;h2 id=&quot;7-maintenance-comands&quot;&gt;7. Maintenance Comands&lt;/h2&gt;
 
-&lt;p&gt;Compile &lt;code class=&quot;highlighter-rouge&quot;&gt;C- C-c m&lt;/code&gt;  corre en otro buffer&lt;/p&gt;
+&lt;p&gt;Compile &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C- C-c m&lt;/code&gt;  corre en otro buffer&lt;/p&gt;
 
-&lt;p&gt;Preview &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c p&lt;/code&gt; corre en la pantalla en buffer&lt;/p&gt;
+&lt;p&gt;Preview &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c p&lt;/code&gt; corre en la pantalla en buffer&lt;/p&gt;
 
-&lt;p&gt;Export &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c e&lt;/code&gt;  basename.html&lt;/p&gt;
+&lt;p&gt;Export &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c e&lt;/code&gt;  basename.html&lt;/p&gt;
 
-&lt;p&gt;Export and View &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c v&lt;/code&gt; exporta y visualiza en el navegador.&lt;/p&gt;
+&lt;p&gt;Export and View &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c v&lt;/code&gt; exporta y visualiza en el navegador.&lt;/p&gt;
 
-&lt;p&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c o&lt;/code&gt; abre archivo&lt;/p&gt;
+&lt;p&gt;Open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c o&lt;/code&gt; abre archivo&lt;/p&gt;
 
-&lt;p&gt;Live export &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c l&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Live export &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c l&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c c RET&lt;/code&gt; revisa referencias indefinidas&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c c RET&lt;/code&gt; revisa referencias indefinidas&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c n&lt;/code&gt; renumera con algún orden el buffer de nuestras secuencias&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c n&lt;/code&gt; renumera con algún orden el buffer de nuestras secuencias&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c ]&lt;/code&gt; completa reglas&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c ]&lt;/code&gt; completa reglas&lt;/p&gt;
 
 &lt;h2 id=&quot;8-following-links&quot;&gt;8. Following Links##&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; abre links en el navegador&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; abre links en el navegador&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-u&lt;/code&gt; prefijo&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-u&lt;/code&gt; prefijo&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-p&lt;/code&gt; salta al link previo (previous)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-p&lt;/code&gt; salta al link previo (previous)&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-n&lt;/code&gt; salta al próximo link (next)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-n&lt;/code&gt; salta al próximo link (next)&lt;/p&gt;
 
 &lt;h2 id=&quot;9-jumping&quot;&gt;9. Jumping&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-j&lt;/code&gt; salta desde el punto objeto&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-j&lt;/code&gt; salta desde el punto objeto&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-TAB&lt;/code&gt; salta hacia atrás&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S-TAB&lt;/code&gt; salta hacia atrás&lt;/p&gt;
 
 &lt;h2 id=&quot;10-promotion-and-demotion&quot;&gt;10. Promotion and Demotion&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-&lt;/code&gt; decrementa el nivel&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-&lt;/code&gt; decrementa el nivel&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-=&lt;/code&gt; incrementa el nivel&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-=&lt;/code&gt; incrementa el nivel&lt;/p&gt;
 
 &lt;p&gt;Toda la documentación en en la web del desarrollador &lt;a href=&quot;http://jblevins.org/projects/markdown-mode/&quot;&gt;JBlevins.org&lt;/a&gt;&lt;/p&gt;
 
@@ -1984,14 +2074,14 @@ C-c C-e l p
           <description>&lt;p&gt;Incluir themes nuevos&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Según la documentación oficial de &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html&quot;&gt;gnu.org&lt;/a&gt;, o en &lt;a href=&quot;https://www.emacswiki.org/emacs/CustomThemes&quot;&gt;EmacsWiki&lt;/a&gt; nos situamos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt; y allí creamos &lt;code class=&quot;highlighter-rouge&quot;&gt;etc/themes/&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;En el fichero de configuración de &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; incluiremos la ruta:
+  &lt;li&gt;Según la documentación oficial de &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html&quot;&gt;gnu.org&lt;/a&gt;, o en &lt;a href=&quot;https://www.emacswiki.org/emacs/CustomThemes&quot;&gt;EmacsWiki&lt;/a&gt; nos situamos en el directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt; y allí creamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;etc/themes/&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;En el fichero de configuración de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; incluiremos la ruta:
     &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(add-to-list 'custom-theme-load-path &quot;~/.emacs.d/etc/themes/&quot;) 
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
-  &lt;li&gt;Para cambiar de theme &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x customize-themes ;;; now press retun&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Para cambiar de theme &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x customize-themes ;;; now press retun&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Podemos bajar themes desde &lt;a href=&quot;https://emacsthemes.com/&quot;&gt;EmacsThemes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Algo importante es que los themes han de acabar en &lt;code class=&quot;highlighter-rouge&quot;&gt;*-theme.el&lt;/code&gt; en caso contrario no se mostrará&lt;/li&gt;
+  &lt;li&gt;Algo importante es que los themes han de acabar en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*-theme.el&lt;/code&gt; en caso contrario no se mostrará&lt;/li&gt;
 &lt;/ol&gt;
 
 </description>
@@ -2009,40 +2099,40 @@ C-c C-e l p
 &lt;p&gt;Abrimos un archivo de bookmarks o favoritos.&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Nos situamos en el fichero que queremos añadir al &lt;strong&gt;bookmark&lt;/strong&gt; con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-f&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Tecleamos &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x bookmark-set Ctrl-x-r-m&lt;/code&gt; de esta forma grabamos el archivo al bookmark.&lt;/li&gt;
+  &lt;li&gt;Nos situamos en el fichero que queremos añadir al &lt;strong&gt;bookmark&lt;/strong&gt; con el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x C-f&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Tecleamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x bookmark-set Ctrl-x-r-m&lt;/code&gt; de esta forma grabamos el archivo al bookmark.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;apuntando-a-un-directorio&quot;&gt;Apuntando a un directorio&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Abrimos el directorio con los comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-d&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Grabamos el directorio al bookmark &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x bookmark-set Ctrl-x r-m&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Abrimos el directorio con los comandos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x C-d&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Grabamos el directorio al bookmark &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x bookmark-set Ctrl-x r-m&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;recuperando-los-bookmarks&quot;&gt;Recuperando los bookmarks&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x r-l&lt;/code&gt; y pulsamos sobre el lugar donde queremos ir.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x r-l&lt;/code&gt; y pulsamos sobre el lugar donde queremos ir.&lt;/p&gt;
 
 &lt;h3 id=&quot;editar-bookmarks&quot;&gt;Editar bookmarks&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Abrimos el gestor de bookmarks o favoritos &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x bookmark-bmenu-list&lt;/code&gt; (&lt;strong&gt;bookmark-list&lt;/strong&gt;).&lt;/li&gt;
-  &lt;li&gt;Abrimos el fichero que queremos que se a un bookmark &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+x r m&lt;/code&gt; y pondremos su nombre (&lt;strong&gt;bookmark-bmenu-set&lt;/strong&gt;).&lt;/li&gt;
-  &lt;li&gt;Listamos el archivo &lt;strong&gt;bookmark-bmenu-list&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+x r l&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Abrimos el archivo &lt;strong&gt;bookmark-jump&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+x r b&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Abrimos el gestor de bookmarks o favoritos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x bookmark-bmenu-list&lt;/code&gt; (&lt;strong&gt;bookmark-list&lt;/strong&gt;).&lt;/li&gt;
+  &lt;li&gt;Abrimos el fichero que queremos que se a un bookmark &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+x r m&lt;/code&gt; y pondremos su nombre (&lt;strong&gt;bookmark-bmenu-set&lt;/strong&gt;).&lt;/li&gt;
+  &lt;li&gt;Listamos el archivo &lt;strong&gt;bookmark-bmenu-list&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+x r l&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Abrimos el archivo &lt;strong&gt;bookmark-jump&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+x r b&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;Borramos o Renombramos el bookmark
     &lt;ul&gt;
-      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt; para borrar item.&lt;/li&gt;
-      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; para borrar marcadores.&lt;/li&gt;
-      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; para borrar el título del ítem.&lt;/li&gt;
-      &lt;li&gt;Escribimos &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; para guardar los cambios.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt; para borrar item.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; para borrar marcadores.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r&lt;/code&gt; para borrar el título del ítem.&lt;/li&gt;
+      &lt;li&gt;Escribimos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt; para guardar los cambios.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Guardar el archivo bookmark. Llamamos &lt;strong&gt;bookmark-save&lt;/strong&gt; o presionamos &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Guardar el archivo bookmark. Llamamos &lt;strong&gt;bookmark-save&lt;/strong&gt; o presionamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Podemos configurar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; para que se vaya guardando automáticamente.&lt;/p&gt;
+&lt;p&gt;Podemos configurar el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; para que se vaya guardando automáticamente.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq bookmark-save-flag 1) ; para que cada vez que cambie, se guarde
 
@@ -2051,7 +2141,7 @@ C-c C-e l p
 (setq bookmark-save-flag nil) ; para que nunca se autogruarde
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Podremos configurar las teclas rápidas llamando a &lt;strong&gt;describe-mode&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + h m&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Podremos configurar las teclas rápidas llamando a &lt;strong&gt;describe-mode&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + h m&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Para iniciar el archivo al arrancar Emacs:&lt;/p&gt;
 
@@ -2061,9 +2151,9 @@ C-c C-e l p
 (switch-to-buffer &quot;*Bookmark List*&quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Guardaremos el archivo en &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.emacs.d/bookmarks&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Guardaremos el archivo en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.emacs.d/bookmarks&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Por defecto el camino del archivo bookmark está guardado en la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;bookmark-default-file&lt;/code&gt;. Llamaremos &lt;code class=&quot;highlighter-rouge&quot;&gt;describe-variable&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+h v&lt;/code&gt; para ver su valor.&lt;/p&gt;
+&lt;p&gt;Por defecto el camino del archivo bookmark está guardado en la variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bookmark-default-file&lt;/code&gt;. Llamaremos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;describe-variable&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+h v&lt;/code&gt; para ver su valor.&lt;/p&gt;
 </description>
           <pubDate>2017-04-15T07:02:06+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/bookmarks</link>
@@ -2074,13 +2164,13 @@ C-c C-e l p
       
         <item>
           <title>23 Directorio</title>
-          <description>&lt;p&gt;Para configurar el &lt;em&gt;directorio por defecto&lt;/em&gt; y que, así nos apunte rápidamente al directorio donde trabajajos editaremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; e insertaremos este código:&lt;/p&gt;
+          <description>&lt;p&gt;Para configurar el &lt;em&gt;directorio por defecto&lt;/em&gt; y que, así nos apunte rápidamente al directorio donde trabajajos editaremos el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; e insertaremos este código:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;(setq default-directory &quot;~Documents/BulletJournal/&quot;)
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;De esta forma, cada vez que abramos un archivo con &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x f&lt;/code&gt; ya estaremos en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;~Documents/BulletJournal/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;De esta forma, cada vez que abramos un archivo con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x f&lt;/code&gt; ya estaremos en el directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~Documents/BulletJournal/&lt;/code&gt;&lt;/p&gt;
 </description>
           <pubDate>2017-04-08T02:00:00+02:00</pubDate>
           <link>http://localhost:4000/emacs/notes/directorio</link>
@@ -2093,7 +2183,7 @@ C-c C-e l p
           <title>22 Captura</title>
           <description>&lt;p&gt;Si queremos utilizar plantillas para captura necesitaremos copiar este cógigo y adaptar el directorio de destino donde van a ir a parar las capturas.&lt;/p&gt;
 
-&lt;p&gt;Así deberemos incluir en el archivo de configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; el siguiente código:&lt;/p&gt;
+&lt;p&gt;Así deberemos incluir en el archivo de configuración &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; el siguiente código:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;
 ;; Plantilles per a capturar
@@ -2125,7 +2215,7 @@ C-c C-e l p
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;De estar forma presionando las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c c&lt;/code&gt; obtendremos el menú siguiente:&lt;/p&gt;
+&lt;p&gt;De estar forma presionando las teclas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c c&lt;/code&gt; obtendremos el menú siguiente:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;Select a capture template
 =========================
@@ -2142,7 +2232,7 @@ C-c C-e l p
 [C]     Customize org-capture-templates
 [q]     Abort
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Este menú creará un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;captura.org&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;diary.org&lt;/code&gt; donde se irán almacenando muestras capturas.&lt;/p&gt;
+&lt;p&gt;Este menú creará un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;captura.org&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diary.org&lt;/code&gt; donde se irán almacenando muestras capturas.&lt;/p&gt;
 
 &lt;p&gt;Así tendremos un archivo de texto plano con todas las funcionalidades de OrgMode.&lt;/p&gt;
 </description>
@@ -2173,7 +2263,7 @@ C-c C-e l p
 
 &lt;p&gt;Así definimos el hábito `Controlar la respiración durante 5 minuts.&lt;/p&gt;
 
-&lt;p&gt;Marcamos en la agenda este hábito &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;, pero editamos la marca añadiendo la hora i las veces que se va a repetir a lo largo del día. &lt;code class=&quot;highlighter-rouge&quot;&gt;05:00 .+1d/2d&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Marcamos en la agenda este hábito &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;, pero editamos la marca añadiendo la hora i las veces que se va a repetir a lo largo del día. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;05:00 .+1d/2d&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;2-marcamos-el-hábito&quot;&gt;2. Marcamos el hábito&lt;/h1&gt;
 
@@ -2185,7 +2275,7 @@ C-c C-e l p
 
 &lt;p&gt;De esta forma obtendremos un listado de las veces que realizamos el hábito.&lt;/p&gt;
 
-&lt;p&gt;Para &lt;code class=&quot;highlighter-rouge&quot;&gt;marcar el hábito&lt;/code&gt; no situaremos encima de la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;TODO&lt;/code&gt; y pulsaremos las teclas &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift + &amp;lt;right&amp;gt;&lt;/code&gt;, es decir &lt;code class=&quot;highlighter-rouge&quot;&gt;Mayúscula + flecha derecha&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;marcar el hábito&lt;/code&gt; no situaremos encima de la palabra &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TODO&lt;/code&gt; y pulsaremos las teclas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + &amp;lt;right&amp;gt;&lt;/code&gt;, es decir &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mayúscula + flecha derecha&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;De esta forma se generará una lista de seguimiento del hábito.&lt;/p&gt;
 
@@ -2212,17 +2302,17 @@ C-c C-e l p
           <title>20 Agenda</title>
           <description>&lt;p&gt;Comandos que te introducirán en el uso de la agenda:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-x org-agenda&lt;/code&gt; Menú para utilizar la agenda&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x org-agenda&lt;/code&gt; Menú para utilizar la agenda&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-d&lt;/code&gt;     (org-deadline) Inserta fecha final&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-d&lt;/code&gt;     (org-deadline) Inserta fecha final&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;     (org-schedule) Inserta fecha para realizr la tarea&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-s&lt;/code&gt;     (org-schedule) Inserta fecha para realizr la tarea&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / d&lt;/code&gt;     (org-check-deadlines) Lista citas por fecha límite&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c / d&lt;/code&gt;     (org-check-deadlines) Lista citas por fecha límite&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / b&lt;/code&gt;     (org-check-before-date) Lista citas antes de una fecha&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c / b&lt;/code&gt;     (org-check-before-date) Lista citas antes de una fecha&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / a&lt;/code&gt;     (org-check-after-date) Lista citas después de una fecha&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c / a&lt;/code&gt;     (org-check-after-date) Lista citas después de una fecha&lt;/p&gt;
 
 </description>
           <pubDate>2017-03-30T02:00:00+02:00</pubDate>
@@ -2234,7 +2324,7 @@ C-c C-e l p
       
         <item>
           <title>19 Cabeceras</title>
-          <description>&lt;p&gt;Empezar el documento &lt;code class=&quot;highlighter-rouge&quot;&gt;.org&lt;/code&gt; con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.&lt;/p&gt;
+          <description>&lt;p&gt;Empezar el documento &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.org&lt;/code&gt; con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;#+TITLE: Bullet Journal
 #+LANGUAGE: en
@@ -2272,7 +2362,7 @@ C-c C-e l p
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Startup: si contine la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; aparecen desplegadas las categorías al abrir el documento&lt;/li&gt;
+  &lt;li&gt;Startup: si contine la palabra &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;content&lt;/code&gt; aparecen desplegadas las categorías al abrir el documento&lt;/li&gt;
   &lt;li&gt;Priorities: configuración de las prioridades, lo que se pone en lo que se usa, en este caso hemos cambiado las prioridades A, B, C por 1, 2, 3&lt;/li&gt;
   &lt;li&gt;Tags: etiquetas que usaremos por defecto&lt;/li&gt;
   &lt;li&gt;ToDo: estados de las tareas que utilizaremos por defecto&lt;/li&gt;
@@ -2298,15 +2388,15 @@ C-c C-e l p
 
 &lt;h1 id=&quot;2-teclas-rápidas&quot;&gt;2. Teclas rápidas&lt;/h1&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt; Rotar los TODO a otro ítem: (sin marca) -&amp;gt; TODO -&amp;gt; PROGRESS -&amp;gt; DONE -&amp;gt; (sin marca)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-t&lt;/code&gt; Rotar los TODO a otro ítem: (sin marca) -&amp;gt; TODO -&amp;gt; PROGRESS -&amp;gt; DONE -&amp;gt; (sin marca)&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-&amp;lt;right&amp;gt;/&amp;lt;left&amp;gt;&lt;/code&gt; Utilizar con flechas. Estado de TODO.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S-&amp;lt;right&amp;gt;/&amp;lt;left&amp;gt;&lt;/code&gt; Utilizar con flechas. Estado de TODO.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c / t&lt;/code&gt; Ver los TODO en árbol.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c / t&lt;/code&gt; Ver los TODO en árbol.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c a t&lt;/code&gt; Mostrar todos los TODO.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c a t&lt;/code&gt; Mostrar todos los TODO.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-M-&amp;lt;RET&amp;gt;&lt;/code&gt; Insertar TODO en nueva entrada.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S-M-&amp;lt;RET&amp;gt;&lt;/code&gt; Insertar TODO en nueva entrada.&lt;/p&gt;
 
 </description>
           <pubDate>2017-03-27T02:00:00+02:00</pubDate>
@@ -2346,7 +2436,7 @@ C-c C-e l p
 [[Daily Log]]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Utilizaremos estos símbolos &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/code&gt; para indicar el destino.&lt;/p&gt;
+&lt;p&gt;Utilizaremos estos símbolos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/code&gt; para indicar el destino.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;&amp;lt;&amp;lt;Future Log&amp;gt;&amp;gt;
 &amp;lt;&amp;lt;Monty Log&amp;gt;&amp;gt;
@@ -2360,15 +2450,15 @@ C-c C-e l p
 
 &lt;h1 id=&quot;4-sintaxis&quot;&gt;4. Sintaxis&lt;/h1&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c l&lt;/code&gt; Alamacena un enlace en el buffer&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c l&lt;/code&gt; Alamacena un enlace en el buffer&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Inserta el enlace almacenado en el buffer&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Inserta el enlace almacenado en el buffer&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Situándose encima del enlace esconde el enlace (&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;) en la descripción&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-l&lt;/code&gt; Situándose encima del enlace esconde el enlace (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RET&lt;/code&gt;) en la descripción&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; Abre el enlace&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-o&lt;/code&gt; Abre el enlace&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c %&lt;/code&gt; Marca una posición para volver a ella con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c &amp;amp;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c %&lt;/code&gt; Marca una posición para volver a ella con el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c &amp;amp;&lt;/code&gt;&lt;/p&gt;
 </description>
           <pubDate>2017-03-26T01:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/links</link>
@@ -2410,12 +2500,12 @@ _underline_ ==&amp;gt; underline
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento^superínidice
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;2&lt;sup&gt;4&lt;/sup&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;2^4&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2&lt;sup&gt;4&lt;/sup&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2^4&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;elemento_subíndice
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;H_2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;H_2&lt;/code&gt;&lt;/p&gt;
 
 </description>
           <pubDate>2017-03-15T01:00:00+01:00</pubDate>
@@ -2427,17 +2517,17 @@ _underline_ ==&amp;gt; underline
       
         <item>
           <title>14 Cortar, Copiar, Pegar</title>
-          <description>&lt;p&gt;Utilizaremos la notación &lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt; para simbolizar la barra espaciadora.&lt;/p&gt;
+          <description>&lt;p&gt;Utilizaremos la notación &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SPC&lt;/code&gt; para simbolizar la barra espaciadora.&lt;/p&gt;
 
-&lt;p&gt;Marcar el principio del bloque: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-SPC&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Marcar el principio del bloque: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-SPC&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Cortar desde la marca hasta la posición actual: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-w&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Cortar desde la marca hasta la posición actual: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-w&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Copiar desde la marca a la posición actual: &lt;code class=&quot;highlighter-rouge&quot;&gt;M-w&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Copiar desde la marca a la posición actual: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-w&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Cortar desde la marca hata el final de línea: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-k&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Cortar desde la marca hata el final de línea: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-k&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Pegar el último bloque cortado o copiado: &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-y&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Pegar el último bloque cortado o copiado: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-y&lt;/code&gt;&lt;/p&gt;
 
 </description>
           <pubDate>2017-03-14T01:00:00+01:00</pubDate>
@@ -2451,17 +2541,17 @@ _underline_ ==&amp;gt; underline
           <title>13 Notas</title>
           <description>&lt;p&gt;Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.&lt;/p&gt;
 
-&lt;p&gt;Para acceder al Bloc de Notas &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x remember&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Para acceder al Bloc de Notas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M-x remember&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Se nos abrirá un archivo donce podremos escribir.&lt;/p&gt;
 
-&lt;p&gt;Lo guardaremos así: &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Lo guardaremos así: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-c&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;De esta manera nos guardará este archivo en el directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt;, nombrandolo notes.&lt;/p&gt;
+&lt;p&gt;De esta manera nos guardará este archivo en el directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs.d&lt;/code&gt;, nombrandolo notes.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs.d/notes&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs.d/notes&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Lo que nos creará una bitácora genial en el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;notes&lt;/code&gt; que incluirá el día y la hora, un comentario y la ruta del archivo del que nos referimos así:&lt;/p&gt;
+&lt;p&gt;Lo que nos creará una bitácora genial en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;notes&lt;/code&gt; que incluirá el día y la hora, un comentario y la ruta del archivo del que nos referimos así:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;** Wed Mar 22 20:45:31 2017 (hola)
 
@@ -2499,19 +2589,19 @@ adiós
 
 &lt;p&gt;La forma más rápida de establecer el código unidoce UTF-8 en Emacs, de forma manual seria:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 8 keymap&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 8 keymap&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Lo cual quedaría de esta forma si quisiéramos indicar &lt;code class=&quot;highlighter-rouge&quot;&gt;UTF-8&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Lo cual quedaría de esta forma si quisiéramos indicar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UTF-8&lt;/code&gt;:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Pulsamos &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 8 RET&lt;/code&gt;. La tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt; indica que pulsemos la tecla Intro o Retorno.&lt;/p&gt;
+    &lt;p&gt;Pulsamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 8 RET&lt;/code&gt;. La tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RET&lt;/code&gt; indica que pulsemos la tecla Intro o Retorno.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Se nos muestra: &lt;code class=&quot;highlighter-rouge&quot;&gt;Insert character (Unicode name or hex):&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Se nos muestra: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Insert character (Unicode name or hex):&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Introducimos exactamente estos caracteres: &lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Introducimos exactamente estos caracteres: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;utf-8&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -2531,17 +2621,17 @@ adiós
       
         <item>
           <title>11 Ventanas</title>
-          <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 1&lt;/code&gt; - Ver una sola ventana.&lt;/p&gt;
+          <description>&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 1&lt;/code&gt; - Ver una sola ventana.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 2&lt;/code&gt; - Divide la ventana actual en dos filas&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 2&lt;/code&gt; - Divide la ventana actual en dos filas&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 3&lt;/code&gt; - Divide la ventana actual en dos columnas&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 3&lt;/code&gt; - Divide la ventana actual en dos columnas&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt; - (cero) Elimina la ventana actual.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt; - (cero) Elimina la ventana actual.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt; - Cambiar el buffer de la venana actual. En minibuffer aparece prompt&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x b&lt;/code&gt; - Cambiar el buffer de la venana actual. En minibuffer aparece prompt&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x o&lt;/code&gt; - Cambiar de ventana cuando el aréa de trabajo está dividida en varias ventanas&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x o&lt;/code&gt; - Cambiar de ventana cuando el aréa de trabajo está dividida en varias ventanas&lt;/p&gt;
 
 </description>
           <pubDate>2017-03-11T01:00:00+01:00</pubDate>
@@ -2564,7 +2654,7 @@ adiós
   &lt;li&gt;Guardar C-x C-s&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Vamos a mejorar la configuracion para evitar los mensajes de inicio. Abriremos el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y copiaremos:&lt;/p&gt;
+&lt;p&gt;Vamos a mejorar la configuracion para evitar los mensajes de inicio. Abriremos el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; y copiaremos:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;;;; Sin mensaje de bienvenida:
 (setq inhibit-startup-message t)
@@ -2603,11 +2693,11 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
           <title>09 Cifrado</title>
           <description>&lt;p&gt;Emacs utiliza por defecto el cifrado de GPG.&lt;/p&gt;
 
-&lt;p&gt;De esta manera para podemos cifrar y descrifrar documentos tanto para &lt;code class=&quot;highlighter-rouge&quot;&gt;claves simétricas&lt;/code&gt;, una clave como para &lt;code class=&quot;highlighter-rouge&quot;&gt;claves asimétricas&lt;/code&gt;, dos claves: pública y privada).&lt;/p&gt;
+&lt;p&gt;De esta manera para podemos cifrar y descrifrar documentos tanto para &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;claves simétricas&lt;/code&gt;, una clave como para &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;claves asimétricas&lt;/code&gt;, dos claves: pública y privada).&lt;/p&gt;
 
-&lt;p&gt;Empecemos por lo sencillo: &lt;code class=&quot;highlighter-rouge&quot;&gt;cifrado simétrico&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Empecemos por lo sencillo: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cifrado simétrico&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Si creamos un documento llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt&lt;/code&gt;, lo guardamos.&lt;/p&gt;
+&lt;p&gt;Si creamos un documento llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a.txt&lt;/code&gt;, lo guardamos.&lt;/p&gt;
 
 &lt;p&gt;Ahora lo podremos cifrar desde el menú:&lt;/p&gt;
 
@@ -2624,13 +2714,13 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 &lt;pre&gt;&lt;code class=&quot;language-emacs&quot;&gt;gpg -d a.txt.gpg
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Genera un archivo nuevo &lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt;, antes nos pide dos veces que le pongamos una contraseña.&lt;/p&gt;
+&lt;p&gt;Genera un archivo nuevo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt;, antes nos pide dos veces que le pongamos una contraseña.&lt;/p&gt;
 
 &lt;p&gt;El resultado son dos archivos:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt&lt;/code&gt; Sin cifrar&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a.txt&lt;/code&gt; Sin cifrar&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt; Cifrado&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a.txt.gpg&lt;/code&gt; Cifrado&lt;/p&gt;
 
 &lt;p&gt;Subiríamos a la nube el segundo.&lt;/p&gt;
 
@@ -2651,15 +2741,15 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
           <title>08 Buffer</title>
           <description>&lt;h1 id=&quot;1-introducción&quot;&gt;1. Introducción&lt;/h1&gt;
 
-&lt;p&gt;Para entender el concepto de &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; debemos tener en cuenta que el &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere a la memoria RAM.&lt;/p&gt;
+&lt;p&gt;Para entender el concepto de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;buffer&lt;/code&gt; debemos tener en cuenta que el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere a la memoria RAM.&lt;/p&gt;
 
 &lt;p&gt;Cuando abrimos un archivo en el disco (memoria ROM) ocupa un espacio específico, mapeado, en la memoria RAM.&lt;/p&gt;
 
-&lt;p&gt;El &lt;code class=&quot;highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere al espacio concreto que ocupa este archivo en RAM.&lt;/p&gt;
+&lt;p&gt;El &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;buffer&lt;/code&gt; se refiere al espacio concreto que ocupa este archivo en RAM.&lt;/p&gt;
 
-&lt;p&gt;Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; a un valor &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;, así: &lt;code class=&quot;highlighter-rouge&quot;&gt;s = 5&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Por ejemplo, cuando en Python (lenguaje de programación) asignamos una variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt; a un valor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt;, así: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s = 5&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;El la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;s&lt;/code&gt; queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos &lt;code class=&quot;highlighter-rouge&quot;&gt;$s&lt;/code&gt; nos devueve su valor, en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;El la variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt; queda almacenada en un espacio concreto de la memoria RAM y cuando la llamamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$s&lt;/code&gt; nos devueve su valor, en este caso &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Así el buffer se refiere al archivo cargado en RAM, que desaparecerá cuando apaguemos el ordenador o salgamos del programa.&lt;/p&gt;
 
@@ -2671,25 +2761,25 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 
 &lt;p&gt;&lt;em&gt;Messages&lt;/em&gt; %&lt;/p&gt;
 
-&lt;p&gt;Que esten cargados con asteriscos &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; indica que estan en RAM (buffer) pero no escritos en disco (ROM).&lt;/p&gt;
+&lt;p&gt;Que esten cargados con asteriscos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; indica que estan en RAM (buffer) pero no escritos en disco (ROM).&lt;/p&gt;
 
-&lt;p&gt;Así, si visitas &lt;code class=&quot;highlighter-rouge&quot;&gt;*Messages&lt;/code&gt; observarás que tiene la función de &lt;code class=&quot;highlighter-rouge&quot;&gt;log&lt;/code&gt; o bitácora donde se van acumulando los mensajes que te va dando Emacs.&lt;/p&gt;
+&lt;p&gt;Así, si visitas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*Messages&lt;/code&gt; observarás que tiene la función de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;log&lt;/code&gt; o bitácora donde se van acumulando los mensajes que te va dando Emacs.&lt;/p&gt;
 
 &lt;p&gt;Cuando sales, si no guardas los buffers en archivos específicos, se borran de la RAM liberándo el espacio, por lo que normalmente, guardarmos en disco los archivos para volver a recuperarlos cuando iniciemos el sistema.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; Indica que se trabaja en ese buffer&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt; Indica que se trabaja en ese buffer&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica sólo lectura&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; Indica sólo lectura&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; Indica que ese buffer está modificado (este símbolo sale cuando listamos los buffers no en el menú, que significa que está en RAM)&lt;/p&gt;
 
 &lt;h1 id=&quot;2-teclas-rápidas&quot;&gt;2. Teclas rápidas&lt;/h1&gt;
 
-&lt;p&gt;Listar buffers &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-b&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Listar buffers &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x C-b&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Cambiar de buffer &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Cambiar de buffer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x b&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Cerrar buffer &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x k&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Cerrar buffer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x k&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html&quot;&gt;https://www.gnu.org/software/emacs/manual/html_node/emacs/List-Buffers.html&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -2703,13 +2793,13 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
         <item>
           <title>07 Ventanas</title>
           <description>&lt;ol&gt;
-  &lt;li&gt;Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él. &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x b&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Selecciona otra ventana &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x o&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Borra la ventana seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Borra todas las ventanas excepto la seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x  1&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Selecciona un buffer en una ventana nueva &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 b&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 f&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Borra la ventana seleccionada y cierra, mata el buffer que contenia &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x 4 0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Cambia a otro buffer solicitando el nombre. Si se proporciona el nombre de un buffer no abierto, se crea uno con dicho nombre y se cambia a él. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x b&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Selecciona otra ventana &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x o&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Borra la ventana seleccionada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Borra todas las ventanas excepto la seleccionada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x  1&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Selecciona un buffer en una ventana nueva &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 4 b&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Visita un fichero y sitúa un buffer en otra venta, que se convierte en la seleccionada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 4 f&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Borra la ventana seleccionada y cierra, mata el buffer que contenia &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x 4 0&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
           <pubDate>2017-03-07T01:00:00+01:00</pubDate>
@@ -2722,12 +2812,12 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
         <item>
           <title>06 Ficheros</title>
           <description>&lt;ol&gt;
-  &lt;li&gt;Abrir fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-f&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Abrir directorio &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x d&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Grabar en disco &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-s&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Grabar el buffer con otro nombre &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-w&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x s&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Cerrar buffer, sin guardar, no modifica archivo creado &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x k&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Abrir fichero &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-c C-f&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Abrir directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x d&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Grabar en disco &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x C-s&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Grabar el buffer con otro nombre &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x C-w&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;En edición de buffers simuntáneos nos preguntará si se ha modificado y si queremos guardarlo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x s&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Cerrar buffer, sin guardar, no modifica archivo creado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x k&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
           <pubDate>2017-03-06T01:00:00+01:00</pubDate>
@@ -2739,19 +2829,19 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
       
         <item>
           <title>05 Buffers</title>
-          <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Buffer&lt;/code&gt;: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.&lt;/p&gt;
+          <description>&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Buffer&lt;/code&gt;: zona de memoria en la que se encuentra el texto objeto de edición. Es volátil.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Fichero&lt;/code&gt;: conjunto de datos almacenados en el disco. Es inmodificable, aunque se puede borrar y crear otro fichero con distinto nombre y mismo contenido.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fichero&lt;/code&gt;: conjunto de datos almacenados en el disco. Es inmodificable, aunque se puede borrar y crear otro fichero con distinto nombre y mismo contenido.&lt;/p&gt;
 
 &lt;p&gt;Cuando leemos un fichero, lo que realmente hacermos es copiarlo en memoria RAM (buffer), durante su edición lo modificamos en esa zona de memoria. el fichero permanece inalterado hasta que demos la orden específica de grabar en el disco las modificaciones.&lt;/p&gt;
 
-&lt;p&gt;No todos los &lt;code class=&quot;highlighter-rouge&quot;&gt;buffers&lt;/code&gt; corresponden a &lt;code class=&quot;highlighter-rouge&quot;&gt;ficheros&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;No todos los &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;buffers&lt;/code&gt; corresponden a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ficheros&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Cuando se inicia Emacs aparecen estos dos buffers:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*scratch*&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*messages*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*scratch*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*messages*&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Obsérvese que van entre asteríscos, lo que indica no es un buffer asociado a un fichero.&lt;/p&gt;
@@ -2764,7 +2854,7 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Incluir acentos: incluye esto &lt;code class=&quot;highlighter-rouge&quot;&gt;(set-keyboard-coding-system 'utf-8) &lt;/code&gt; en el fichero &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Incluir acentos: incluye esto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(set-keyboard-coding-system 'utf-8) &lt;/code&gt; en el fichero &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 </description>
@@ -2779,13 +2869,13 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
           <title>04 Organizar ventanas</title>
           <description>&lt;h1 id=&quot;aclaraciones&quot;&gt;Aclaraciones&lt;/h1&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-c&lt;/code&gt; - Pulsas &lt;code class=&quot;highlighter-rouge&quot;&gt;Control&lt;/code&gt; y con la tecla de &lt;code class=&quot;highlighter-rouge&quot;&gt;Control&lt;/code&gt; pulsada pulsas primero &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; y después &lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt;.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x C-c&lt;/code&gt; - Pulsas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control&lt;/code&gt; y con la tecla de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control&lt;/code&gt; pulsada pulsas primero &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; y después &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c&lt;/code&gt;.&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x k&lt;/code&gt; - Pulsas &lt;code class=&quot;highlighter-rouge&quot;&gt;Control&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt;. Levantas el dedo de la tecla &lt;code class=&quot;highlighter-rouge&quot;&gt;Control&lt;/code&gt; y pulsas &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt;.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-x k&lt;/code&gt; - Pulsas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt;. Levantas el dedo de la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control&lt;/code&gt; y pulsas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt;.&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;limpiar-minibuffer&quot;&gt;Limpiar minibuffer&lt;/h1&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-g&lt;/code&gt; - Este comando limpia el minibuffer para no encadenar comandos. Una vez limpio ya podemos introducir la secuencia.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C-g&lt;/code&gt; - Este comando limpia el minibuffer para no encadenar comandos. Una vez limpio ya podemos introducir la secuencia.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Borra ventana activa&lt;/li&gt;
@@ -2833,22 +2923,22 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
           <title>03 Zonas</title>
           <description>&lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Barra de menú&lt;/code&gt;: situada arriba&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Barra de menú&lt;/code&gt;: situada arriba&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Point&lt;/code&gt; o punto de escritura en una &lt;code class=&quot;highlighter-rouge&quot;&gt;ventana de edición&lt;/code&gt; o ventanas si decidimos partirlas: situada en la parte central.&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Point&lt;/code&gt; o punto de escritura en una &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ventana de edición&lt;/code&gt; o ventanas si decidimos partirlas: situada en la parte central.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Línea de modo&lt;/code&gt;: situada abajo, en video inverso. Muestra información variada&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Línea de modo&lt;/code&gt;: situada abajo, en video inverso. Muestra información variada&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Área de eco&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;minibuffer&lt;/code&gt;: ambos aparecen en la última línea&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Área de eco&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minibuffer&lt;/code&gt;: ambos aparecen en la última línea&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Área de eco&lt;/code&gt;: aparece sólo al escribir una combinación de teclas. Lo escrito hace eco o tiene su salida en la pantalla.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Minibúffer&lt;/code&gt;: sirve para escribir argumentos que se hayan de pasar a un comando&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Área de eco&lt;/code&gt;: aparece sólo al escribir una combinación de teclas. Lo escrito hace eco o tiene su salida en la pantalla.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Minibúffer&lt;/code&gt;: sirve para escribir argumentos que se hayan de pasar a un comando&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Para salir del minibuffer, zona donde escribimos comandos, debemos apretar C-g, ya que de lo contrario, se encadenaran los comandos.&lt;/p&gt;
@@ -2900,15 +2990,15 @@ trash-directory &quot;~/.local/share/Trash/files&quot;)
       
         <item>
           <title>01 Inicio</title>
-          <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Meta&lt;/code&gt;: Dominar Emacs nivel inicial en 30 dias.&lt;/p&gt;
+          <description>&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Meta&lt;/code&gt;: Dominar Emacs nivel inicial en 30 dias.&lt;/p&gt;
 
 &lt;p&gt;Nomenclatura:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C&lt;/code&gt; - Control&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C&lt;/code&gt; - Control&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M&lt;/code&gt; - Meta, tecla Alt izquierda o ESC&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M&lt;/code&gt; - Meta, tecla Alt izquierda o ESC&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; - Shift o mayúscula&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S&lt;/code&gt; - Shift o mayúscula&lt;/p&gt;
 
 &lt;h1 id=&quot;observa-la-perspectiva&quot;&gt;Observa la perspectiva&lt;/h1&gt;
 &lt;ul&gt;

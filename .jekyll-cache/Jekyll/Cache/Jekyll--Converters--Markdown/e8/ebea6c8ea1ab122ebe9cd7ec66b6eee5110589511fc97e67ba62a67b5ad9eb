@@ -1,8 +1,8 @@
-I"<p>Para realizar un seguimiento del tiempo que dedicamos a las tareas podemos utilizar esta técnica.</p>
+I"h<p>Para realizar un seguimiento del tiempo que dedicamos a las tareas podemos utilizar esta técnica.</p>
 
-<p><code class="highlighter-rouge">C-c C-x C-i</code> - <code class="highlighter-rouge">org-clock-in</code>: Comienza a contar el reloj actual.</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-x C-i</code> - <code class="language-plaintext highlighter-rouge">org-clock-in</code>: Comienza a contar el reloj actual.</p>
 
-<p><code class="highlighter-rouge">C-c C-x C-o</code> - <code class="highlighter-rouge">org-clock-out</code>: Detiene el contador de un reloj añadiendo un timestamp frente a la fecha detenida.</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-x C-o</code> - <code class="language-plaintext highlighter-rouge">org-clock-out</code>: Detiene el contador de un reloj añadiendo un timestamp frente a la fecha detenida.</p>
 
 <p><a href="https://www.blackhats.es/wordpress/?p=214">Para saber mucho más</a></p>
 :ET

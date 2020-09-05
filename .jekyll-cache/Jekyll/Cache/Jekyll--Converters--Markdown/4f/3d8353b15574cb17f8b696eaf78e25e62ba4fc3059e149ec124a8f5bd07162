@@ -1,14 +1,14 @@
-I"�<p>Incluir themes nuevos</p>
+I"<<p>Incluir themes nuevos</p>
 
 <ol>
-  <li>Según la documentación oficial de <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html">gnu.org</a>, o en <a href="https://www.emacswiki.org/emacs/CustomThemes">EmacsWiki</a> nos situamos en el directorio <code class="highlighter-rouge">.emacs.d</code> y allí creamos <code class="highlighter-rouge">etc/themes/</code>.</li>
-  <li>En el fichero de configuración de <code class="highlighter-rouge">.emacs</code> incluiremos la ruta:
+  <li>Según la documentación oficial de <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html">gnu.org</a>, o en <a href="https://www.emacswiki.org/emacs/CustomThemes">EmacsWiki</a> nos situamos en el directorio <code class="language-plaintext highlighter-rouge">.emacs.d</code> y allí creamos <code class="language-plaintext highlighter-rouge">etc/themes/</code>.</li>
+  <li>En el fichero de configuración de <code class="language-plaintext highlighter-rouge">.emacs</code> incluiremos la ruta:
     <pre><code class="language-emacs">(add-to-list 'custom-theme-load-path "~/.emacs.d/etc/themes/") 
 </code></pre>
   </li>
-  <li>Para cambiar de theme <code class="highlighter-rouge">M-x customize-themes ;;; now press retun</code></li>
+  <li>Para cambiar de theme <code class="language-plaintext highlighter-rouge">M-x customize-themes ;;; now press retun</code></li>
   <li>Podemos bajar themes desde <a href="https://emacsthemes.com/">EmacsThemes</a></li>
-  <li>Algo importante es que los themes han de acabar en <code class="highlighter-rouge">*-theme.el</code> en caso contrario no se mostrará</li>
+  <li>Algo importante es que los themes han de acabar en <code class="language-plaintext highlighter-rouge">*-theme.el</code> en caso contrario no se mostrará</li>
 </ol>
 
 :ET

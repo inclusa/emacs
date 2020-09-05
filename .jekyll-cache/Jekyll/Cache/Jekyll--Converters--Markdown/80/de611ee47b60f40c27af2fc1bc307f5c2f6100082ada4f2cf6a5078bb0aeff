@@ -1,4 +1,4 @@
-I";<p>Documento de trabajo, iremos puliéndolo para explicar cómo insertar referenias bibliográficas.</p>
+I"a<p>Documento de trabajo, iremos puliéndolo para explicar cómo insertar referenias bibliográficas.</p>
 
 <p>Bibtex</p>
 
@@ -12,9 +12,9 @@
 
 <p>Iniciamos Emacs y escribimos:</p>
 
-<p><code class="highlighter-rouge">M-x package-install &lt;RET&gt;</code> RET significa que pulsemos la tecla de retorno.</p>
+<p><code class="language-plaintext highlighter-rouge">M-x package-install &lt;RET&gt;</code> RET significa que pulsemos la tecla de retorno.</p>
 
-<p>Escribimos <code class="highlighter-rouge">helm-bibtex &lt;RET&gt;</code></p>
+<p>Escribimos <code class="language-plaintext highlighter-rouge">helm-bibtex &lt;RET&gt;</code></p>
 
 <p>Así ya tendremos instalado el paquete.</p>
 

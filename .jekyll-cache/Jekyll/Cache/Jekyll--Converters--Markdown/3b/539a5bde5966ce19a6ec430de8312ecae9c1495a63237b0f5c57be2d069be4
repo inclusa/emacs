@@ -1,12 +1,12 @@
-I"G<p>Para imprimir deberemos utilizar los siguientes comandos según sea lo que necesitemos:</p>
+I"�<p>Para imprimir deberemos utilizar los siguientes comandos según sea lo que necesitemos:</p>
 
-<p><code class="highlighter-rouge">M-x print-buffer</code>: imprime la copia impresa del buffer actual incluyendo encabezamientos y números de página.</p>
+<p><code class="language-plaintext highlighter-rouge">M-x print-buffer</code>: imprime la copia impresa del buffer actual incluyendo encabezamientos y números de página.</p>
 
-<p><code class="highlighter-rouge">M-x lpr-buffer</code>: imprime la copia impresa del buffer actual sin ningún título de la página.</p>
+<p><code class="language-plaintext highlighter-rouge">M-x lpr-buffer</code>: imprime la copia impresa del buffer actual sin ningún título de la página.</p>
 
-<p><code class="highlighter-rouge">M-x print region</code>: lo mismo que <code class="highlighter-rouge">M-x print-buffer</code>, pero sólo implime la región actual.</p>
+<p><code class="language-plaintext highlighter-rouge">M-x print region</code>: lo mismo que <code class="language-plaintext highlighter-rouge">M-x print-buffer</code>, pero sólo implime la región actual.</p>
 
-<p><code class="highlighter-rouge">M-x lpr-region</code>: lo mismo que <code class="highlighter-rouge">lpr-buffer</code>, pero sól imprime la región actual.</p>
+<p><code class="language-plaintext highlighter-rouge">M-x lpr-region</code>: lo mismo que <code class="language-plaintext highlighter-rouge">lpr-buffer</code>, pero sól imprime la región actual.</p>
 
 <p>Fuente: <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Printing.html">Emacs</a></p>
 :ET

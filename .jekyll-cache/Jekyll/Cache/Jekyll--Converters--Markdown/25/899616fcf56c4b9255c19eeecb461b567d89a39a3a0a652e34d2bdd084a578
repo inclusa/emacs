@@ -1,22 +1,21 @@
-I"
-<p>Para conectarnos dentro de <code class="highlighter-rouge">Emacs</code>:</p>
+I"V<p>Para conectarnos dentro de <code class="language-plaintext highlighter-rouge">Emacs</code>:</p>
 
 <ol>
   <li>Llamamos al plugin</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M-x erc
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M-x erc
 </code></pre></div></div>
 
 <ol>
   <li>
-    <p>Nos conectamos a <code class="highlighter-rouge">irc.freenode.org</code></p>
+    <p>Nos conectamos a <code class="language-plaintext highlighter-rouge">irc.freenode.org</code></p>
   </li>
   <li>
     <p>Entramos en una sala:</p>
   </li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/join debian
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/join debian
 </code></pre></div></div>
 :ET

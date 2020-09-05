@@ -1,4 +1,4 @@
-I"�<h1 id="01-referencia-del-desarrollador-e-instrucciones">#01 Referencia del desarrollador e instrucciones</h1>
+I"�<h1 id="01-referencia-del-desarrollador-e-instrucciones">#01 Referencia del desarrollador e instrucciones</h1>
 
 <p><a href="http://jblevins.org/projects/markdown-mode/">http://jblevins.org/projects/markdown-mode/</a></p>
 
@@ -12,7 +12,7 @@
 </code></pre></div></div>
 
 <ol>
-  <li>Activar el modo Markdown dentro de <code class="highlighter-rouge">Emacs</code> así <code class="highlighter-rouge">M-x markdown-mode</code></li>
+  <li>Activar el modo Markdown dentro de <code class="language-plaintext highlighter-rouge">Emacs</code> así <code class="language-plaintext highlighter-rouge">M-x markdown-mode</code></li>
 </ol>
 
 <p>Ahora ya podemos escribir, veremos pintadas las letras.</p>
@@ -21,125 +21,125 @@
 
 <h2 id="1-introducción">1. Introducción</h2>
 
-<p><code class="highlighter-rouge">C-a</code>          Mnemotécnico <code class="highlighter-rouge">&lt;a&gt;</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-a</code>          Mnemotécnico <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code></p>
 
-<p><code class="highlighter-rouge">C-c C-a</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-a</code></p>
 
-<p><code class="highlighter-rouge">C-c C-t</code>      Mnemotécnico titling (titulación)</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t</code>      Mnemotécnico titling (titulación)</p>
 
-<p><code class="highlighter-rouge">C-c &lt;</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c &lt;</code></p>
 
-<p><code class="highlighter-rouge">C-c &gt;</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c &gt;</code></p>
 
-<p><code class="highlighter-rouge">C-c C-c</code>      Markdown abre un archivo de grupo bajo un prefijo.</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-c</code>      Markdown abre un archivo de grupo bajo un prefijo.</p>
 
 <h2 id="2-hyperlinks">2. Hyperlinks</h2>
 
-<p><code class="highlighter-rouge">C-c C-a l</code>   <code class="highlighter-rouge">[text](url)</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-a l</code>   <code class="language-plaintext highlighter-rouge">[text](url)</code></p>
 
-<p><code class="highlighter-rouge">C-c C-a L</code>   <code class="highlighter-rouge">[text][label]</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-a L</code>   <code class="language-plaintext highlighter-rouge">[text][label]</code></p>
 
-<p><code class="highlighter-rouge">C-c C-a u</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-a u</code></p>
 
-<p><code class="highlighter-rouge">C-c C-a f</code>   Pie de página</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-a f</code>   Pie de página</p>
 
-<p><code class="highlighter-rouge">C-c C-a w</code>   [[WikiLink]]</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-a w</code>   [[WikiLink]]</p>
 
 <h2 id="3-images">3. Images</h2>
 
-<p><code class="highlighter-rouge">C-c C-i i</code>   Insertar imágenes</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-i i</code>   Insertar imágenes</p>
 
-<p><code class="highlighter-rouge">C-c C-i I</code>   Insertar estilo de imagen</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-i I</code>   Insertar estilo de imagen</p>
 
 <h2 id="4-styles">4. Styles</h2>
 
-<p><code class="highlighter-rouge">C-c C-s e</code>   Insertar una marca en una región de una parlabra. Ejemplo: itálica (<code class="highlighter-rouge">e</code> para <code class="highlighter-rouge">&lt;em&gt;</code>)</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-s e</code>   Insertar una marca en una región de una parlabra. Ejemplo: itálica (<code class="language-plaintext highlighter-rouge">e</code> para <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>)</p>
 
-<p><code class="highlighter-rouge">C-c C-s s</code>   Insertar negrita <code class="highlighter-rouge">bold</code> (`<strong>’)</strong></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-s s</code>   Insertar negrita <code class="language-plaintext highlighter-rouge">bold</code> (`<strong>’)</strong></p>
 
-<p><code class="highlighter-rouge">C-c C-s c</code>   Code</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-s c</code>   Code</p>
 
-<p><code class="highlighter-rouge">C-c C-s C-f</code> Blockquote</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-s C-f</code> Blockquote</p>
 
-<p><code class="highlighter-rouge">C-c C-s p</code>   Bloque de blockquote</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-s p</code>   Bloque de blockquote</p>
 
-<p><code class="highlighter-rouge">C-c C-s C-p</code> Bloque de región</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-s C-p</code> Bloque de región</p>
 
 <h2 id="5-headings">5. Headings</h2>
 
-<p><code class="highlighter-rouge">C-c C-t h</code>   Inserta título automáticamente cambiando caracter por siguiente nivel</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t h</code>   Inserta título automáticamente cambiando caracter por siguiente nivel</p>
 
-<p><code class="highlighter-rouge">C-c C-t H</code>   Inserta título con subrayado simple</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t H</code>   Inserta título con subrayado simple</p>
 
-<p><code class="highlighter-rouge">C-u C-u</code>     Prefija, se puede especificar un nivel.</p>
+<p><code class="language-plaintext highlighter-rouge">C-u C-u</code>     Prefija, se puede especificar un nivel.</p>
 
-<p><code class="highlighter-rouge">C-c C-t 1</code>   Inserta encabezado nivel 1</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t 1</code>   Inserta encabezado nivel 1</p>
 
-<p><code class="highlighter-rouge">C-c C-t 2</code>   Inserta encabezado nivel 2</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t 2</code>   Inserta encabezado nivel 2</p>
 
-<p><code class="highlighter-rouge">C-c C-t 3</code>   Inserta encabezado nivel 3</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t 3</code>   Inserta encabezado nivel 3</p>
 
-<p><code class="highlighter-rouge">C-c C-t 4</code>   Inserta encabezado nivel 4</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t 4</code>   Inserta encabezado nivel 4</p>
 
-<p><code class="highlighter-rouge">C-c C-t 5</code>   Inserta encabezado nivel 5</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t 5</code>   Inserta encabezado nivel 5</p>
 
-<p><code class="highlighter-rouge">C-c C-t 6</code>   Inserta encabezado nivel 6</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t 6</code>   Inserta encabezado nivel 6</p>
 
-<p><code class="highlighter-rouge">C-c C-t !</code>   Inserta encabezados de nivel 1 <code class="highlighter-rouge">S-1</code> subrayado <code class="highlighter-rouge">=</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t !</code>   Inserta encabezados de nivel 1 <code class="language-plaintext highlighter-rouge">S-1</code> subrayado <code class="language-plaintext highlighter-rouge">=</code></p>
 
-<p><code class="highlighter-rouge">C-c C-t @</code>   Inserta encabezados de nivel 2 <code class="highlighter-rouge">S-2</code> subrayado <code class="highlighter-rouge">-</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-t @</code>   Inserta encabezados de nivel 2 <code class="language-plaintext highlighter-rouge">S-2</code> subrayado <code class="language-plaintext highlighter-rouge">-</code></p>
 
-<p><code class="highlighter-rouge">C-c C-k</code>     Borra el encabezado</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-k</code>     Borra el encabezado</p>
 
-<p><code class="highlighter-rouge">C-y</code>         Pega en el cabezado</p>
+<p><code class="language-plaintext highlighter-rouge">C-y</code>         Pega en el cabezado</p>
 
 <h2 id="6-horizontal-rules">6. Horizontal Rules</h2>
 
-<p><code class="highlighter-rouge">C-c -</code>       Inserta raya horizontal</p>
+<p><code class="language-plaintext highlighter-rouge">C-c -</code>       Inserta raya horizontal</p>
 
-<p><code class="highlighter-rouge">C-u</code>         Prefija, inserta última cadena N en N posición (contando desde 1)</p>
+<p><code class="language-plaintext highlighter-rouge">C-u</code>         Prefija, inserta última cadena N en N posición (contando desde 1)</p>
 
 <h2 id="7-maintenance-comands">7. Maintenance Comands</h2>
 
-<p>Compile <code class="highlighter-rouge">C- C-c m</code>  corre en otro buffer</p>
+<p>Compile <code class="language-plaintext highlighter-rouge">C- C-c m</code>  corre en otro buffer</p>
 
-<p>Preview <code class="highlighter-rouge">C-c C-c p</code> corre en la pantalla en buffer</p>
+<p>Preview <code class="language-plaintext highlighter-rouge">C-c C-c p</code> corre en la pantalla en buffer</p>
 
-<p>Export <code class="highlighter-rouge">C-c C-c e</code>  basename.html</p>
+<p>Export <code class="language-plaintext highlighter-rouge">C-c C-c e</code>  basename.html</p>
 
-<p>Export and View <code class="highlighter-rouge">C-c C-c v</code> exporta y visualiza en el navegador.</p>
+<p>Export and View <code class="language-plaintext highlighter-rouge">C-c C-c v</code> exporta y visualiza en el navegador.</p>
 
-<p>Open <code class="highlighter-rouge">C-c o</code> abre archivo</p>
+<p>Open <code class="language-plaintext highlighter-rouge">C-c o</code> abre archivo</p>
 
-<p>Live export <code class="highlighter-rouge">C-c C-c l</code></p>
+<p>Live export <code class="language-plaintext highlighter-rouge">C-c C-c l</code></p>
 
-<p><code class="highlighter-rouge">C-c C-c c RET</code> revisa referencias indefinidas</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-c c RET</code> revisa referencias indefinidas</p>
 
-<p><code class="highlighter-rouge">C-c C-c n</code> renumera con algún orden el buffer de nuestras secuencias</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-c n</code> renumera con algún orden el buffer de nuestras secuencias</p>
 
-<p><code class="highlighter-rouge">C-c C-c ]</code> completa reglas</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-c ]</code> completa reglas</p>
 
 <h2 id="8-following-links">8. Following Links##</h2>
 
-<p><code class="highlighter-rouge">C-c C-o</code> abre links en el navegador</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-o</code> abre links en el navegador</p>
 
-<p><code class="highlighter-rouge">C-u</code> prefijo</p>
+<p><code class="language-plaintext highlighter-rouge">C-u</code> prefijo</p>
 
-<p><code class="highlighter-rouge">M-p</code> salta al link previo (previous)</p>
+<p><code class="language-plaintext highlighter-rouge">M-p</code> salta al link previo (previous)</p>
 
-<p><code class="highlighter-rouge">M-n</code> salta al próximo link (next)</p>
+<p><code class="language-plaintext highlighter-rouge">M-n</code> salta al próximo link (next)</p>
 
 <h2 id="9-jumping">9. Jumping</h2>
 
-<p><code class="highlighter-rouge">C-c C-j</code> salta desde el punto objeto</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-j</code> salta desde el punto objeto</p>
 
-<p><code class="highlighter-rouge">S-TAB</code> salta hacia atrás</p>
+<p><code class="language-plaintext highlighter-rouge">S-TAB</code> salta hacia atrás</p>
 
 <h2 id="10-promotion-and-demotion">10. Promotion and Demotion</h2>
 
-<p><code class="highlighter-rouge">C-c C-</code> decrementa el nivel</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-</code> decrementa el nivel</p>
 
-<p><code class="highlighter-rouge">C-c C-=</code> incrementa el nivel</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-=</code> incrementa el nivel</p>
 
 <p>Toda la documentación en en la web del desarrollador <a href="http://jblevins.org/projects/markdown-mode/">JBlevins.org</a></p>
 

@@ -1,16 +1,16 @@
-I"�<p>Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.</p>
+I"<p>Emacs nos ofrece un mecanismo a modo de log o comentario sobre los archivos que vamos escribiendo.</p>
 
-<p>Para acceder al Bloc de Notas <code class="highlighter-rouge">M-x remember</code></p>
+<p>Para acceder al Bloc de Notas <code class="language-plaintext highlighter-rouge">M-x remember</code></p>
 
 <p>Se nos abrirá un archivo donce podremos escribir.</p>
 
-<p>Lo guardaremos así: <code class="highlighter-rouge">C-c C-c</code></p>
+<p>Lo guardaremos así: <code class="language-plaintext highlighter-rouge">C-c C-c</code></p>
 
-<p>De esta manera nos guardará este archivo en el directorio <code class="highlighter-rouge">.emacs.d</code>, nombrandolo notes.</p>
+<p>De esta manera nos guardará este archivo en el directorio <code class="language-plaintext highlighter-rouge">.emacs.d</code>, nombrandolo notes.</p>
 
-<p><code class="highlighter-rouge">.emacs.d/notes</code></p>
+<p><code class="language-plaintext highlighter-rouge">.emacs.d/notes</code></p>
 
-<p>Lo que nos creará una bitácora genial en el archivo <code class="highlighter-rouge">notes</code> que incluirá el día y la hora, un comentario y la ruta del archivo del que nos referimos así:</p>
+<p>Lo que nos creará una bitácora genial en el archivo <code class="language-plaintext highlighter-rouge">notes</code> que incluirá el día y la hora, un comentario y la ruta del archivo del que nos referimos así:</p>
 
 <pre><code class="language-emacs">** Wed Mar 22 20:45:31 2017 (hola)
 

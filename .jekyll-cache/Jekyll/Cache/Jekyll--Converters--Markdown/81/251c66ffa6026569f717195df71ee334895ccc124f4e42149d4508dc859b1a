@@ -1,14 +1,14 @@
-I"�<p>Objetivo: ejecutar GIT dentro de Emacs.</p>
+I"<p>Objetivo: ejecutar GIT dentro de Emacs.</p>
 
 <h3 id="1-instalando-desde-elpa">1. Instalando desde ELPA</h3>
 
-<p>Para establecer el repositorio editar el archivo <code class="highlighter-rouge">.emacs</code> y anadir una de estas dos opciones:</p>
+<p>Para establecer el repositorio editar el archivo <code class="language-plaintext highlighter-rouge">.emacs</code> y anadir una de estas dos opciones:</p>
 
 <ol>
   <li>Usar MELPA:</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(require 'package)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 </code></pre></div></div>
@@ -16,52 +16,52 @@
   <li>Usar MELPA-Stable:</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(require 'package)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(require 'package)
 (add-to-list 'package-archives
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 </code></pre></div></div>
 
 <h3 id="2-refrescamos">2. Refrescamos</h3>
 
-<p><code class="highlighter-rouge">M-x package-refresh-contents RET</code> Desde dentro de Emacs refrescamos el repositorio.</p>
+<p><code class="language-plaintext highlighter-rouge">M-x package-refresh-contents RET</code> Desde dentro de Emacs refrescamos el repositorio.</p>
 
 <h3 id="3-instalamos-el-paquete-magit">3. Instalamos el paquete Magit</h3>
 
-<p><code class="highlighter-rouge">M-x package-install RET magit RET</code> Así instalamos.</p>
+<p><code class="language-plaintext highlighter-rouge">M-x package-install RET magit RET</code> Así instalamos.</p>
 
 <h3 id="4-revisamos-la-versión">4. Revisamos la versión</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M-x package-install RET magit RET
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M-x package-install RET magit RET
 </code></pre></div></div>
 
 <p>Output</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Magit 20170422.623, Git 2.7.4, Emacs 24.5.1, gnu/linux
 </code></pre></div></div>
 
 <h3 id="5-comandos-esenciales">5. Comandos esenciales</h3>
 
-<p><code class="highlighter-rouge">M-x magit-status</code> para ver el estaddus de git y el estatus del buffer:</p>
+<p><code class="language-plaintext highlighter-rouge">M-x magit-status</code> para ver el estaddus de git y el estatus del buffer:</p>
 
-<p><code class="highlighter-rouge">s</code> para añadir a la pila archivos (<code class="highlighter-rouge">git add .</code>)</p>
+<p><code class="language-plaintext highlighter-rouge">s</code> para añadir a la pila archivos (<code class="language-plaintext highlighter-rouge">git add .</code>)</p>
 
-<p><code class="highlighter-rouge">c c</code> para hacer crear un comit (escribe el mensaje, después pulsa <code class="highlighter-rouge">C-c C-c</code> para realizarel commit automáticamente)</p>
+<p><code class="language-plaintext highlighter-rouge">c c</code> para hacer crear un comit (escribe el mensaje, después pulsa <code class="language-plaintext highlighter-rouge">C-c C-c</code> para realizarel commit automáticamente)</p>
 
-<p><code class="highlighter-rouge">b b</code> para crear otra rama</p>
+<p><code class="language-plaintext highlighter-rouge">b b</code> para crear otra rama</p>
 
 <h3 id="6-otros-comandos">6. Otros comandos</h3>
 
-<p><code class="highlighter-rouge">P u</code> para realizar un <code class="highlighter-rouge">git push</code></p>
+<p><code class="language-plaintext highlighter-rouge">P u</code> para realizar un <code class="language-plaintext highlighter-rouge">git push</code></p>
 
-<p><code class="highlighter-rouge">F u</code> para realizar un <code class="highlighter-rouge">git pull</code></p>
+<p><code class="language-plaintext highlighter-rouge">F u</code> para realizar un <code class="language-plaintext highlighter-rouge">git pull</code></p>
 
-<p>try to press <code class="highlighter-rouge">TAB</code></p>
+<p>try to press <code class="language-plaintext highlighter-rouge">TAB</code></p>
 
 <h3 id="7-flujo-de-trabajo">7. Flujo de trabajo</h3>
 
-<p><code class="highlighter-rouge">M-x magit-commit</code> Commit dels canvis, pregunta si es vol afegir a l’stag, finalitzem</p>
+<p><code class="language-plaintext highlighter-rouge">M-x magit-commit</code> Commit dels canvis, pregunta si es vol afegir a l’stag, finalitzem</p>
 
-<p><code class="highlighter-rouge">C-c</code> Per finalitzar</p>
+<p><code class="language-plaintext highlighter-rouge">C-c</code> Per finalitzar</p>
 
 <h3 id="8-ejemplo">8. Ejemplo</h3>
 

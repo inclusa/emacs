@@ -1,8 +1,8 @@
-I"�<p>Para cambiar el tamaño de letra modo grafico:</p>
+I"�<p>Para cambiar el tamaño de letra modo grafico:</p>
 
-<p><code class="highlighter-rouge">C-x C-+</code> Aumentar el tamaño de la letra modo gráfico.</p>
+<p><code class="language-plaintext highlighter-rouge">C-x C-+</code> Aumentar el tamaño de la letra modo gráfico.</p>
 
-<p><code class="highlighter-rouge">C-x C--</code> Disminuir el tamaño de la letra modo gráfico.</p>
+<p><code class="language-plaintext highlighter-rouge">C-x C--</code> Disminuir el tamaño de la letra modo gráfico.</p>
 
 <p>Fuente: <a href="http://wwwae.ciemat.es/~oglez/webcms/oginfo/combinaciones_emacs.html">http://wwwae.ciemat.es/~oglez/webcms/oginfo/combinaciones_emacs.html</a></p>
 :ET

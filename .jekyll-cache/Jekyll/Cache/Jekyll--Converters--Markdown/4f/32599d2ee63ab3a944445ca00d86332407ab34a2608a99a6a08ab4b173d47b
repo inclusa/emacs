@@ -1,8 +1,8 @@
-I"�<p>La automatización de texto es algo importante cuando deseas ir rápido, para ello necesitaremos instalar una extensión para llamar al texto automático. A este concepto lo llamamos <strong>snippet</strong>.</p>
+I"q<p>La automatización de texto es algo importante cuando deseas ir rápido, para ello necesitaremos instalar una extensión para llamar al texto automático. A este concepto lo llamamos <strong>snippet</strong>.</p>
 
 <p>Un <strong>snippet</strong> es un texto programado, al cual se le llama con un caracter o palabra clave seguido de la pulsación del tabulador.</p>
 
-<p>Para ello vamos a instalar primero la extensión <code class="highlighter-rouge">yasnippet</code>.</p>
+<p>Para ello vamos a instalar primero la extensión <code class="language-plaintext highlighter-rouge">yasnippet</code>.</p>
 
 <p>Así seguiremos los pasos de esta página <a href="https://www.emacswiki.org/emacs/Yasnippet">EmacsWiki</a>.</p>
 
@@ -10,12 +10,12 @@
 
 <p>Para ello primero invocaremos el comando para crearlos:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M-x yas-new-snippet
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M-x yas-new-snippet
 </code></pre></div></div>
 
 <p>Escribiremos el snippet:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># -*- mode: snippet -*-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># -*- mode: snippet -*-
 # name: post
 # key: p
 # --
@@ -30,19 +30,19 @@ coments: true
 
 </code></pre></div></div>
 
-<p>Y lo guardaremos con los comandos <code class="highlighter-rouge">C-c C-c</code>.</p>
+<p>Y lo guardaremos con los comandos <code class="language-plaintext highlighter-rouge">C-c C-c</code>.</p>
 
 <p>A la hora de guardar nos preguntará dónde queremos guardarlos.</p>
 
-<p>Para organizar bien los snippets lo mejor será antes de crear el snippet crear una página donde vayamos a escribir, en este caso hemos empezado a escribir en markdown por tanto, hemos creado una página <code class="highlighter-rouge">.md</code>.</p>
+<p>Para organizar bien los snippets lo mejor será antes de crear el snippet crear una página donde vayamos a escribir, en este caso hemos empezado a escribir en markdown por tanto, hemos creado una página <code class="language-plaintext highlighter-rouge">.md</code>.</p>
 
-<p>En el paso siguiente creamos el snippet y posteriormente guardamos. El programa nos identificará nuestra necesidad, crear un snippet para Markdown, así que nos propondrá una carpeta para guardarlo, en este caso <code class="highlighter-rouge">markdown-mode</code>, a la cual cosa accederemos.</p>
+<p>En el paso siguiente creamos el snippet y posteriormente guardamos. El programa nos identificará nuestra necesidad, crear un snippet para Markdown, así que nos propondrá una carpeta para guardarlo, en este caso <code class="language-plaintext highlighter-rouge">markdown-mode</code>, a la cual cosa accederemos.</p>
 
-<p>Para invocar el <code class="highlighter-rouge">snippet</code> simplemente crearemos un archivo <code class="highlighter-rouge">.md</code>, escribiremos la la clave, en este caso <code class="highlighter-rouge">p</code> y el programa nos lanzará el snippet.</p>
+<p>Para invocar el <code class="language-plaintext highlighter-rouge">snippet</code> simplemente crearemos un archivo <code class="language-plaintext highlighter-rouge">.md</code>, escribiremos la la clave, en este caso <code class="language-plaintext highlighter-rouge">p</code> y el programa nos lanzará el snippet.</p>
 
-<p>Ahora ya tenemos creado el <code class="highlighter-rouge">snippet</code>, pero para que funcione deberemos decirle a emacs que inicie el programa de cuando arranque.</p>
+<p>Ahora ya tenemos creado el <code class="language-plaintext highlighter-rouge">snippet</code>, pero para que funcione deberemos decirle a emacs que inicie el programa de cuando arranque.</p>
 
-<p>Para ello editamos el archivo <code class="highlighter-rouge">.emacs</code> y añadiremos las siguientes líneas:</p>
+<p>Para ello editamos el archivo <code class="language-plaintext highlighter-rouge">.emacs</code> y añadiremos las siguientes líneas:</p>
 
 <pre><code class="language-emacs">;;; Activant snippets
 (setq yas-snippet-dirs

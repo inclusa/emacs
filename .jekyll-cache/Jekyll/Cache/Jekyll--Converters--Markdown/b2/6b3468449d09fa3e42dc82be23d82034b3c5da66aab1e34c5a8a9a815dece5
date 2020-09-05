@@ -1,12 +1,12 @@
-I"ø<h1 id="aclaraciones">Aclaraciones</h1>
+I"ê<h1 id="aclaraciones">Aclaraciones</h1>
 
-<p><code class="highlighter-rouge">C-x C-c</code> - Pulsas <code class="highlighter-rouge">Control</code> y con la tecla de <code class="highlighter-rouge">Control</code> pulsada pulsas primero <code class="highlighter-rouge">x</code> y despu√©s <code class="highlighter-rouge">c</code>.<br /></p>
+<p><code class="language-plaintext highlighter-rouge">C-x C-c</code> - Pulsas <code class="language-plaintext highlighter-rouge">Control</code> y con la tecla de <code class="language-plaintext highlighter-rouge">Control</code> pulsada pulsas primero <code class="language-plaintext highlighter-rouge">x</code> y despu√©s <code class="language-plaintext highlighter-rouge">c</code>.<br /></p>
 
-<p><code class="highlighter-rouge">C-x k</code> - Pulsas <code class="highlighter-rouge">Control</code> y <code class="highlighter-rouge">x</code>. Levantas el dedo de la tecla <code class="highlighter-rouge">Control</code> y pulsas <code class="highlighter-rouge">k</code>.<br /></p>
+<p><code class="language-plaintext highlighter-rouge">C-x k</code> - Pulsas <code class="language-plaintext highlighter-rouge">Control</code> y <code class="language-plaintext highlighter-rouge">x</code>. Levantas el dedo de la tecla <code class="language-plaintext highlighter-rouge">Control</code> y pulsas <code class="language-plaintext highlighter-rouge">k</code>.<br /></p>
 
 <h1 id="limpiar-minibuffer">Limpiar minibuffer</h1>
 
-<p><code class="highlighter-rouge">C-g</code> - Este comando limpia el minibuffer para no encadenar comandos. Una vez limpio ya podemos introducir la secuencia.</p>
+<p><code class="language-plaintext highlighter-rouge">C-g</code> - Este comando limpia el minibuffer para no encadenar comandos. Una vez limpio ya podemos introducir la secuencia.</p>
 
 <ol>
   <li>Borra ventana activa</li>

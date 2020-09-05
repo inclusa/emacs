@@ -1,4 +1,4 @@
-I"�<h3 id="0-introducción">0. Introducción</h3>
+I"�<h3 id="0-introducción">0. Introducción</h3>
 
 <p><strong>Spacemacs</strong> es una nueva experiencia de <strong>Emacs</strong>, se trata de una configuración sofisticada y pulida, centrada en la ergonomía, la mnemotécnia y la consistencia.</p>
 
@@ -9,15 +9,15 @@
 <p>Sea cual sea la configuración base podrás cambiarla posteriormente introduciendo uno de estos comandos:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">SPC t E e</code> or <code class="highlighter-rouge">M-m t E e</code>: enable/disable emacs editing style</li>
-  <li><code class="highlighter-rouge">SPC t E h</code> or <code class="highlighter-rouge">M-m t E h</code>: enable/disable hybrid editing style</li>
+  <li><code class="language-plaintext highlighter-rouge">SPC t E e</code> or <code class="language-plaintext highlighter-rouge">M-m t E e</code>: enable/disable emacs editing style</li>
+  <li><code class="language-plaintext highlighter-rouge">SPC t E h</code> or <code class="language-plaintext highlighter-rouge">M-m t E h</code>: enable/disable hybrid editing style</li>
 </ul>
 
-<p>Estando en modo <code class="highlighter-rouge">hybrid</code>, <code class="highlighter-rouge">SPC</code> significa pulsar la <code class="highlighter-rouge">barra espaciadora</code>.</p>
+<p>Estando en modo <code class="language-plaintext highlighter-rouge">hybrid</code>, <code class="language-plaintext highlighter-rouge">SPC</code> significa pulsar la <code class="language-plaintext highlighter-rouge">barra espaciadora</code>.</p>
 
-<p>La configuración de <strong>Spacemacs</strong> se guardará en el archivo <code class="highlighter-rouge">.spacemacs</code> de tu <code class="highlighter-rouge">/home</code>.</p>
+<p>La configuración de <strong>Spacemacs</strong> se guardará en el archivo <code class="language-plaintext highlighter-rouge">.spacemacs</code> de tu <code class="language-plaintext highlighter-rouge">/home</code>.</p>
 
-<p>Si has cambiado el estilo de edición y lo quieres mantener cada vez que inicies el sistema puedes dejar estas líneas en el archivo <code class="highlighter-rouge">.spacemacs</code> así:</p>
+<p>Si has cambiado el estilo de edición y lo quieres mantener cada vez que inicies el sistema puedes dejar estas líneas en el archivo <code class="language-plaintext highlighter-rouge">.spacemacs</code> así:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="p">;;</span> EDITAT: Edició de l<span class="s1">'estil per defecte
    ;; dotspacemacs-editing-style '</span>emacs
@@ -26,7 +26,7 @@
                                        hybrid-mode-default-state <span class="s1">'hybrid)
 </span></code></pre></div></div>
 
-<p>De esta manera quedará seleccionada la opción <code class="highlighter-rouge">hybrid</code> cada vez que inicies `Spacemacs**. Además será fácil cambiar de opción por defecto, pues solo habrá que comentar o descomentar la opción más conveniente de las tres.</p>
+<p>De esta manera quedará seleccionada la opción <code class="language-plaintext highlighter-rouge">hybrid</code> cada vez que inicies `Spacemacs**. Además será fácil cambiar de opción por defecto, pues solo habrá que comentar o descomentar la opción más conveniente de las tres.</p>
 
 <h3 id="1-características">1. Características</h3>
 
@@ -58,7 +58,7 @@
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git clone https://github.com/syl20bnr/spacemacs ~ /.emacs.d 
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">master</code>` es la rama estable y es inmutable, <strong>NO le hagas ninguna modificación o romperás el mecanismo de actualización</strong>. Si desea bifurcar Spacemacs, use de forma segura la rama de develop donde maneja la actualización manualmente.</p>
+<p><code class="language-plaintext highlighter-rouge">master</code>` es la rama estable y es inmutable, <strong>NO le hagas ninguna modificación o romperás el mecanismo de actualización</strong>. Si desea bifurcar Spacemacs, use de forma segura la rama de develop donde maneja la actualización manualmente.</p>
 
 <p><strong>PASO 3</strong></p>
 
@@ -73,7 +73,7 @@
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  emacs <span class="nt">--insecure</span>
 </code></pre></div></div>
 
-<p>O puede configurar <code class="highlighter-rouge">dotspacemacs-elpa-https</code> en nil en su <code class="highlighter-rouge">dotspacemacs-elpa-https</code> para eliminar la necesidad de iniciar <strong>Emacs</strong>* con el argumento <code class="highlighter-rouge">--insecure</code>. Es posible que desee borrar su directorio .`emacs.d/elpa** antes de hacer esto, para que todos los paquetes dañados que haya descargado se reinstalen.</p>
+<p>O puede configurar <code class="language-plaintext highlighter-rouge">dotspacemacs-elpa-https</code> en nil en su <code class="language-plaintext highlighter-rouge">dotspacemacs-elpa-https</code> para eliminar la necesidad de iniciar <strong>Emacs</strong>* con el argumento <code class="language-plaintext highlighter-rouge">--insecure</code>. Es posible que desee borrar su directorio .`emacs.d/elpa** antes de hacer esto, para que todos los paquetes dañados que haya descargado se reinstalen.</p>
 
 <p><strong>PASO 5</strong></p>
 

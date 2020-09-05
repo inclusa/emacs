@@ -1,4 +1,4 @@
-I"w<p>Empezar el documento <code class="highlighter-rouge">.org</code> con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.</p>
+I"�<p>Empezar el documento <code class="language-plaintext highlighter-rouge">.org</code> con cabeceras ayuda mucho a contextualizar y arrancar sobre qué es lo que contiene.</p>
 
 <pre><code class="language-emacs">#+TITLE: Bullet Journal
 #+LANGUAGE: en
@@ -36,7 +36,7 @@
 </blockquote>
 
 <ul>
-  <li>Startup: si contine la palabra <code class="highlighter-rouge">content</code> aparecen desplegadas las categorías al abrir el documento</li>
+  <li>Startup: si contine la palabra <code class="language-plaintext highlighter-rouge">content</code> aparecen desplegadas las categorías al abrir el documento</li>
   <li>Priorities: configuración de las prioridades, lo que se pone en lo que se usa, en este caso hemos cambiado las prioridades A, B, C por 1, 2, 3</li>
   <li>Tags: etiquetas que usaremos por defecto</li>
   <li>ToDo: estados de las tareas que utilizaremos por defecto</li>

@@ -1,6 +1,6 @@
-I"z<p>Instalamos el paquete <code class="highlighter-rouge">AUCTeX</code> desde <a href="https://melpa.org/#/">MELPA</a>, repositorio de Emacs, que se puede consultar via web.</p>
+I"	<p>Instalamos el paquete <code class="language-plaintext highlighter-rouge">AUCTeX</code> desde <a href="https://melpa.org/#/">MELPA</a>, repositorio de Emacs, que se puede consultar via web.</p>
 
-<p>Para poder instalar paquetes de <code class="highlighter-rouge">Emacs</code> deberemos configurar el archivo <code class="highlighter-rouge">.emacs</code> convenientemente. Para ello añadiremos estas líneas:</p>
+<p>Para poder instalar paquetes de <code class="language-plaintext highlighter-rouge">Emacs</code> deberemos configurar el archivo <code class="language-plaintext highlighter-rouge">.emacs</code> convenientemente. Para ello añadiremos estas líneas:</p>
 
 <pre><code class="language-emacs">;;; #01 Añadir repositorio
 (require 'package) ;; You might already have this line
@@ -16,18 +16,18 @@
 '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 </code></pre>
 
-<p>Cuando lo hagamos salimos de <code class="highlighter-rouge">Emacs</code> y volvemos a entrar.</p>
+<p>Cuando lo hagamos salimos de <code class="language-plaintext highlighter-rouge">Emacs</code> y volvemos a entrar.</p>
 
-<p>Pasamos a la instalación. Para ello escribimos en <code class="highlighter-rouge">Emacs</code>:</p>
+<p>Pasamos a la instalación. Para ello escribimos en <code class="language-plaintext highlighter-rouge">Emacs</code>:</p>
 
 <pre><code class="language-emacs">M-x list-package
 </code></pre>
 
-<p>Esto nos mostrará la lista. Debemos tener en cuenta que a la hora de escribir los comandos en Emacs podemos utilizar la tecla <code class="highlighter-rouge">TAB</code> para que <code class="highlighter-rouge">Emacs</code> pueda intuir el final de la instrucción.</p>
+<p>Esto nos mostrará la lista. Debemos tener en cuenta que a la hora de escribir los comandos en Emacs podemos utilizar la tecla <code class="language-plaintext highlighter-rouge">TAB</code> para que <code class="language-plaintext highlighter-rouge">Emacs</code> pueda intuir el final de la instrucción.</p>
 
 <p>Clicaremos con el ratón el paquete correspondiente o bajaremos el cursor hasta llegar al paquete. Se instalará.</p>
 
-<p>Para ver su funcionamiento podemos bajar una plantilla de LaTeX desde esta página: <a href="https://www.latextemplates.com/template/stylish-article">https://www.latextemplates.com/template/stylish-article</a>. Descomprimiremos el archivo y editaremos el archivo: <code class="highlighter-rouge">archivo.tex</code>.</p>
+<p>Para ver su funcionamiento podemos bajar una plantilla de LaTeX desde esta página: <a href="https://www.latextemplates.com/template/stylish-article">https://www.latextemplates.com/template/stylish-article</a>. Descomprimiremos el archivo y editaremos el archivo: <code class="language-plaintext highlighter-rouge">archivo.tex</code>.</p>
 
 <p>Miremos la barra de menú que aparece arriba.</p>
 

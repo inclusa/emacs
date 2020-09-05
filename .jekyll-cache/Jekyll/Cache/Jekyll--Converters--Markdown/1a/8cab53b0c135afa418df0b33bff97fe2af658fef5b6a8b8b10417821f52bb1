@@ -1,7 +1,7 @@
-I"x<p>Para incrustar imágenes en los documentos lo haremos así:</p>
+I"�<p>Para incrustar imágenes en los documentos lo haremos así:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./image/emacs.png
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./image/emacs.png
 </code></pre></div></div>
 
-<p>Deberemos crear un directorio llamado <code class="highlighter-rouge">image</code> un nivel por debajo y una imagen llamada <code class="highlighter-rouge">emacs.png</code></p>
+<p>Deberemos crear un directorio llamado <code class="language-plaintext highlighter-rouge">image</code> un nivel por debajo y una imagen llamada <code class="language-plaintext highlighter-rouge">emacs.png</code></p>
 :ET
