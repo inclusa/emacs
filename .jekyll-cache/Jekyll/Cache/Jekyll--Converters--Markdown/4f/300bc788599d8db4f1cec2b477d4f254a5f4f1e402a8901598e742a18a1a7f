@@ -1,5 +1,4 @@
-I"M
-<h3 id="1-cabeceras">1. Cabeceras</h3>
+I"j<h3 id="1-cabeceras">1. Cabeceras</h3>
 
 <p>Para exportar datos deberemos incluir la siguiente información en la cabecera del documento y adaptarla a nuestras necesidades:</p>
 
@@ -13,17 +12,17 @@
 
 <h3 id="2-comandos">2. Comandos</h3>
 
-<p><code class="highlighter-rouge">C-c C-e</code> Comandos de explotación y publicación.</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-e</code> Comandos de explotación y publicación.</p>
 
 <h3 id="3-codificación">3. Codificación</h3>
 
-<p><code class="highlighter-rouge">C-c C-e t u</code> y <code class="highlighter-rouge">C-c C-e t U</code> ambos exportan la codificación a UTF-8.</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-e t u</code> y <code class="language-plaintext highlighter-rouge">C-c C-e t U</code> ambos exportan la codificación a UTF-8.</p>
 
 <h3 id="4-creando-un-archivo-de-html-donde-se-incrusta-código">4. Creando un archivo de HTML donde se incrusta código</h3>
 
-<p><code class="highlighter-rouge">C-c C-e h h</code> Exportar a HTML <code class="highlighter-rouge">archivo.html</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-e h h</code> Exportar a HTML <code class="language-plaintext highlighter-rouge">archivo.html</code></p>
 
-<p><code class="highlighter-rouge">C-c C-e h o</code> Exportar a HTML e inmediatamente abrir el navegador sin guardar</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-e h o</code> Exportar a HTML e inmediatamente abrir el navegador sin guardar</p>
 
 <p>Para incrustar código:</p>
 
@@ -41,15 +40,15 @@
 
 <h3 id="5-exportar-a-latex-o-pdf">5. Exportar a LaTeX o PDF</h3>
 
-<p><code class="highlighter-rouge">C-c C-e l l</code> Exporta un fichero LaTeX <code class="highlighter-rouge">archivo.tex</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-e l l</code> Exporta un fichero LaTeX <code class="language-plaintext highlighter-rouge">archivo.tex</code></p>
 
-<p><code class="highlighter-rouge">C-c C-e l p</code> Exporta como LaTeX y también PDF</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-e l p</code> Exporta como LaTeX y también PDF</p>
 
-<p><code class="highlighter-rouge">C-c C-e l o</code> Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-e l o</code> Exporta sólo a PDF, aunque procesa LaTeX da como resultado sólo un archivo de PDF</p>
 
 <h3 id="6-exportar-calendario">6. Exportar calendario</h3>
 
-<p><code class="highlighter-rouge">C-c C-e c f</code> Crea un archivo iCalendar con extensión <code class="highlighter-rouge">.ics</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-e c f</code> Crea un archivo iCalendar con extensión <code class="language-plaintext highlighter-rouge">.ics</code></p>
 
-<p><code class="highlighter-rouge">C-c C-e c c</code> Crea un archivo largo de iCalendar con todos los archivos <code class="highlighter-rouge">org-agenda-files</code> y lo escribe cogiendo <code class="highlighter-rouge">org-icalendar-combined-agenda-file</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">C-c C-e c c</code> Crea un archivo largo de iCalendar con todos los archivos <code class="language-plaintext highlighter-rouge">org-agenda-files</code> y lo escribe cogiendo <code class="language-plaintext highlighter-rouge">org-icalendar-combined-agenda-file</code>.</p>
 :ET

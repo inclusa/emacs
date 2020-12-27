@@ -1,0 +1,136 @@
+I"<h3 id="introducción">Introducción</h3>
+
+<p><strong>Tracking time</strong> o seguimiento del tiempo es una herramienta realmente útil para realizar análisis de efectividad en el trabajo.</p>
+
+<h3 id="tracking-time-con-orgmode">Tracking time con OrgMode</h3>
+
+<p>Para realizar un seguimiento del tiempo mediante OrgMode deberemos activar el reloj <code class="language-plaintext highlighter-rouge">C-c C-x C-i</code>.</p>
+
+<p>En el momento en que realizamos esta acción tendremos el siguinete texto en el documento:</p>
+
+<pre><code class="language-OrgMode">:LOGBOOK:
+CLOCK: [2020-12-27 Sun 09:00]
+:END:
+</code></pre>
+
+<p>Cuando desactivemos el reloj con el comando <code class="language-plaintext highlighter-rouge">C-c C-x C-o</code> obtendremos lo siguiente:</p>
+
+<pre><code class="language-OrgMode">:LOGBOOK:
+CLOCK: [2020-12-27 Sun 09:00]--[2020-12-27 Sun 09:05] =&gt; 0:05
+:END:
+</code></pre>
+<h3 id="comandos-importantes">Comandos importantes</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Calls</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C-c C-x C-i</td>
+      <td>org-clock-in</td>
+      <td>Activa el reloj</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-x</td>
+      <td>org-clock-in-last</td>
+      <td>Activa el reloj desde la última parada</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-o</td>
+      <td>org-clock-out</td>
+      <td>Para el reloj</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-j</td>
+      <td>org-clock-goto</td>
+      <td>Salta hasta la línia donde paramos el reloj</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-q</td>
+      <td>org-clock-cancel</td>
+      <td>Cancela la cuenta del reloj</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-d</td>
+      <td>org-clock-display</td>
+      <td>Muestra el tiempo dedicado en las cabeceras</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-r</td>
+      <td>org-clock-report</td>
+      <td>Genera un informe de la actividad del reloj</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-z</td>
+      <td>org-resolve-clocks</td>
+      <td>Resolve any half-open clocks</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="genera-un-informe-de-los-registros-de-tiempo">Genera un informe de los registros de tiempo</h3>
+
+<p>Podemos generar el informare así: <code class="language-plaintext highlighter-rouge">C-c C-x C-r</code>. De esta forma nos generará un nuevo informe/tabla, aunque lo podremos generar manualment así <code class="language-plaintext highlighter-rouge">C-c C-c</code>.</p>
+
+<pre><code class="language-OrgMode">#+BEGIN: clocktable
+#+END:
+</code></pre>
+
+<p>Ahora escribiremos las ociones en la línea <code class="language-plaintext highlighter-rouge">BEGIN</code>:</p>
+
+<pre><code class="language-OrgMode">#+BEGIN: clocktable :maxlevel 4 :scope agenda :block thismonth
+#+END:
+</code></pre>
+<p>Las opciones del informe del reloj son las siguentes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>:maxlevel</td>
+      <td>Máximo nivel de profundidad de las tiempos listados en la tabla</td>
+    </tr>
+    <tr>
+      <td>:scope</td>
+      <td>Vista considerara en el informe</td>
+    </tr>
+    <tr>
+      <td>:block</td>
+      <td>Bloque de tiempo a considerar</td>
+    </tr>
+    <tr>
+      <td>:tstart</td>
+      <td>Bloque desde que empieza a considerarlo el reloj</td>
+    </tr>
+    <tr>
+      <td>:tend</td>
+      <td>Cuando se considera que el tiempo habría acabado</td>
+    </tr>
+    <tr>
+      <td>:wstart</td>
+      <td>Empieza un dia específico de la semana, 1 significa Monday</td>
+    </tr>
+    <tr>
+      <td>:mstart</td>
+      <td>Empieza un día específico del mes, 1 significa el primer dia del mes</td>
+    </tr>
+    <tr>
+      <td>:tags</td>
+      <td>Solo incluye tiempo que coincidadn con estas tareas</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Más explicaciones en <a href="https://orgmode.org/manual/The-clock-table.html">OrgMode.org - The clock table</a></p>
+
+:ET

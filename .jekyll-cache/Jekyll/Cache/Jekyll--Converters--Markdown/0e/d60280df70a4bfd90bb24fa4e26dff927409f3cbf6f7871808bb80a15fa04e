@@ -1,13 +1,13 @@
-I"�<p>Los bullets son viñetas configurables.</p>
+I"�<p>Los bullets son viñetas configurables.</p>
 
 <p>Para activar los bullets a mano:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M-x org-bullets-mode
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M-x org-bullets-mode
 </code></pre></div></div>
 
-<p>Para arrancar este modo tendremos que escribir en el archivo de configuración de <strong>Emacs</strong>, <code class="highlighter-rouge">.emacs</code> esta línea:</p>
+<p>Para arrancar este modo tendremos que escribir en el archivo de configuración de <strong>Emacs</strong>, <code class="language-plaintext highlighter-rouge">.emacs</code> esta línea:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(setq 'org-bullets-mode)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(setq 'org-bullets-mode)
 </code></pre></div></div>
 
 <p><img src="../assets/orgmode/17_bullets.jpg" alt="Bullets" /></p>

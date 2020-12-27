@@ -1,0 +1,7 @@
+I"<p>Me encontré en la situación de que habían 7 paquestes que no se podian descargar porque, tal vez, no estaban actualizacos des del repositorio MELPA.</p>
+
+<p>La situación se solucionó arrancando en modo insiguro la primera vez, de esta forma se actualizaon los paquestes necesarios. En adelante arrancamos Spacemacs como lo venimos haciendo y no hubo más problema.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emacs <span class="nt">--insecure</span>
+</code></pre></div></div>
+:ET

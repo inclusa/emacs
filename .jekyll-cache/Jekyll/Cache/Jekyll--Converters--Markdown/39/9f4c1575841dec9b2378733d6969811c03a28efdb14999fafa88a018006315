@@ -1,0 +1,75 @@
+I"�<h3 id="introducción">Introducción</h3>
+
+<p><strong>Tracking time</strong> o seguimiento del tiempo es una herramienta realmente útil para realizar análisis de efectividad en el trabajo.</p>
+
+<h3 id="tracking-time-con-orgmode">Tracking time con OrgMode</h3>
+
+<p>Para realizar un seguimiento del tiempo mediante OrgMode deberemos activar el reloj <code class="language-plaintext highlighter-rouge">C-c C-x C-i</code>.</p>
+
+<p>En el momento en que realizamos esta acción tendremos el siguinete texto en el documento:</p>
+
+<pre><code class="language-OrgMode">:LOGBOOK:
+CLOCK: [2020-12-27 Sun 09:00]
+:END:
+</code></pre>
+
+<p>Cuando desactivemos el reloj con el comando <code class="language-plaintext highlighter-rouge">C-c C-x C-o</code> obtendremos lo siguiente:</p>
+
+<pre><code class="language-OrgMode">:LOGBOOK:
+CLOCK: [2020-12-27 Sun 09:00]--[2020-12-27 Sun 09:05] =&gt; 0:05
+:END:
+</code></pre>
+<h3 id="comandos-importantes">Comandos importantes</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Calls</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C-c C-x C-i</td>
+      <td>org-clock-in</td>
+      <td>Clock in to the section you’re currently in</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-x</td>
+      <td>org-clock-in-last</td>
+      <td>Clock in to the last clocked task</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-o</td>
+      <td>org-clock-out</td>
+      <td>Clock out of whatever you’re clocked in to</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-j</td>
+      <td>org-clock-goto</td>
+      <td>Jump to whatever headline you are currently clocked in to</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-q</td>
+      <td>org-clock-cancel</td>
+      <td>Cancel the current clock (removes all of it’s current time)</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-d</td>
+      <td>org-clock-display</td>
+      <td>Display clock times for headlines in current file</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-r</td>
+      <td>org-clock-report</td>
+      <td>Generate a report for clock activity</td>
+    </tr>
+    <tr>
+      <td>C-c C-x C-z</td>
+      <td>org-resolve-clocks</td>
+      <td>Resolve any half-open clocks</td>
+    </tr>
+  </tbody>
+</table>
+:ET

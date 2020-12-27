@@ -1,0 +1,33 @@
+I"4<h3 id="introducción">Introducción</h3>
+
+<p><strong>Tracking time</strong> o seguimiento del tiempo es una herramienta realmente útil para realizar análisis de efectividad en el trabajo.</p>
+
+<h3 id="tracking-time-con-orgmode">Tracking time con OrgMode</h3>
+
+<p>Para realizar un seguimiento del tiempo mediante OrgMode deberemos activar el reloj <code class="language-plaintext highlighter-rouge">C-c C-x C-i</code>.</p>
+
+<p>En el momento en que realizamos esta acción tendremos el siguinete texto en el documento:</p>
+
+<pre><code class="language-OrgMode">:LOGBOOK:
+CLOCK: [2020-12-27 Sun 09:00]
+:END:
+</code></pre>
+
+<p>Cuando desactivemos el reloj con el comando <code class="language-plaintext highlighter-rouge">C-c C-x C-o</code> obtendremos lo siguiente:</p>
+
+<pre><code class="language-OrgMode">:LOGBOOK:
+CLOCK: [2020-12-27 Sun 09:00]--[2020-12-27 Sun 09:05] =&gt; 0:05
+:END:
+</code></pre>
+<h3 id="comandos-importantes">Comandos importantes</h3>
+
+<p>Key 	Calls 	Action
+C-c C-x C-i 	org-clock-in 	Clock in to the section you’re currently in
+C-c C-x C-x 	org-clock-in-last 	Clock in to the last clocked task
+C-c C-x C-o 	org-clock-out 	Clock out of whatever you’re clocked in to
+C-c C-x C-j 	org-clock-goto 	Jump to whatever headline you are currently clocked in to
+C-c C-x C-q 	org-clock-cancel 	Cancel the current clock (removes all of it’s current time)
+C-c C-x C-d 	org-clock-display 	Display clock times for headlines in current file
+C-c C-x C-r 	org-clock-report 	Generate a report for clock activity
+C-c C-x C-z 	org-resolve-clocks 	Resolve any half-open clocks</p>
+:ET

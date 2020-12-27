@@ -1,4 +1,4 @@
-I"C<p>Unicode es un estándar de codificación de caracteres diseñado para facilitar el tratamiento informático, transmisión y visualización de textos de múltiples lenguajes y disciplinas técnicas, además de textos clásicos de lenguas muertas. El término Unicode proviene de los tres objetivos perseguidos: universalidad, uniformidad y unicidad.</p>
+I"�<p>Unicode es un estándar de codificación de caracteres diseñado para facilitar el tratamiento informático, transmisión y visualización de textos de múltiples lenguajes y disciplinas técnicas, además de textos clásicos de lenguas muertas. El término Unicode proviene de los tres objetivos perseguidos: universalidad, uniformidad y unicidad.</p>
 
 <p>Los puntos de código de Unicode se identifican por un número entero.</p>
 
@@ -12,19 +12,19 @@
 
 <p>La forma más rápida de establecer el código unidoce UTF-8 en Emacs, de forma manual seria:</p>
 
-<p><code class="highlighter-rouge">C-x 8 keymap</code></p>
+<p><code class="language-plaintext highlighter-rouge">C-x 8 keymap</code></p>
 
-<p>Lo cual quedaría de esta forma si quisiéramos indicar <code class="highlighter-rouge">UTF-8</code>:</p>
+<p>Lo cual quedaría de esta forma si quisiéramos indicar <code class="language-plaintext highlighter-rouge">UTF-8</code>:</p>
 
 <ol>
   <li>
-    <p>Pulsamos <code class="highlighter-rouge">C-x 8 RET</code>. La tecla <code class="highlighter-rouge">RET</code> indica que pulsemos la tecla Intro o Retorno.</p>
+    <p>Pulsamos <code class="language-plaintext highlighter-rouge">C-x 8 RET</code>. La tecla <code class="language-plaintext highlighter-rouge">RET</code> indica que pulsemos la tecla Intro o Retorno.</p>
   </li>
   <li>
-    <p>Se nos muestra: <code class="highlighter-rouge">Insert character (Unicode name or hex):</code></p>
+    <p>Se nos muestra: <code class="language-plaintext highlighter-rouge">Insert character (Unicode name or hex):</code></p>
   </li>
   <li>
-    <p>Introducimos exactamente estos caracteres: <code class="highlighter-rouge">utf-8</code></p>
+    <p>Introducimos exactamente estos caracteres: <code class="language-plaintext highlighter-rouge">utf-8</code></p>
   </li>
 </ol>
 

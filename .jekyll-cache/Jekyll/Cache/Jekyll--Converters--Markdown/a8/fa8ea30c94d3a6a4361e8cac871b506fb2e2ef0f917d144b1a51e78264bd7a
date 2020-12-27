@@ -1,42 +1,42 @@
-I"U<h3 id="apuntando-a-un-fichero">Apuntando a un fichero</h3>
+I"�<h3 id="apuntando-a-un-fichero">Apuntando a un fichero</h3>
 
 <p>Abrimos un archivo de bookmarks o favoritos.</p>
 
 <ol>
-  <li>Nos situamos en el fichero que queremos añadir al <strong>bookmark</strong> con el comando <code class="highlighter-rouge">C-x C-f</code>.</li>
-  <li>Tecleamos <code class="highlighter-rouge">M-x bookmark-set Ctrl-x-r-m</code> de esta forma grabamos el archivo al bookmark.</li>
+  <li>Nos situamos en el fichero que queremos añadir al <strong>bookmark</strong> con el comando <code class="language-plaintext highlighter-rouge">C-x C-f</code>.</li>
+  <li>Tecleamos <code class="language-plaintext highlighter-rouge">M-x bookmark-set Ctrl-x-r-m</code> de esta forma grabamos el archivo al bookmark.</li>
 </ol>
 
 <h3 id="apuntando-a-un-directorio">Apuntando a un directorio</h3>
 
 <ol>
-  <li>Abrimos el directorio con los comandos <code class="highlighter-rouge">C-x C-d</code>.</li>
-  <li>Grabamos el directorio al bookmark <code class="highlighter-rouge">M-x bookmark-set Ctrl-x r-m</code>.</li>
+  <li>Abrimos el directorio con los comandos <code class="language-plaintext highlighter-rouge">C-x C-d</code>.</li>
+  <li>Grabamos el directorio al bookmark <code class="language-plaintext highlighter-rouge">M-x bookmark-set Ctrl-x r-m</code>.</li>
 </ol>
 
 <h3 id="recuperando-los-bookmarks">Recuperando los bookmarks</h3>
 
-<p><code class="highlighter-rouge">C-x r-l</code> y pulsamos sobre el lugar donde queremos ir.</p>
+<p><code class="language-plaintext highlighter-rouge">C-x r-l</code> y pulsamos sobre el lugar donde queremos ir.</p>
 
 <h3 id="editar-bookmarks">Editar bookmarks</h3>
 
 <ol>
-  <li>Abrimos el gestor de bookmarks o favoritos <code class="highlighter-rouge">M-x bookmark-bmenu-list</code> (<strong>bookmark-list</strong>).</li>
-  <li>Abrimos el fichero que queremos que se a un bookmark <code class="highlighter-rouge">Ctrl+x r m</code> y pondremos su nombre (<strong>bookmark-bmenu-set</strong>).</li>
-  <li>Listamos el archivo <strong>bookmark-bmenu-list</strong> <code class="highlighter-rouge">Ctrl+x r l</code></li>
-  <li>Abrimos el archivo <strong>bookmark-jump</strong> <code class="highlighter-rouge">Ctrl+x r b</code>.</li>
+  <li>Abrimos el gestor de bookmarks o favoritos <code class="language-plaintext highlighter-rouge">M-x bookmark-bmenu-list</code> (<strong>bookmark-list</strong>).</li>
+  <li>Abrimos el fichero que queremos que se a un bookmark <code class="language-plaintext highlighter-rouge">Ctrl+x r m</code> y pondremos su nombre (<strong>bookmark-bmenu-set</strong>).</li>
+  <li>Listamos el archivo <strong>bookmark-bmenu-list</strong> <code class="language-plaintext highlighter-rouge">Ctrl+x r l</code></li>
+  <li>Abrimos el archivo <strong>bookmark-jump</strong> <code class="language-plaintext highlighter-rouge">Ctrl+x r b</code>.</li>
   <li>Borramos o Renombramos el bookmark
     <ul>
-      <li>Escribimos <code class="highlighter-rouge">d</code> para borrar item.</li>
-      <li>Escribimos <code class="highlighter-rouge">x</code> para borrar marcadores.</li>
-      <li>Escribimos <code class="highlighter-rouge">r</code> para borrar el título del ítem.</li>
-      <li>Escribimos <code class="highlighter-rouge">s</code> para guardar los cambios.</li>
+      <li>Escribimos <code class="language-plaintext highlighter-rouge">d</code> para borrar item.</li>
+      <li>Escribimos <code class="language-plaintext highlighter-rouge">x</code> para borrar marcadores.</li>
+      <li>Escribimos <code class="language-plaintext highlighter-rouge">r</code> para borrar el título del ítem.</li>
+      <li>Escribimos <code class="language-plaintext highlighter-rouge">s</code> para guardar los cambios.</li>
     </ul>
   </li>
-  <li>Guardar el archivo bookmark. Llamamos <strong>bookmark-save</strong> o presionamos <code class="highlighter-rouge">s</code>.</li>
+  <li>Guardar el archivo bookmark. Llamamos <strong>bookmark-save</strong> o presionamos <code class="language-plaintext highlighter-rouge">s</code>.</li>
 </ol>
 
-<p>Podemos configurar el archivo <code class="highlighter-rouge">.emacs</code> para que se vaya guardando automáticamente.</p>
+<p>Podemos configurar el archivo <code class="language-plaintext highlighter-rouge">.emacs</code> para que se vaya guardando automáticamente.</p>
 
 <pre><code class="language-emacs">(setq bookmark-save-flag 1) ; para que cada vez que cambie, se guarde
 
@@ -45,7 +45,7 @@
 (setq bookmark-save-flag nil) ; para que nunca se autogruarde
 </code></pre>
 
-<p>Podremos configurar las teclas rápidas llamando a <strong>describe-mode</strong> <code class="highlighter-rouge">Ctrl + h m</code>.</p>
+<p>Podremos configurar las teclas rápidas llamando a <strong>describe-mode</strong> <code class="language-plaintext highlighter-rouge">Ctrl + h m</code>.</p>
 
 <p>Para iniciar el archivo al arrancar Emacs:</p>
 
@@ -55,7 +55,7 @@
 (switch-to-buffer "*Bookmark List*")
 </code></pre>
 
-<p>Guardaremos el archivo en <code class="highlighter-rouge">~/.emacs.d/bookmarks</code></p>
+<p>Guardaremos el archivo en <code class="language-plaintext highlighter-rouge">~/.emacs.d/bookmarks</code></p>
 
-<p>Por defecto el camino del archivo bookmark está guardado en la variable <code class="highlighter-rouge">bookmark-default-file</code>. Llamaremos <code class="highlighter-rouge">describe-variable</code> <code class="highlighter-rouge">Ctrl+h v</code> para ver su valor.</p>
+<p>Por defecto el camino del archivo bookmark está guardado en la variable <code class="language-plaintext highlighter-rouge">bookmark-default-file</code>. Llamaremos <code class="language-plaintext highlighter-rouge">describe-variable</code> <code class="language-plaintext highlighter-rouge">Ctrl+h v</code> para ver su valor.</p>
 :ET
