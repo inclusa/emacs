@@ -7,6 +7,7 @@
     
       
         <item>
+<<<<<<< HEAD
           <title>68 Tracking time</title>
           <description>&lt;h3 id=&quot;introducción&quot;&gt;Introducción&lt;/h3&gt;
 
@@ -149,6 +150,77 @@ CLOCK: [2020-12-27 Sun 09:00]--[2020-12-27 Sun 09:05] =&amp;gt; 0:05
           <pubDate>2020-12-27T00:00:00+01:00</pubDate>
           <link>http://localhost:4000/emacs/notes/68-Tracking-time</link>
           <guid isPermaLink="true">http://localhost:4000/emacs/notes/68-Tracking-time</guid>
+=======
+          <title>68 Exportar un apartado</title>
+          <description>&lt;p&gt;Leyendo el blog de &lt;a href=&quot;https://ugeek.github.io/blog/post/2020-09-03-visualizar-aparte-una-cabecera-de-un-orgmode-en-emacs.html&quot;&gt;uGeek&lt;/a&gt; he aprendido a aislar un apartado en un buffer, una ventana, y a imprimirlo posteriormente.&lt;/p&gt;
+
+&lt;p&gt;Imaginemos que hemos desarrollado un documento largo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;* Index
+* GTD
+* Dssing Thingking
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Desplegado obtendríamos algo así:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;* Index
+* GTD
+** Dimensions
+*** Control
+**** Capturar
+**** Aclarir
+**** Organitzar
+**** Reflexionar
+**** Comprometre's
+*** Perspectiva
+**** Propòsits - Principis
+**** Visió
+**** Metes
+**** Àrees de responsabilitat
+**** Projectes
+**** Accions
+** Matriu d'autogestió
+*** Bajo Control + Baja Perspectiva
+   - Negatiu: Víctima
+   - Positiu: Capacitat de resposta
+*** Alt Control + Baixa Perspectiva
+   - Negatiu: Micromanager
+   - Positiu: Implementador
+*** Bajo Control + Alta Perspectiva
+   - Negatiu: Creador boig
+   - Positiu: Visionari
+*** Bajo Control + Baja Perspectiva
+   - Negatiu: Autocomplacència
+   - Positiu: Comandant en cap
+* Dessign Thinking
+   1. Empatitza
+   2. Defineix
+   3. Idea
+   4. Prototipa
+   5. Testeja
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Si nos situáramos en el apartado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;* GTD&lt;/code&gt; y ejecutáramos los comandos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-c Ctrl-x b&lt;/code&gt; obtendríamos un nuevo buffer, una ventana con el contenido únicament del apartado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;* GTD&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ahora que ya tenemos el contenido aislado queremos exportarlo a diferentes formatos, procedemos a exportarlo a:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Texto Plan txt: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-c Ctrl-e t u&lt;/code&gt;. Ontendremos un nuevo archivo con el mismo nombre que el archivo original, aunque con la extensión &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.txt&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;PDF: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-c Ctrl-e l p&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Markdown: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Crtl-c Ctrl-e M m&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../img/nota.png&quot; alt=&quot;Nota&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En la parte de abajo se puede ver el buffer con la información aislada, generada a partir del primer documento mucho más largo.&lt;/p&gt;
+
+&lt;p&gt;En la parte de arriba se puede ver el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;txt&lt;/code&gt; generado.&lt;/p&gt;
+
+</description>
+          <pubDate>2020-09-05T00:00:00+02:00</pubDate>
+          <link>http://localhost:4000/emacs/notes/68-Exportar-un-apartado</link>
+          <guid isPermaLink="true">http://localhost:4000/emacs/notes/68-Exportar-un-apartado</guid>
+>>>>>>> 73ac4c46c79bf16a13b2e5b7fa2a5a9b06a9f4e0
         </item>
       
     

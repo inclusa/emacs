@@ -1,0 +1,61 @@
+I"�<p>Leyendo el blog de <a href="https://ugeek.github.io/blog/post/2020-09-03-visualizar-aparte-una-cabecera-de-un-orgmode-en-emacs.html">uGeek</a> he aprendido a aislar un apartado en un buffer, una ventana, y a imprimirlo posteriormente.</p>
+
+<p>Imaginemos que hemos desarrollado un documento largo:</p>
+
+<pre><code class="language-txt">* Index
+* GTD
+* Dssing Thingking
+</code></pre>
+
+<p>Desplegado obtendríamos algo así:</p>
+
+<pre><code class="language-txt">* Index
+* GTD
+** Dimensions
+*** Control
+**** Capturar
+**** Aclarir
+**** Organitzar
+**** Reflexionar
+**** Comprometre's
+*** Perspectiva
+**** Propòsits - Principis
+**** Visió
+**** Metes
+**** Àrees de responsabilitat
+**** Projectes
+**** Accions
+** Matriu d'autogestió
+*** Bajo Control + Baja Perspectiva
+   - Negatiu: Víctima
+   - Positiu: Capacitat de resposta
+*** Alt Control + Baixa Perspectiva
+   - Negatiu: Micromanager
+   - Positiu: Implementador
+*** Bajo Control + Alta Perspectiva
+   - Negatiu: Creador boig
+   - Positiu: Visionari
+*** Bajo Control + Baja Perspectiva
+   - Negatiu: Autocomplacència
+   - Positiu: Comandant en cap
+* Dessign Thinking
+   1. Empatitza
+   2. Defineix
+   3. Idea
+   4. Prototipa
+   5. Testeja
+</code></pre>
+
+<p>Si nos situáramos en el apartado <code class="language-plaintext highlighter-rouge">* GTD</code> y ejecutáramos los comandos <code class="language-plaintext highlighter-rouge">Ctrl-c Ctrl-x b</code> obtendríamos un nuevo buffer, una ventana con el contenido únicament del apartado <code class="language-plaintext highlighter-rouge">* GTD</code>.</p>
+
+<p>Ahora que ya tenemos el contenido aislado queremos exportarlo a diferentes formatos, procedemos a exportarlo a:</p>
+
+<ul>
+  <li>Texto Plan txt: <code class="language-plaintext highlighter-rouge">Ctrl-c Ctrl-e t u</code>. Ontendremos un nuevo archivo con el mismo nombre que el archivo original, aunque con la extensión <code class="language-plaintext highlighter-rouge">.txt</code>.</li>
+  <li>PDF: <code class="language-plaintext highlighter-rouge">Ctrl-c Ctrl-e l p</code>.</li>
+  <li>Markdown: <code class="language-plaintext highlighter-rouge">Crtl-c Ctrl-e M m</code>.</li>
+</ul>
+
+<p><img src="../img/nota.png" alt="Nota" /></p>
+
+:ET
