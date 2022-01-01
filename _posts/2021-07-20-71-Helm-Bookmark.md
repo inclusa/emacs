@@ -9,6 +9,21 @@ Para llamar al gestor de Bookmarks:
 
 `M-x helm-bookmarks`
 
+### Procedimiento desde Spacemancs
+
+1. Abrir el archivo que se quiere marcar como bookmark
+2. 'M-x helm-bookmars'
+3. Escribir el nombre del bookmark
+4. Intro
+
+| Keys  | Description                          |
+|-------+--------------------------------------|
+| C-c o | Jump other window.                   |
+| C-d   | Delete bookmark.                     |
+| C-e   | Edit bookmark.                       |
+| C-f   | Toggle bookmark location visibility. |
+
+
 ### Procedimiento
 
 1. Abrir el archivo: `C-x f`
